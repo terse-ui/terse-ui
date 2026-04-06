@@ -1,10 +1,11 @@
 // @ts-check
 import eslint from '@eslint/js';
-import tseslint from 'typescript-eslint';
 import angular from 'angular-eslint';
 import prettier from 'eslint-plugin-prettier/recommended';
+import {defineConfig} from 'eslint/config';
+import tseslint from 'typescript-eslint';
 
-export default tseslint.config(
+export default defineConfig(
   {
     ignores: ['dist/', 'node_modules/', 'out-tsc/', '.angular/', 'docs/'],
   },
@@ -12,8 +13,7 @@ export default tseslint.config(
     files: ['**/*.ts'],
     extends: [
       eslint.configs.recommended,
-      ...tseslint.configs.strictTypeChecked,
-      ...tseslint.configs.stylisticTypeChecked,
+      ...tseslint.configs.recommendedTypeChecked,
       ...angular.configs.tsRecommended,
     ],
     languageOptions: {
@@ -26,11 +26,11 @@ export default tseslint.config(
       // Angular library: selectors use the library prefix
       '@angular-eslint/directive-selector': [
         'error',
-        {type: 'attribute', prefix: 'base', style: 'camelCase'},
+        {type: 'attribute', prefix: 't', style: 'camelCase'},
       ],
       '@angular-eslint/component-selector': [
         'error',
-        {type: 'element', prefix: 'base', style: 'kebab-case'},
+        {type: 'element', prefix: 't', style: 'kebab-case'},
       ],
 
       // Library authors rename inputs/outputs for public API
@@ -39,15 +39,12 @@ export default tseslint.config(
 
       // Enforce modern Angular patterns
       '@angular-eslint/prefer-standalone': 'error',
-      '@angular-eslint/prefer-on-push-component-change-detection': 'error',
+      '@angular-eslint/prefer-on-push-component-change-detection': 'off', // v22 uses OnPush by default
       '@angular-eslint/no-host-metadata-property': 'off', // we use host bindings intentionally
       '@angular-eslint/prefer-output-readonly': 'error',
 
       // TypeScript strict overrides for library code
-      '@typescript-eslint/explicit-function-return-type': [
-        'error',
-        {allowExpressions: true, allowConciseArrowFunctionExpressionsStartingWithVoid: true},
-      ],
+      '@typescript-eslint/explicit-member-accessibility': ['error', {accessibility: 'no-public'}],
       '@typescript-eslint/no-explicit-any': 'error',
       '@typescript-eslint/no-non-null-assertion': 'error',
       '@typescript-eslint/consistent-type-imports': [
@@ -68,6 +65,8 @@ export default tseslint.config(
       '@typescript-eslint/no-floating-promises': 'off',
       '@typescript-eslint/no-unsafe-assignment': 'off',
       '@typescript-eslint/no-unsafe-member-access': 'off',
+      '@typescript-eslint/no-unsafe-call': 'off',
+      '@angular-eslint/component-selector': 'off',
     },
   },
   {

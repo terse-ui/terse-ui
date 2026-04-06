@@ -25,12 +25,7 @@
           "defaultConfiguration": "production"
         },
         "test": {
-          "builder": "@angular/build:unit-test",
-          "options": {
-            "tsConfig": "pkgs/core/tsconfig.spec.json",
-            "setupFiles": ["test-setup.ts"],
-            "watch": false
-          }
+          "builder": "@analogjs/vitest-angular:test"
         }
       }
     }
