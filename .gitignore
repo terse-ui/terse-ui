@@ -39,6 +39,10 @@ testem.log
 /typings
 __screenshots__/
 
+# VitePress
+docs/.vitepress/dist
+docs/.vitepress/cache
+
 # System files
 .DS_Store
 Thumbs.db

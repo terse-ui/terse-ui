@@ -1,0 +1,8 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "tailwindCSS.classFunctions": ["clsx", "cva", "cx", "cn", "classes"],
+  "tailwindCSS.experimental.classRegex": [
+    "(?:class|className|classes)\\s*[=:]\\s*['\"`]([^'\"`]*)['\"`]",
+    "(?:cva|cn|cx|clsx|classes)\\s*\\([^)]*['\"`]([^'\"`]*)['\"`]"
+  ]
+}

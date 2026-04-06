@@ -4,7 +4,35 @@
   "cli": {
     "packageManager": "pnpm"
   },
-  "newProjectRoot": "projects",
+  "newProjectRoot": "pkgs",
   "projects": {
+    "core": {
+      "projectType": "library",
+      "root": "pkgs/core",
+      "sourceRoot": "pkgs/core",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "pkgs/core/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "pkgs/core/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test",
+          "options": {
+            "tsConfig": "pkgs/core/tsconfig.spec.json",
+            "setupFiles": ["test-setup.ts"],
+            "watch": false
+          }
+        }
+      }
+    }
   }
 }
