@@ -30,25 +30,25 @@ importers:
     dependencies:
       '@angular/cdk':
         specifier: github:angular/cdk-builds#main
-        version: https://codeload.github.com/angular/cdk-builds/tar.gz/bfca87c802f6e00ac37607e41c8b1fcf87d35b7f(3084a9f08586859a68915805ee2e1c03)
+        version: https://codeload.github.com/angular/cdk-builds/tar.gz/8f63527b7c2313b7711595972ead438121abb8eb(d2362c28edc09dd035ef191e007f5896)
       '@angular/common':
         specifier: github:angular/common-builds#main
-        version: https://codeload.github.com/angular/common-builds/tar.gz/88a5014c12bc6c3a1d722832b9479a055cbbe11c(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2))(rxjs@7.8.2)
+        version: https://codeload.github.com/angular/common-builds/tar.gz/9c7d2629cf74b72cc48f461152e07228ae5a9206(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2))(rxjs@7.8.2)
       '@angular/compiler':
         specifier: github:angular/compiler-builds#main
-        version: https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413
+        version: https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058
       '@angular/core':
         specifier: github:angular/core-builds#main
-        version: https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2)
+        version: https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2)
       '@angular/forms':
         specifier: github:angular/forms-builds#main
-        version: https://codeload.github.com/angular/forms-builds/tar.gz/2fec236b9b58a96a3c6505ca460762dfd8191a48(3084a9f08586859a68915805ee2e1c03)
+        version: https://codeload.github.com/angular/forms-builds/tar.gz/8576429ff77f616a93e60800c89c83c42e8fd887(d2362c28edc09dd035ef191e007f5896)
       '@angular/platform-browser':
         specifier: github:angular/platform-browser-builds#main
-        version: https://codeload.github.com/angular/platform-browser-builds/tar.gz/d6186161549d2618fc472b667854699a4bffcb91(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/88a5014c12bc6c3a1d722832b9479a055cbbe11c(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2))
+        version: https://codeload.github.com/angular/platform-browser-builds/tar.gz/dc1582e178e676ecdc51f2a6104949633e45a7d3(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/9c7d2629cf74b72cc48f461152e07228ae5a9206(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2))
       '@angular/router':
         specifier: github:angular/router-builds#main
-        version: https://codeload.github.com/angular/router-builds/tar.gz/faeea0065be4383869e7bd8e8f6fcdb1eb881458(3084a9f08586859a68915805ee2e1c03)
+        version: https://codeload.github.com/angular/router-builds/tar.gz/f779e601c4f5fdef978a9007e5801c79ada888d6(d2362c28edc09dd035ef191e007f5896)
       rxjs:
         specifier: ~7.8.2
         version: 7.8.2
@@ -58,25 +58,25 @@ importers:
     devDependencies:
       '@analogjs/vite-plugin-angular':
         specifier: ^2.4.0
-        version: 2.4.0(@angular/build@https://codeload.github.com/angular/angular-build-builds/tar.gz/0aaac6535f331f9c82362e0da0e087d7327b972c(3b57695d60c61c282eb19c517efdd768))
+        version: 2.4.0(@angular/build@https://codeload.github.com/angular/angular-build-builds/tar.gz/0aaac6535f331f9c82362e0da0e087d7327b972c(0b4ac80c6672c7791c8479b51caca1cd))
       '@analogjs/vitest-angular':
         specifier: ^2.4.0
-        version: 2.4.0(@analogjs/vite-plugin-angular@2.4.0(@angular/build@https://codeload.github.com/angular/angular-build-builds/tar.gz/0aaac6535f331f9c82362e0da0e087d7327b972c(3b57695d60c61c282eb19c517efdd768)))(@angular-devkit/architect@0.2200.0-next.4(chokidar@5.0.0))(@angular-devkit/schematics@22.0.0-next.4(chokidar@5.0.0))(vitest@4.1.2(jsdom@22.1.0)(vite@7.3.1(less@4.6.4)(sass@1.98.0)))
+        version: 2.4.0(@analogjs/vite-plugin-angular@2.4.0(@angular/build@https://codeload.github.com/angular/angular-build-builds/tar.gz/0aaac6535f331f9c82362e0da0e087d7327b972c(0b4ac80c6672c7791c8479b51caca1cd)))(@angular-devkit/architect@0.2200.0-next.4(chokidar@5.0.0))(@angular-devkit/schematics@22.0.0-next.4(chokidar@5.0.0))(vitest@4.1.2(jsdom@22.1.0)(vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(esbuild@0.27.7)(less@4.6.4)(sass@1.98.0)))
       '@angular/build':
         specifier: github:angular/angular-build-builds#main
-        version: https://codeload.github.com/angular/angular-build-builds/tar.gz/0aaac6535f331f9c82362e0da0e087d7327b972c(3b57695d60c61c282eb19c517efdd768)
+        version: https://codeload.github.com/angular/angular-build-builds/tar.gz/0aaac6535f331f9c82362e0da0e087d7327b972c(0b4ac80c6672c7791c8479b51caca1cd)
       '@angular/cli':
         specifier: github:angular/cli-builds#main
         version: https://codeload.github.com/angular/cli-builds/tar.gz/432b76f1d0bd70f78c7fee83271c43405432ae46(chokidar@5.0.0)
       '@angular/compiler-cli':
         specifier: github:angular/compiler-cli-builds#main
-        version: https://codeload.github.com/angular/compiler-cli-builds/tar.gz/ecd7c51c59a702c32ab4c93168d48f425dc1faa3(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(typescript@6.0.2)
+        version: https://codeload.github.com/angular/compiler-cli-builds/tar.gz/e07b5aff39532cc0add3b48734b0fc4408eb4b82(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(typescript@6.0.2)
       '@eslint/js':
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.2.0)
       '@testing-library/angular':
         specifier: ^19.2.1
-        version: 19.2.1(3f8fe1dfe76a0103723f94c3496df862)
+        version: 19.2.1(9b639ae076b559fa310139aee5e5f47b)
       '@testing-library/jest-dom':
         specifier: ^6.9.1
         version: 6.9.1
@@ -100,7 +100,7 @@ importers:
         version: 22.1.0
       ng-packagr:
         specifier: 22.0.0-next.1
-        version: 22.0.0-next.1(@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/ecd7c51c59a702c32ab4c93168d48f425dc1faa3(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(typescript@6.0.2))(tslib@2.8.1)(typescript@6.0.2)
+        version: 22.0.0-next.1(@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/e07b5aff39532cc0add3b48734b0fc4408eb4b82(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(typescript@6.0.2))(tslib@2.8.1)(typescript@6.0.2)
       prettier:
         specifier: ^3.8.1
         version: 3.8.1
@@ -114,14 +114,14 @@ importers:
         specifier: ^8.58.0
         version: 8.58.0(eslint@10.2.0)(typescript@6.0.2)
       vite:
-        specifier: ^7.0.0
-        version: 7.3.1(less@4.6.4)(sass@1.98.0)
+        specifier: ^8.0.5
+        version: 8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(esbuild@0.27.7)(less@4.6.4)(sass@1.98.0)
       vite-tsconfig-paths:
         specifier: ^4.2.0
-        version: 4.3.2(typescript@6.0.2)(vite@7.3.1(less@4.6.4)(sass@1.98.0))
+        version: 4.3.2(typescript@6.0.2)(vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(esbuild@0.27.7)(less@4.6.4)(sass@1.98.0))
       vitest:
         specifier: ^4.0.0
-        version: 4.1.2(jsdom@22.1.0)(vite@7.3.1(less@4.6.4)(sass@1.98.0))
+        version: 4.1.2(jsdom@22.1.0)(vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(esbuild@0.27.7)(less@4.6.4)(sass@1.98.0))
 
 packages:
 
@@ -336,8 +336,8 @@ packages:
       vitest:
         optional: true
 
-  '@angular/cdk@https://codeload.github.com/angular/cdk-builds/tar.gz/bfca87c802f6e00ac37607e41c8b1fcf87d35b7f':
-    resolution: {tarball: https://codeload.github.com/angular/cdk-builds/tar.gz/bfca87c802f6e00ac37607e41c8b1fcf87d35b7f}
+  '@angular/cdk@https://codeload.github.com/angular/cdk-builds/tar.gz/8f63527b7c2313b7711595972ead438121abb8eb':
+    resolution: {tarball: https://codeload.github.com/angular/cdk-builds/tar.gz/8f63527b7c2313b7711595972ead438121abb8eb}
     version: 22.0.0-next.3
     peerDependencies:
       '@angular/common': ^22.0.0-0 || ^22.1.0-0 || ^22.2.0-0 || ^22.3.0-0 || ^23.0.0-0
@@ -351,37 +351,37 @@ packages:
     engines: {node: ^22.22.0 || >=24.13.1, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     hasBin: true
 
-  '@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/88a5014c12bc6c3a1d722832b9479a055cbbe11c':
-    resolution: {tarball: https://codeload.github.com/angular/common-builds/tar.gz/88a5014c12bc6c3a1d722832b9479a055cbbe11c}
+  '@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/9c7d2629cf74b72cc48f461152e07228ae5a9206':
+    resolution: {tarball: https://codeload.github.com/angular/common-builds/tar.gz/9c7d2629cf74b72cc48f461152e07228ae5a9206}
     version: 22.0.0-next.6
     engines: {node: ^22.22.0 || >=24.13.1}
     peerDependencies:
-      '@angular/core': 22.0.0-next.6+sha-4a174b8
+      '@angular/core': 22.0.0-next.6+sha-2ce0e98
       rxjs: ^6.5.3 || ^7.4.0
 
-  '@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/ecd7c51c59a702c32ab4c93168d48f425dc1faa3':
-    resolution: {tarball: https://codeload.github.com/angular/compiler-cli-builds/tar.gz/ecd7c51c59a702c32ab4c93168d48f425dc1faa3}
+  '@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/e07b5aff39532cc0add3b48734b0fc4408eb4b82':
+    resolution: {tarball: https://codeload.github.com/angular/compiler-cli-builds/tar.gz/e07b5aff39532cc0add3b48734b0fc4408eb4b82}
     version: 22.0.0-next.6
     engines: {node: ^22.22.0 || >=24.13.1}
     hasBin: true
     peerDependencies:
-      '@angular/compiler': 22.0.0-next.6+sha-4a174b8
+      '@angular/compiler': 22.0.0-next.6+sha-2ce0e98
       typescript: 6.0.2
     peerDependenciesMeta:
       typescript:
         optional: true
 
-  '@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413':
-    resolution: {tarball: https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413}
+  '@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058':
+    resolution: {tarball: https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058}
     version: 22.0.0-next.6
     engines: {node: ^22.22.0 || >=24.13.1}
 
-  '@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4':
-    resolution: {tarball: https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4}
+  '@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9':
+    resolution: {tarball: https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9}
     version: 22.0.0-next.6
     engines: {node: ^22.22.0 || >=24.13.1}
     peerDependencies:
-      '@angular/compiler': 22.0.0-next.6+sha-4a174b8
+      '@angular/compiler': 22.0.0-next.6+sha-2ce0e98
       rxjs: ^6.5.3 || ^7.4.0
       zone.js: ~0.15.0 || ~0.16.0
     peerDependenciesMeta:
@@ -390,36 +390,36 @@ packages:
       zone.js:
         optional: true
 
-  '@angular/forms@https://codeload.github.com/angular/forms-builds/tar.gz/2fec236b9b58a96a3c6505ca460762dfd8191a48':
-    resolution: {tarball: https://codeload.github.com/angular/forms-builds/tar.gz/2fec236b9b58a96a3c6505ca460762dfd8191a48}
+  '@angular/forms@https://codeload.github.com/angular/forms-builds/tar.gz/8576429ff77f616a93e60800c89c83c42e8fd887':
+    resolution: {tarball: https://codeload.github.com/angular/forms-builds/tar.gz/8576429ff77f616a93e60800c89c83c42e8fd887}
     version: 22.0.0-next.6
     engines: {node: ^22.22.0 || >=24.13.1}
     peerDependencies:
-      '@angular/common': 22.0.0-next.6+sha-4a174b8
-      '@angular/core': 22.0.0-next.6+sha-4a174b8
-      '@angular/platform-browser': 22.0.0-next.6+sha-4a174b8
+      '@angular/common': 22.0.0-next.6+sha-2ce0e98
+      '@angular/core': 22.0.0-next.6+sha-2ce0e98
+      '@angular/platform-browser': 22.0.0-next.6+sha-2ce0e98
       rxjs: ^6.5.3 || ^7.4.0
 
-  '@angular/platform-browser@https://codeload.github.com/angular/platform-browser-builds/tar.gz/d6186161549d2618fc472b667854699a4bffcb91':
-    resolution: {tarball: https://codeload.github.com/angular/platform-browser-builds/tar.gz/d6186161549d2618fc472b667854699a4bffcb91}
+  '@angular/platform-browser@https://codeload.github.com/angular/platform-browser-builds/tar.gz/dc1582e178e676ecdc51f2a6104949633e45a7d3':
+    resolution: {tarball: https://codeload.github.com/angular/platform-browser-builds/tar.gz/dc1582e178e676ecdc51f2a6104949633e45a7d3}
     version: 22.0.0-next.6
     engines: {node: ^22.22.0 || >=24.13.1}
     peerDependencies:
-      '@angular/animations': 22.0.0-next.6+sha-4a174b8
-      '@angular/common': 22.0.0-next.6+sha-4a174b8
-      '@angular/core': 22.0.0-next.6+sha-4a174b8
+      '@angular/animations': 22.0.0-next.6+sha-2ce0e98
+      '@angular/common': 22.0.0-next.6+sha-2ce0e98
+      '@angular/core': 22.0.0-next.6+sha-2ce0e98
     peerDependenciesMeta:
       '@angular/animations':
         optional: true
 
-  '@angular/router@https://codeload.github.com/angular/router-builds/tar.gz/faeea0065be4383869e7bd8e8f6fcdb1eb881458':
-    resolution: {tarball: https://codeload.github.com/angular/router-builds/tar.gz/faeea0065be4383869e7bd8e8f6fcdb1eb881458}
+  '@angular/router@https://codeload.github.com/angular/router-builds/tar.gz/f779e601c4f5fdef978a9007e5801c79ada888d6':
+    resolution: {tarball: https://codeload.github.com/angular/router-builds/tar.gz/f779e601c4f5fdef978a9007e5801c79ada888d6}
     version: 22.0.0-next.6
     engines: {node: ^22.22.0 || >=24.13.1}
     peerDependencies:
-      '@angular/common': 22.0.0-next.6+sha-4a174b8
-      '@angular/core': 22.0.0-next.6+sha-4a174b8
-      '@angular/platform-browser': 22.0.0-next.6+sha-4a174b8
+      '@angular/common': 22.0.0-next.6+sha-2ce0e98
+      '@angular/core': 22.0.0-next.6+sha-2ce0e98
+      '@angular/platform-browser': 22.0.0-next.6+sha-2ce0e98
       rxjs: ^6.5.3 || ^7.4.0
 
   '@babel/code-frame@7.29.0':
@@ -2713,6 +2713,80 @@ packages:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
 
+  lightningcss-android-arm64@1.32.0:
+    resolution: {integrity: sha512-YK7/ClTt4kAK0vo6w3X+Pnm0D2cf2vPHbhOXdoNti1Ga0al1P4TBZhwjATvjNwLEBCnKvjJc2jQgHXH0NEwlAg==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [arm64]
+    os: [android]
+
+  lightningcss-darwin-arm64@1.32.0:
+    resolution: {integrity: sha512-RzeG9Ju5bag2Bv1/lwlVJvBE3q6TtXskdZLLCyfg5pt+HLz9BqlICO7LZM7VHNTTn/5PRhHFBSjk5lc4cmscPQ==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [arm64]
+    os: [darwin]
+
+  lightningcss-darwin-x64@1.32.0:
+    resolution: {integrity: sha512-U+QsBp2m/s2wqpUYT/6wnlagdZbtZdndSmut/NJqlCcMLTWp5muCrID+K5UJ6jqD2BFshejCYXniPDbNh73V8w==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [x64]
+    os: [darwin]
+
+  lightningcss-freebsd-x64@1.32.0:
+    resolution: {integrity: sha512-JCTigedEksZk3tHTTthnMdVfGf61Fky8Ji2E4YjUTEQX14xiy/lTzXnu1vwiZe3bYe0q+SpsSH/CTeDXK6WHig==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [x64]
+    os: [freebsd]
+
+  lightningcss-linux-arm-gnueabihf@1.32.0:
+    resolution: {integrity: sha512-x6rnnpRa2GL0zQOkt6rts3YDPzduLpWvwAF6EMhXFVZXD4tPrBkEFqzGowzCsIWsPjqSK+tyNEODUBXeeVHSkw==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [arm]
+    os: [linux]
+
+  lightningcss-linux-arm64-gnu@1.32.0:
+    resolution: {integrity: sha512-0nnMyoyOLRJXfbMOilaSRcLH3Jw5z9HDNGfT/gwCPgaDjnx0i8w7vBzFLFR1f6CMLKF8gVbebmkUN3fa/kQJpQ==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  lightningcss-linux-arm64-musl@1.32.0:
+    resolution: {integrity: sha512-UpQkoenr4UJEzgVIYpI80lDFvRmPVg6oqboNHfoH4CQIfNA+HOrZ7Mo7KZP02dC6LjghPQJeBsvXhJod/wnIBg==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
+  lightningcss-linux-x64-gnu@1.32.0:
+    resolution: {integrity: sha512-V7Qr52IhZmdKPVr+Vtw8o+WLsQJYCTd8loIfpDaMRWGUZfBOYEJeyJIkqGIDMZPwPx24pUMfwSxxI8phr/MbOA==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  lightningcss-linux-x64-musl@1.32.0:
+    resolution: {integrity: sha512-bYcLp+Vb0awsiXg/80uCRezCYHNg1/l3mt0gzHnWV9XP1W5sKa5/TCdGWaR/zBM2PeF/HbsQv/j2URNOiVuxWg==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  lightningcss-win32-arm64-msvc@1.32.0:
+    resolution: {integrity: sha512-8SbC8BR40pS6baCM8sbtYDSwEVQd4JlFTOlaD3gWGHfThTcABnNDBda6eTZeqbofalIJhFx0qKzgHJmcPTnGdw==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [arm64]
+    os: [win32]
+
+  lightningcss-win32-x64-msvc@1.32.0:
+    resolution: {integrity: sha512-Amq9B/SoZYdDi1kFrojnoqPLxYhQ4Wo5XiL8EVJrVsB8ARoC1PWW6VGtT0WKCemjy8aC+louJnjS7U18x3b06Q==}
+    engines: {node: '>= 12.0.0'}
+    cpu: [x64]
+    os: [win32]
+
+  lightningcss@1.32.0:
+    resolution: {integrity: sha512-NXYBzinNrblfraPGyrbPoD19C1h9lfI/1mzgWYvXUTe414Gz/X1FD2XBZSZM7rRTrMA8JL3OtAaGifrIKhQ5yQ==}
+    engines: {node: '>= 12.0.0'}
+
   listr2@10.2.1:
     resolution: {integrity: sha512-7I5knELsJKTUjXG+A6BkKAiGkW1i25fNa/xlUl9hFtk15WbE9jndA89xu5FzQKrY5llajE1hfZZFMILXkDHk/Q==}
     engines: {node: '>=22.13.0'}
@@ -3541,6 +3615,49 @@ packages:
       yaml:
         optional: true
 
+  vite@8.0.5:
+    resolution: {integrity: sha512-nmu43Qvq9UopTRfMx2jOYW5l16pb3iDC1JH6yMuPkpVbzK0k+L7dfsEDH4jRgYFmsg0sTAqkojoZgzLMlwHsCQ==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    hasBin: true
+    peerDependencies:
+      '@types/node': ^20.19.0 || >=22.12.0
+      '@vitejs/devtools': ^0.1.0
+      esbuild: ^0.27.0 || ^0.28.0
+      jiti: '>=1.21.0'
+      less: ^4.0.0
+      sass: ^1.70.0
+      sass-embedded: ^1.70.0
+      stylus: '>=0.54.8'
+      sugarss: ^5.0.0
+      terser: ^5.16.0
+      tsx: ^4.8.1
+      yaml: ^2.4.2
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      '@vitejs/devtools':
+        optional: true
+      esbuild:
+        optional: true
+      jiti:
+        optional: true
+      less:
+        optional: true
+      sass:
+        optional: true
+      sass-embedded:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+      tsx:
+        optional: true
+      yaml:
+        optional: true
+
   vitest@4.1.2:
     resolution: {integrity: sha512-xjR1dMTVHlFLh98JE3i/f/WePqJsah4A0FK9cc8Ehp9Udk0AZk6ccpIZhh1qJ/yxVWRZ+Q54ocnD8TXmkhspGg==}
     engines: {node: ^20.0.0 || ^22.0.0 || >=24.0.0}
@@ -3784,19 +3901,19 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.13
       '@jridgewell/trace-mapping': 0.3.31
 
-  '@analogjs/vite-plugin-angular@2.4.0(@angular/build@https://codeload.github.com/angular/angular-build-builds/tar.gz/0aaac6535f331f9c82362e0da0e087d7327b972c(3b57695d60c61c282eb19c517efdd768))':
+  '@analogjs/vite-plugin-angular@2.4.0(@angular/build@https://codeload.github.com/angular/angular-build-builds/tar.gz/0aaac6535f331f9c82362e0da0e087d7327b972c(0b4ac80c6672c7791c8479b51caca1cd))':
     dependencies:
       tinyglobby: 0.2.15
       ts-morph: 21.0.1
     optionalDependencies:
-      '@angular/build': https://codeload.github.com/angular/angular-build-builds/tar.gz/0aaac6535f331f9c82362e0da0e087d7327b972c(3b57695d60c61c282eb19c517efdd768)
+      '@angular/build': https://codeload.github.com/angular/angular-build-builds/tar.gz/0aaac6535f331f9c82362e0da0e087d7327b972c(0b4ac80c6672c7791c8479b51caca1cd)
 
-  '@analogjs/vitest-angular@2.4.0(@analogjs/vite-plugin-angular@2.4.0(@angular/build@https://codeload.github.com/angular/angular-build-builds/tar.gz/0aaac6535f331f9c82362e0da0e087d7327b972c(3b57695d60c61c282eb19c517efdd768)))(@angular-devkit/architect@0.2200.0-next.4(chokidar@5.0.0))(@angular-devkit/schematics@22.0.0-next.4(chokidar@5.0.0))(vitest@4.1.2(jsdom@22.1.0)(vite@7.3.1(less@4.6.4)(sass@1.98.0)))':
+  '@analogjs/vitest-angular@2.4.0(@analogjs/vite-plugin-angular@2.4.0(@angular/build@https://codeload.github.com/angular/angular-build-builds/tar.gz/0aaac6535f331f9c82362e0da0e087d7327b972c(0b4ac80c6672c7791c8479b51caca1cd)))(@angular-devkit/architect@0.2200.0-next.4(chokidar@5.0.0))(@angular-devkit/schematics@22.0.0-next.4(chokidar@5.0.0))(vitest@4.1.2(jsdom@22.1.0)(vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(esbuild@0.27.7)(less@4.6.4)(sass@1.98.0)))':
     dependencies:
-      '@analogjs/vite-plugin-angular': 2.4.0(@angular/build@https://codeload.github.com/angular/angular-build-builds/tar.gz/0aaac6535f331f9c82362e0da0e087d7327b972c(3b57695d60c61c282eb19c517efdd768))
+      '@analogjs/vite-plugin-angular': 2.4.0(@angular/build@https://codeload.github.com/angular/angular-build-builds/tar.gz/0aaac6535f331f9c82362e0da0e087d7327b972c(0b4ac80c6672c7791c8479b51caca1cd))
       '@angular-devkit/architect': 0.2200.0-next.4(chokidar@5.0.0)
       '@angular-devkit/schematics': 22.0.0-next.4(chokidar@5.0.0)
-      vitest: 4.1.2(jsdom@22.1.0)(vite@7.3.1(less@4.6.4)(sass@1.98.0))
+      vitest: 4.1.2(jsdom@22.1.0)(vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(esbuild@0.27.7)(less@4.6.4)(sass@1.98.0))
 
   '@angular-devkit/architect@0.2200.0-next.4(chokidar@5.0.0)':
     dependencies:
@@ -3908,17 +4025,17 @@ snapshots:
       eslint: 10.2.0
       typescript: 6.0.2
 
-  '@angular/build@https://codeload.github.com/angular/angular-build-builds/tar.gz/0aaac6535f331f9c82362e0da0e087d7327b972c(3b57695d60c61c282eb19c517efdd768)':
+  '@angular/build@https://codeload.github.com/angular/angular-build-builds/tar.gz/0aaac6535f331f9c82362e0da0e087d7327b972c(0b4ac80c6672c7791c8479b51caca1cd)':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@angular-devkit/architect': https://codeload.github.com/angular/angular-devkit-architect-builds/tar.gz/af8c6deceba5a03fb3206eb6734514efd2dc5464(chokidar@5.0.0)
-      '@angular/compiler': https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413
-      '@angular/compiler-cli': https://codeload.github.com/angular/compiler-cli-builds/tar.gz/ecd7c51c59a702c32ab4c93168d48f425dc1faa3(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(typescript@6.0.2)
+      '@angular/compiler': https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058
+      '@angular/compiler-cli': https://codeload.github.com/angular/compiler-cli-builds/tar.gz/e07b5aff39532cc0add3b48734b0fc4408eb4b82(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(typescript@6.0.2)
       '@babel/core': 7.29.0
       '@babel/helper-annotate-as-pure': 7.27.3
       '@babel/helper-split-export-declaration': 7.24.7
       '@inquirer/confirm': 6.0.10
-      '@vitejs/plugin-basic-ssl': 2.3.0(vite@7.3.1(less@4.6.4)(sass@1.98.0))
+      '@vitejs/plugin-basic-ssl': 2.3.0(vite@7.3.1(less@4.6.4)(lightningcss@1.32.0)(sass@1.98.0))
       beasties: 0.4.1
       browserslist: 4.28.2
       esbuild: 0.27.3
@@ -3938,16 +4055,16 @@ snapshots:
       tinyglobby: 0.2.15
       tslib: 2.8.1
       typescript: 6.0.2
-      vite: 7.3.1(less@4.6.4)(sass@1.98.0)
+      vite: 7.3.1(less@4.6.4)(lightningcss@1.32.0)(sass@1.98.0)
       watchpack: 2.5.1
     optionalDependencies:
-      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2)
-      '@angular/platform-browser': https://codeload.github.com/angular/platform-browser-builds/tar.gz/d6186161549d2618fc472b667854699a4bffcb91(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/88a5014c12bc6c3a1d722832b9479a055cbbe11c(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2))
+      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2)
+      '@angular/platform-browser': https://codeload.github.com/angular/platform-browser-builds/tar.gz/dc1582e178e676ecdc51f2a6104949633e45a7d3(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/9c7d2629cf74b72cc48f461152e07228ae5a9206(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2))
       less: 4.6.4
       lmdb: 3.5.2
-      ng-packagr: 22.0.0-next.1(@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/ecd7c51c59a702c32ab4c93168d48f425dc1faa3(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(typescript@6.0.2))(tslib@2.8.1)(typescript@6.0.2)
+      ng-packagr: 22.0.0-next.1(@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/e07b5aff39532cc0add3b48734b0fc4408eb4b82(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(typescript@6.0.2))(tslib@2.8.1)(typescript@6.0.2)
       postcss: 8.5.8
-      vitest: 4.1.2(jsdom@22.1.0)(vite@7.3.1(less@4.6.4)(sass@1.98.0))
+      vitest: 4.1.2(jsdom@22.1.0)(vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(esbuild@0.27.7)(less@4.6.4)(sass@1.98.0))
     transitivePeerDependencies:
       - '@emnapi/core'
       - '@emnapi/runtime'
@@ -3963,11 +4080,11 @@ snapshots:
       - tsx
       - yaml
 
-  '@angular/cdk@https://codeload.github.com/angular/cdk-builds/tar.gz/bfca87c802f6e00ac37607e41c8b1fcf87d35b7f(3084a9f08586859a68915805ee2e1c03)':
+  '@angular/cdk@https://codeload.github.com/angular/cdk-builds/tar.gz/8f63527b7c2313b7711595972ead438121abb8eb(d2362c28edc09dd035ef191e007f5896)':
     dependencies:
-      '@angular/common': https://codeload.github.com/angular/common-builds/tar.gz/88a5014c12bc6c3a1d722832b9479a055cbbe11c(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2))(rxjs@7.8.2)
-      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2)
-      '@angular/platform-browser': https://codeload.github.com/angular/platform-browser-builds/tar.gz/d6186161549d2618fc472b667854699a4bffcb91(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/88a5014c12bc6c3a1d722832b9479a055cbbe11c(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2))
+      '@angular/common': https://codeload.github.com/angular/common-builds/tar.gz/9c7d2629cf74b72cc48f461152e07228ae5a9206(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2))(rxjs@7.8.2)
+      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2)
+      '@angular/platform-browser': https://codeload.github.com/angular/platform-browser-builds/tar.gz/dc1582e178e676ecdc51f2a6104949633e45a7d3(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/9c7d2629cf74b72cc48f461152e07228ae5a9206(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2))
       parse5: 8.0.0
       rxjs: 7.8.2
       tslib: 2.8.1
@@ -3998,15 +4115,15 @@ snapshots:
       - chokidar
       - supports-color
 
-  '@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/88a5014c12bc6c3a1d722832b9479a055cbbe11c(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2))(rxjs@7.8.2)':
+  '@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/9c7d2629cf74b72cc48f461152e07228ae5a9206(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2))(rxjs@7.8.2)':
     dependencies:
-      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2)
+      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2)
       rxjs: 7.8.2
       tslib: 2.8.1
 
-  '@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/ecd7c51c59a702c32ab4c93168d48f425dc1faa3(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(typescript@6.0.2)':
+  '@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/e07b5aff39532cc0add3b48734b0fc4408eb4b82(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(typescript@6.0.2)':
     dependencies:
-      '@angular/compiler': https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413
+      '@angular/compiler': https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058
       '@babel/core': 7.29.0
       '@jridgewell/sourcemap-codec': 1.5.5
       chokidar: 5.0.0
@@ -4020,37 +4137,37 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413':
+  '@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058':
     dependencies:
       tslib: 2.8.1
 
-  '@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2)':
+  '@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2)':
     dependencies:
       rxjs: 7.8.2
       tslib: 2.8.1
     optionalDependencies:
-      '@angular/compiler': https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413
+      '@angular/compiler': https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058
 
-  '@angular/forms@https://codeload.github.com/angular/forms-builds/tar.gz/2fec236b9b58a96a3c6505ca460762dfd8191a48(3084a9f08586859a68915805ee2e1c03)':
+  '@angular/forms@https://codeload.github.com/angular/forms-builds/tar.gz/8576429ff77f616a93e60800c89c83c42e8fd887(d2362c28edc09dd035ef191e007f5896)':
     dependencies:
-      '@angular/common': https://codeload.github.com/angular/common-builds/tar.gz/88a5014c12bc6c3a1d722832b9479a055cbbe11c(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2))(rxjs@7.8.2)
-      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2)
-      '@angular/platform-browser': https://codeload.github.com/angular/platform-browser-builds/tar.gz/d6186161549d2618fc472b667854699a4bffcb91(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/88a5014c12bc6c3a1d722832b9479a055cbbe11c(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2))
+      '@angular/common': https://codeload.github.com/angular/common-builds/tar.gz/9c7d2629cf74b72cc48f461152e07228ae5a9206(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2))(rxjs@7.8.2)
+      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2)
+      '@angular/platform-browser': https://codeload.github.com/angular/platform-browser-builds/tar.gz/dc1582e178e676ecdc51f2a6104949633e45a7d3(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/9c7d2629cf74b72cc48f461152e07228ae5a9206(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2))
       '@standard-schema/spec': 1.1.0
       rxjs: 7.8.2
       tslib: 2.8.1
 
-  '@angular/platform-browser@https://codeload.github.com/angular/platform-browser-builds/tar.gz/d6186161549d2618fc472b667854699a4bffcb91(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/88a5014c12bc6c3a1d722832b9479a055cbbe11c(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2))':
+  '@angular/platform-browser@https://codeload.github.com/angular/platform-browser-builds/tar.gz/dc1582e178e676ecdc51f2a6104949633e45a7d3(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/9c7d2629cf74b72cc48f461152e07228ae5a9206(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2))':
     dependencies:
-      '@angular/common': https://codeload.github.com/angular/common-builds/tar.gz/88a5014c12bc6c3a1d722832b9479a055cbbe11c(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2))(rxjs@7.8.2)
-      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2)
+      '@angular/common': https://codeload.github.com/angular/common-builds/tar.gz/9c7d2629cf74b72cc48f461152e07228ae5a9206(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2))(rxjs@7.8.2)
+      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2)
       tslib: 2.8.1
 
-  '@angular/router@https://codeload.github.com/angular/router-builds/tar.gz/faeea0065be4383869e7bd8e8f6fcdb1eb881458(3084a9f08586859a68915805ee2e1c03)':
+  '@angular/router@https://codeload.github.com/angular/router-builds/tar.gz/f779e601c4f5fdef978a9007e5801c79ada888d6(d2362c28edc09dd035ef191e007f5896)':
     dependencies:
-      '@angular/common': https://codeload.github.com/angular/common-builds/tar.gz/88a5014c12bc6c3a1d722832b9479a055cbbe11c(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2))(rxjs@7.8.2)
-      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2)
-      '@angular/platform-browser': https://codeload.github.com/angular/platform-browser-builds/tar.gz/d6186161549d2618fc472b667854699a4bffcb91(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/88a5014c12bc6c3a1d722832b9479a055cbbe11c(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2))
+      '@angular/common': https://codeload.github.com/angular/common-builds/tar.gz/9c7d2629cf74b72cc48f461152e07228ae5a9206(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2))(rxjs@7.8.2)
+      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2)
+      '@angular/platform-browser': https://codeload.github.com/angular/platform-browser-builds/tar.gz/dc1582e178e676ecdc51f2a6104949633e45a7d3(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/9c7d2629cf74b72cc48f461152e07228ae5a9206(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2))
       rxjs: 7.8.2
       tslib: 2.8.1
 
@@ -4978,12 +5095,12 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  '@testing-library/angular@19.2.1(3f8fe1dfe76a0103723f94c3496df862)':
+  '@testing-library/angular@19.2.1(9b639ae076b559fa310139aee5e5f47b)':
     dependencies:
-      '@angular/common': https://codeload.github.com/angular/common-builds/tar.gz/88a5014c12bc6c3a1d722832b9479a055cbbe11c(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2))(rxjs@7.8.2)
-      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2)
-      '@angular/platform-browser': https://codeload.github.com/angular/platform-browser-builds/tar.gz/d6186161549d2618fc472b667854699a4bffcb91(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/88a5014c12bc6c3a1d722832b9479a055cbbe11c(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/6d7c925ec8e6e08cffb0d515edbfb00f33f5c6e4(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(rxjs@7.8.2))
-      '@angular/router': https://codeload.github.com/angular/router-builds/tar.gz/faeea0065be4383869e7bd8e8f6fcdb1eb881458(3084a9f08586859a68915805ee2e1c03)
+      '@angular/common': https://codeload.github.com/angular/common-builds/tar.gz/9c7d2629cf74b72cc48f461152e07228ae5a9206(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2))(rxjs@7.8.2)
+      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2)
+      '@angular/platform-browser': https://codeload.github.com/angular/platform-browser-builds/tar.gz/dc1582e178e676ecdc51f2a6104949633e45a7d3(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/9c7d2629cf74b72cc48f461152e07228ae5a9206(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/179cc270b6c81de9f0bc1fdc78b1f45d3f6613c9(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(rxjs@7.8.2))
+      '@angular/router': https://codeload.github.com/angular/router-builds/tar.gz/f779e601c4f5fdef978a9007e5801c79ada888d6(d2362c28edc09dd035ef191e007f5896)
       '@testing-library/dom': 10.4.1
       tslib: 2.8.1
 
@@ -5138,9 +5255,9 @@ snapshots:
       '@typescript-eslint/types': 8.58.0
       eslint-visitor-keys: 5.0.1
 
-  '@vitejs/plugin-basic-ssl@2.3.0(vite@7.3.1(less@4.6.4)(sass@1.98.0))':
+  '@vitejs/plugin-basic-ssl@2.3.0(vite@7.3.1(less@4.6.4)(lightningcss@1.32.0)(sass@1.98.0))':
     dependencies:
-      vite: 7.3.1(less@4.6.4)(sass@1.98.0)
+      vite: 7.3.1(less@4.6.4)(lightningcss@1.32.0)(sass@1.98.0)
 
   '@vitest/expect@4.1.2':
     dependencies:
@@ -5151,13 +5268,13 @@ snapshots:
       chai: 6.2.2
       tinyrainbow: 3.1.0
 
-  '@vitest/mocker@4.1.2(vite@7.3.1(less@4.6.4)(sass@1.98.0))':
+  '@vitest/mocker@4.1.2(vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(esbuild@0.27.7)(less@4.6.4)(sass@1.98.0))':
     dependencies:
       '@vitest/spy': 4.1.2
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 7.3.1(less@4.6.4)(sass@1.98.0)
+      vite: 8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(esbuild@0.27.7)(less@4.6.4)(sass@1.98.0)
 
   '@vitest/pretty-format@4.1.2':
     dependencies:
@@ -5483,8 +5600,7 @@ snapshots:
 
   dequal@2.0.3: {}
 
-  detect-libc@2.1.2:
-    optional: true
+  detect-libc@2.1.2: {}
 
   dom-accessibility-api@0.5.16: {}
 
@@ -6122,6 +6238,55 @@ snapshots:
       prelude-ls: 1.2.1
       type-check: 0.4.0
 
+  lightningcss-android-arm64@1.32.0:
+    optional: true
+
+  lightningcss-darwin-arm64@1.32.0:
+    optional: true
+
+  lightningcss-darwin-x64@1.32.0:
+    optional: true
+
+  lightningcss-freebsd-x64@1.32.0:
+    optional: true
+
+  lightningcss-linux-arm-gnueabihf@1.32.0:
+    optional: true
+
+  lightningcss-linux-arm64-gnu@1.32.0:
+    optional: true
+
+  lightningcss-linux-arm64-musl@1.32.0:
+    optional: true
+
+  lightningcss-linux-x64-gnu@1.32.0:
+    optional: true
+
+  lightningcss-linux-x64-musl@1.32.0:
+    optional: true
+
+  lightningcss-win32-arm64-msvc@1.32.0:
+    optional: true
+
+  lightningcss-win32-x64-msvc@1.32.0:
+    optional: true
+
+  lightningcss@1.32.0:
+    dependencies:
+      detect-libc: 2.1.2
+    optionalDependencies:
+      lightningcss-android-arm64: 1.32.0
+      lightningcss-darwin-arm64: 1.32.0
+      lightningcss-darwin-x64: 1.32.0
+      lightningcss-freebsd-x64: 1.32.0
+      lightningcss-linux-arm-gnueabihf: 1.32.0
+      lightningcss-linux-arm64-gnu: 1.32.0
+      lightningcss-linux-arm64-musl: 1.32.0
+      lightningcss-linux-x64-gnu: 1.32.0
+      lightningcss-linux-x64-musl: 1.32.0
+      lightningcss-win32-arm64-msvc: 1.32.0
+      lightningcss-win32-x64-msvc: 1.32.0
+
   listr2@10.2.1:
     dependencies:
       cli-truncate: 5.2.0
@@ -6311,10 +6476,10 @@ snapshots:
 
   negotiator@1.0.0: {}
 
-  ng-packagr@22.0.0-next.1(@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/ecd7c51c59a702c32ab4c93168d48f425dc1faa3(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(typescript@6.0.2))(tslib@2.8.1)(typescript@6.0.2):
+  ng-packagr@22.0.0-next.1(@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/e07b5aff39532cc0add3b48734b0fc4408eb4b82(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(typescript@6.0.2))(tslib@2.8.1)(typescript@6.0.2):
     dependencies:
       '@ampproject/remapping': 2.3.0
-      '@angular/compiler-cli': https://codeload.github.com/angular/compiler-cli-builds/tar.gz/ecd7c51c59a702c32ab4c93168d48f425dc1faa3(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/20c494609ef4a4b47086f9656aefd893606bb413)(typescript@6.0.2)
+      '@angular/compiler-cli': https://codeload.github.com/angular/compiler-cli-builds/tar.gz/e07b5aff39532cc0add3b48734b0fc4408eb4b82(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/c2edfab088fe105203670385bbae7196297ab058)(typescript@6.0.2)
       '@rollup/plugin-json': 6.1.0(rollup@4.60.1)
       '@rollup/wasm-node': 4.60.1
       ajv: 8.18.0
@@ -7022,18 +7187,18 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vite-tsconfig-paths@4.3.2(typescript@6.0.2)(vite@7.3.1(less@4.6.4)(sass@1.98.0)):
+  vite-tsconfig-paths@4.3.2(typescript@6.0.2)(vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(esbuild@0.27.7)(less@4.6.4)(sass@1.98.0)):
     dependencies:
       debug: 4.4.3
       globrex: 0.1.2
       tsconfck: 3.1.6(typescript@6.0.2)
     optionalDependencies:
-      vite: 7.3.1(less@4.6.4)(sass@1.98.0)
+      vite: 8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(esbuild@0.27.7)(less@4.6.4)(sass@1.98.0)
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  vite@7.3.1(less@4.6.4)(sass@1.98.0):
+  vite@7.3.1(less@4.6.4)(lightningcss@1.32.0)(sass@1.98.0):
     dependencies:
       esbuild: 0.27.7
       fdir: 6.5.0(picomatch@4.0.4)
@@ -7044,12 +7209,29 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
       less: 4.6.4
+      lightningcss: 1.32.0
       sass: 1.98.0
 
-  vitest@4.1.2(jsdom@22.1.0)(vite@7.3.1(less@4.6.4)(sass@1.98.0)):
+  vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(esbuild@0.27.7)(less@4.6.4)(sass@1.98.0):
+    dependencies:
+      lightningcss: 1.32.0
+      picomatch: 4.0.4
+      postcss: 8.5.8
+      rolldown: 1.0.0-rc.12(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)
+      tinyglobby: 0.2.15
+    optionalDependencies:
+      esbuild: 0.27.7
+      fsevents: 2.3.3
+      less: 4.6.4
+      sass: 1.98.0
+    transitivePeerDependencies:
+      - '@emnapi/core'
+      - '@emnapi/runtime'
+
+  vitest@4.1.2(jsdom@22.1.0)(vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(esbuild@0.27.7)(less@4.6.4)(sass@1.98.0)):
     dependencies:
       '@vitest/expect': 4.1.2
-      '@vitest/mocker': 4.1.2(vite@7.3.1(less@4.6.4)(sass@1.98.0))
+      '@vitest/mocker': 4.1.2(vite@8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(esbuild@0.27.7)(less@4.6.4)(sass@1.98.0))
       '@vitest/pretty-format': 4.1.2
       '@vitest/runner': 4.1.2
       '@vitest/snapshot': 4.1.2
@@ -7066,7 +7248,7 @@ snapshots:
       tinyexec: 1.0.4
       tinyglobby: 0.2.15
       tinyrainbow: 3.1.0
-      vite: 7.3.1(less@4.6.4)(sass@1.98.0)
+      vite: 8.0.5(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(esbuild@0.27.7)(less@4.6.4)(sass@1.98.0)
       why-is-node-running: 2.3.0
     optionalDependencies:
       jsdom: 22.1.0
