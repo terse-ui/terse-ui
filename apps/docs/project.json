@@ -5,11 +5,22 @@
   "sourceRoot": "apps/docs",
   "targets": {
     "serve": {
-      "dependsOn": ["examples:buildElements"],
+      "dependsOn": ["examples:buildElements", "tools:extract-api"],
       "executor": "nx:run-commands",
       "options": {
-        "commands": ["npx nx run examples:buildElements --watch", "vitepress dev apps/docs"],
+        "commands": [
+          "npx nx run examples:buildElements --watch",
+          "npx nx run tools:extract-api:watch",
+          "vitepress dev apps/docs"
+        ],
         "parallel": true
+      }
+    },
+    "build": {
+      "dependsOn": ["examples:buildElements", "tools:extract-api"],
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vitepress build apps/docs"
       }
     }
   }

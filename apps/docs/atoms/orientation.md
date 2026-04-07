@@ -61,27 +61,4 @@ export class MyTabList {
 
 ## API Reference
 
-### AtomOrientation
-
-| | |
-| --- | --- |
-| **Selector** | `[atomOrientation]` |
-| **Exported as** | `atomOrientation` |
-
-#### Inputs
-
-| Input | Type | Default | Description |
-| --- | --- | --- | --- |
-| `atomOrientation` | `'horizontal' \| 'vertical'` | `'horizontal'` | The orientation direction (model, two-way bindable) |
-
-#### Data Attributes
-
-| Attribute | Description |
-| --- | --- |
-| `data-orientation` | The current orientation value (`horizontal` or `vertical`) |
-
-#### Host Bindings
-
-| Binding | Description |
-| --- | --- |
-| `[attr.aria-orientation]` | Reflects the orientation for assistive technology |
+<!-- api-ref:atoms/orientation -->

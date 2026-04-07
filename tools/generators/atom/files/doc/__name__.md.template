@@ -1,0 +1,23 @@
+# <%= className.replace('Atom', '') %>
+
+TODO: Add one-line description.
+
+## Why use this atom?
+
+- TODO: Add reasons
+
+## Import
+
+```ts
+import {<%= className %>} from '@terse-ui/atoms/<%= name %>';
+```
+
+## Usage
+
+```html
+<div <%= selector %>>...</div>
+```
+
+## API Reference
+
+<!-- api-ref:atoms/<%= name %> -->

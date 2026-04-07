@@ -68,21 +68,4 @@ Click-outside and Escape key are a natural pair for dismissable overlays:
 
 ## API Reference
 
-### AtomClickOutside
-
-| | |
-| --- | --- |
-| **Selector** | `[atomClickOutside]` |
-| **Exported as** | `atomClickOutside` |
-
-#### Inputs
-
-| Input | Type | Default | Description |
-| --- | --- | --- | --- |
-| `atomClickOutsideDisabled` | `boolean` | `false` | Suppress the click-outside listener |
-
-#### Outputs
-
-| Output | Type | Description |
-| --- | --- | --- |
-| `atomClickOutside` | `PointerEvent` | Emitted when a pointer event occurs outside the host element |
+<!-- api-ref:atoms/click-outside -->

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "cli": "nx",
+  "id": "atom",
+  "title": "Create a new Atom directive",
+  "description": "Scaffolds a new atom secondary entry point with directive, tests, and docs page.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the atom (e.g. 'press', 'focus-visible'). Will be kebab-cased.",
+      "x-prompt": "What name would you like to use for the atom?"
+    }
+  },
+  "required": ["name"]
+}

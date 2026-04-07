@@ -1,0 +1,33 @@
+name: Publish
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*.*.*'
+
+permissions:
+  contents: write
+  packages: write
+
+jobs:
+  publish:
+    name: Build and Publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install
+        uses: ./.github/workflows/composite
+
+      - name: Build packages
+        run: pnpm nx run-many -t build --no-tui
+
+      - name: Set up npm auth
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ~/.npmrc
+
+      - name: Publish packages
+        run: pnpm nx release publish --no-tui

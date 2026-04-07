@@ -2,16 +2,9 @@
   "name": "@terse-ui/atoms",
   "version": "0.0.1",
   "peerDependencies": {
-    "@angular/core": "~21.2.7",
-    "@angular/compiler": "~21.2.7",
-    "@analogjs/vitest-angular": "~2.1.3",
-    "@testing-library/jest-dom": "^6.9.1",
-    "vite": "^8.0.5",
-    "@analogjs/vite-plugin-angular": "~2.1.3",
-    "@nx/vite": "22.6.4",
-    "@signality/core": "^0.1.3",
+    "@angular/core": "22.0.0-next.6",
     "@terse-ui/core": "0.0.1",
-    "@angular/common": "~21.2.7"
+    "@angular/common": "22.0.0-next.6"
   },
   "sideEffects": false
 }

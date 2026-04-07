@@ -68,28 +68,4 @@ export class MyAccordionPanel {
 
 ## API Reference
 
-### AtomOpenClose
-
-| | |
-| --- | --- |
-| **Selector** | `[atomOpenClose]` |
-| **Exported as** | `atomOpenClose` |
-
-#### Inputs
-
-| Input | Type | Default | Description |
-| --- | --- | --- | --- |
-| `atomOpenClose` | `boolean` | `false` | Whether the element is open (model, two-way bindable) |
-
-#### Data Attributes
-
-| Attribute | Description |
-| --- | --- |
-| `data-open` | Present when open. Absent otherwise. |
-| `data-closed` | Present when closed. Absent otherwise. |
-
-#### Host Bindings
-
-| Binding | Description |
-| --- | --- |
-| `[attr.aria-expanded]` | Reflects the open state for assistive technology |
+<!-- api-ref:atoms/open-close -->

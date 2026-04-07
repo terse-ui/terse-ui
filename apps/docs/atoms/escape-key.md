@@ -65,21 +65,4 @@ For nested overlays, use `stopPropagation()` to prevent the parent from also clo
 
 ## API Reference
 
-### AtomEscapeKey
-
-| | |
-| --- | --- |
-| **Selector** | `[atomEscapeKey]` |
-| **Exported as** | `atomEscapeKey` |
-
-#### Inputs
-
-| Input | Type | Default | Description |
-| --- | --- | --- | --- |
-| `atomEscapeKeyDisabled` | `boolean` | `false` | Suppress the Escape key listener |
-
-#### Outputs
-
-| Output | Type | Description |
-| --- | --- | --- |
-| `atomEscapeKey` | `KeyboardEvent` | Emitted when Escape is pressed and the listener is enabled |
+<!-- api-ref:atoms/escape-key -->

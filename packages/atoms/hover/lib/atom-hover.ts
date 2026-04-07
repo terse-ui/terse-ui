@@ -1,6 +1,5 @@
 import {computed, Directive, DOCUMENT, inject, Injectable, model, signal} from '@angular/core';
-import {listener} from '@signality/core';
-import {Timeout} from '@terse-ui/core/internal';
+import {on, Timeout} from '@terse-ui/core/internal';
 
 @Injectable({providedIn: 'root'})
 class GlobalPointerEvents {
@@ -13,8 +12,8 @@ class GlobalPointerEvents {
 
   constructor() {
     const doc = inject(DOCUMENT);
-    listener.capture.passive(doc, 'pointerup', this.#onGlobalPointerUp.bind(this));
-    listener.capture.passive(doc, 'touchend', this.#ignoreEmulatedMouse.bind(this));
+    on.capture.passive(doc, 'pointerup', this.#onGlobalPointerUp.bind(this));
+    on.capture.passive(doc, 'touchend', this.#ignoreEmulatedMouse.bind(this));
   }
 
   #ignoreEmulatedMouse(): void {

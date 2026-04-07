@@ -57,7 +57,7 @@ export class SaveComponent {
 
 ## Links
 
-- [Documentation](https://terse-ui.dev)
+- [Documentation](https://terse-ui.com)
 - [GitHub](https://github.com/terse-ui/terse-ui)
 
 ## License

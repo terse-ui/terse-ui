@@ -48,6 +48,26 @@
     "@nx/angular:library": {"linter": "eslint", "unitTestRunner": "vitest-analog"},
     "@nx/angular:component": {"style": "css"}
   },
-  "release": {"version": {"preVersionCommand": "pnpm dlx nx run-many -t build"}},
+  "release": {
+    "projects": ["atoms", "protos", "core"],
+    "projectsRelationship": "fixed",
+    "version": {
+      "preVersionCommand": "pnpm nx run-many -t build --no-tui",
+      "conventionalCommits": true,
+      "generatorOptions": {
+        "fallbackCurrentVersionResolver": "disk"
+      }
+    },
+    "changelog": {
+      "projectChangelogs": true,
+      "workspaceChangelog": {
+        "createRelease": "github"
+      }
+    },
+    "git": {
+      "commit": true,
+      "tag": true
+    }
+  },
   "nxCloudId": "69d48667a666f6a4abe261a5"
 }

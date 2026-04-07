@@ -1,0 +1,9 @@
+{
+  "generators": {
+    "atom": {
+      "factory": "./atom/index",
+      "schema": "./atom/schema.json",
+      "description": "Create a new Atom directive with tests and docs"
+    }
+  }
+}

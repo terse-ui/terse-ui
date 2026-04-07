@@ -64,27 +64,4 @@ The `data-hover` attribute is only present when the element is hovered and hover
 
 ## API Reference
 
-### AtomHover
-
-| | |
-| --- | --- |
-| **Selector** | `[atomHover]` |
-| **Exported as** | `atomHover` |
-
-#### Inputs
-
-| Input | Type | Default | Description |
-| --- | --- | --- | --- |
-| `atomHoverDisabled` | `boolean` | `false` | Suppress hover tracking |
-
-#### Properties
-
-| Property | Type | Description |
-| --- | --- | --- |
-| `isHovered` | `Signal<boolean>` (readonly) | Whether the element is currently hovered |
-
-#### Data Attributes
-
-| Attribute | Description |
-| --- | --- |
-| `data-hover` | Present when hovered and not disabled. Absent otherwise. |
+<!-- api-ref:atoms/hover -->

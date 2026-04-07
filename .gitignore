@@ -50,5 +50,6 @@ vitest.config.*.timestamp*
 # VitePress
 **/.vitepress/dist
 **/.vitepress/cache
+**/.vitepress/data/api
 apps/docs/public/examples/*
 !apps/docs/public/examples/.gitkeep

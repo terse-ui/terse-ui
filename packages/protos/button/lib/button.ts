@@ -1,19 +1,11 @@
-import {
-  booleanAttribute,
-  computed,
-  Directive,
-  effect,
-  inject,
-  input,
-  numberAttribute,
-} from '@angular/core';
-import {listener} from '@signality/core';
+import {booleanAttribute, computed, Directive, inject, input, numberAttribute} from '@angular/core';
 import {
   hasDisabledAttribute,
   injEl,
   isAnchorElement,
   isButtonElement,
   isInputElement,
+  on,
   optsBuilder,
 } from '@terse-ui/core/internal';
 import {HostAttributes} from '@terse-ui/core/utils/host';
@@ -114,13 +106,9 @@ export class ProtoButton {
   );
 
   constructor() {
-    effect(() => {
-      console.log(this.disabled());
-    });
-
     // Capture-phase listener registered early so it fires before Angular's
     // template-bound (click) handlers and can block them when disabled.
-    listener.capture(this.#element, 'click', (event) => {
+    on.capture(this.#element, 'click', (event) => {
       if (this.disabled()) {
         event.preventDefault();
         event.stopImmediatePropagation();

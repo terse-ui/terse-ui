@@ -68,35 +68,4 @@ When the element enters the viewport, `data-intersecting` is set and the output 
 
 ## API Reference
 
-### AtomIntersect
-
-| | |
-| --- | --- |
-| **Selector** | `[atomIntersect]` |
-| **Exported as** | `atomIntersect` |
-
-#### Inputs
-
-| Input | Type | Default | Description |
-| --- | --- | --- | --- |
-| `atomIntersectDisabled` | `boolean` | `false` | Pause the intersection observer |
-| `atomIntersectThreshold` | `number` | `0` | Visibility ratio (0 to 1) that triggers the observer |
-| `atomIntersectRootMargin` | `string` | `'0px'` | Margin around the root for early/late triggering |
-
-#### Outputs
-
-| Output | Type | Description |
-| --- | --- | --- |
-| `atomIntersect` | `IntersectionObserverEntry` | Emitted on each intersection change |
-
-#### Properties
-
-| Property | Type | Description |
-| --- | --- | --- |
-| `isIntersecting` | `Signal<boolean>` (readonly) | Whether the element is currently intersecting |
-
-#### Data Attributes
-
-| Attribute | Description |
-| --- | --- |
-| `data-intersecting` | Present when the element is intersecting. Absent otherwise. |
+<!-- api-ref:atoms/intersect -->

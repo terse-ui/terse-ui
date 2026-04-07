@@ -1,0 +1,34 @@
+{
+  "name": "tools",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "tools",
+  "projectType": "library",
+  "tags": ["tools"],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "extract-api": {
+      "executor": "nx:run-commands",
+      "inputs": ["production"],
+      "outputs": ["{workspaceRoot}/apps/docs/.vitepress/data/api"],
+      "options": {
+        "commands": [
+          "npx tsx tools/api-extractor/extract.ts --package=atoms",
+          "npx tsx tools/api-extractor/extract.ts --package=protos"
+        ],
+        "parallel": false
+      }
+    },
+    "extract-api:watch": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "npx tsx tools/api-extractor/extract.ts --package=atoms --watch",
+          "npx tsx tools/api-extractor/extract.ts --package=protos --watch"
+        ],
+        "parallel": true
+      }
+    }
+  }
+}

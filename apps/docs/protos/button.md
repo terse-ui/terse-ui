@@ -79,17 +79,7 @@ These are the recommended ways to style the button across different states:
 
 ## API Reference
 
-The following directives are available to import from the `@terse-ui/protos/button` package:
-
-TODO
-
-### Data Attributes
-
-| Attribute              | Description                                              |
-| ---------------------- | -------------------------------------------------------- |
-| `data-disabled`        | Present when the button is either hard or soft disabled. |
-| `data-disabled='hard'` | Present when the button has native disabled behavior.    |
-| `data-disabled='soft'` | Present when the button is disabled but focusable.       |
+<!-- api-ref:protos/button -->
 
 ## Accessibility
 

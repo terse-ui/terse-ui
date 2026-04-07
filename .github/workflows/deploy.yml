@@ -1,0 +1,39 @@
+name: Deploy Docs
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'apps/docs/**'
+      - 'apps/examples/**'
+      - 'packages/*/lib/**'
+      - 'packages/*/*/lib/**'
+      - 'tools/api-extractor/**'
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install
+        uses: ./.github/workflows/composite
+
+      - name: Build docs
+        run: pnpm nx run docs:build --no-tui
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./apps/docs/.vitepress/dist
+          cname: terse-ui.com

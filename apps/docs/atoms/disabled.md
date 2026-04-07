@@ -59,27 +59,4 @@ For native `<button>` and `<input>` elements, you may still want to bind the HTM
 
 ## API Reference
 
-### AtomDisabled
-
-| | |
-| --- | --- |
-| **Selector** | `[atomDisabled]` |
-| **Exported as** | `atomDisabled` |
-
-#### Inputs
-
-| Input | Type | Default | Description |
-| --- | --- | --- | --- |
-| `atomDisabled` | `boolean` | `false` | Whether the element is disabled (model, two-way bindable) |
-
-#### Data Attributes
-
-| Attribute | Description |
-| --- | --- |
-| `data-disabled` | Present when disabled. Absent otherwise. |
-
-#### Host Bindings
-
-| Binding | Description |
-| --- | --- |
-| `[attr.aria-disabled]` | Reflects the disabled state for assistive technology |
+<!-- api-ref:atoms/disabled -->

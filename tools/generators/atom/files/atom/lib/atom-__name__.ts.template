@@ -1,0 +1,18 @@
+import {Directive, model} from '@angular/core';
+
+/**
+ * TODO: Add description.
+ *
+ * @example
+ * ```html
+ * <div <%= selector %>>...</div>
+ * ```
+ */
+@Directive({
+  selector: '[<%= selector %>]',
+  exportAs: '<%= selector %>',
+  host: {},
+})
+export class <%= className %> {
+  // TODO: Implement
+}

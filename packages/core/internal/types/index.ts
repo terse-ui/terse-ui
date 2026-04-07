@@ -8,6 +8,11 @@ export type MaybeProp<T> = MaybeFn<T | null | undefined>;
 
 export type MaybeSignal<T> = T | Signal<T>;
 
+export type MaybeElSignal<T extends Element> =
+  | T
+  | ElementRef<T>
+  | Signal<T | ElementRef<T> | null | undefined>;
+
 export type UnArray<T> = T extends (infer U)[] ? U : T;
 
 export type OmitNever<T> = {[K in keyof T as NonNullable<T[K]> extends never ? never : K]: T[K]};

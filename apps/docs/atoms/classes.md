@@ -83,27 +83,4 @@ export class MyButton {
 
 ## API Reference
 
-### AtomClass
-
-| | |
-| --- | --- |
-| **Selector** | `[atomClass]` |
-| **Exported as** | `atomClass` |
-
-#### Inputs
-
-| Input | Type | Default | Description |
-| --- | --- | --- | --- |
-| `atomClass` | `T` | — | The base class value passed to the reducer chain |
-
-#### Methods
-
-| Method | Signature | Description |
-| --- | --- | --- |
-| `register` | `(fn: (base: T) => T) => () => void` | Add a class source to the reducer chain. Returns an unregister function. |
-
-### provideAtomClassOpts
-
-| Option | Type | Default | Description |
-| --- | --- | --- | --- |
-| `reducer` | `(a: T, b: T) => T` | String concatenation | Custom merge function for resolving class conflicts |
+<!-- api-ref:atoms/classes -->

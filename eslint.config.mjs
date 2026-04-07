@@ -45,7 +45,7 @@ export default [
     },
   },
   {
-    files: ['./packages/**/*.ts', './apps/**/*.ts'],
+    files: ['./packages/**/*.ts', './apps/**/*.ts', './tools/**/*.ts'],
     languageOptions: {
       parserOptions: {
         project: ['**/tsconfig.*?.json'],

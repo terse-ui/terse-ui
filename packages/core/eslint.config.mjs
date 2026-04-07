@@ -13,6 +13,16 @@ export default [
         'error',
         {
           ignoredFiles: ['{projectRoot}/eslint.config.{js,cjs,mjs,ts,cts,mts}'],
+          ignoredDependencies: [
+            '@analogjs/vite-plugin-angular',
+            '@analogjs/vitest-angular',
+            '@angular/compiler',
+            '@nx/vite',
+            '@testing-library/angular',
+            '@testing-library/jest-dom',
+            'vite',
+            'vitest',
+          ],
         },
       ],
     },
@@ -43,8 +53,20 @@ export default [
     },
   },
   {
-    files: ['**/*.html'],
-    // Override or add rules here
-    rules: {},
+    files: ['**/*.ts'],
+    rules: {
+      'no-console': 'error',
+    },
+  },
+  {
+    files: ['**/*.spec.ts'],
+    rules: {
+      '@typescript-eslint/explicit-function-return-type': 'off',
+      '@typescript-eslint/no-floating-promises': 'off',
+      '@typescript-eslint/no-unsafe-assignment': 'off',
+      '@typescript-eslint/no-unsafe-member-access': 'off',
+      '@typescript-eslint/no-unsafe-call': 'off',
+      '@angular-eslint/component-selector': 'off',
+    },
   },
 ];

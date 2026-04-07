@@ -72,32 +72,4 @@ Options are deep-merged and inherited through the injector hierarchy.
 
 ## API Reference
 
-### AtomAnchor
-
-| | |
-| --- | --- |
-| **Selector** | `[atomAnchor]` |
-| **Host bindings** | `[style.anchor-name]` bound to `anchorName` |
-
-#### Properties
-
-| Property | Type | Description |
-| --- | --- | --- |
-| `anchorName` | `string` (readonly) | The generated CSS anchor name, e.g. `"--anchor-1"` |
-
-### AtomAnchored
-
-| | |
-| --- | --- |
-| **Selector** | `[atomAnchored]` |
-| **Host bindings** | `[style.position]`, `[style.position-anchor]`, `[style.position-area]`, `[style.position-try-fallbacks]`, `[style.margin]` |
-
-#### Inputs
-
-| Input | Type | Default | Description |
-| --- | --- | --- | --- |
-| `atomAnchored` | `AtomAnchor \| string` | Parent `AtomAnchor` | The anchor reference or CSS anchor name |
-| `atomAnchoredSide` | `AnchorSide` | `'bottom'` | Which side to position on |
-| `atomAnchoredPosition` | `AnchorPosition` | `'fixed'` | CSS position type |
-| `atomAnchoredPositionTryFallbacks` | `string[]` | `['flip-block', ...]` | Fallback positioning strategies |
-| `atomAnchoredMargin` | `string \| number` | `0` | Margin from anchor |
+<!-- api-ref:atoms/anchor -->

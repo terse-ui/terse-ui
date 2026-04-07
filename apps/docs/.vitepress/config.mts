@@ -1,4 +1,5 @@
 import {defineConfig} from 'vitepress';
+import {apiRefInject} from './plugins/api-ref-inject';
 import {examplesWatcher} from './plugins/examples-watcher';
 
 export default defineConfig({
@@ -92,10 +93,12 @@ export default defineConfig({
         items: [{text: 'Host', link: '/utils/host'}],
       },
       {
+        text: 'Roadmap',
+        items: [{text: 'Overview', link: '/roadmap'}],
+      },
+      {
         text: 'Blog',
-        items: [
-          {text: 'NG0309 Is Dead', link: '/blog/ng0309-is-dead'},
-        ],
+        items: [{text: 'NG0309 Is Dead', link: '/blog/ng0309-is-dead'}],
       },
     ],
 
@@ -129,7 +132,7 @@ export default defineConfig({
 
   vite: {
     // plugins: [tailwind(), examplesWatcher()],
-    plugins: [examplesWatcher()],
+    plugins: [apiRefInject(), examplesWatcher()],
     server: {
       host: process.env.VITEPRESS_HOST || 'localhost',
       watch: {

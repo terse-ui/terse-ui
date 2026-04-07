@@ -24,12 +24,12 @@ export interface InjCtxRef {
  * @remarks
  * Adapted from @signality/core/internal setupContext
  */
-export function setupInjCtx<T>(inj?: Injector, dbgFn?: Fn) {
+export function setupInjCtx(inj?: Injector, dbgFn?: Fn) {
   if (typeof ngDevMode !== 'undefined' && ngDevMode && !inj) {
     assertInInjectionContext(dbgFn || setupInjCtx);
   }
   const ctxInj = inj ?? inject(INJECTOR);
-  return function injCtx(fn: (ctx: InjCtxRef) => T): T {
+  return function injCtx<T>(fn: (ctx: InjCtxRef) => T): T {
     const result = runInInjectionContext(ctxInj, () => {
       const ref = createRef();
       return untracked(() => fn(ref));

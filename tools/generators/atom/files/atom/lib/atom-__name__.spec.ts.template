@@ -1,0 +1,13 @@
+import {terse} from '@terse-ui/core/testing';
+import {screen} from '@testing-library/angular';
+import {<%= className %>} from './atom-<%= name %>';
+
+describe('<%= className %>', () => {
+  it('should create', async () => {
+    await terse(`<div <%= selector %>>Test</div>`, {
+      imports: [<%= className %>],
+    });
+
+    expect(screen.getByText('Test')).toBeTruthy();
+  });
+});
