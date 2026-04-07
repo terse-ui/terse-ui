@@ -27,10 +27,7 @@
         "{workspaceRoot}/eslint.config.mjs"
       ]
     },
-    "@nx/vitest:test": {
-      "cache": true,
-      "inputs": ["default", "^production"]
-    },
+    "@nx/vitest:test": {"cache": true, "inputs": ["default", "^production"]},
     "@nx/angular:package": {
       "cache": true,
       "dependsOn": ["^build"],
@@ -38,18 +35,8 @@
     }
   },
   "plugins": [
-    {
-      "plugin": "@nx/playwright/plugin",
-      "options": {
-        "targetName": "e2e"
-      }
-    },
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "lint"
-      }
-    }
+    {"plugin": "@nx/playwright/plugin", "options": {"targetName": "e2e"}},
+    {"plugin": "@nx/eslint/plugin", "options": {"targetName": "lint"}}
   ],
   "generators": {
     "@nx/angular:application": {
@@ -58,17 +45,9 @@
       "style": "css",
       "unitTestRunner": "vitest-analog"
     },
-    "@nx/angular:library": {
-      "linter": "eslint",
-      "unitTestRunner": "vitest-analog"
-    },
-    "@nx/angular:component": {
-      "style": "css"
-    }
+    "@nx/angular:library": {"linter": "eslint", "unitTestRunner": "vitest-analog"},
+    "@nx/angular:component": {"style": "css"}
   },
-  "release": {
-    "version": {
-      "preVersionCommand": "pnpm dlx nx run-many -t build"
-    }
-  }
+  "release": {"version": {"preVersionCommand": "pnpm dlx nx run-many -t build"}},
+  "nxCloudId": "69d48667a666f6a4abe261a5"
 }
