@@ -1,0 +1,114 @@
+{
+  "name": "examples",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "ex",
+  "sourceRoot": "apps/examples/src",
+  "tags": ["examples"],
+  "targets": {
+    "build": {
+      "executor": "@angular/build:application",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/examples",
+        "browser": "apps/examples/src/main.ts",
+        "tsConfig": "apps/examples/tsconfig.app.json",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "apps/examples/public"
+          }
+        ],
+        "styles": ["apps/examples/src/styles.css"],
+        "server": "apps/examples/src/main.server.ts",
+        "ssr": {
+          "entry": "apps/examples/src/server.ts"
+        },
+        "outputMode": "server"
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "4kb",
+              "maximumError": "8kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "buildElements": {
+      "executor": "@angular/build:application",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "apps/docs/public/examples",
+        "browser": "apps/examples/src/main.elements.ts",
+        "tsConfig": "apps/examples/tsconfig.app.json",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "apps/examples/public"
+          }
+        ],
+        "styles": ["apps/examples/src/styles.css"],
+        "index": false
+      },
+      "configurations": {
+        "production": {
+          "optimization": true
+        },
+        "development": {
+          "optimization": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "serve": {
+      "continuous": true,
+      "executor": "@angular/build:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "examples:build:production"
+        },
+        "development": {
+          "buildTarget": "examples:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/vitest:test",
+      "outputs": ["{options.reportsDirectory}"],
+      "options": {
+        "reportsDirectory": "coverage/apps/examples"
+      }
+    },
+    "serve-static": {
+      "continuous": true,
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "examples:build",
+        "port": 4200,
+        "staticFilePath": "dist/apps/examples/browser",
+        "spa": true
+      }
+    }
+  }
+}

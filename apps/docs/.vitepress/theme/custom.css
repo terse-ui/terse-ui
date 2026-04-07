@@ -1,0 +1,119 @@
+:root {
+  --vp-c-brand-1: #5fb28b;
+  --vp-c-brand-2: #1a7551;
+  --vp-c-brand-3: #14593e;
+  --vp-c-brand-soft: rgba(95, 178, 139, 0.14);
+  --vp-button-brand-bg: #1a7551;
+  --vp-button-brand-hover-bg: #1e8a5f;
+  --vp-button-brand-active-bg: #14593e;
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(135deg, #5fb28b 0%, #1a7551 100%);
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+/* Hide language label in code blocks */
+div[class*='language-'] .lang {
+  display: none;
+}
+
+/* Table styles */
+.vp-doc table {
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1rem 0;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.vp-doc table th,
+.vp-doc table td {
+  border: 1px solid var(--vp-c-divider);
+  padding: 0.75rem 1rem;
+}
+
+.vp-doc table th + th,
+.vp-doc table td + td {
+  border-left: none;
+}
+
+.vp-doc table tr + tr th,
+.vp-doc table tr + tr td {
+  border-top: none;
+}
+
+.vp-doc th:first-of-type {
+  border-top-left-radius: 0.5rem;
+}
+
+.vp-doc th:last-of-type {
+  border-top-right-radius: 0.5rem;
+}
+
+.vp-doc tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 0.5rem;
+}
+
+.vp-doc tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 0.5rem;
+}
+
+:root:not(:has(.normal-width-page)) {
+  /* Adjusts the overall container max-width */
+  --vp-layout-max-width: 100%;
+}
+
+/* Force the main content container to be full width */
+:root:not(:has(.normal-width-page)) .VPDoc .container {
+  max-width: 100% !important;
+}
+
+/* Force the markdown content itself to be full width */
+:root:not(:has(.normal-width-page)) .VPDoc .content {
+  max-width: 100% !important;
+}
+
+/* Optional: If you want to remove the side margins for the main body */
+:root:not(:has(.normal-width-page)) .VPDoc .content-container {
+  max-width: 100% !important;
+}
+
+:root {
+  --surface-dark: light-dark(oklch(0.92 0 162), oklch(0.05 0.01 162));
+  --surface: light-dark(oklch(0.96 0 162), oklch(0.15 0.01 162));
+  --surface-hover: light-dark(oklch(0.9 0 162 / 80%), oklch(0.3 0.02 162 / 50%));
+  --surface-light: light-dark(oklch(1 0 162), oklch(0.25 0.01 162));
+  --surface-active: light-dark(oklch(0.96 0.01 162 / 80%), oklch(0.35 0.02 162 / 50%));
+
+  --on-surface: light-dark(oklch(0.15 0.01 162), oklch(0.92 0.01 162));
+  --on-surface-muted: light-dark(oklch(0.4 0.01 162), oklch(0.7 0.01 162));
+
+  --border: light-dark(oklch(0.8 0.01 162), oklch(0.3 0.01 162));
+  --ring: light-dark(oklch(0.7 0.02 162), oklch(0.6 0.02 162));
+
+  --primary: light-dark(oklch(0.5 0.1 162), oklch(0.7 0.1 162));
+  --on-primary: light-dark(oklch(1 0.05 162), oklch(0.2 0.1 162));
+  --primary-hover: light-dark(oklch(0.55 0.1 162), oklch(0.65 0.1 162));
+  --primary-active: light-dark(oklch(0.6 0.15 162), oklch(0.6 0.15 162));
+
+  --danger: light-dark(oklch(0.5 0.15 30), oklch(0.8 0.15 30));
+  --on-danger: light-dark(oklch(1 0 30), oklch(0.2 0.1 30));
+
+  --warning: light-dark(oklch(0.65 0.2 80), oklch(0.8 0.2 80));
+  --warning-hover: light-dark(oklch(0.575 0.2 80), oklch(0.7 0.2 80));
+  --on-warning: light-dark(oklch(1 0 80), oklch(0.2 0.1 80));
+
+  --success: light-dark(oklch(0.5 0.2 160), oklch(0.8 0.2 160));
+  --success-accent: light-dark(oklch(0.6 0.2 160), oklch(0.9 0.2 160));
+  --on-success: light-dark(oklch(1 0 160), oklch(0.2 0.1 160));
+}

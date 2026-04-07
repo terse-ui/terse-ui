@@ -1,78 +1,60 @@
 // @ts-check
-import eslint from '@eslint/js';
-import angular from 'angular-eslint';
+import nx from '@nx/eslint-plugin';
 import prettier from 'eslint-plugin-prettier/recommended';
-import {defineConfig} from 'eslint/config';
-import tseslint from 'typescript-eslint';
 
-export default defineConfig(
+export default [
+  ...nx.configs['flat/base'],
+  ...nx.configs['flat/typescript'],
+  ...nx.configs['flat/javascript'],
   {
-    ignores: ['dist/', 'node_modules/', 'out-tsc/', '.angular/', 'docs/'],
+    'ignores': ['**/dist', '**/out-tsc', '**/vitest.config.*.timestamp*', 'apps/docs'],
+  },
+  {
+    files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
+    rules: {
+      '@nx/enforce-module-boundaries': [
+        'error',
+        {
+          enforceBuildableLibDependency: true,
+          allow: ['^.*/eslint(\\.base)?\\.config\\.[cm]?[jt]s$'],
+          depConstraints: [
+            {
+              sourceTag: '*',
+              onlyDependOnLibsWithTags: ['*'],
+            },
+          ],
+        },
+      ],
+    },
   },
   {
     files: ['**/*.ts'],
-    extends: [
-      eslint.configs.recommended,
-      ...tseslint.configs.recommendedTypeChecked,
-      ...angular.configs.tsRecommended,
-    ],
+    ignores: ['**/*.spec.ts'],
+    rules: {
+      'no-restricted-imports': [
+        'error',
+        {
+          patterns: [
+            {
+              group: ['@terse-ui/core/testing', '@terse-ui/core/testing/*'],
+              message: 'Testing utilities are only available in .spec.ts files.',
+            },
+          ],
+        },
+      ],
+    },
+  },
+  {
+    files: ['./packages/**/*.ts', './apps/**/*.ts'],
     languageOptions: {
       parserOptions: {
-        projectService: true,
+        project: ['**/tsconfig.*?.json'],
       },
     },
-    processor: angular.processInlineTemplates,
     rules: {
-      // Angular library: selectors use the library prefix
-      '@angular-eslint/directive-selector': [
-        'error',
-        {type: 'attribute', prefix: 't', style: 'camelCase'},
-      ],
-      '@angular-eslint/component-selector': [
-        'error',
-        {type: 'element', prefix: 't', style: 'kebab-case'},
-      ],
-
-      // Library authors rename inputs/outputs for public API
-      '@angular-eslint/no-input-rename': 'off',
-      '@angular-eslint/no-output-rename': 'off',
-
-      // Enforce modern Angular patterns
-      '@angular-eslint/prefer-standalone': 'error',
-      '@angular-eslint/prefer-on-push-component-change-detection': 'off', // v22 uses OnPush by default
-      '@angular-eslint/no-host-metadata-property': 'off', // we use host bindings intentionally
-      '@angular-eslint/prefer-output-readonly': 'error',
-
-      // TypeScript strict overrides for library code
-      '@typescript-eslint/explicit-member-accessibility': ['error', {accessibility: 'no-public'}],
-      '@typescript-eslint/no-explicit-any': 'error',
-      '@typescript-eslint/no-non-null-assertion': 'error',
-      '@typescript-eslint/consistent-type-imports': [
-        'error',
-        {prefer: 'type-imports', fixStyle: 'inline-type-imports'},
-      ],
-
-      // Relax rules that conflict with Angular patterns
-      '@typescript-eslint/no-extraneous-class': 'off', // Angular services/components are classes
-      '@typescript-eslint/unbound-method': 'off', // Angular template bindings
+      '@typescript-eslint/consistent-type-exports': 'error',
+      '@typescript-eslint/consistent-type-imports': 'error',
     },
-  },
-  {
-    files: ['**/*.spec.ts'],
-    rules: {
-      // Relax strictness in tests
-      '@typescript-eslint/explicit-function-return-type': 'off',
-      '@typescript-eslint/no-floating-promises': 'off',
-      '@typescript-eslint/no-unsafe-assignment': 'off',
-      '@typescript-eslint/no-unsafe-member-access': 'off',
-      '@typescript-eslint/no-unsafe-call': 'off',
-      '@angular-eslint/component-selector': 'off',
-    },
-  },
-  {
-    files: ['**/*.html'],
-    extends: [...angular.configs.templateRecommended, ...angular.configs.templateAccessibility],
-    rules: {},
   },
   prettier,
-);
+];

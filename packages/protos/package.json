@@ -1,0 +1,17 @@
+{
+  "name": "@terse-ui/protos",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/core": "^21.2.0",
+    "vite": "^8.0.5",
+    "@analogjs/vite-plugin-angular": "~2.1.3",
+    "@nx/vite": "22.6.4",
+    "@signality/core": "^0.1.3",
+    "@terse-ui/atoms": "0.0.1",
+    "@terse-ui/core": "0.0.1",
+    "@angular/compiler": "~21.2.7",
+    "@analogjs/vitest-angular": "~2.1.3",
+    "@testing-library/jest-dom": "^6.9.1"
+  },
+  "sideEffects": false
+}
