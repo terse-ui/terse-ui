@@ -3,13 +3,13 @@ import type {ComponentFixture} from '@angular/core/testing';
 import {By} from '@angular/platform-browser';
 import {render, type RenderResult} from '@testing-library/angular';
 
-type DirectiveQueries = {
+type TerseDirQueries = {
   query<T>(type: Type<T>): T;
   queryAll<T>(type: Type<T>): T[];
 };
 
 type TerseResult<T = unknown> = RenderResult<T> & {
-  fixture: ComponentFixture<T> & DirectiveQueries;
+  fixture: ComponentFixture<T> & TerseDirQueries;
 };
 
 export async function terse<T>(...args: Parameters<typeof render<T>>): Promise<TerseResult<T>> {
@@ -24,7 +24,7 @@ export async function terse<T>(...args: Parameters<typeof render<T>>): Promise<T
         .queryAll(By.directive(type))
         .map((de) => de.injector.get(type));
     },
-  } satisfies DirectiveQueries);
+  } satisfies TerseDirQueries);
 
   return result as TerseResult<T>;
 }

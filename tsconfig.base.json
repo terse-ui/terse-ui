@@ -1,7 +1,6 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": ".",
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "esModuleInterop": true,
@@ -27,13 +26,14 @@
     "useDefineForClassFields": true,
     "verbatimModuleSyntax": true,
     "ignoreDeprecations": "6.0",
+    "baseUrl": ".",
     "paths": {
-      "@terse-ui/core": ["packages/core"],
-      "@terse-ui/core/*": ["packages/core/*"],
-      "@terse-ui/atoms": ["packages/atoms"],
-      "@terse-ui/atoms/*": ["packages/atoms/*"],
-      "@terse-ui/protos": ["packages/protos"],
-      "@terse-ui/protos/*": ["packages/protos/*"]
+      "@terse-ui/core": ["./packages/core"],
+      "@terse-ui/core/*": ["./packages/core/*"],
+      "@terse-ui/atoms": ["./packages/atoms"],
+      "@terse-ui/atoms/*": ["./packages/atoms/*"],
+      "@terse-ui/protos": ["./packages/protos"],
+      "@terse-ui/protos/*": ["./packages/protos/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]
