@@ -1,6 +1,6 @@
 import {inject, Injectable, runInInjectionContext, untracked, type Injector} from '@angular/core';
 import {setupContext, type ContextRef} from '@signality/core/internal';
-import {injectElement} from '@terse-ui/core/internal';
+import {injEl} from '@terse-ui/core/internal';
 import type {Constructor} from '@terse-ui/core/internal/types';
 
 @Injectable({providedIn: 'root'})
@@ -19,7 +19,7 @@ export class AutoHostResolver {
   resolve<T extends object>(type: Constructor<T>, injector?: Injector): T {
     const {runInContext} = setupContext(injector, this.resolve.bind(this));
     return runInContext(({injector}) => {
-      const element = injectElement();
+      const element = injEl();
       const serviceMap = this.#get<T>(element);
       let instance = serviceMap.get(type);
       if (!instance) {

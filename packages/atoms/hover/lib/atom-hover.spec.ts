@@ -2,13 +2,13 @@ import {By} from '@angular/platform-browser';
 import {terse} from '@terse-ui/core/testing';
 import {screen} from '@testing-library/angular';
 import userEvent from '@testing-library/user-event';
-import {Hoverable} from './hoverable';
+import {AtomHover} from './atom-hover';
 
 describe('Hover', () => {
   describe('pointer hover', () => {
     it('should set data-hover on mouse pointerenter', async () => {
-      const {fixture} = await terse(`<button hoverable>Hover me</button>`, {
-        imports: [Hoverable],
+      const {fixture} = await terse(`<button atomHover>Hover me</button>`, {
+        imports: [AtomHover],
       });
 
       const button = screen.getByRole('button');
@@ -20,8 +20,8 @@ describe('Hover', () => {
     });
 
     it('should remove data-hover on mouse pointerleave', async () => {
-      const {fixture} = await terse(`<button hoverable>Hover me</button>`, {
-        imports: [Hoverable],
+      const {fixture} = await terse(`<button atomHover>Hover me</button>`, {
+        imports: [AtomHover],
       });
 
       const button = screen.getByRole('button');
@@ -36,7 +36,7 @@ describe('Hover', () => {
     });
 
     it('should not have data-hover initially', async () => {
-      await terse(`<button hoverable>Hover me</button>`, {imports: [Hoverable]});
+      await terse(`<button atomHover>Hover me</button>`, {imports: [AtomHover]});
 
       expect(screen.getByRole('button')).not.toHaveAttribute('data-hover');
     });
@@ -44,8 +44,8 @@ describe('Hover', () => {
 
   describe('mouse events fallback', () => {
     it('should track hover with mouseenter/mouseleave', async () => {
-      const {fixture} = await terse(`<button hoverable>Hover me</button>`, {
-        imports: [Hoverable],
+      const {fixture} = await terse(`<button atomHover>Hover me</button>`, {
+        imports: [AtomHover],
       });
 
       const button = screen.getByRole('button');
@@ -62,8 +62,8 @@ describe('Hover', () => {
 
   describe('touch events', () => {
     it('should ignore touch pointer events', async () => {
-      const {fixture} = await terse(`<button hoverable>Hover me</button>`, {
-        imports: [Hoverable],
+      const {fixture} = await terse(`<button atomHover>Hover me</button>`, {
+        imports: [AtomHover],
       });
 
       const button = screen.getByRole('button');
@@ -74,8 +74,8 @@ describe('Hover', () => {
     });
 
     it('should ignore emulated mouse events after touch', async () => {
-      const {fixture} = await terse(`<button hoverable>Hover me</button>`, {
-        imports: [Hoverable],
+      const {fixture} = await terse(`<button atomHover>Hover me</button>`, {
+        imports: [AtomHover],
       });
 
       const button = screen.getByRole('button');
@@ -90,11 +90,11 @@ describe('Hover', () => {
   describe('disabled state', () => {
     it('should not trigger hover when disabled', async () => {
       const userNoPointerCheck = userEvent.setup({pointerEventsCheck: 0});
-      const {fixture} = await terse(`<button hoverable>Hover me</button>`, {imports: [Hoverable]});
+      const {fixture} = await terse(`<button atomHover>Hover me</button>`, {imports: [AtomHover]});
 
       fixture.debugElement
-        .query(By.directive(Hoverable))
-        .injector.get(Hoverable)
+        .query(By.directive(AtomHover))
+        .injector.get(AtomHover)
         .disabled.set(true);
       fixture.detectChanges();
 
@@ -106,8 +106,8 @@ describe('Hover', () => {
     });
 
     it('should reset hover when becoming disabled while hovered', async () => {
-      const {fixture} = await terse(`<button hoverable>Hover me</button>`, {
-        imports: [Hoverable],
+      const {fixture} = await terse(`<button atomHover>Hover me</button>`, {
+        imports: [AtomHover],
       });
 
       const button = screen.getByRole('button');
@@ -117,23 +117,23 @@ describe('Hover', () => {
       expect(button).toHaveAttribute('data-hover', '');
 
       fixture.debugElement
-        .query(By.directive(Hoverable))
-        .injector.get(Hoverable)
+        .query(By.directive(AtomHover))
+        .injector.get(AtomHover)
         .disabled.set(true);
       fixture.detectChanges();
       expect(button).not.toHaveAttribute('data-hover');
     });
 
     it('should allow hover after re-enabling', async () => {
-      const {fixture} = await terse(`<button hoverable>Hover me</button>`, {
-        imports: [Hoverable],
+      const {fixture} = await terse(`<button atomHover>Hover me</button>`, {
+        imports: [AtomHover],
       });
 
       const button = screen.getByRole('button');
 
       fixture.debugElement
-        .query(By.directive(Hoverable))
-        .injector.get(Hoverable)
+        .query(By.directive(AtomHover))
+        .injector.get(AtomHover)
         .disabled.set(false);
       fixture.detectChanges();
 
@@ -145,8 +145,8 @@ describe('Hover', () => {
 
   describe('element types', () => {
     it('should work with button elements', async () => {
-      const {fixture} = await terse(`<button hoverable>Button</button>`, {
-        imports: [Hoverable],
+      const {fixture} = await terse(`<button atomHover>Button</button>`, {
+        imports: [AtomHover],
       });
 
       const button = screen.getByRole('button');
@@ -156,8 +156,8 @@ describe('Hover', () => {
     });
 
     it('should work with div elements', async () => {
-      const {fixture} = await terse(`<div hoverable tabindex="0">Custom</div>`, {
-        imports: [Hoverable],
+      const {fixture} = await terse(`<div atomHover tabindex="0">Custom</div>`, {
+        imports: [AtomHover],
       });
 
       const div = screen.getByText('Custom');
@@ -167,8 +167,8 @@ describe('Hover', () => {
     });
 
     it('should work with anchor elements', async () => {
-      const {fixture} = await terse(`<a hoverable href="#">Link</a>`, {
-        imports: [Hoverable],
+      const {fixture} = await terse(`<a atomHover href="#">Link</a>`, {
+        imports: [AtomHover],
       });
 
       const link = screen.getByRole('link', {name: 'Link'});
@@ -180,8 +180,8 @@ describe('Hover', () => {
 
   describe('mouseenter/mouseleave sequence', () => {
     it('should handle multiple enter/leave cycles', async () => {
-      const {fixture} = await terse(`<button hoverable>Hover me</button>`, {
-        imports: [Hoverable],
+      const {fixture} = await terse(`<button atomHover>Hover me</button>`, {
+        imports: [AtomHover],
       });
 
       const button = screen.getByRole('button');

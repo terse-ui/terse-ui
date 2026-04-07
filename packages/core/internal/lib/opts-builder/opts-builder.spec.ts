@@ -10,28 +10,25 @@ import {
   numberAttribute,
 } from '@angular/core';
 import {TestBed} from '@angular/core/testing';
-import {defineCfg} from './define-cfg';
+import {optsBuilder} from './opts-builder';
 
 // ---------------------------------------------------------------------------
 // Realistic fixture: mirrors the Button directive pattern
 // ---------------------------------------------------------------------------
 
-interface WidgetConfig {
+interface WidgetOpts {
   disabled: boolean;
   size: number;
   role: string | null;
   variant: string;
 }
 
-const [provideWidgetConfig, injectWidgetConfig] = defineCfg<WidgetConfig>(
-  () => ({
-    disabled: false,
-    size: numberAttribute(inject(new HostAttributeToken('size'), {optional: true}) ?? 16, 16),
-    role: inject(new HostAttributeToken('role'), {optional: true}),
-    variant: 'solid',
-  }),
-  {debugName: 'Widget'},
-);
+const [provideWidgetOpts, injectWidgetOpts] = optsBuilder<WidgetOpts>('Widget', () => ({
+  disabled: false,
+  size: numberAttribute(inject(new HostAttributeToken('size'), {optional: true}) ?? 16, 16),
+  role: inject(new HostAttributeToken('role'), {optional: true}),
+  variant: 'solid',
+}));
 
 @Directive({
   selector: '[tWidget]',
@@ -42,13 +39,13 @@ const [provideWidgetConfig, injectWidgetConfig] = defineCfg<WidgetConfig>(
   exportAs: 'tWidget',
 })
 class Widget {
-  readonly #config = injectWidgetConfig();
+  readonly #opts = injectWidgetOpts();
 
-  readonly size = input(this.#config.size, {
-    transform: (v: unknown) => numberAttribute(v, this.#config.size),
+  readonly size = input(this.#opts.size, {
+    transform: (v: unknown) => numberAttribute(v, this.#opts.size),
   });
 
-  readonly role = input(this.#config.role);
+  readonly role = input(this.#opts.role);
 
   protected readonly roleAttr = computed(() => this.role() ?? 'button');
   protected readonly sizeAttr = computed(() => `${this.size()}`);
@@ -58,10 +55,10 @@ class Widget {
 // Tests
 // ---------------------------------------------------------------------------
 
-describe('defineCfg', () => {
-  describe('returns [provideConfig, injectConfig]', () => {
+describe('optionsBuilder', () => {
+  describe('returns [provideOpts, injectOpts]', () => {
     it('should return a tuple of two functions', () => {
-      const result = defineCfg({value: 1});
+      const result = optsBuilder('Test', {value: 1});
       expect(result).toHaveLength(2);
       expect(typeof result[0]).toBe('function');
       expect(typeof result[1]).toBe('function');
@@ -71,7 +68,7 @@ describe('defineCfg', () => {
   // ---- directive-level tests (realistic injection context) ----
 
   describe('directive with injection-context factory defaults', () => {
-    it('should resolve defaults when no config is provided', () => {
+    it('should resolve defaults when no opts is provided', () => {
       @Component({
         selector: 'test-host',
         changeDetection: ChangeDetectionStrategy.OnPush,
@@ -88,7 +85,7 @@ describe('defineCfg', () => {
       expect(el.getAttribute('data-size')).toBe('16');
     });
 
-    it('should read host attributes through the default config factory', () => {
+    it('should read host attributes through the default opts factory', () => {
       @Component({
         selector: 'test-host',
         changeDetection: ChangeDetectionStrategy.OnPush,
@@ -122,14 +119,14 @@ describe('defineCfg', () => {
     });
   });
 
-  describe('provideConfig at component level (plain object)', () => {
-    it('should deep merge a partial override into the default config', () => {
+  describe('provideOpts at component level (plain object)', () => {
+    it('should deep merge a partial override into the default opts', () => {
       @Component({
         selector: 'test-host',
         changeDetection: ChangeDetectionStrategy.OnPush,
         imports: [Widget],
         template: `<div tWidget></div>`,
-        providers: [provideWidgetConfig({size: 48})],
+        providers: [provideWidgetOpts({size: 48})],
       })
       class TestHost {}
 
@@ -147,7 +144,7 @@ describe('defineCfg', () => {
         changeDetection: ChangeDetectionStrategy.OnPush,
         imports: [Widget],
         template: `<div tWidget></div>`,
-        providers: [provideWidgetConfig({size: 64, variant: 'outline'})],
+        providers: [provideWidgetOpts({size: 64, variant: 'outline'})],
       })
       class TestHost {}
 
@@ -159,14 +156,14 @@ describe('defineCfg', () => {
     });
   });
 
-  describe('provideConfig at component level (factory function)', () => {
-    it('should accept a factory that returns a partial config', () => {
+  describe('provideOpts at component level (factory function)', () => {
+    it('should accept a factory that returns a partial opts', () => {
       @Component({
         selector: 'test-host',
         changeDetection: ChangeDetectionStrategy.OnPush,
         imports: [Widget],
         template: `<div tWidget></div>`,
-        providers: [provideWidgetConfig(() => ({size: 20}))],
+        providers: [provideWidgetOpts(() => ({size: 20}))],
       })
       class TestHost {}
 
@@ -188,7 +185,7 @@ describe('defineCfg', () => {
         changeDetection: ChangeDetectionStrategy.OnPush,
         imports: [Widget],
         template: `<div tWidget></div>`,
-        providers: [provideWidgetConfig(() => ({size: inject(ThemeService).defaultSize}))],
+        providers: [provideWidgetOpts(() => ({size: inject(ThemeService).defaultSize}))],
       })
       class TestHost {}
 
@@ -201,13 +198,13 @@ describe('defineCfg', () => {
   });
 
   describe('multiple providers (multi token)', () => {
-    it('should accumulate contributions from multiple provideConfig calls', () => {
+    it('should accumulate contributions from multiple provideOpts calls', () => {
       @Component({
         selector: 'test-host',
         changeDetection: ChangeDetectionStrategy.OnPush,
         imports: [Widget],
         template: `<div tWidget></div>`,
-        providers: [provideWidgetConfig({size: 48}), provideWidgetConfig({variant: 'ghost'})],
+        providers: [provideWidgetOpts({size: 48}), provideWidgetOpts({variant: 'ghost'})],
       })
       class TestHost {}
 
@@ -226,13 +223,13 @@ describe('defineCfg', () => {
         changeDetection: ChangeDetectionStrategy.OnPush,
         imports: [Widget],
         template: `<div tWidget></div>`,
-        providers: [provideWidgetConfig({size: 12})],
+        providers: [provideWidgetOpts({size: 12})],
       })
       class TestHost {}
 
       TestBed.configureTestingModule({
         imports: [TestHost],
-        providers: [provideWidgetConfig({size: 64})],
+        providers: [provideWidgetOpts({size: 64})],
       });
 
       const fixture = TestBed.createComponent(TestHost);
@@ -246,31 +243,28 @@ describe('defineCfg', () => {
   // ---- service-level tests (deep merge semantics) ----
 
   describe('deep merge semantics', () => {
-    interface SimpleConfig {
+    interface SimpleOpts {
       color: string;
       count: number;
       nested: {enabled: boolean; label: string; fn: () => number};
     }
 
-    const [provideSimple, injectSimple] = defineCfg<SimpleConfig>(
-      () => ({
-        color: 'red',
-        count: 10,
-        nested: {enabled: false, label: 'default', fn: () => 1},
-      }),
-      {debugName: 'Simple'},
-    );
+    const [provideSimple, injectSimple] = optsBuilder<SimpleOpts>('Simple', () => ({
+      color: 'red',
+      count: 10,
+      nested: {enabled: false, label: 'default', fn: () => 1},
+    }));
 
     @Injectable({providedIn: 'root'})
     class SimpleService {
-      readonly config = injectSimple();
+      readonly opts = injectSimple();
     }
 
     it('should return defaults when no providers are configured', () => {
       TestBed.configureTestingModule({});
       const service = TestBed.inject(SimpleService);
 
-      expect(service.config).toEqual({
+      expect(service.opts).toEqual({
         color: 'red',
         count: 10,
         nested: {enabled: false, label: 'default', fn: expect.any(Function)},
@@ -283,7 +277,7 @@ describe('defineCfg', () => {
       });
       const service = TestBed.inject(SimpleService);
 
-      expect(service.config).toEqual({
+      expect(service.opts).toEqual({
         color: 'blue',
         count: 10,
         nested: {enabled: false, label: 'default', fn: expect.any(Function)},
@@ -296,7 +290,7 @@ describe('defineCfg', () => {
       });
       const service = TestBed.inject(SimpleService);
 
-      expect(service.config.nested).toEqual({
+      expect(service.opts.nested).toEqual({
         enabled: true,
         label: 'default',
         fn: expect.any(Function),
@@ -309,21 +303,21 @@ describe('defineCfg', () => {
       });
       const service = TestBed.inject(SimpleService);
 
-      expect(service.config).toEqual({
+      expect(service.opts).toEqual({
         color: 'green',
         count: 42,
         nested: {enabled: false, label: 'custom', fn: expect.any(Function)},
       });
     });
 
-    it('should accept a factory function that returns a partial config', () => {
+    it('should accept a factory function that returns a partial opts', () => {
       TestBed.configureTestingModule({
         providers: [provideSimple(() => ({count: 99}))],
       });
       const service = TestBed.inject(SimpleService);
 
-      expect(service.config.count).toBe(99);
-      expect(service.config.color).toBe('red');
+      expect(service.opts.count).toBe(99);
+      expect(service.opts.color).toBe('red');
     });
 
     it('should allow factory functions to use inject()', () => {
@@ -337,7 +331,7 @@ describe('defineCfg', () => {
       });
       const service = TestBed.inject(SimpleService);
 
-      expect(service.config.color).toBe('purple');
+      expect(service.opts.color).toBe('purple');
     });
 
     it('should merge function values', () => {
@@ -345,39 +339,37 @@ describe('defineCfg', () => {
         providers: [provideSimple({nested: {fn: () => 2}})],
       });
       const service = TestBed.inject(SimpleService);
-      expect(service.config.nested.fn()).toBe(2);
+      expect(service.opts.nested.fn()).toBe(2);
     });
   });
 
-  describe('default config as a plain object', () => {
+  describe('default opts as a plain object', () => {
     it('should work with a plain object default', () => {
-      const [, injectPlain] = defineCfg({x: 1, y: 'hello'}, {debugName: 'Plain'});
+      const [, injectPlain] = optsBuilder('Plain', {x: 1, y: 'hello'});
 
       @Injectable({providedIn: 'root'})
       class PlainService {
-        readonly config = injectPlain();
+        readonly opts = injectPlain();
       }
 
       TestBed.configureTestingModule({});
       const service = TestBed.inject(PlainService);
-      expect(service.config).toEqual({x: 1, y: 'hello'});
+      expect(service.opts).toEqual({x: 1, y: 'hello'});
     });
   });
 
-  describe('default config as a factory function', () => {
-    it('should accept a factory function as the default config', () => {
-      const [, injectFactoryConfig] = defineCfg(() => ({value: 'from-factory'}), {
-        debugName: 'Factory',
-      });
+  describe('default opts as a factory function', () => {
+    it('should accept a factory function as the default opts', () => {
+      const [, injectFactoryOpts] = optsBuilder('Factory', () => ({value: 'from-factory'}));
 
       @Injectable({providedIn: 'root'})
       class FactoryService {
-        readonly config = injectFactoryConfig();
+        readonly opts = injectFactoryOpts();
       }
 
       TestBed.configureTestingModule({});
       const service = TestBed.inject(FactoryService);
-      expect(service.config).toEqual({value: 'from-factory'});
+      expect(service.opts).toEqual({value: 'from-factory'});
     });
   });
 });

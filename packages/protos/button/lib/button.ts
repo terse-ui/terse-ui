@@ -9,12 +9,12 @@ import {
 } from '@angular/core';
 import {listener} from '@signality/core';
 import {
-  defineCfg,
   hasDisabledAttribute,
-  injectElement,
+  injEl,
   isAnchorElement,
   isButtonElement,
   isInputElement,
+  optsBuilder,
 } from '@terse-ui/core/internal';
 import {HostAttributes} from '@terse-ui/core/utils/host';
 
@@ -27,17 +27,20 @@ export interface ProtoButtonConfig {
   composite: boolean;
 }
 
-const [provideButtonConfig, injectButtonConfig] = defineCfg<ProtoButtonConfig>(() => {
-  const ha = inject(HostAttributes);
-  return {
-    disabled: false,
-    disabledInteractive: false,
-    tabIndex: numberAttribute(ha.get('tabindex') ?? 0, 0),
-    role: ha.get('role'),
-    type: ha.get('type'),
-    composite: false,
-  };
-});
+const [provideButtonConfig, injectButtonConfig] = optsBuilder<ProtoButtonConfig>(
+  'ProtoButton',
+  () => {
+    const ha = inject(HostAttributes);
+    return {
+      disabled: false,
+      disabledInteractive: false,
+      tabIndex: numberAttribute(ha.get('tabindex') ?? 0, 0),
+      role: ha.get('role'),
+      type: ha.get('type'),
+      composite: false,
+    };
+  },
+);
 
 export {provideButtonConfig};
 
@@ -56,7 +59,7 @@ export {provideButtonConfig};
   exportAs: 'protoButton',
 })
 export class ProtoButton {
-  readonly #element = injectElement();
+  readonly #element = injEl();
   readonly #config = injectButtonConfig();
 
   readonly disabled = input(this.#config.disabled, {transform: booleanAttribute});

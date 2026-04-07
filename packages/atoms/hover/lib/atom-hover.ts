@@ -30,8 +30,8 @@ class GlobalPointerEvents {
 }
 
 @Directive({
-  selector: '[hoverable]',
-  exportAs: 'hoverable',
+  selector: '[atomHover]',
+  exportAs: 'atomHover',
   host: {
     '[attr.data-hover]': 'dataHoverAttr()',
     '(pointerenter)': 'onPointerEnter($event)',
@@ -41,14 +41,14 @@ class GlobalPointerEvents {
     '(mouseleave)': 'onMouseLeave($event)',
   },
 })
-export class Hoverable {
+export class AtomHover {
   readonly #global = inject(GlobalPointerEvents);
   #localIgnoreMouseEvents = false;
 
   readonly #isHovered = signal(false);
   readonly isHovered = this.#isHovered.asReadonly();
 
-  readonly disabled = model(false, {alias: 'hoverableDisabled'});
+  readonly disabled = model(false, {alias: 'atomHoverDisabled'});
   readonly dataHoverAttr = computed(() => (this.disabled() ? null : this.isHovered() ? '' : null));
 
   #onHoverBegin(event: Event, pointerType: string): void {
