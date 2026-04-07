@@ -47,6 +47,7 @@ export default defineConfig({
       {text: 'Protos', link: '/protos'},
       {text: 'Atoms', link: '/atoms'},
       {text: 'Utils', link: '/utils'},
+      {text: 'Blog', link: '/blog/ng0309-is-dead'},
       {
         text: 'Links',
         items: [
@@ -59,7 +60,10 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Guide',
-        items: [{text: 'Getting Started', link: '/guide/getting-started'}],
+        items: [
+          {text: 'Getting Started', link: '/guide/getting-started'},
+          {text: 'Why Terse UI?', link: '/guide/why-terse-ui'},
+        ],
       },
       {
         text: 'Protos',
@@ -69,12 +73,29 @@ export default defineConfig({
       {
         text: 'Atoms',
         link: '/atoms',
-        items: [{text: 'Hoverable', link: '/atoms/hoverable'}],
+        items: [
+          {text: 'Id', link: '/atoms/id'},
+          {text: 'Hoverable', link: '/atoms/hoverable'},
+          {text: 'Anchor', link: '/atoms/anchor'},
+          {text: 'Open Close', link: '/atoms/open-close'},
+          {text: 'Orientation', link: '/atoms/orientation'},
+          {text: 'Disabled', link: '/atoms/disabled'},
+          {text: 'Escape Key', link: '/atoms/escape-key'},
+          {text: 'Click Outside', link: '/atoms/click-outside'},
+          {text: 'Intersect', link: '/atoms/intersect'},
+          {text: 'Classes', link: '/atoms/classes'},
+        ],
       },
       {
         text: 'Utils',
         link: '/utils',
-        items: [{text: 'Host Attributes', link: '/utils/host-attributes'}],
+        items: [{text: 'Host', link: '/utils/host'}],
+      },
+      {
+        text: 'Blog',
+        items: [
+          {text: 'NG0309 Is Dead', link: '/blog/ng0309-is-dead'},
+        ],
       },
     ],
 

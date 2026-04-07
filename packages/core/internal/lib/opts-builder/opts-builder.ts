@@ -23,6 +23,10 @@ export type OptionsBuilderResult<Options extends object> = [
 export function optsBuilder<Options extends object>(
   debugName: string,
   defaultOptions: MaybeFn<Options>,
+  merger?: (
+    contributions: MaybeFn<DeepPartial<Options>>[],
+    defaultValue: MaybeFn<Options>,
+  ) => Options,
 ): OptionsBuilderResult<Options> {
   const optsToken = new InjectionToken<Options>(ngDevMode ? `Options:${debugName}` : '');
 
@@ -32,6 +36,9 @@ export function optsBuilder<Options extends object>(
 
   function injectOptions(opts: Omit<InjectOptions, 'optional'> = {}): Options {
     const contributions = inject(optsContributionToken, {...opts, optional: true}) ?? [];
+    if (merger) {
+      return merger(contributions, defaultOptions);
+    }
     return unwrapMergeInject(inject(INJECTOR), defaultOptions, ...contributions);
   }
 

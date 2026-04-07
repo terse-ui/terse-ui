@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /protos/button
+      link: /guide/getting-started
     - theme: alt
       text: GitHub
       link: https://github.com/terse-ui/terse-ui

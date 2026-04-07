@@ -53,3 +53,40 @@ You are an expert in TypeScript, Angular, and scalable web application developme
 - Design services around a single responsibility
 - Use the `providedIn: 'root'` option for singleton services
 - Use the `inject()` function instead of constructor injection
+
+## Project Architecture
+
+Terse UI is a headless Angular UI library with a three-layer architecture:
+
+- **`@terse-ui/core`** (`packages/core`) — Foundational utilities: `IdGenerator`, `optsBuilder`, deep-merge, type guards, injection helpers, `AutoHost`, `HostAttributes`.
+- **`@terse-ui/atoms`** (`packages/atoms`) — Atomic host directives. Single-responsibility behavioral primitives (`AtomId`, `AtomHover`, `AtomAnchor`, `AtomAnchored`) that compose freely via Angular 22's de-duplicated host directives.
+- **`@terse-ui/protos`** (`packages/protos`) — Headless UI components composed from atoms via `hostDirectives`. Zero CSS, full WAI-ARIA compliance. (`ProtoButton`, more coming.)
+
+Other directories:
+- `apps/docs` — VitePress documentation site.
+- `apps/examples` — Angular Elements used as live demos in docs.
+
+The key innovation is Angular 22's host directive de-duplication (no more NG0309). Before this, composing multiple host directives that shared a common atom was impractical. The `AutoHost` decorator (`@terse-ui/core/utils/host`) was the workaround and is still used internally.
+
+## Documentation Conventions
+
+Follow the structure established in `apps/docs/protos/button.md` as the gold standard:
+
+1. **H1** with the component/directive name
+2. **One-line description** sentence
+3. **"Why use this?"** section with bullet points
+4. **Import** snippet (always use secondary entry points: `@terse-ui/protos/button`, not `@terse-ui/protos`)
+5. **Accessibility features** table (where applicable, linking WAI-ARIA patterns)
+6. **Examples** using `<Example name="..." />` (only when a corresponding Angular Element exists in `apps/examples/`)
+7. **Styling** section with CSS selector examples
+8. **API Reference** with tables for inputs, outputs, and data attributes
+9. **Keyboard Interactions** with `<kbd>` tags (where applicable)
+
+Tone: technical but approachable. No fluff, no emoji. Aim for ~100 lines per page. Use tables for structured comparisons. Reference WAI-ARIA patterns where applicable.
+
+## VitePress Conventions
+
+- Docs live in `apps/docs/`, config at `apps/docs/.vitepress/config.mts`.
+- Live examples are Angular components registered as custom elements with the `ex-` prefix, embedded in docs with `<Example name="proto-button-loading" />`.
+- The `Example.vue` component loads `public/examples/browser/main.js` and renders the Angular custom element.
+- Only add `<Example>` embeds when a corresponding Angular Element exists in `apps/examples/`.
