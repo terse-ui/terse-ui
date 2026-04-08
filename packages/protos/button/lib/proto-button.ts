@@ -30,12 +30,7 @@ export {provideButtonOpts};
 @Directive({
   selector: '[protoButton]',
   exportAs: 'protoButton',
-  hostDirectives: [
-    {
-      directive: AtomInteract,
-      inputs: ['disabled', 'disabledInteractive', 'tabIndex'],
-    },
-  ],
+  hostDirectives: [AtomInteract],
   host: {
     '[attr.role]': 'roleAttr()',
     '[attr.type]': 'typeAttr()',
@@ -47,6 +42,9 @@ export class ProtoButton {
   readonly #element = injectElement();
   readonly #opts = injectButtonOpts();
   readonly #interact = inject(AtomInteract);
+
+  readonly hardDisabled = this.#interact.hardDisabled.bind(this.#interact);
+  readonly softDisabled = this.#interact.softDisabled.bind(this.#interact);
 
   readonly role = input(this.#opts.role);
   readonly roleControl = signalControl(this.role);

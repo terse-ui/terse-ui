@@ -64,6 +64,7 @@ export default defineConfig({
         items: [
           {text: 'Getting Started', link: '/guide/getting-started'},
           {text: 'Why Terse UI?', link: '/guide/why-terse-ui'},
+          {text: 'Composing Directives', link: '/guide/composing-directives'},
         ],
       },
       {

@@ -21,20 +21,20 @@ pnpm add @terse-ui/core @terse-ui/atoms @terse-ui/protos
 ```
 
 ```ts
-import {ChangeDetectionStrategy, Component} from '@angular/core';
+import {Component} from '@angular/core';
 import {ProtoButton} from '@terse-ui/protos/button';
 
 @Component({
-  selector: 'app-save',
-  imports: [ProtoButton],
-  template: `<button protoButton (click)="save()">Save</button>`,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  selector: 'app-button',
+  hostDirectives: [
+    {
+      directive: ProtoButton,
+      inputs: ['disabled', 'disabledInteractive', 'tabIndex'],
+    },
+  ],
+  template: `<ng-content />`,
 })
-export class SaveComponent {
-  save() {
-    /* ... */
-  }
-}
+export class AppButton {}
 ```
 
 `ProtoButton` adds `role="button"` (on non-native elements), keyboard activation, disabled state management, and focus handling — automatically.

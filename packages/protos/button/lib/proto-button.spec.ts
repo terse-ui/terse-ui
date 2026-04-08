@@ -1,9 +1,25 @@
 import {Directive} from '@angular/core';
 import {By} from '@angular/platform-browser';
+import {AtomInteract} from '@terse-ui/atoms/interact';
 import {terse} from '@terse-ui/core/testing';
 import {fireEvent, screen} from '@testing-library/angular';
 import {userEvent} from '@testing-library/user-event';
-import {ProtoButton} from './proto-button';
+import {ProtoButton as _ProtoButton} from './proto-button';
+
+@Directive({
+  selector: '[protoButton]',
+  hostDirectives: [
+    {
+      directive: AtomInteract,
+      inputs: ['disabled', 'disabledInteractive', 'tabIndex'],
+    },
+    {
+      directive: _ProtoButton,
+      inputs: ['role', 'type'],
+    },
+  ],
+})
+export class ProtoButton {}
 
 describe('Button', () => {
   describe('disabled states', () => {

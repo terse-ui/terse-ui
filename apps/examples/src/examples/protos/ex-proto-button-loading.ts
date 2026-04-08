@@ -1,9 +1,25 @@
-import {Component, signal} from '@angular/core';
+import {Component, Directive, signal} from '@angular/core';
+import {AtomInteract} from '@terse-ui/atoms/interact';
 import {ProtoButton} from '@terse-ui/protos/button';
+
+@Directive({
+  selector: '[exButton]',
+  hostDirectives: [
+    {
+      directive: AtomInteract,
+      inputs: ['disabled', 'disabledInteractive', 'tabIndex'],
+    },
+    {
+      directive: ProtoButton,
+      inputs: ['role', 'type'],
+    },
+  ],
+})
+export class ExButton {}
 
 @Component({
   selector: 'ex-proto-button-loading',
-  imports: [ProtoButton],
+  imports: [ExButton],
   template: `
     <p class="description">
       Use the keyboard to tab into the button and press Enter or Space to see the loading state.
@@ -11,7 +27,7 @@ import {ProtoButton} from '@terse-ui/protos/button';
     </p>
 
     <button
-      protoButton
+      exButton
       [aria-label]="isLoading() ? 'Submitting, please wait' : null"
       [disabled]="isLoading()"
       [disabledInteractive]="isLoading()"
@@ -40,7 +56,7 @@ import {ProtoButton} from '@terse-ui/protos/button';
       text-wrap: balance;
     }
 
-    [protoButton] {
+    [exButton] {
       font-size: 1em;
       padding-left: 1rem;
       padding-right: 1rem;
@@ -59,24 +75,24 @@ import {ProtoButton} from '@terse-ui/protos/button';
       gap: 0.5rem;
     }
 
-    [protoButton]:focus-visible {
+    [exButton]:focus-visible {
       outline: 2px solid var(--ring);
     }
 
-    [protoButton]:not([data-disabled]):hover {
+    [exButton]:not([data-disabled]):hover {
       background-color: var(--surface-hover);
     }
 
-    [protoButton]:not([data-disabled]):active {
+    [exButton]:not([data-disabled]):active {
       background-color: var(--surface-active);
     }
 
-    [protoButton][data-disabled] {
+    [exButton][data-disabled] {
       opacity: 0.5;
       cursor: not-allowed;
     }
 
-    [protoButton] .loader {
+    [exButton] .loader {
       width: 1rem;
       height: 1rem;
       border: 2px solid var(--on-surface);

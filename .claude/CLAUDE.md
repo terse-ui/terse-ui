@@ -26,7 +26,7 @@ You are an expert in TypeScript, Angular, and scalable web application developme
 - Keep components small and focused on a single responsibility
 - Use `input()` and `output()` functions instead of decorators
 - Use `computed()` for derived state
-- Set `changeDetection: ChangeDetectionStrategy.OnPush` in `@Component` decorator
+- Do not set changeDetection, it's the default in Angular v22+
 - Prefer inline templates for small components
 - Prefer Reactive forms instead of Template-driven ones
 - Do NOT use `ngClass`, use `class` bindings instead
@@ -58,6 +58,7 @@ You are an expert in TypeScript, Angular, and scalable web application developme
 This project heavily uses [`@signality/core`](https://signality.dev) as its reactive building block layer. Always prefer signality utilities over raw browser APIs or custom implementations.
 
 **Required usage:**
+
 - `listener()` from `@signality/core` — for all event listeners. Never use raw `addEventListener`/`removeEventListener`. The `listener` utility handles SSR safety, `untracked()` execution (prevents NG0600), and effect-based cleanup. Supports chainable modifiers: `listener.capture.passive(...)`.
 - `onClickOutside()` from `@signality/core` — for click-outside detection. Uses `composedPath()` for Shadow DOM compatibility and pointer-down/pointer-up sequence.
 - `activeElement()` from `@signality/core` — reactive signal tracking the document's active element.
@@ -79,6 +80,16 @@ Other directories:
 - `apps/examples` — Angular Elements used as live demos in docs.
 
 The key innovation is Angular 22's host directive de-duplication (no more NG0309). Before this, composing multiple host directives that shared a common atom was impractical. The `AutoHost` decorator (`@terse-ui/core/utils/host`) was the workaround and is still used internally.
+
+### Host Directive Composition Rules
+
+- **NG0309 (duplicate directive)** — eliminated by Angular 22's de-duplication. Same directive, one instance.
+- **NG0312 (conflicting aliases)** — same input exposed under different names by two directives in the chain. Fix: use the same name everywhere, or only expose from one source.
+- **Inputs must be explicitly exposed** in `hostDirectives: [{directive: X, inputs: [...]}]` to be template-bindable.
+- **Host bindings win** over host directive bindings when both are dynamic.
+- **Host directives init before their host** — lifecycle hooks fire depth-first, left-to-right.
+
+Full guide with examples: `apps/docs/guide/composing-directives.md`
 
 ## Documentation Conventions
 

@@ -1,5 +1,4 @@
 import {
-  ChangeDetectionStrategy,
   Component,
   computed,
   Directive,
@@ -71,7 +70,6 @@ describe('optionsBuilder', () => {
     it('should resolve defaults when no opts is provided', () => {
       @Component({
         selector: 'test-host',
-        changeDetection: ChangeDetectionStrategy.OnPush,
         imports: [Widget],
         template: `<div tWidget></div>`,
       })
@@ -88,7 +86,6 @@ describe('optionsBuilder', () => {
     it('should read host attributes through the default opts factory', () => {
       @Component({
         selector: 'test-host',
-        changeDetection: ChangeDetectionStrategy.OnPush,
         imports: [Widget],
         template: `<div role="tab" size="24" tWidget></div>`,
       })
@@ -105,7 +102,6 @@ describe('optionsBuilder', () => {
     it('should coerce host attribute values via numberAttribute', () => {
       @Component({
         selector: 'test-host',
-        changeDetection: ChangeDetectionStrategy.OnPush,
         imports: [Widget],
         template: `<div size="32" tWidget></div>`,
       })
@@ -123,7 +119,6 @@ describe('optionsBuilder', () => {
     it('should deep merge a partial override into the default opts', () => {
       @Component({
         selector: 'test-host',
-        changeDetection: ChangeDetectionStrategy.OnPush,
         imports: [Widget],
         template: `<div tWidget></div>`,
         providers: [provideWidgetOpts({size: 48})],
@@ -141,7 +136,6 @@ describe('optionsBuilder', () => {
     it('should override multiple fields at once', () => {
       @Component({
         selector: 'test-host',
-        changeDetection: ChangeDetectionStrategy.OnPush,
         imports: [Widget],
         template: `<div tWidget></div>`,
         providers: [provideWidgetOpts({size: 64, variant: 'outline'})],
@@ -160,7 +154,6 @@ describe('optionsBuilder', () => {
     it('should accept a factory that returns a partial opts', () => {
       @Component({
         selector: 'test-host',
-        changeDetection: ChangeDetectionStrategy.OnPush,
         imports: [Widget],
         template: `<div tWidget></div>`,
         providers: [provideWidgetOpts(() => ({size: 20}))],
@@ -182,7 +175,6 @@ describe('optionsBuilder', () => {
 
       @Component({
         selector: 'test-host',
-        changeDetection: ChangeDetectionStrategy.OnPush,
         imports: [Widget],
         template: `<div tWidget></div>`,
         providers: [provideWidgetOpts(() => ({size: inject(ThemeService).defaultSize}))],
@@ -201,7 +193,6 @@ describe('optionsBuilder', () => {
     it('should accumulate contributions from multiple provideOpts calls', () => {
       @Component({
         selector: 'test-host',
-        changeDetection: ChangeDetectionStrategy.OnPush,
         imports: [Widget],
         template: `<div tWidget></div>`,
         providers: [provideWidgetOpts({size: 48}), provideWidgetOpts({variant: 'ghost'})],
@@ -220,7 +211,6 @@ describe('optionsBuilder', () => {
     it('should allow component-level providers to shadow module-level', () => {
       @Component({
         selector: 'test-host',
-        changeDetection: ChangeDetectionStrategy.OnPush,
         imports: [Widget],
         template: `<div tWidget></div>`,
         providers: [provideWidgetOpts({size: 12})],

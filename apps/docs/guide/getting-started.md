@@ -8,24 +8,30 @@ pnpm add @terse-ui/core @terse-ui/atoms @terse-ui/protos
 
 ## Your First Component
 
-Add `ProtoButton` to any element for accessible button behavior:
+Add `AtomInteract` and `ProtoButton` as host directives to any element for accessible button behavior:
 
 ```ts
-import {ChangeDetectionStrategy, Component} from '@angular/core';
+import {Directive} from '@angular/core';
+import {AtomInteract} from '@terse-ui/atoms/interact';
 import {ProtoButton} from '@terse-ui/protos/button';
 
-@Component({
-  selector: 'app-example',
-  imports: [ProtoButton],
-  template: ` <button protoButton (click)="count = count + 1">Clicked {{ count }} times</button> `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+@Directive({
+  selector: 'app-button',
+  hostDirectives: [
+    {
+      directive: AtomInteract,
+      inputs: ['disabled', 'disabledInteractive', 'tabIndex'],
+    },
+    {
+      directive: ProtoButton,
+      inputs: ['role', 'type'],
+    },
+  ],
 })
-export class ExampleComponent {
-  count = 0;
-}
+export class AppButton {}
 ```
 
-The rendered `<button>` gets keyboard activation, disabled state management, and proper ARIA semantics automatically. No extra configuration needed.
+The rendered `<app-button />` gets keyboard activation, native and soft disabled state management, and proper ARIA semantics automatically. No extra configuration needed.
 
 ## Styling
 
