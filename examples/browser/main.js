@@ -30,7 +30,7 @@ var __objRest = (source, exclude) => {
   return target;
 };
 
-// node_modules/.pnpm/@angular+core@22.0.0-next.6_@angular+compiler@22.0.0-next.6_rxjs@7.8.2/node_modules/@angular/core/fesm2022/_effect-chunk.mjs
+// node_modules/.pnpm/@angular+core@https+++codeload.github.com+angular+core-builds+tar.gz+b8a4431215fce2f67f_4fb74995ef8d3e310c82cdcd949a9f5d/node_modules/@angular/core/fesm2022/_effect-chunk.mjs
 var activeConsumer = null;
 var inNotificationPhase = false;
 var epoch = 1;
@@ -423,7 +423,7 @@ function runEffect(node) {
   }
 }
 
-// node_modules/.pnpm/@angular+core@22.0.0-next.6_@angular+compiler@22.0.0-next.6_rxjs@7.8.2/node_modules/@angular/core/fesm2022/_not_found-chunk.mjs
+// node_modules/.pnpm/@angular+core@https+++codeload.github.com+angular+core-builds+tar.gz+b8a4431215fce2f67f_4fb74995ef8d3e310c82cdcd949a9f5d/node_modules/@angular/core/fesm2022/_not_found-chunk.mjs
 var _currentInjector = void 0;
 function getCurrentInjector() {
   return _currentInjector;
@@ -438,7 +438,88 @@ function isNotFound(e) {
   return e === NOT_FOUND || e?.name === "\u0275NotFound";
 }
 
-// node_modules/.pnpm/@angular+core@22.0.0-next.6_@angular+compiler@22.0.0-next.6_rxjs@7.8.2/node_modules/@angular/core/fesm2022/_untracked-chunk.mjs
+// node_modules/.pnpm/@angular+core@https+++codeload.github.com+angular+core-builds+tar.gz+b8a4431215fce2f67f_4fb74995ef8d3e310c82cdcd949a9f5d/node_modules/@angular/core/fesm2022/_untracked-chunk.mjs
+function createLinkedSignal(sourceFn, computationFn, equalityFn) {
+  const node = Object.create(LINKED_SIGNAL_NODE);
+  node.source = sourceFn;
+  node.computation = computationFn;
+  if (equalityFn != void 0) {
+    node.equal = equalityFn;
+  }
+  const linkedSignalGetter = () => {
+    producerUpdateValueVersion(node);
+    producerAccessed(node);
+    if (node.value === ERRORED) {
+      throw node.error;
+    }
+    return node.value;
+  };
+  const getter = linkedSignalGetter;
+  getter[SIGNAL] = node;
+  if (typeof ngDevMode !== "undefined" && ngDevMode) {
+    getter.toString = () => `[LinkedSignal${node.debugName ? " (" + node.debugName + ")" : ""}: ${String(node.value)}]`;
+  }
+  runPostProducerCreatedFn(node);
+  return getter;
+}
+function linkedSignalSetFn(node, newValue) {
+  producerUpdateValueVersion(node);
+  signalSetFn(node, newValue);
+  producerMarkClean(node);
+}
+function linkedSignalUpdateFn(node, updater) {
+  producerUpdateValueVersion(node);
+  if (node.value === ERRORED) {
+    throw node.error;
+  }
+  signalUpdateFn(node, updater);
+  producerMarkClean(node);
+}
+var LINKED_SIGNAL_NODE = /* @__PURE__ */ (() => {
+  return __spreadProps(__spreadValues({}, REACTIVE_NODE), {
+    value: UNSET,
+    dirty: true,
+    error: null,
+    equal: defaultEquals,
+    kind: "linkedSignal",
+    producerMustRecompute(node) {
+      return node.value === UNSET || node.value === COMPUTING;
+    },
+    producerRecomputeValue(node) {
+      if (node.value === COMPUTING) {
+        throw new Error(typeof ngDevMode !== "undefined" && ngDevMode ? "Detected cycle in computations." : "");
+      }
+      const oldValue = node.value;
+      node.value = COMPUTING;
+      const prevConsumer = consumerBeforeComputation(node);
+      let newValue;
+      let wasEqual = false;
+      try {
+        const newSourceValue = node.source();
+        const oldValueValid = oldValue !== UNSET && oldValue !== ERRORED;
+        const prev = oldValueValid ? {
+          source: node.sourceValue,
+          value: oldValue
+        } : void 0;
+        newValue = node.computation(newSourceValue, prev);
+        node.sourceValue = newSourceValue;
+        setActiveConsumer(null);
+        wasEqual = oldValueValid && newValue !== ERRORED && node.equal(oldValue, newValue);
+      } catch (err) {
+        newValue = ERRORED;
+        node.error = err;
+      } finally {
+        consumerAfterComputation(node, prevConsumer);
+      }
+      if (wasEqual) {
+        node.value = oldValue;
+        return;
+      }
+      node.value = newValue;
+      node.version++;
+    }
+  });
+})();
 function untracked(nonReactiveReadsFn) {
   const prevConsumer = setActiveConsumer(null);
   try {
@@ -448,7 +529,7 @@ function untracked(nonReactiveReadsFn) {
   }
 }
 
-// node_modules/.pnpm/@angular+core@22.0.0-next.6_@angular+compiler@22.0.0-next.6_rxjs@7.8.2/node_modules/@angular/core/fesm2022/primitives-signals.mjs
+// node_modules/.pnpm/@angular+core@https+++codeload.github.com+angular+core-builds+tar.gz+b8a4431215fce2f67f_4fb74995ef8d3e310c82cdcd949a9f5d/node_modules/@angular/core/fesm2022/primitives-signals.mjs
 var formatter = {
   header: (sig, config2) => {
     if (!isSignal(sig) || config2?.ngSkipFormatting) return null;
@@ -1442,8 +1523,8 @@ function __asyncGenerator(thisArg, _arguments, generator) {
       settle(q[0][3], e);
     }
   }
-  function step(r) {
-    r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r);
+  function step(r2) {
+    r2.value instanceof __await ? Promise.resolve(r2.value.v).then(fulfill, reject) : settle(q[0][2], r2);
   }
   function fulfill(value) {
     resume("next", value);
@@ -1878,7 +1959,7 @@ function switchMap(project, resultSelector) {
   });
 }
 
-// node_modules/.pnpm/@angular+core@22.0.0-next.6_@angular+compiler@22.0.0-next.6_rxjs@7.8.2/node_modules/@angular/core/fesm2022/_pending_tasks-chunk.mjs
+// node_modules/.pnpm/@angular+core@https+++codeload.github.com+angular+core-builds+tar.gz+b8a4431215fce2f67f_4fb74995ef8d3e310c82cdcd949a9f5d/node_modules/@angular/core/fesm2022/_pending_tasks-chunk.mjs
 var Version = class {
   full;
   major;
@@ -1892,7 +1973,7 @@ var Version = class {
     this.patch = parts.slice(2).join(".");
   }
 };
-var VERSION = /* @__PURE__ */ new Version("22.0.0-next.6");
+var VERSION = /* @__PURE__ */ new Version("22.0.0-next.6+sha-a0aa830");
 var DOC_PAGE_BASE_URL = (() => {
   const full = VERSION.full;
   const isPreRelease = full.includes("-next") || full.includes("-rc") || full === "0.0.0-PLACEHOLDER";
@@ -4737,7 +4818,7 @@ var PendingTasks = class _PendingTasks {
   });
 };
 
-// node_modules/.pnpm/@angular+core@22.0.0-next.6_@angular+compiler@22.0.0-next.6_rxjs@7.8.2/node_modules/@angular/core/fesm2022/_debug_node-chunk.mjs
+// node_modules/.pnpm/@angular+core@https+++codeload.github.com+angular+core-builds+tar.gz+b8a4431215fce2f67f_4fb74995ef8d3e310c82cdcd949a9f5d/node_modules/@angular/core/fesm2022/_debug_node-chunk.mjs
 function noSideEffects(fn) {
   return {
     toString: fn
@@ -6679,13 +6760,13 @@ function onInteraction(trigger, callback) {
   return () => {
     const {
       callbacks,
-      listener
+      listener: listener2
     } = entry;
     callbacks.delete(callback);
     if (callbacks.size === 0) {
       interactionTriggers.delete(trigger);
       for (const name of interactionEventNames) {
-        trigger.removeEventListener(name, listener, eventListenerOptions);
+        trigger.removeEventListener(name, listener2, eventListenerOptions);
       }
     }
   };
@@ -6703,12 +6784,12 @@ function onHover(trigger, callback) {
   return () => {
     const {
       callbacks,
-      listener
+      listener: listener2
     } = entry;
     callbacks.delete(callback);
     if (callbacks.size === 0) {
       for (const name of hoverEventNames) {
-        trigger.removeEventListener(name, listener, eventListenerOptions);
+        trigger.removeEventListener(name, listener2, eventListenerOptions);
       }
       hoverTriggers.delete(trigger);
     }
@@ -11892,13 +11973,13 @@ var ControlDirectiveHostImpl = class {
     const directiveDef = this.tView.data[this.tNode.customControlIndex];
     listenToDirectiveOutput(this.tNode, this.lView, directiveDef, outputName, wrapListener(this.tNode, this.lView, callback));
   }
-  listenToCustomControlModel(listener) {
+  listenToCustomControlModel(listener2) {
     const modelName = this.tNode.flags & 1024 ? "valueChange" : "checkedChange";
     const directiveDef = this.tView.data[this.tNode.customControlIndex];
-    listenToDirectiveOutput(this.tNode, this.lView, directiveDef, modelName, wrapListener(this.tNode, this.lView, listener));
+    listenToDirectiveOutput(this.tNode, this.lView, directiveDef, modelName, wrapListener(this.tNode, this.lView, listener2));
   }
-  listenToDom(eventName, listener) {
-    listenToDomEvent(this.tNode, this.tView, this.lView, void 0, this.lView[RENDERER], eventName, listener, wrapListener(this.tNode, this.lView, listener));
+  listenToDom(eventName, listener2) {
+    listenToDomEvent(this.tNode, this.tView, this.lView, void 0, this.lView[RENDERER], eventName, listener2, wrapListener(this.tNode, this.lView, listener2));
   }
   setInputOnDirectives(inputName, value) {
     const directiveIndices = this.tNode.inputs?.[inputName];
@@ -12237,7 +12318,7 @@ var ComponentFactory2 = class extends ComponentFactory$1 {
   }
 };
 function createRootTView(rootSelectorOrNode, componentDef, componentBindings, directives) {
-  const tAttributes = rootSelectorOrNode ? ["ng-version", "22.0.0-next.6"] : extractAttrsAndClassesFromSelector(componentDef.selectors[0]);
+  const tAttributes = rootSelectorOrNode ? ["ng-version", "22.0.0-next.6+sha-a0aa830"] : extractAttrsAndClassesFromSelector(componentDef.selectors[0]);
   let creationBindings = null;
   let updateBindings = null;
   let varsToAllocate = 0;
@@ -12427,34 +12508,26 @@ var R3ViewContainerRef = class _R3ViewContainerRef extends ViewContainerRef {
     this.insertImpl(viewRef, index, shouldAddViewToDom(this._hostTNode, dehydratedView));
     return viewRef;
   }
-  createComponent(componentFactoryOrType, indexOrOptions, injector, projectableNodes, environmentInjector, directives, bindings) {
-    const isComponentFactory = componentFactoryOrType && !isType(componentFactoryOrType);
+  createComponent(componentType, opts, injector, projectableNodes, environmentInjector, directives, bindings) {
     let index;
-    if (isComponentFactory) {
-      if (ngDevMode) {
-        assertEqual(typeof indexOrOptions !== "object", true, "It looks like Component factory was provided as the first argument and an options object as the second argument. This combination of arguments is incompatible. You can either change the first argument to provide Component type or change the second argument to be a number (representing an index at which to insert the new component's host view into this container)");
-      }
-      index = indexOrOptions;
-    } else {
-      if (ngDevMode) {
-        assertDefined(getComponentDef(componentFactoryOrType), `Provided Component class doesn't contain Component definition. Please check whether provided class has @Component decorator.`);
-        assertEqual(typeof indexOrOptions !== "number", true, "It looks like Component type was provided as the first argument and a number (representing an index at which to insert the new component's host view into this container as the second argument. This combination of arguments is incompatible. Please use an object as the second argument instead.");
-      }
-      const options = indexOrOptions || {};
-      if (ngDevMode && options.environmentInjector && options.ngModuleRef) {
-        throwError(`Cannot pass both environmentInjector and ngModuleRef options to createComponent().`);
-      }
-      index = options.index;
-      injector = options.injector;
-      projectableNodes = options.projectableNodes;
-      environmentInjector = options.environmentInjector || options.ngModuleRef;
-      directives = options.directives;
-      bindings = options.bindings;
+    if (ngDevMode) {
+      assertDefined(getComponentDef(componentType), `Provided Component class doesn't contain Component definition. Please check whether provided class has @Component decorator.`);
+      assertEqual(typeof opts !== "number", true, "It looks like Component type was provided as the first argument and a number (representing an index at which to insert the new component's host view into this container as the second argument. This combination of arguments is incompatible. Please use an object as the second argument instead.");
     }
-    const componentFactory = isComponentFactory ? componentFactoryOrType : new ComponentFactory2(getComponentDef(componentFactoryOrType));
+    const options = opts || {};
+    if (ngDevMode && options.environmentInjector && options.ngModuleRef) {
+      throwError(`Cannot pass both environmentInjector and ngModuleRef options to createComponent().`);
+    }
+    index = options.index;
+    injector = options.injector;
+    projectableNodes = options.projectableNodes;
+    environmentInjector = options.environmentInjector || options.ngModuleRef;
+    directives = options.directives;
+    bindings = options.bindings;
+    const componentFactory = new ComponentFactory2(getComponentDef(componentType));
     const contextInjector = injector || this.parentInjector;
     if (!environmentInjector && componentFactory.ngModule == null) {
-      const _injector = isComponentFactory ? contextInjector : this.parentInjector;
+      const _injector = this.parentInjector;
       const result = _injector.get(EnvironmentInjector, null);
       if (result) {
         environmentInjector = result;
@@ -13506,7 +13579,7 @@ function resolveHostDirectives(matches) {
       const start = allDirectiveDefs.length;
       hostDirectiveDefs ??= /* @__PURE__ */ new Map();
       hostDirectiveRanges ??= /* @__PURE__ */ new Map();
-      findHostDirectiveDefs(def, allDirectiveDefs, hostDirectiveDefs);
+      findHostDirectiveDefs(def, allDirectiveDefs, hostDirectiveDefs, matches);
       hostDirectiveRanges.set(def, [start, allDirectiveDefs.length - 1]);
     }
     if (i === 0 && isComponentDef(def)) {
@@ -13517,37 +13590,59 @@ function resolveHostDirectives(matches) {
   for (let i = hasComponent ? 1 : 0; i < matches.length; i++) {
     allDirectiveDefs.push(matches[i]);
   }
+  if (hostDirectiveDefs !== null) {
+    hostDirectiveDefs.forEach((def, hostDirectiveDef) => {
+      patchDeclaredInputs(hostDirectiveDef.declaredInputs, def.inputs);
+    });
+  }
   return [allDirectiveDefs, hostDirectiveDefs, hostDirectiveRanges];
 }
-function findHostDirectiveDefs(currentDef, matchedDefs, hostDirectiveDefs) {
+function findHostDirectiveDefs(currentDef, matchedDefs, hostDirectiveDefs, templateMatches) {
   if (currentDef.hostDirectives !== null) {
     for (const configOrFn of currentDef.hostDirectives) {
       if (typeof configOrFn === "function") {
         const resolved = configOrFn();
         for (const config2 of resolved) {
-          trackHostDirectiveDef(createHostDirectiveDef(config2), matchedDefs, hostDirectiveDefs);
+          trackHostDirectiveDef(createHostDirectiveDef(config2), matchedDefs, hostDirectiveDefs, templateMatches);
         }
       } else {
-        trackHostDirectiveDef(configOrFn, matchedDefs, hostDirectiveDefs);
+        trackHostDirectiveDef(configOrFn, matchedDefs, hostDirectiveDefs, templateMatches);
       }
     }
   }
 }
-function trackHostDirectiveDef(def, matchedDefs, hostDirectiveDefs) {
+function trackHostDirectiveDef(def, finalMatches, hostDirectiveDefs, templateMatches) {
   const hostDirectiveDef = getDirectiveDef(def.directive);
   if (typeof ngDevMode === "undefined" || ngDevMode) {
     validateHostDirective(def, hostDirectiveDef);
   }
-  patchDeclaredInputs(hostDirectiveDef.declaredInputs, def.inputs);
-  findHostDirectiveDefs(hostDirectiveDef, matchedDefs, hostDirectiveDefs);
-  hostDirectiveDefs.set(hostDirectiveDef, def);
-  matchedDefs.push(hostDirectiveDef);
+  findHostDirectiveDefs(hostDirectiveDef, finalMatches, hostDirectiveDefs, templateMatches);
+  if (hostDirectiveDefs.has(hostDirectiveDef)) {
+    const existing = hostDirectiveDefs.get(hostDirectiveDef);
+    mergeBindingMaps(existing, def.inputs, "input");
+    mergeBindingMaps(existing, def.outputs, "output");
+  } else if (!templateMatches.includes(hostDirectiveDef)) {
+    hostDirectiveDefs.set(hostDirectiveDef, def);
+    finalMatches.push(hostDirectiveDef);
+  }
+}
+function mergeBindingMaps(existingDef, newMap, kind) {
+  const targetMap = kind === "input" ? existingDef.inputs : existingDef.outputs;
+  Object.keys(newMap).forEach((publicName) => {
+    const alias = newMap[publicName];
+    if (!targetMap.hasOwnProperty(publicName) || targetMap[publicName] === alias) {
+      targetMap[publicName] = alias;
+    } else if (typeof ngDevMode === "undefined" || ngDevMode) {
+      const message = `${kind === "input" ? "Input" : "Output"} "${publicName}" from ${existingDef.directive.name} is exposed under the following conflicting names: "${targetMap[publicName]}" and "${alias}". An ${kind} can only be exposed under a single name.`;
+      throw new RuntimeError(312, message);
+    }
+  });
 }
 function createHostDirectiveDef(config2) {
   return typeof config2 === "function" ? {
     directive: resolveForwardRef(config2),
-    inputs: EMPTY_OBJ,
-    outputs: EMPTY_OBJ
+    inputs: {},
+    outputs: {}
   } : {
     directive: resolveForwardRef(config2.directive),
     inputs: bindingArrayToMap(config2.inputs),
@@ -13555,12 +13650,11 @@ function createHostDirectiveDef(config2) {
   };
 }
 function bindingArrayToMap(bindings) {
-  if (bindings === void 0 || bindings.length === 0) {
-    return EMPTY_OBJ;
-  }
   const result = {};
-  for (let i = 0; i < bindings.length; i += 2) {
-    result[bindings[i]] = bindings[i + 1];
+  if (bindings !== void 0 && bindings.length > 0) {
+    for (let i = 0; i < bindings.length; i += 2) {
+      result[bindings[i]] = bindings[i + 1];
+    }
   }
   return result;
 }
@@ -15293,35 +15387,34 @@ var ApplicationRef = class _ApplicationRef {
   get injector() {
     return this._injector;
   }
-  bootstrap(componentOrFactory, rootSelectorOrNode) {
-    return this.bootstrapImpl(componentOrFactory, rootSelectorOrNode);
+  bootstrap(component, rootSelectorOrNode) {
+    return this.bootstrapImpl(component, rootSelectorOrNode);
   }
-  bootstrapImpl(componentOrFactory, rootSelectorOrNode, injector = Injector.NULL) {
+  bootstrapImpl(component, hostElementOrOptions, injector = Injector.NULL) {
     const ngZone = this._injector.get(NgZone);
     return ngZone.run(() => {
       profiler(ProfilerEvent.BootstrapComponentStart);
       (typeof ngDevMode === "undefined" || ngDevMode) && warnIfDestroyed(this._destroyed);
-      const isComponentFactory = componentOrFactory instanceof ComponentFactory$1;
       const initStatus = this._injector.get(ApplicationInitStatus);
       if (!initStatus.done) {
         let errorMessage = "";
         if (typeof ngDevMode === "undefined" || ngDevMode) {
-          const standalone = !isComponentFactory && isStandalone(componentOrFactory);
+          const standalone = isStandalone(component);
           errorMessage = "Cannot bootstrap as there are still asynchronous initializers running." + (standalone ? "" : " Bootstrap components in the `ngDoBootstrap` method of the root module.");
         }
         throw new RuntimeError(405, errorMessage);
       }
-      let componentFactory;
-      if (isComponentFactory) {
-        componentFactory = componentOrFactory;
-      } else {
-        const resolver = this._injector.get(ComponentFactoryResolver$1);
-        componentFactory = resolver.resolveComponentFactory(componentOrFactory);
-      }
+      const resolver = this._injector.get(ComponentFactoryResolver$1);
+      const componentFactory = resolver.resolveComponentFactory(component);
       this.componentTypes.push(componentFactory.componentType);
       const ngModule = isBoundToModule(componentFactory) ? void 0 : this._injector.get(NgModuleRef$1);
-      const selectorOrNode = rootSelectorOrNode || componentFactory.selector;
-      const compRef = componentFactory.create(injector, [], selectorOrNode, ngModule);
+      const {
+        hostElement,
+        directives,
+        bindings
+      } = normalizeBootstrapOptions(hostElementOrOptions);
+      const selectorOrNode = hostElement || componentFactory.selector;
+      const compRef = componentFactory.create(injector, [], selectorOrNode, ngModule, directives, bindings);
       const nativeElement = compRef.location.nativeElement;
       const testability = compRef.injector.get(TESTABILITY, null);
       testability?.registerApplication(nativeElement);
@@ -15466,12 +15559,12 @@ var ApplicationRef = class _ApplicationRef {
     if (ngDevMode && !Array.isArray(listeners)) {
       throw new RuntimeError(-209, `Unexpected type of the \`APP_BOOTSTRAP_LISTENER\` token value (expected an array, but got ${typeof listeners}). Please check that the \`APP_BOOTSTRAP_LISTENER\` token is configured as a \`multi: true\` provider.`);
     }
-    listeners.forEach((listener) => listener(componentRef));
+    listeners.forEach((listener2) => listener2(componentRef));
   }
   ngOnDestroy() {
     if (this._destroyed) return;
     try {
-      this._destroyListeners.forEach((listener) => listener());
+      this._destroyListeners.forEach((listener2) => listener2());
       this._views.slice().forEach((view) => view.destroy());
     } finally {
       this._destroyed = true;
@@ -15513,6 +15606,14 @@ var ApplicationRef = class _ApplicationRef {
     }]
   }], () => [], null);
 })();
+function normalizeBootstrapOptions(hostElementOrOptions) {
+  if (hostElementOrOptions === void 0 || typeof hostElementOrOptions === "string" || hostElementOrOptions instanceof Element) {
+    return {
+      hostElement: hostElementOrOptions
+    };
+  }
+  return hostElementOrOptions;
+}
 function warnIfDestroyed(destroyed) {
   if (destroyed) {
     console.warn(formatRuntimeError(406, "This instance of the `ApplicationRef` has already been destroyed."));
@@ -16012,9 +16113,11 @@ function triggerResourceLoading(tDetails, lView, tNode) {
   }
   tDetails.loadingPromise = Promise.allSettled(dependenciesFn()).then((results) => {
     let failed = false;
+    let failedReason = null;
     const directiveDefs = [];
     const pipeDefs = [];
-    for (const result of results) {
+    for (let i = 0; i < results.length; i++) {
+      const result = results[i];
       if (result.status === "fulfilled") {
         const dependency = result.value;
         const directiveDef = getComponentDef(dependency) || getDirectiveDef(dependency);
@@ -16028,6 +16131,7 @@ function triggerResourceLoading(tDetails, lView, tNode) {
         }
       } else {
         failed = true;
+        failedReason = result.reason instanceof Error ? result.reason : new Error(String(result.reason));
         break;
       }
     }
@@ -16035,7 +16139,32 @@ function triggerResourceLoading(tDetails, lView, tNode) {
       tDetails.loadingState = DeferDependenciesLoadingState.FAILED;
       if (tDetails.errorTmplIndex === null) {
         const templateLocation = ngDevMode ? getTemplateLocationDetails(lView) : "";
-        const error = new RuntimeError(-750, ngDevMode && `Loading dependencies for \`@defer\` block failed, but no \`@error\` block was configured${templateLocation}. Consider using the \`@error\` block to render an error state.`);
+        let errorMsg = "";
+        if (ngDevMode) {
+          errorMsg = `Loading dependencies for \`@defer\` block failed, but no \`@error\` block was configured${templateLocation}. Consider using the \`@error\` block to render an error state.`;
+          const depsFn = tDetails.dependencyResolverFn;
+          const errorReason = failedReason?.message;
+          if (depsFn) {
+            errorMsg += `
+
+Angular tried to invoke the following dependency function (compiler-generated):
+\`\`\`
+${depsFn.toString()}
+\`\`\``;
+          }
+          if (errorReason) {
+            errorMsg += depsFn ? `
+
+but it resulted in the following error:
+
+${errorReason}` : `
+
+The loading resulted in the following error:
+
+${errorReason}`;
+          }
+        }
+        const error = new RuntimeError(-750, errorMsg);
         handleUncaughtError(lView, error);
       }
     } else {
@@ -21469,7 +21598,7 @@ var MissingTranslationStrategy;
   MissingTranslationStrategy2[MissingTranslationStrategy2["Ignore"] = 2] = "Ignore";
 })(MissingTranslationStrategy || (MissingTranslationStrategy = {}));
 
-// node_modules/.pnpm/@angular+core@22.0.0-next.6_@angular+compiler@22.0.0-next.6_rxjs@7.8.2/node_modules/@angular/core/fesm2022/_resource-chunk.mjs
+// node_modules/.pnpm/@angular+core@https+++codeload.github.com+angular+core-builds+tar.gz+b8a4431215fce2f67f_4fb74995ef8d3e310c82cdcd949a9f5d/node_modules/@angular/core/fesm2022/_resource-chunk.mjs
 var OutputEmitterRef = class {
   destroyed = false;
   listeners = null;
@@ -21539,8 +21668,30 @@ var ResourceParamsStatus = class _ResourceParamsStatus extends Error {
   static IDLE = new _ResourceParamsStatus("IDLE");
   static LOADING = new _ResourceParamsStatus("LOADING");
 };
+var identityFn = (v) => v;
+function linkedSignal(optionsOrComputation, options) {
+  if (typeof optionsOrComputation === "function") {
+    const getter = createLinkedSignal(optionsOrComputation, identityFn, options?.equal);
+    return upgradeLinkedSignalGetter(getter, options?.debugName);
+  } else {
+    const getter = createLinkedSignal(optionsOrComputation.source, optionsOrComputation.computation, optionsOrComputation.equal);
+    return upgradeLinkedSignalGetter(getter, optionsOrComputation.debugName);
+  }
+}
+function upgradeLinkedSignalGetter(getter, debugName) {
+  if (typeof ngDevMode !== "undefined" && ngDevMode) {
+    getter[SIGNAL].debugName = debugName;
+    getter.toString = () => `[LinkedSignal${debugName ? " (" + debugName + ")" : ""}: ${getter()}]`;
+  }
+  const node = getter[SIGNAL];
+  const upgradedGetter = getter;
+  upgradedGetter.set = (newValue) => linkedSignalSetFn(node, newValue);
+  upgradedGetter.update = (updateFn) => linkedSignalUpdateFn(node, updateFn);
+  upgradedGetter.asReadonly = signalAsReadonlyFn.bind(getter);
+  return upgradedGetter;
+}
 
-// node_modules/.pnpm/@angular+core@22.0.0-next.6_@angular+compiler@22.0.0-next.6_rxjs@7.8.2/node_modules/@angular/core/fesm2022/core.mjs
+// node_modules/.pnpm/@angular+core@https+++codeload.github.com+angular+core-builds+tar.gz+b8a4431215fce2f67f_4fb74995ef8d3e310c82cdcd949a9f5d/node_modules/@angular/core/fesm2022/core.mjs
 var REQUIRED_UNSET_VALUE = /* @__PURE__ */ Symbol("InputSignalNode#UNSET");
 var INPUT_SIGNAL_NODE = /* @__PURE__ */ (() => {
   return __spreadProps(__spreadValues({}, SIGNAL_NODE), {
@@ -22933,10 +23084,10 @@ var PlatformRef = class _PlatformRef {
       throw new RuntimeError(404, ngDevMode && "The platform has already been destroyed!");
     }
     this._modules.slice().forEach((module) => module.destroy());
-    this._destroyListeners.forEach((listener) => listener());
+    this._destroyListeners.forEach((listener2) => listener2());
     const destroyListeners = this._injector.get(PLATFORM_DESTROY_LISTENERS, null);
     if (destroyListeners) {
-      destroyListeners.forEach((listener) => listener());
+      destroyListeners.forEach((listener2) => listener2());
       destroyListeners.clear();
     }
     this._destroyed = true;
@@ -23237,7 +23388,7 @@ function phaseDebugName(phase) {
 }
 var platformCore = createPlatformFactory(null, "core", []);
 
-// node_modules/.pnpm/@angular+elements@22.0.0-next.6_@angular+core@22.0.0-next.6_@angular+compiler@22.0.0-next.6_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/elements/fesm2022/elements.mjs
+// node_modules/.pnpm/@angular+elements@https+++codeload.github.com+angular+elements-builds+tar.gz+f201a1056d_d6153a48ce28cffc0fabe4ba83e78686/node_modules/@angular/elements/fesm2022/elements.mjs
 var scheduler = {
   schedule(taskFn, delay) {
     const id = setTimeout(taskFn, delay);
@@ -23512,7 +23663,7 @@ function createCustomElement(component, config2) {
   return NgElementImpl;
 }
 
-// node_modules/.pnpm/@angular+common@22.0.0-next.6_@angular+core@22.0.0-next.6_@angular+compiler@22.0.0-next.6_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/_platform_location-chunk.mjs
+// node_modules/.pnpm/@angular+common@https+++codeload.github.com+angular+common-builds+tar.gz+6296c196d7a439_84d423868cd96cd9cd08fa67f89f765d/node_modules/@angular/common/fesm2022/_platform_location-chunk.mjs
 var _DOM = null;
 function getDOM() {
   return _DOM;
@@ -23628,7 +23779,7 @@ var BrowserPlatformLocation = class _BrowserPlatformLocation extends PlatformLoc
   }], () => [], null);
 })();
 
-// node_modules/.pnpm/@angular+common@22.0.0-next.6_@angular+core@22.0.0-next.6_@angular+compiler@22.0.0-next.6_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/_location-chunk.mjs
+// node_modules/.pnpm/@angular+common@https+++codeload.github.com+angular+common-builds+tar.gz+6296c196d7a439_84d423868cd96cd9cd08fa67f89f765d/node_modules/@angular/common/fesm2022/_location-chunk.mjs
 function joinWithSlash(start, end) {
   if (!start) return end;
   if (!end) return start;
@@ -23933,7 +24084,7 @@ function _stripOrigin(baseHref) {
   return baseHref;
 }
 
-// node_modules/.pnpm/@angular+common@22.0.0-next.6_@angular+core@22.0.0-next.6_@angular+compiler@22.0.0-next.6_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/_common_module-chunk.mjs
+// node_modules/.pnpm/@angular+common@https+++codeload.github.com+angular+common-builds+tar.gz+6296c196d7a439_84d423868cd96cd9cd08fa67f89f765d/node_modules/@angular/common/fesm2022/_common_module-chunk.mjs
 var HashLocationStrategy = class _HashLocationStrategy extends LocationStrategy {
   _platformLocation;
   _baseHref = "";
@@ -26487,8 +26638,8 @@ var KeyValuePipe = class _KeyValuePipe {
     const compareFnChanged = compareFn !== this.compareFn;
     if (differChanges) {
       this.keyValues = [];
-      differChanges.forEachItem((r) => {
-        this.keyValues.push(makeKeyValuePair(r.key, r.currentValue));
+      differChanges.forEachItem((r2) => {
+        this.keyValues.push(makeKeyValuePair(r2.key, r2.currentValue));
       });
     }
     if (differChanges || compareFnChanged) {
@@ -26735,7 +26886,7 @@ var CommonModule = class _CommonModule {
   }], null, null);
 })();
 
-// node_modules/.pnpm/@angular+common@22.0.0-next.6_@angular+core@22.0.0-next.6_@angular+compiler@22.0.0-next.6_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/_platform_navigation-chunk.mjs
+// node_modules/.pnpm/@angular+common@https+++codeload.github.com+angular+common-builds+tar.gz+6296c196d7a439_84d423868cd96cd9cd08fa67f89f765d/node_modules/@angular/common/fesm2022/_platform_navigation-chunk.mjs
 var PRECOMMIT_HANDLER_SUPPORTED = new InjectionToken("", {
   factory: () => {
     return typeof window !== "undefined" && typeof window.NavigationPrecommitController !== "undefined";
@@ -26761,7 +26912,7 @@ var PlatformNavigation = class _PlatformNavigation {
   }], null, null);
 })();
 
-// node_modules/.pnpm/@angular+common@22.0.0-next.6_@angular+core@22.0.0-next.6_@angular+compiler@22.0.0-next.6_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/_xhr-chunk.mjs
+// node_modules/.pnpm/@angular+common@https+++codeload.github.com+angular+common-builds+tar.gz+6296c196d7a439_84d423868cd96cd9cd08fa67f89f765d/node_modules/@angular/common/fesm2022/_xhr-chunk.mjs
 function parseCookieValue(cookieStr, name) {
   name = encodeURIComponent(name);
   for (const cookie of cookieStr.split(";")) {
@@ -26776,7 +26927,7 @@ function parseCookieValue(cookieStr, name) {
 var XhrFactory = class {
 };
 
-// node_modules/.pnpm/@angular+common@22.0.0-next.6_@angular+core@22.0.0-next.6_@angular+compiler@22.0.0-next.6_rxjs@7.8.2__rxjs@7.8.2/node_modules/@angular/common/fesm2022/common.mjs
+// node_modules/.pnpm/@angular+common@https+++codeload.github.com+angular+common-builds+tar.gz+6296c196d7a439_84d423868cd96cd9cd08fa67f89f765d/node_modules/@angular/common/fesm2022/common.mjs
 var NavigationAdapterForLocation = class _NavigationAdapterForLocation extends Location {
   navigation = inject2(PlatformNavigation);
   destroyRef = inject2(DestroyRef);
@@ -26838,6 +26989,9 @@ var NavigationAdapterForLocation = class _NavigationAdapterForLocation extends L
 })();
 var PLATFORM_BROWSER_ID = "browser";
 var PLATFORM_SERVER_ID = "server";
+function isPlatformBrowser(platformId) {
+  return platformId === PLATFORM_BROWSER_ID;
+}
 function isPlatformServer(platformId) {
   return platformId === PLATFORM_SERVER_ID;
 }
@@ -27979,7 +28133,7 @@ function booleanOrUrlAttribute(value) {
   return booleanAttribute(value);
 }
 
-// node_modules/.pnpm/@angular+platform-browser@22.0.0-next.6_@angular+common@22.0.0-next.6_@angular+core@22._de7e76a8e58896b097b626014c478a87/node_modules/@angular/platform-browser/fesm2022/_dom_renderer-chunk.mjs
+// node_modules/.pnpm/@angular+platform-browser@https+++codeload.github.com+angular+platform-browser-builds+t_8733d68bbf0350cd23e9914373a0b5b0/node_modules/@angular/platform-browser/fesm2022/_dom_renderer-chunk.mjs
 var EventManagerPlugin = class {
   _doc;
   constructor(_doc) {
@@ -28187,6 +28341,17 @@ var SharedStylesHost = class _SharedStylesHost {
   }
   removeHost(hostNode) {
     this.hosts.delete(hostNode);
+    for (const record of [...this.inline.values(), ...this.external.values()]) {
+      const remaining = [];
+      for (const element of record.elements) {
+        if (element.parentNode === hostNode) {
+          element.remove();
+        } else {
+          remaining.push(element);
+        }
+      }
+      record.elements = remaining;
+    }
   }
   addElement(host, element) {
     if (this.nonce) {
@@ -28664,16 +28829,16 @@ var EmulatedEncapsulationDomRenderer2 = class extends NoneEncapsulationDomRender
   }
 };
 
-// node_modules/.pnpm/@angular+platform-browser@22.0.0-next.6_@angular+common@22.0.0-next.6_@angular+core@22._de7e76a8e58896b097b626014c478a87/node_modules/@angular/platform-browser/fesm2022/_browser-chunk.mjs
+// node_modules/.pnpm/@angular+platform-browser@https+++codeload.github.com+angular+platform-browser-builds+t_8733d68bbf0350cd23e9914373a0b5b0/node_modules/@angular/platform-browser/fesm2022/_browser-chunk.mjs
 var BrowserDomAdapter = class _BrowserDomAdapter extends DomAdapter {
   supportsDOMEvents = true;
   static makeCurrent() {
     setRootDomAdapter(new _BrowserDomAdapter());
   }
-  onAndCancel(el, evt, listener, options) {
-    el.addEventListener(evt, listener, options);
+  onAndCancel(el, evt, listener2, options) {
+    el.addEventListener(evt, listener2, options);
     return () => {
-      el.removeEventListener(evt, listener, options);
+      el.removeEventListener(evt, listener2, options);
     };
   }
   dispatchEvent(el, evt) {
@@ -29017,7 +29182,7 @@ var BrowserModule = class _BrowserModule {
   }], () => [], null);
 })();
 
-// node_modules/.pnpm/@angular+platform-browser@22.0.0-next.6_@angular+common@22.0.0-next.6_@angular+core@22._de7e76a8e58896b097b626014c478a87/node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs
+// node_modules/.pnpm/@angular+platform-browser@https+++codeload.github.com+angular+platform-browser-builds+t_8733d68bbf0350cd23e9914373a0b5b0/node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs
 var Meta = class _Meta {
   _doc;
   _dom;
@@ -29264,180 +29429,94 @@ var DomSanitizerImpl = class _DomSanitizerImpl extends DomSanitizer {
   }], null);
 })();
 
-// packages/core/internal/lib/inj-ctx/inj-ctx.ts
-function setupInjCtx(inj, dbgFn) {
-  if (typeof ngDevMode !== "undefined" && ngDevMode && !inj) {
-    assertInInjectionContext(dbgFn || setupInjCtx);
+// node_modules/.pnpm/@signality+core@0.1.3_1e3f5073487ea7c59f2c691b6df0b5c0/node_modules/@signality/core/fesm2022/signality-core-internal.mjs
+var MOBILE_REGEX = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+var NOOP_FN = () => {
+};
+var NOOP_EFFECT_REF = { destroy: NOOP_FN };
+var IS_BROWSER = new InjectionToken(ngDevMode ? "IS_BROWSER" : "", {
+  providedIn: "platform",
+  factory: () => isPlatformBrowser(inject2(PLATFORM_ID))
+});
+var IS_MOBILE = new InjectionToken(ngDevMode ? "IS_MOBILE" : "", {
+  providedIn: "platform",
+  factory: () => {
+    return inject2(IS_BROWSER) ? MOBILE_REGEX.test(navigator.userAgent) : false;
   }
-  const ctxInj = inj ?? inject2(INJECTOR$1);
-  return function injCtx(fn) {
-    const result = runInInjectionContext(ctxInj, () => {
-      const ref = createRef();
-      return untracked2(() => fn(ref));
-    });
-    if (typeof ngDevMode !== "undefined" && ngDevMode && result != null) {
-      stampDbgNames(result, dbgFn || injCtx);
-    }
-    return result;
-  };
-}
-function createRef() {
-  const injector = inject2(INJECTOR$1);
-  const destroyRef = inject2(DestroyRef);
-  const onCleanup = (cleanup) => {
-    destroyRef.onDestroy(cleanup);
-  };
-  return { injector, onCleanup };
-}
-function stampDbgNames(value, dbgFn) {
-  if (isSignal2(value)) {
-    setDbgName(value, dbgFn);
-  } else if (typeof value === "object" && value !== null) {
-    for (const [key, v] of Object.entries(value)) {
-      if (isSignal2(v))
-        setDbgName(v, dbgFn, key);
-    }
-  }
-}
-function setDbgName(signal2, dbgFn, postfix) {
-  const node = signal2[SIGNAL];
-  node.debugName ??= dbgFn.name + (postfix ? "." + postfix : "");
-}
-
-// packages/core/internal/lib/inj-el.ts
-function injElRef() {
-  return inject2(ElementRef);
-}
-function injEl() {
-  return injElRef().nativeElement;
-}
-function unrefEl(value) {
-  return value instanceof ElementRef ? value.nativeElement : value;
-}
-
-// packages/core/internal/lib/validators.ts
-function isFunction2(value) {
-  return typeof value === "function";
-}
-function isElement2(value) {
-  return !!value && value.nodeType === Node.ELEMENT_NODE;
-}
-function isButtonElement(element, opts) {
-  return element.tagName === "BUTTON" && (!opts?.types?.length || opts.types.includes(element.type));
-}
-function isInputElement(element, opts) {
-  return element.tagName === "INPUT" && (!opts?.types?.length || opts.types.includes(element.type));
-}
-function isAnchorElement(element, { validLink = false } = {}) {
-  return element.tagName === "A" && (!validLink || !!element.href || !!element.routerLink);
-}
-function hasDisabledAttribute(element) {
-  return isElement2(element) && "disabled" in element;
-}
+});
+var IS_SERVER = new InjectionToken(ngDevMode ? "IS_SERVER" : "", {
+  providedIn: "platform",
+  factory: () => isPlatformServer(inject2(PLATFORM_ID))
+});
 function isEventTarget(value) {
   return typeof value?.addEventListener === "function";
-}
-
-// packages/core/internal/lib/on/on.ts
-var on = createModifier({});
-var isSyncSetupRequired = false;
-function onImpl(applied, ...args) {
-  const options = args[3];
-  const runner = setupInjCtx(options?.injector, onImpl);
-  return runner(() => {
-    if (isPlatformServer(inject2(PLATFORM_ID))) {
-      return { destroy: () => void 0 };
-    }
-    const [maybeReactiveTarget, maybeReactiveEvent, rawHandler] = args;
-    const _a = applied, { stop, prevent, self } = _a, nativeOptions = __objRest(_a, ["stop", "prevent", "self"]);
-    const hasModifiers = stop || prevent || self;
-    const handler = hasModifiers ? function(event) {
-      if (self && event.target !== event.currentTarget)
-        return;
-      if (prevent)
-        event.preventDefault();
-      if (stop)
-        event.stopPropagation();
-      rawHandler.call(this, event);
-    } : rawHandler;
-    const untrackedHandler = function(event) {
-      untracked2(() => handler.call(this, event));
-    };
-    const setupListener = (onCleanup) => {
-      const raw = toValue(maybeReactiveTarget);
-      const target = unrefEl(raw);
-      const event = toValue(maybeReactiveEvent);
-      if (!target) {
-        return;
-      }
-      if (ngDevMode) {
-        assertEventTarget(target, "listener");
-      }
-      target.addEventListener(event, untrackedHandler, nativeOptions);
-      onCleanup(() => {
-        target.removeEventListener(event, untrackedHandler, nativeOptions);
-      });
-    };
-    let effectRef;
-    if (isSyncSetupRequired) {
-      effectRef = syncEffect(setupListener);
-    } else {
-      effectRef = afterRenderEffect({ read: setupListener });
-    }
-    return { destroy: () => effectRef.destroy() };
-  });
-}
-var MODIFIERS = /* @__PURE__ */ new Set([
-  "capture",
-  "passive",
-  "once",
-  "stop",
-  "prevent",
-  "self"
-]);
-function createModifier(applied) {
-  const modifierFn = ((...args) => {
-    return onImpl(applied, ...args);
-  });
-  return new Proxy(modifierFn, {
-    get(target, prop) {
-      if (typeof prop !== "string" || !MODIFIERS.has(prop)) {
-        return target[prop];
-      }
-      if (applied[prop]) {
-        return target;
-      }
-      return createModifier(__spreadProps(__spreadValues({}, applied), { [prop]: true }));
-    }
-  });
-}
-function syncEffect(effectFn, options) {
-  const effectRef = effect(effectFn, options);
-  const effectNode = effectRef[SIGNAL];
-  try {
-    effectNode.run();
-  } catch (error) {
-    if (ngDevMode) {
-      console.warn("[syncEffect] Failed to run effectFn synchronously", error);
-    }
-  }
-  return effectRef;
-}
-var toValue = (() => {
-  const fn = toValueFn;
-  fn.untracked = (v) => toValueFn(v, true);
-  return fn;
-})();
-function toValueFn(maybeSignal, untracked3 = false) {
-  if (isSignal2(maybeSignal)) {
-    return untracked3 ? untracked2(maybeSignal) : maybeSignal();
-  }
-  return maybeSignal;
 }
 function assertEventTarget(value, source) {
   if (!isEventTarget(value)) {
     throw new Error(`[${source}] Expected an EventTarget, ElementRef but received: ${value.constructor?.name ?? typeof value}. If you are using viewChild/contentChild, specify "{ read: ElementRef }" to avoid implicit directive references.`);
   }
+}
+function setupContext(injector, debugFn) {
+  if (typeof ngDevMode !== "undefined" && ngDevMode && !injector) {
+    assertInInjectionContext(debugFn || setupContext);
+  }
+  const ctxInjector = injector || inject2(INJECTOR$1);
+  return {
+    runInContext(fn) {
+      return runInContextImpl(fn, ctxInjector, debugFn || setupContext);
+    }
+  };
+}
+function runInContextImpl(fn, injector, debugFn) {
+  const result = runInInjectionContext(injector, () => {
+    const isBrowser = inject2(IS_BROWSER);
+    const isServer = inject2(IS_SERVER);
+    const isMobile = inject2(IS_MOBILE);
+    const destroyRef = inject2(DestroyRef);
+    const onCleanup = (cleanupFn) => {
+      destroyRef.onDestroy(cleanupFn);
+    };
+    return untracked2(() => fn({ injector, isBrowser, isServer, isMobile, onCleanup }));
+  });
+  if (typeof ngDevMode !== "undefined" && ngDevMode && result != null) {
+    setupDebugInfo2(result, debugFn);
+  }
+  return result;
+}
+function setupDebugInfo2(value, debugFn) {
+  if (isSignal2(value)) {
+    setDebugName(value, debugFn);
+  } else if (value && typeof value === "object") {
+    for (const [postfix, maybeSignal] of Object.entries(value)) {
+      if (isSignal2(maybeSignal)) {
+        setDebugName(maybeSignal, debugFn, postfix);
+      }
+    }
+  }
+  return value;
+}
+function setDebugName(signal2, debugFn, postfix) {
+  const node = signal2[SIGNAL];
+  if (node.debugName === void 0) {
+    node.debugName = debugFn.name + (postfix ? "." + postfix : "");
+  }
+}
+function unrefElement(value) {
+  return value instanceof ElementRef ? value.nativeElement : value;
+}
+
+// packages/core/internal/lib/inject-ctx.ts
+function injectCtx(inj, dbgFn) {
+  const { runInContext } = setupContext(inj, dbgFn);
+  return runInContext;
+}
+
+// packages/core/internal/lib/inject-element.ts
+function injectElementRef2() {
+  return inject2(ElementRef);
+}
+function injectElement() {
+  return injectElementRef2().nativeElement;
 }
 
 // packages/core/internal/lib/deep-merge/deep-merge.ts
@@ -29487,6 +29566,29 @@ deepMerge.withOptions = (options, ...objects) => {
   return deepMergeWithOptions(mergedOptions, ...objects);
 };
 
+// packages/core/internal/lib/validators.ts
+function isFunction2(value) {
+  return typeof value === "function";
+}
+function isUndefined(value) {
+  return typeof value === "undefined";
+}
+function isElement2(value) {
+  return !!value && value.nodeType === Node.ELEMENT_NODE;
+}
+function isButtonElement(element, opts) {
+  return element.tagName === "BUTTON" && (!opts?.types?.length || opts.types.includes(element.type));
+}
+function isInputElement(element, opts) {
+  return element.tagName === "INPUT" && (!opts?.types?.length || opts.types.includes(element.type));
+}
+function isAnchorElement(element, { validLink = false } = {}) {
+  return element.tagName === "A" && (!validLink || !!element.href || !!element.routerLink);
+}
+function hasDisabledAttribute(element) {
+  return isElement2(element) && "disabled" in element;
+}
+
 // packages/core/internal/lib/unwrap.ts
 function unwrap(val, ...args) {
   return isFunction2(val) ? val(...args) : val;
@@ -29499,17 +29601,18 @@ function unwrapMergeInject(injector, defaultValue, ...values) {
 }
 
 // packages/core/internal/lib/opts-builder/opts-builder.ts
-function optsBuilder(debugName, defaultOptions2, merger) {
-  const optsToken = new InjectionToken(ngDevMode ? `Options:${debugName}` : "");
-  const optsContributionToken = new InjectionToken(ngDevMode ? `OptionsContribution:${debugName}` : "");
-  function injectOptions(opts = {}) {
-    const contributions = inject2(optsContributionToken, __spreadProps(__spreadValues({}, opts), { optional: true })) ?? [];
+function optsBuilder(dbgName, defaultOpts, merger) {
+  const optsToken = new InjectionToken(ngDevMode ? `Opts:${dbgName}` : "");
+  const optsContributionToken = new InjectionToken(ngDevMode ? `OptsContribution:${dbgName}` : "");
+  function injectOpts(opts = {}) {
+    const inj = inject2(INJECTOR$1);
+    const contribs = inject2(optsContributionToken, __spreadProps(__spreadValues({}, opts), { optional: true })) ?? [];
     if (merger) {
-      return merger(contributions, defaultOptions2);
+      return merger(contribs.map((c) => unwrapInject(inj, c)), unwrapInject(inj, defaultOpts));
     }
-    return unwrapMergeInject(inject2(INJECTOR$1), defaultOptions2, ...contributions);
+    return unwrapMergeInject(inj, defaultOpts, ...contribs);
   }
-  function provideOptions(opts) {
+  function provideOpts(opts) {
     return [
       {
         multi: true,
@@ -29518,11 +29621,35 @@ function optsBuilder(debugName, defaultOptions2, merger) {
       },
       {
         provide: optsToken,
-        useFactory: injectOptions
+        useFactory: injectOpts
       }
     ];
   }
-  return [provideOptions, injectOptions];
+  return [provideOpts, injectOpts];
+}
+
+// packages/core/internal/lib/signal-control.ts
+function signalControl(source) {
+  const control = linkedSignal(
+    () => source(),
+    ...ngDevMode ? [{ debugName: "control" }] : (
+      /* istanbul ignore next */
+      []
+    )
+  );
+  return Object.assign(control, {
+    control(binder, opts) {
+      return injectCtx(opts?.injector, this.control)(() => {
+        const value = opts?.track ? computed(() => binder(control())) : computed(() => binder(untracked2(() => control())));
+        return effect(() => {
+          const v = value();
+          if (!isUndefined(v)) {
+            control.set(v);
+          }
+        }, opts?.options);
+      });
+    }
+  });
 }
 
 // packages/core/internal/lib/static-cache.ts
@@ -29548,8 +29675,8 @@ var AutoHostResolver = class _AutoHostResolver {
     return serviceMap;
   }
   resolve(type, injector) {
-    return setupInjCtx(injector, this.resolve.bind(this))(({ injector: injector2 }) => {
-      const element = injEl();
+    return injectCtx(injector, this.resolve.bind(this))(({ injector: injector2 }) => {
+      const element = injectElement();
       const serviceMap = this.#get(element);
       let instance = serviceMap.get(type);
       if (!instance) {
@@ -29611,52 +29738,300 @@ var HostAttributes = (() => {
   return HostAttributes2 = _classThis;
 })();
 
-// packages/protos/button/lib/button.ts
-var [provideButtonConfig, injectButtonConfig] = optsBuilder("ProtoButton", () => {
-  const ha = inject2(HostAttributes);
+// node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs
+function r(e) {
+  var t, f, n = "";
+  if ("string" == typeof e || "number" == typeof e) n += e;
+  else if ("object" == typeof e) if (Array.isArray(e)) {
+    var o = e.length;
+    for (t = 0; t < o; t++) e[t] && (f = r(e[t])) && (n && (n += " "), n += f);
+  } else for (f in e) e[f] && (n && (n += " "), n += f);
+  return n;
+}
+function clsx() {
+  for (var e, t, f = 0, n = "", o = arguments.length; f < o; f++) (e = arguments[f]) && (t = r(e)) && (n && (n += " "), n += t);
+  return n;
+}
+
+// packages/atoms/classes/lib/atom-classes.ts
+var [provideAtomClassesOpts, injectAtomClassesOpts] = optsBuilder("AtomClasses", {
+  mapResult: (result) => clsx(result)
+});
+var AtomClasses = class _AtomClasses {
+  #renderer = inject2(Renderer2);
+  #opts = injectAtomClassesOpts();
+  #hostAttribs = inject2(HostAttributes);
+  #hostClass = this.#hostAttribs.get("class");
+  /**
+   * ClassValue to be applied to the host element.
+   */
+  class = input(this.#hostClass, __spreadProps(__spreadValues({}, ngDevMode ? { debugName: "class" } : (
+    /* istanbul ignore next */
+    {}
+  )), { alias: "atomClasses" }));
+  #pre = signal(
+    [],
+    ...ngDevMode ? [{ debugName: "#pre" }] : (
+      /* istanbul ignore next */
+      []
+    )
+  );
+  #post = signal(
+    [],
+    ...ngDevMode ? [{ debugName: "#post" }] : (
+      /* istanbul ignore next */
+      []
+    )
+  );
+  classValue = computed(
+    () => {
+      const pre = this.#pre().map((s) => s());
+      const post = this.#post().map((s) => s());
+      return this.#opts.mapResult([...pre, this.class(), ...post])?.trim() || "";
+    },
+    ...ngDevMode ? [{ debugName: "classValue" }] : (
+      /* istanbul ignore next */
+      []
+    )
+  );
+  constructor() {
+    if (isPlatformServer(inject2(PLATFORM_ID))) {
+      return;
+    }
+    const el = injectElement();
+    const prev = el.style.getPropertyValue("transition");
+    const prevPriority = el.style.getPropertyPriority("transition");
+    this.#renderer.setStyle(el, "transition", "none", RendererStyleFlags2.Important);
+    afterNextRender(() => {
+      if (prev) {
+        this.#renderer.setStyle(el, "transition", prev, prevPriority === "important" ? RendererStyleFlags2.Important : void 0);
+      } else {
+        this.#renderer.removeStyle(el, "transition");
+      }
+    });
+  }
+  /**
+   * Register a reactive class source to be applied **before** the base `class` input.
+   * Later registrations take higher precedence (appended to the end).
+   *
+   * The `fn` callback is invoked inside a `computed()`, so any signals read
+   * within it are automatically tracked — the class list re-evaluates when they change.
+   *
+   * @param fn - A reactive function returning class values. Signals read inside are tracked.
+   * @returns A function to unregister the class source.
+   */
+  pre(fn) {
+    this.#pre.update((sources) => [...sources, fn]);
+    return () => {
+      this.#pre.update((sources) => sources.filter((s) => s !== fn));
+    };
+  }
+  /**
+   * Register a reactive class source to be applied **after** the base `class` input.
+   * Later registrations take higher precedence (appended to the end).
+   *
+   * Post sources override both `pre` sources and the base `class` input when classes conflict.
+   * Prefer {@link AtomClasses.pre} unless you explicitly need to override the consumer's `class` input.
+   *
+   * The `fn` callback is invoked inside a `computed()`, so any signals read
+   * within it are automatically tracked — the class list re-evaluates when they change.
+   *
+   * @param fn - A reactive function returning class values. Signals read inside are tracked.
+   * @returns A function to unregister the class source.
+   */
+  post(fn) {
+    this.#post.update((sources) => [...sources, fn]);
+    return () => {
+      this.#post.update((sources) => sources.filter((s) => s !== fn));
+    };
+  }
+  static \u0275fac = function AtomClasses_Factory(__ngFactoryType__) {
+    return new (__ngFactoryType__ || _AtomClasses)();
+  };
+  static \u0275dir = /* @__PURE__ */ \u0275\u0275defineDirective({ type: _AtomClasses, selectors: [["", "atomClasses", ""]], hostVars: 2, hostBindings: function AtomClasses_HostBindings(rf, ctx) {
+    if (rf & 2) {
+      \u0275\u0275classMap(ctx.classValue());
+    }
+  }, inputs: { class: [1, "atomClasses", "class"] }, exportAs: ["atomClasses"] });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(AtomClasses, [{
+    type: Directive,
+    args: [{
+      selector: "[atomClasses]",
+      exportAs: "atomClasses",
+      host: {
+        "[class]": "classValue()"
+      }
+    }]
+  }], () => [], { class: [{ type: Input, args: [{ isSignal: true, alias: "atomClasses", required: false }] }] });
+})();
+
+// node_modules/.pnpm/@signality+core@0.1.3_1e3f5073487ea7c59f2c691b6df0b5c0/node_modules/@signality/core/fesm2022/signality-core-utilities.mjs
+var GENERATE_ID_FACTORY = new InjectionToken(typeof ngDevMode !== "undefined" && ngDevMode ? "GENERATE_ID_FACTORY" : "", {
+  providedIn: "platform",
+  factory: () => {
+    let i = 0;
+    return (prefix = "app") => `${prefix}-${Date.now()}${i++}`;
+  }
+});
+var toValue = (() => {
+  const fn = toValueFn;
+  fn.untracked = (v) => toValueFn(v, true);
+  return fn;
+})();
+function toValueFn(maybeSignal, untracked$1 = false) {
+  if (isSignal2(maybeSignal)) {
+    return untracked$1 ? untracked2(maybeSignal) : maybeSignal();
+  }
+  return maybeSignal;
+}
+var toElement = (() => {
+  const fn = toElementFn;
+  fn.untracked = (v) => toElementFn(v, true);
+  return fn;
+})();
+function toElementFn(maybeSignal, untracked3 = false) {
+  const raw = untracked3 ? toValue.untracked(maybeSignal) : toValue(maybeSignal);
+  return unrefElement(raw);
+}
+
+// node_modules/.pnpm/@signality+core@0.1.3_1e3f5073487ea7c59f2c691b6df0b5c0/node_modules/@signality/core/fesm2022/signality-core-browser-listener.mjs
+var listener = createModifier({});
+var isSyncSetupRequired = false;
+function listenerImpl(applied, ...args) {
+  const options = args[3];
+  const { runInContext } = setupContext(options?.injector, listenerImpl);
+  return runInContext(({ isServer }) => {
+    if (isServer) {
+      return NOOP_EFFECT_REF;
+    }
+    const [maybeReactiveTarget, maybeReactiveEvent, rawHandler] = args;
+    const _a = applied, { stop, prevent, self } = _a, nativeOptions = __objRest(_a, ["stop", "prevent", "self"]);
+    const hasModifiers = stop || prevent || self;
+    const handler = hasModifiers ? function(event) {
+      if (self && event.target !== event.currentTarget)
+        return;
+      if (prevent)
+        event.preventDefault();
+      if (stop)
+        event.stopPropagation();
+      rawHandler.call(this, event);
+    } : rawHandler;
+    const untrackedHandler = function(event) {
+      untracked2(() => handler.call(this, event));
+    };
+    const setupListener = (onCleanup) => {
+      const raw = toValue(maybeReactiveTarget);
+      const target = unrefElement(raw);
+      const event = toValue(maybeReactiveEvent);
+      if (!target) {
+        return;
+      }
+      if (ngDevMode) {
+        assertEventTarget(target, "listener");
+      }
+      target.addEventListener(event, untrackedHandler, nativeOptions);
+      onCleanup(() => {
+        target.removeEventListener(event, untrackedHandler, nativeOptions);
+      });
+    };
+    let effectRef;
+    if (isSyncSetupRequired) {
+      effectRef = syncEffect(setupListener);
+    } else {
+      effectRef = afterRenderEffect({ read: setupListener });
+    }
+    return { destroy: () => effectRef.destroy() };
+  });
+}
+var MODIFIERS = /* @__PURE__ */ new Set([
+  "capture",
+  "passive",
+  "once",
+  "stop",
+  "prevent",
+  "self"
+]);
+function createModifier(applied) {
+  const modifierFn = ((...args) => {
+    return listenerImpl(applied, ...args);
+  });
+  return new Proxy(modifierFn, {
+    get(target, prop) {
+      if (typeof prop !== "string" || !MODIFIERS.has(prop)) {
+        return target[prop];
+      }
+      if (applied[prop]) {
+        return target;
+      }
+      return createModifier(__spreadProps(__spreadValues({}, applied), { [prop]: true }));
+    }
+  });
+}
+function syncEffect(effectFn, options) {
+  const effectRef = effect(effectFn, options);
+  const effectNode = effectRef[SIGNAL];
+  try {
+    effectNode.run();
+  } catch (error) {
+    if (ngDevMode) {
+      console.warn("[syncEffect] Failed to run effectFn synchronously", error);
+    }
+  }
+  return effectRef;
+}
+
+// packages/atoms/interact/lib/atom-interact.ts
+var [provideAtomInteractOpts, injectAtomInteractOpts] = optsBuilder("AtomInteract", () => {
+  const hostAttribs = inject2(HostAttributes);
   return {
     disabled: false,
     disabledInteractive: false,
-    tabIndex: numberAttribute(ha.get("tabindex") ?? 0, 0),
-    role: ha.get("role"),
-    type: ha.get("type"),
-    composite: false
+    tabIndex: numberAttribute(hostAttribs.get("tabindex") ?? 0, 0)
   };
 });
-var ProtoButton = class _ProtoButton {
-  #element = injEl();
-  #config = injectButtonConfig();
-  disabled = input(this.#config.disabled, __spreadProps(__spreadValues({}, ngDevMode ? { debugName: "disabled" } : (
+var AtomInteract = class _AtomInteract {
+  #element = injectElement();
+  #opts = injectAtomInteractOpts();
+  disabled = input(this.#opts.disabled, __spreadProps(__spreadValues({}, ngDevMode ? { debugName: "disabled" } : (
     /* istanbul ignore next */
     {}
   )), { transform: booleanAttribute }));
-  disabledInteractive = input(this.#config.disabledInteractive, __spreadProps(__spreadValues({}, ngDevMode ? { debugName: "disabledInteractive" } : (
+  disabledControl = signalControl(this.disabled);
+  disabledInteractive = input(this.#opts.disabledInteractive, __spreadProps(__spreadValues({}, ngDevMode ? { debugName: "disabledInteractive" } : (
     /* istanbul ignore next */
     {}
   )), { transform: booleanAttribute }));
+  disabledInteractiveControl = signalControl(this.disabledInteractive);
+  tabIndex = input(this.#opts.tabIndex, __spreadProps(__spreadValues({}, ngDevMode ? { debugName: "tabIndex" } : (
+    /* istanbul ignore next */
+    {}
+  )), { transform: (v) => numberAttribute(v, this.#opts.tabIndex) }));
+  tabIndexControl = signalControl(this.tabIndex);
   hardDisabled = computed(
-    () => this.disabled() && !this.disabledInteractive(),
+    () => this.disabledControl() && !this.disabledInteractiveControl(),
     ...ngDevMode ? [{ debugName: "hardDisabled" }] : (
       /* istanbul ignore next */
       []
     )
   );
   softDisabled = computed(
-    () => this.disabled() && this.disabledInteractive(),
+    () => this.disabledControl() && this.disabledInteractiveControl(),
     ...ngDevMode ? [{ debugName: "softDisabled" }] : (
       /* istanbul ignore next */
       []
     )
   );
   attrDisabled = computed(
-    () => this.#hasNativeDisabled ? this.disabled() && !this.disabledInteractive() ? "" : null : null,
+    () => this.#hasNativeDisabled ? this.disabledControl() && !this.disabledInteractiveControl() ? "" : null : null,
     ...ngDevMode ? [{ debugName: "attrDisabled" }] : (
       /* istanbul ignore next */
       []
     )
   );
   dataDisabledAttr = computed(
-    () => this.disabled() ? this.hardDisabled() ? "hard" : "soft" : null,
+    () => this.disabledControl() ? this.hardDisabled() ? "hard" : "soft" : null,
     ...ngDevMode ? [{ debugName: "dataDisabledAttr" }] : (
       /* istanbul ignore next */
       []
@@ -29664,8 +30039,8 @@ var ProtoButton = class _ProtoButton {
   );
   ariaDisabledAttr = computed(
     () => {
-      if (this.#hasNativeDisabled && this.disabledInteractive() || !this.#hasNativeDisabled && this.disabled()) {
-        return this.disabled();
+      if (this.#hasNativeDisabled && this.disabledInteractiveControl() || !this.#hasNativeDisabled && this.disabledControl()) {
+        return this.disabledControl();
       }
       return null;
     },
@@ -29674,15 +30049,11 @@ var ProtoButton = class _ProtoButton {
       []
     )
   );
-  tabIndex = input(this.#config.tabIndex, __spreadProps(__spreadValues({}, ngDevMode ? { debugName: "tabIndex" } : (
-    /* istanbul ignore next */
-    {}
-  )), { transform: (v) => numberAttribute(v, this.#config.tabIndex) }));
   tabIndexAttr = computed(
     () => {
-      let tabIndex = this.tabIndex();
-      if (!this.#hasNativeDisabled && this.disabled()) {
-        tabIndex = this.disabledInteractive() ? tabIndex : -1;
+      let tabIndex = this.tabIndexControl();
+      if (!this.#hasNativeDisabled && this.disabledControl()) {
+        tabIndex = this.disabledInteractiveControl() ? tabIndex : -1;
       }
       return tabIndex;
     },
@@ -29691,37 +30062,9 @@ var ProtoButton = class _ProtoButton {
       []
     )
   );
-  role = input(
-    this.#config.role,
-    ...ngDevMode ? [{ debugName: "role" }] : (
-      /* istanbul ignore next */
-      []
-    )
-  );
-  roleAttr = computed(
-    () => this.role() ?? (this.#isNativeButton || this.#isValidLink || this.#isNativeInput ? null : "button"),
-    ...ngDevMode ? [{ debugName: "roleAttr" }] : (
-      /* istanbul ignore next */
-      []
-    )
-  );
-  type = input(
-    this.#config.type,
-    ...ngDevMode ? [{ debugName: "type" }] : (
-      /* istanbul ignore next */
-      []
-    )
-  );
-  typeAttr = computed(
-    () => this.type() ?? (this.#isNativeButton ? "button" : null),
-    ...ngDevMode ? [{ debugName: "typeAttr" }] : (
-      /* istanbul ignore next */
-      []
-    )
-  );
   constructor() {
-    on.capture(this.#element, "click", (event) => {
-      if (this.disabled()) {
+    listener.capture(this.#element, "click", (event) => {
+      if (this.disabledControl()) {
         event.preventDefault();
         event.stopImmediatePropagation();
       }
@@ -29730,6 +30073,91 @@ var ProtoButton = class _ProtoButton {
   get #hasNativeDisabled() {
     return hasDisabledAttribute(this.#element);
   }
+  /**
+   * Blocks activation keys (Enter, Space) when soft-disabled.
+   * Navigation keys (arrows, Escape, Home, End, Tab) are always allowed
+   * so parent containers (menus, listboxes, toolbars) can still navigate
+   * through soft-disabled items.
+   */
+  onKeyDown(event) {
+    if (this.softDisabled() && (event.key === "Enter" || event.key === " ")) {
+      event.preventDefault();
+    }
+  }
+  static \u0275fac = function AtomInteract_Factory(__ngFactoryType__) {
+    return new (__ngFactoryType__ || _AtomInteract)();
+  };
+  static \u0275dir = /* @__PURE__ */ \u0275\u0275defineDirective({ type: _AtomInteract, selectors: [["", "atomInteract", ""]], hostVars: 4, hostBindings: function AtomInteract_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      \u0275\u0275listener("keydown", function AtomInteract_keydown_HostBindingHandler($event) {
+        return ctx.onKeyDown($event);
+      });
+    }
+    if (rf & 2) {
+      \u0275\u0275attribute("disabled", ctx.attrDisabled())("data-disabled", ctx.dataDisabledAttr())("tabindex", ctx.tabIndexAttr())("aria-disabled", ctx.ariaDisabledAttr());
+    }
+  }, inputs: { disabled: [1, "disabled"], disabledInteractive: [1, "disabledInteractive"], tabIndex: [1, "tabIndex"] }, exportAs: ["atomInteract"] });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(AtomInteract, [{
+    type: Directive,
+    args: [{
+      selector: "[atomInteract]",
+      exportAs: "atomInteract",
+      host: {
+        "[attr.disabled]": "attrDisabled()",
+        "[attr.data-disabled]": "dataDisabledAttr()",
+        "[attr.tabindex]": "tabIndexAttr()",
+        "[attr.aria-disabled]": "ariaDisabledAttr()",
+        "(keydown)": "onKeyDown($event)"
+      }
+    }]
+  }], () => [], { disabled: [{ type: Input, args: [{ isSignal: true, alias: "disabled", required: false }] }], disabledInteractive: [{ type: Input, args: [{ isSignal: true, alias: "disabledInteractive", required: false }] }], tabIndex: [{ type: Input, args: [{ isSignal: true, alias: "tabIndex", required: false }] }] });
+})();
+
+// packages/protos/button/lib/proto-button.ts
+var [provideButtonOpts, injectButtonOpts] = optsBuilder("ProtoButton", () => {
+  const hostAttribs = inject2(HostAttributes);
+  return {
+    role: hostAttribs.get("role"),
+    type: hostAttribs.get("type"),
+    composite: false
+  };
+});
+var ProtoButton = class _ProtoButton {
+  #element = injectElement();
+  #opts = injectButtonOpts();
+  #interact = inject2(AtomInteract);
+  role = input(
+    this.#opts.role,
+    ...ngDevMode ? [{ debugName: "role" }] : (
+      /* istanbul ignore next */
+      []
+    )
+  );
+  roleControl = signalControl(this.role);
+  roleAttr = computed(
+    () => this.roleControl() ?? (this.#isNativeButton || this.#isValidLink || this.#isNativeInput ? null : "button"),
+    ...ngDevMode ? [{ debugName: "roleAttr" }] : (
+      /* istanbul ignore next */
+      []
+    )
+  );
+  type = input(
+    this.#opts.type,
+    ...ngDevMode ? [{ debugName: "type" }] : (
+      /* istanbul ignore next */
+      []
+    )
+  );
+  typeControl = signalControl(this.type);
+  typeAttr = computed(
+    () => this.typeControl() ?? (this.#isNativeButton ? "button" : null),
+    ...ngDevMode ? [{ debugName: "typeAttr" }] : (
+      /* istanbul ignore next */
+      []
+    )
+  );
   get #isNativeButton() {
     return isButtonElement(this.#element);
   }
@@ -29746,20 +30174,17 @@ var ProtoButton = class _ProtoButton {
     return this.#isNativeButton || this.#isNativeInput;
   }
   onKeyDown(event) {
-    if (this.softDisabled() && event.key !== "Tab") {
-      event.preventDefault();
-    }
-    if (this.disabled()) {
+    if (this.#interact.disabled()) {
       return;
     }
-    if (this.#isNativeActivatable && !this.#config.composite) {
+    if (this.#isNativeActivatable && !this.#opts.composite) {
       return;
     }
     const isCurrentTarget = event.target === event.currentTarget;
     if (!isCurrentTarget) {
       return;
     }
-    if (this.#config.composite && event.key === " ") {
+    if (this.#opts.composite && event.key === " ") {
       event.preventDefault();
       this.#element.click();
       return;
@@ -29772,10 +30197,10 @@ var ProtoButton = class _ProtoButton {
     }
   }
   onKeyUp(event) {
-    if (this.disabled()) {
+    if (this.#interact.disabled()) {
       return;
     }
-    if (this.#config.composite && event.key === " ") {
+    if (this.#opts.composite && event.key === " ") {
       event.preventDefault();
       return;
     }
@@ -29789,7 +30214,7 @@ var ProtoButton = class _ProtoButton {
   static \u0275fac = function ProtoButton_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _ProtoButton)();
   };
-  static \u0275dir = /* @__PURE__ */ \u0275\u0275defineDirective({ type: _ProtoButton, selectors: [["", "protoButton", ""]], hostVars: 6, hostBindings: function ProtoButton_HostBindings(rf, ctx) {
+  static \u0275dir = /* @__PURE__ */ \u0275\u0275defineDirective({ type: _ProtoButton, selectors: [["", "protoButton", ""]], hostVars: 2, hostBindings: function ProtoButton_HostBindings(rf, ctx) {
     if (rf & 1) {
       \u0275\u0275listener("keydown", function ProtoButton_keydown_HostBindingHandler($event) {
         return ctx.onKeyDown($event);
@@ -29798,43 +30223,130 @@ var ProtoButton = class _ProtoButton {
       });
     }
     if (rf & 2) {
-      \u0275\u0275attribute("disabled", ctx.attrDisabled())("data-disabled", ctx.dataDisabledAttr())("tabindex", ctx.tabIndexAttr())("aria-disabled", ctx.ariaDisabledAttr())("role", ctx.roleAttr())("type", ctx.typeAttr());
+      \u0275\u0275attribute("role", ctx.roleAttr())("type", ctx.typeAttr());
     }
-  }, inputs: { disabled: [1, "disabled"], disabledInteractive: [1, "disabledInteractive"], tabIndex: [1, "tabIndex"], role: [1, "role"], type: [1, "type"] }, exportAs: ["protoButton"] });
+  }, inputs: { role: [1, "role"], type: [1, "type"] }, exportAs: ["protoButton"], features: [\u0275\u0275HostDirectivesFeature([{ directive: AtomInteract, inputs: ["disabled", "disabled", "disabledInteractive", "disabledInteractive", "tabIndex", "tabIndex"] }])] });
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ProtoButton, [{
     type: Directive,
     args: [{
       selector: "[protoButton]",
+      exportAs: "protoButton",
+      hostDirectives: [
+        {
+          directive: AtomInteract,
+          inputs: ["disabled", "disabledInteractive", "tabIndex"]
+        }
+      ],
       host: {
-        "[attr.disabled]": "attrDisabled()",
-        "[attr.data-disabled]": "dataDisabledAttr()",
-        "[attr.tabindex]": "tabIndexAttr()",
-        "[attr.aria-disabled]": "ariaDisabledAttr()",
         "[attr.role]": "roleAttr()",
         "[attr.type]": "typeAttr()",
         "(keydown)": "onKeyDown($event)",
         "(keyup)": "onKeyUp($event)"
-      },
-      exportAs: "protoButton"
+      }
     }]
-  }], () => [], { disabled: [{ type: Input, args: [{ isSignal: true, alias: "disabled", required: false }] }], disabledInteractive: [{ type: Input, args: [{ isSignal: true, alias: "disabledInteractive", required: false }] }], tabIndex: [{ type: Input, args: [{ isSignal: true, alias: "tabIndex", required: false }] }], role: [{ type: Input, args: [{ isSignal: true, alias: "role", required: false }] }], type: [{ type: Input, args: [{ isSignal: true, alias: "type", required: false }] }] });
+  }], null, { role: [{ type: Input, args: [{ isSignal: true, alias: "role", required: false }] }], type: [{ type: Input, args: [{ isSignal: true, alias: "type", required: false }] }] });
 })();
 
-// apps/examples/src/examples/protos/button/button-loading-example.ts
-function ProtoButtonLoadingExample_Conditional_3_Template(rf, ctx) {
+// apps/examples/src/examples/atoms/ex-atom-classes.ts
+var _c0 = (a0) => ({ "hover": a0 });
+var ExAtomClassesComp = class _ExAtomClassesComp {
+  #classes = inject2(AtomClasses);
+  blue = model(
+    false,
+    ...ngDevMode ? [{ debugName: "blue" }] : (
+      /* istanbul ignore next */
+      []
+    )
+  );
+  constructor() {
+    this.#classes.pre(() => [this.blue() && "blue"]);
+  }
+  static \u0275fac = function ExAtomClassesComp_Factory(__ngFactoryType__) {
+    return new (__ngFactoryType__ || _ExAtomClassesComp)();
+  };
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _ExAtomClassesComp, selectors: [["ex-atom-classes-comp"]], inputs: { blue: [1, "blue"] }, outputs: { blue: "blueChange" }, features: [\u0275\u0275HostDirectivesFeature([{ directive: AtomClasses, inputs: ["atomClasses", "class"] }])], decls: 1, vars: 0, template: function ExAtomClassesComp_Template(rf, ctx) {
+    if (rf & 1) {
+      \u0275\u0275text(0, "Ex Content");
+    }
+  }, styles: ["\n.blue[_nghost-%COMP%] {\n  background-color: blue;\n  color: white;\n}\n[_nghost-%COMP%]:hover {\n  background-color: red;\n}\n/*# sourceMappingURL=ex-atom-classes.css.map */"] });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ExAtomClassesComp, [{
+    type: Component,
+    args: [{ selector: "ex-atom-classes-comp", hostDirectives: [
+      {
+        directive: AtomClasses,
+        inputs: ["atomClasses:class"]
+      }
+    ], template: "Ex Content", styles: ["/* angular:styles/component:css;a2e300fcff2ec5377fe9a881d7cfaadbcab3df376d6ab874f134500b41c9b49b;/home/runner/work/terse-ui/terse-ui/apps/examples/src/examples/atoms/ex-atom-classes.ts */\n:host.blue {\n  background-color: blue;\n  color: white;\n}\n:host:hover {\n  background-color: red;\n}\n/*# sourceMappingURL=ex-atom-classes.css.map */\n"] }]
+  }], () => [], { blue: [{ type: Input, args: [{ isSignal: true, alias: "blue", required: false }] }, { type: Output, args: ["blueChange"] }] });
+})();
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(ExAtomClassesComp, { className: "ExAtomClassesComp", filePath: "apps/examples/src/examples/atoms/ex-atom-classes.ts", lineNumber: 24 });
+})();
+var ExAtomClasses = class _ExAtomClasses {
+  static \u0275fac = function ExAtomClasses_Factory(__ngFactoryType__) {
+    return new (__ngFactoryType__ || _ExAtomClasses)();
+  };
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _ExAtomClasses, selectors: [["ex-atom-classes"]], decls: 6, vars: 4, consts: [["comp", ""], ["protoButton", "", 3, "click"]], template: function ExAtomClasses_Template(rf, ctx) {
+    if (rf & 1) {
+      const _r1 = \u0275\u0275getCurrentView();
+      \u0275\u0275elementStart(0, "div");
+      \u0275\u0275element(1, "ex-atom-classes-comp", null, 0);
+      \u0275\u0275elementEnd();
+      \u0275\u0275elementStart(3, "div")(4, "button", 1);
+      \u0275\u0275listener("click", function ExAtomClasses_Template_button_click_4_listener() {
+        \u0275\u0275restoreView(_r1);
+        const comp_r2 = \u0275\u0275reference(2);
+        return \u0275\u0275resetView(comp_r2.blue.set(!comp_r2.blue()));
+      });
+      \u0275\u0275text(5, "Toggle Blue");
+      \u0275\u0275elementEnd()();
+    }
+    if (rf & 2) {
+      const comp_r2 = \u0275\u0275reference(2);
+      \u0275\u0275advance(3);
+      \u0275\u0275classMap(\u0275\u0275pureFunction1(2, _c0, comp_r2.blue()));
+    }
+  }, dependencies: [ExAtomClassesComp, ProtoButton], encapsulation: 2 });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ExAtomClasses, [{
+    type: Component,
+    args: [{
+      selector: "ex-atom-classes",
+      imports: [ExAtomClassesComp, ProtoButton],
+      template: `
+    <div>
+      <ex-atom-classes-comp #comp />
+    </div>
+
+    <div [class]="{'hover': comp.blue()}">
+      <button protoButton (click)="comp.blue.set(!comp.blue())">Toggle Blue</button>
+    </div>
+  `
+    }]
+  }], null, null);
+})();
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(ExAtomClasses, { className: "ExAtomClasses", filePath: "apps/examples/src/examples/atoms/ex-atom-classes.ts", lineNumber: 46 });
+})();
+
+// apps/examples/src/examples/protos/ex-proto-button-loading.ts
+function ExProtoButtonLoading_Conditional_3_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275element(0, "span", 3);
     \u0275\u0275text(1, " Submitting... ");
   }
 }
-function ProtoButtonLoadingExample_Conditional_4_Template(rf, ctx) {
+function ExProtoButtonLoading_Conditional_4_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275text(0, " Submit ");
   }
 }
-var ProtoButtonLoadingExample = class _ProtoButtonLoadingExample {
+var ExProtoButtonLoading = class _ExProtoButtonLoading {
   isLoading = signal(
     false,
     ...ngDevMode ? [{ debugName: "isLoading" }] : (
@@ -29854,20 +30366,20 @@ var ProtoButtonLoadingExample = class _ProtoButtonLoadingExample {
     await new Promise((res) => setTimeout(res, 3e3));
     this.isLoading.set(false);
   }
-  static \u0275fac = function ProtoButtonLoadingExample_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ProtoButtonLoadingExample)();
+  static \u0275fac = function ExProtoButtonLoading_Factory(__ngFactoryType__) {
+    return new (__ngFactoryType__ || _ExProtoButtonLoading)();
   };
-  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _ProtoButtonLoadingExample, selectors: [["ex-proto-button-loading"]], decls: 7, vars: 5, consts: [[1, "description"], ["protoButton", "", 3, "click", "aria-label", "disabled", "disabledInteractive"], [1, "clicks"], ["aria-hidden", "true", 1, "loader"]], template: function ProtoButtonLoadingExample_Template(rf, ctx) {
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _ExProtoButtonLoading, selectors: [["ex-proto-button-loading"]], decls: 7, vars: 5, consts: [[1, "description"], ["protoButton", "", 3, "click", "aria-label", "disabled", "disabledInteractive"], [1, "clicks"], ["aria-hidden", "true", 1, "loader"]], template: function ExProtoButtonLoading_Template(rf, ctx) {
     if (rf & 1) {
       \u0275\u0275elementStart(0, "p", 0);
       \u0275\u0275text(1, " Use the keyboard to tab into the button and press Enter or Space to see the loading state. Focus remains on the button while loading. ");
       \u0275\u0275elementEnd();
       \u0275\u0275elementStart(2, "button", 1);
-      \u0275\u0275listener("click", function ProtoButtonLoadingExample_Template_button_click_2_listener() {
+      \u0275\u0275listener("click", function ExProtoButtonLoading_Template_button_click_2_listener() {
         ctx.startLoading();
         return ctx.clicks.set(ctx.clicks() + 1);
       });
-      \u0275\u0275conditionalCreate(3, ProtoButtonLoadingExample_Conditional_3_Template, 2, 0)(4, ProtoButtonLoadingExample_Conditional_4_Template, 1, 0);
+      \u0275\u0275conditionalCreate(3, ExProtoButtonLoading_Conditional_3_Template, 2, 0)(4, ExProtoButtonLoading_Conditional_4_Template, 1, 0);
       \u0275\u0275elementEnd();
       \u0275\u0275elementStart(5, "div", 2);
       \u0275\u0275text(6);
@@ -29882,10 +30394,10 @@ var ProtoButtonLoadingExample = class _ProtoButtonLoadingExample {
       \u0275\u0275advance(3);
       \u0275\u0275textInterpolate1("", ctx.clicks(), " clicks");
     }
-  }, dependencies: [ProtoButton], styles: ["\n[_nghost-%COMP%] {\n  display: grid;\n  place-items: center;\n  gap: 1rem;\n  text-align: center;\n}\n.description[_ngcontent-%COMP%] {\n  line-height: 1.5;\n  text-wrap: balance;\n}\n[protoButton][_ngcontent-%COMP%] {\n  font-size: 1em;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  border-radius: 0.5rem;\n  color: var(--primary);\n  border: none;\n  height: 2.5rem;\n  font-weight: 500;\n  background-color: var(--surface);\n  transition: background-color 100ms cubic-bezier(0.4, 0, 0.2, 1);\n  box-sizing: border-box;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  cursor: pointer;\n  gap: 0.5rem;\n}\n[protoButton][_ngcontent-%COMP%]:focus-visible {\n  outline: 2px solid var(--ring);\n}\n[protoButton][_ngcontent-%COMP%]:not([data-disabled]):hover {\n  background-color: var(--surface-hover);\n}\n[protoButton][_ngcontent-%COMP%]:not([data-disabled]):active {\n  background-color: var(--surface-active);\n}\n[protoButton][data-disabled][_ngcontent-%COMP%] {\n  opacity: 0.5;\n  cursor: not-allowed;\n}\n[protoButton][_ngcontent-%COMP%]   .loader[_ngcontent-%COMP%] {\n  width: 1rem;\n  height: 1rem;\n  border: 2px solid var(--on-surface);\n  border-bottom-color: transparent;\n  border-radius: 50%;\n  display: inline-block;\n  box-sizing: border-box;\n  animation: _ngcontent-%COMP%_rotation 1s linear infinite;\n}\n@keyframes _ngcontent-%COMP%_rotation {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n/*# sourceMappingURL=button-loading-example.css.map */"] });
+  }, dependencies: [ProtoButton], styles: ["\n[_nghost-%COMP%] {\n  display: grid;\n  place-items: center;\n  gap: 1rem;\n  text-align: center;\n}\n.description[_ngcontent-%COMP%] {\n  line-height: 1.5;\n  text-wrap: balance;\n}\n[protoButton][_ngcontent-%COMP%] {\n  font-size: 1em;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  border-radius: 0.5rem;\n  color: var(--primary);\n  border: none;\n  height: 2.5rem;\n  font-weight: 500;\n  background-color: var(--surface);\n  transition: background-color 100ms cubic-bezier(0.4, 0, 0.2, 1);\n  box-sizing: border-box;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  cursor: pointer;\n  gap: 0.5rem;\n}\n[protoButton][_ngcontent-%COMP%]:focus-visible {\n  outline: 2px solid var(--ring);\n}\n[protoButton][_ngcontent-%COMP%]:not([data-disabled]):hover {\n  background-color: var(--surface-hover);\n}\n[protoButton][_ngcontent-%COMP%]:not([data-disabled]):active {\n  background-color: var(--surface-active);\n}\n[protoButton][data-disabled][_ngcontent-%COMP%] {\n  opacity: 0.5;\n  cursor: not-allowed;\n}\n[protoButton][_ngcontent-%COMP%]   .loader[_ngcontent-%COMP%] {\n  width: 1rem;\n  height: 1rem;\n  border: 2px solid var(--on-surface);\n  border-bottom-color: transparent;\n  border-radius: 50%;\n  display: inline-block;\n  box-sizing: border-box;\n  animation: _ngcontent-%COMP%_rotation 1s linear infinite;\n}\n@keyframes _ngcontent-%COMP%_rotation {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n/*# sourceMappingURL=ex-proto-button-loading.css.map */"] });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ProtoButtonLoadingExample, [{
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ExProtoButtonLoading, [{
     type: Component,
     args: [{ selector: "ex-proto-button-loading", imports: [ProtoButton], template: `
     <p class="description">
@@ -29909,15 +30421,18 @@ var ProtoButtonLoadingExample = class _ProtoButtonLoadingExample {
     </button>
 
     <div class="clicks">{{ clicks() }} clicks</div>
-  `, styles: ["/* angular:styles/component:css;127335024fd76d4f2ecf69f95bb29caf346502f38e9324c3a6fe2a2d1a346817;/home/runner/work/terse-ui/terse-ui/apps/examples/src/examples/protos/button/button-loading-example.ts */\n:host {\n  display: grid;\n  place-items: center;\n  gap: 1rem;\n  text-align: center;\n}\n.description {\n  line-height: 1.5;\n  text-wrap: balance;\n}\n[protoButton] {\n  font-size: 1em;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  border-radius: 0.5rem;\n  color: var(--primary);\n  border: none;\n  height: 2.5rem;\n  font-weight: 500;\n  background-color: var(--surface);\n  transition: background-color 100ms cubic-bezier(0.4, 0, 0.2, 1);\n  box-sizing: border-box;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  cursor: pointer;\n  gap: 0.5rem;\n}\n[protoButton]:focus-visible {\n  outline: 2px solid var(--ring);\n}\n[protoButton]:not([data-disabled]):hover {\n  background-color: var(--surface-hover);\n}\n[protoButton]:not([data-disabled]):active {\n  background-color: var(--surface-active);\n}\n[protoButton][data-disabled] {\n  opacity: 0.5;\n  cursor: not-allowed;\n}\n[protoButton] .loader {\n  width: 1rem;\n  height: 1rem;\n  border: 2px solid var(--on-surface);\n  border-bottom-color: transparent;\n  border-radius: 50%;\n  display: inline-block;\n  box-sizing: border-box;\n  animation: rotation 1s linear infinite;\n}\n@keyframes rotation {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n/*# sourceMappingURL=button-loading-example.css.map */\n"] }]
+  `, styles: ["/* angular:styles/component:css;127335024fd76d4f2ecf69f95bb29caf346502f38e9324c3a6fe2a2d1a346817;/home/runner/work/terse-ui/terse-ui/apps/examples/src/examples/protos/ex-proto-button-loading.ts */\n:host {\n  display: grid;\n  place-items: center;\n  gap: 1rem;\n  text-align: center;\n}\n.description {\n  line-height: 1.5;\n  text-wrap: balance;\n}\n[protoButton] {\n  font-size: 1em;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  border-radius: 0.5rem;\n  color: var(--primary);\n  border: none;\n  height: 2.5rem;\n  font-weight: 500;\n  background-color: var(--surface);\n  transition: background-color 100ms cubic-bezier(0.4, 0, 0.2, 1);\n  box-sizing: border-box;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  cursor: pointer;\n  gap: 0.5rem;\n}\n[protoButton]:focus-visible {\n  outline: 2px solid var(--ring);\n}\n[protoButton]:not([data-disabled]):hover {\n  background-color: var(--surface-hover);\n}\n[protoButton]:not([data-disabled]):active {\n  background-color: var(--surface-active);\n}\n[protoButton][data-disabled] {\n  opacity: 0.5;\n  cursor: not-allowed;\n}\n[protoButton] .loader {\n  width: 1rem;\n  height: 1rem;\n  border: 2px solid var(--on-surface);\n  border-bottom-color: transparent;\n  border-radius: 50%;\n  display: inline-block;\n  box-sizing: border-box;\n  animation: rotation 1s linear infinite;\n}\n@keyframes rotation {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n/*# sourceMappingURL=ex-proto-button-loading.css.map */\n"] }]
   }], null, null);
 })();
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(ProtoButtonLoadingExample, { className: "ProtoButtonLoadingExample", filePath: "apps/examples/src/examples/protos/button/button-loading-example.ts", lineNumber: 100 });
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(ExProtoButtonLoading, { className: "ExProtoButtonLoading", filePath: "apps/examples/src/examples/protos/ex-proto-button-loading.ts", lineNumber: 100 });
 })();
 
 // apps/examples/src/main.elements.ts
-var EXAMPLES = [{ component: ProtoButtonLoadingExample, name: "ex-proto-button-loading" }];
+var EXAMPLES = [
+  { component: ExProtoButtonLoading, name: "ex-proto-button-loading" },
+  { component: ExAtomClasses, name: "ex-atom-classes" }
+];
 void (async () => {
   const app = await createApplication({
     providers: [provideZonelessChangeDetection()]

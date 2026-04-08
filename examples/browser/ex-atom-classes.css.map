@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["ex-atom-classes.ts"],
+  "sourcesContent": ["\n    :host.blue {\n      background-color: blue;\n      color: white;\n    }\n    :host:hover {\n      background-color: red;\n    }\n  "],
+  "mappings": ";AACI,KAAA,CAAA;AACE,oBAAA;AACA,SAAA;AACF;AACA,KAAA;AACE,oBAAA;AACF;",
+  "names": []
+}
