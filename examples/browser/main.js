@@ -30128,6 +30128,8 @@ var ProtoButton = class _ProtoButton {
   #element = injectElement();
   #opts = injectButtonOpts();
   #interact = inject2(AtomInteract);
+  hardDisabled = this.#interact.hardDisabled.bind(this.#interact);
+  softDisabled = this.#interact.softDisabled.bind(this.#interact);
   role = input(
     this.#opts.role,
     ...ngDevMode ? [{ debugName: "role" }] : (
@@ -30225,7 +30227,7 @@ var ProtoButton = class _ProtoButton {
     if (rf & 2) {
       \u0275\u0275attribute("role", ctx.roleAttr())("type", ctx.typeAttr());
     }
-  }, inputs: { role: [1, "role"], type: [1, "type"] }, exportAs: ["protoButton"], features: [\u0275\u0275HostDirectivesFeature([{ directive: AtomInteract, inputs: ["disabled", "disabled", "disabledInteractive", "disabledInteractive", "tabIndex", "tabIndex"] }])] });
+  }, inputs: { role: [1, "role"], type: [1, "type"] }, exportAs: ["protoButton"], features: [\u0275\u0275HostDirectivesFeature([AtomInteract])] });
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ProtoButton, [{
@@ -30233,12 +30235,7 @@ var ProtoButton = class _ProtoButton {
     args: [{
       selector: "[protoButton]",
       exportAs: "protoButton",
-      hostDirectives: [
-        {
-          directive: AtomInteract,
-          inputs: ["disabled", "disabledInteractive", "tabIndex"]
-        }
-      ],
+      hostDirectives: [AtomInteract],
       host: {
         "[attr.role]": "roleAttr()",
         "[attr.type]": "typeAttr()",
@@ -30346,6 +30343,30 @@ function ExProtoButtonLoading_Conditional_4_Template(rf, ctx) {
     \u0275\u0275text(0, " Submit ");
   }
 }
+var ExButton = class _ExButton {
+  static \u0275fac = function ExButton_Factory(__ngFactoryType__) {
+    return new (__ngFactoryType__ || _ExButton)();
+  };
+  static \u0275dir = /* @__PURE__ */ \u0275\u0275defineDirective({ type: _ExButton, selectors: [["", "exButton", ""]], features: [\u0275\u0275HostDirectivesFeature([{ directive: AtomInteract, inputs: ["disabled", "disabled", "disabledInteractive", "disabledInteractive", "tabIndex", "tabIndex"] }, { directive: ProtoButton, inputs: ["role", "role", "type", "type"] }])] });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ExButton, [{
+    type: Directive,
+    args: [{
+      selector: "[exButton]",
+      hostDirectives: [
+        {
+          directive: AtomInteract,
+          inputs: ["disabled", "disabledInteractive", "tabIndex"]
+        },
+        {
+          directive: ProtoButton,
+          inputs: ["role", "type"]
+        }
+      ]
+    }]
+  }], null, null);
+})();
 var ExProtoButtonLoading = class _ExProtoButtonLoading {
   isLoading = signal(
     false,
@@ -30369,7 +30390,7 @@ var ExProtoButtonLoading = class _ExProtoButtonLoading {
   static \u0275fac = function ExProtoButtonLoading_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _ExProtoButtonLoading)();
   };
-  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _ExProtoButtonLoading, selectors: [["ex-proto-button-loading"]], decls: 7, vars: 5, consts: [[1, "description"], ["protoButton", "", 3, "click", "aria-label", "disabled", "disabledInteractive"], [1, "clicks"], ["aria-hidden", "true", 1, "loader"]], template: function ExProtoButtonLoading_Template(rf, ctx) {
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _ExProtoButtonLoading, selectors: [["ex-proto-button-loading"]], decls: 7, vars: 5, consts: [[1, "description"], ["exButton", "", 3, "click", "aria-label", "disabled", "disabledInteractive"], [1, "clicks"], ["aria-hidden", "true", 1, "loader"]], template: function ExProtoButtonLoading_Template(rf, ctx) {
     if (rf & 1) {
       \u0275\u0275elementStart(0, "p", 0);
       \u0275\u0275text(1, " Use the keyboard to tab into the button and press Enter or Space to see the loading state. Focus remains on the button while loading. ");
@@ -30394,19 +30415,19 @@ var ExProtoButtonLoading = class _ExProtoButtonLoading {
       \u0275\u0275advance(3);
       \u0275\u0275textInterpolate1("", ctx.clicks(), " clicks");
     }
-  }, dependencies: [ProtoButton], styles: ["\n[_nghost-%COMP%] {\n  display: grid;\n  place-items: center;\n  gap: 1rem;\n  text-align: center;\n}\n.description[_ngcontent-%COMP%] {\n  line-height: 1.5;\n  text-wrap: balance;\n}\n[protoButton][_ngcontent-%COMP%] {\n  font-size: 1em;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  border-radius: 0.5rem;\n  color: var(--primary);\n  border: none;\n  height: 2.5rem;\n  font-weight: 500;\n  background-color: var(--surface);\n  transition: background-color 100ms cubic-bezier(0.4, 0, 0.2, 1);\n  box-sizing: border-box;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  cursor: pointer;\n  gap: 0.5rem;\n}\n[protoButton][_ngcontent-%COMP%]:focus-visible {\n  outline: 2px solid var(--ring);\n}\n[protoButton][_ngcontent-%COMP%]:not([data-disabled]):hover {\n  background-color: var(--surface-hover);\n}\n[protoButton][_ngcontent-%COMP%]:not([data-disabled]):active {\n  background-color: var(--surface-active);\n}\n[protoButton][data-disabled][_ngcontent-%COMP%] {\n  opacity: 0.5;\n  cursor: not-allowed;\n}\n[protoButton][_ngcontent-%COMP%]   .loader[_ngcontent-%COMP%] {\n  width: 1rem;\n  height: 1rem;\n  border: 2px solid var(--on-surface);\n  border-bottom-color: transparent;\n  border-radius: 50%;\n  display: inline-block;\n  box-sizing: border-box;\n  animation: _ngcontent-%COMP%_rotation 1s linear infinite;\n}\n@keyframes _ngcontent-%COMP%_rotation {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n/*# sourceMappingURL=ex-proto-button-loading.css.map */"] });
+  }, dependencies: [ExButton], styles: ["\n[_nghost-%COMP%] {\n  display: grid;\n  place-items: center;\n  gap: 1rem;\n  text-align: center;\n}\n.description[_ngcontent-%COMP%] {\n  line-height: 1.5;\n  text-wrap: balance;\n}\n[exButton][_ngcontent-%COMP%] {\n  font-size: 1em;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  border-radius: 0.5rem;\n  color: var(--primary);\n  border: none;\n  height: 2.5rem;\n  font-weight: 500;\n  background-color: var(--surface);\n  transition: background-color 100ms cubic-bezier(0.4, 0, 0.2, 1);\n  box-sizing: border-box;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  cursor: pointer;\n  gap: 0.5rem;\n}\n[exButton][_ngcontent-%COMP%]:focus-visible {\n  outline: 2px solid var(--ring);\n}\n[exButton][_ngcontent-%COMP%]:not([data-disabled]):hover {\n  background-color: var(--surface-hover);\n}\n[exButton][_ngcontent-%COMP%]:not([data-disabled]):active {\n  background-color: var(--surface-active);\n}\n[exButton][data-disabled][_ngcontent-%COMP%] {\n  opacity: 0.5;\n  cursor: not-allowed;\n}\n[exButton][_ngcontent-%COMP%]   .loader[_ngcontent-%COMP%] {\n  width: 1rem;\n  height: 1rem;\n  border: 2px solid var(--on-surface);\n  border-bottom-color: transparent;\n  border-radius: 50%;\n  display: inline-block;\n  box-sizing: border-box;\n  animation: _ngcontent-%COMP%_rotation 1s linear infinite;\n}\n@keyframes _ngcontent-%COMP%_rotation {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n/*# sourceMappingURL=ex-proto-button-loading.css.map */"] });
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ExProtoButtonLoading, [{
     type: Component,
-    args: [{ selector: "ex-proto-button-loading", imports: [ProtoButton], template: `
+    args: [{ selector: "ex-proto-button-loading", imports: [ExButton], template: `
     <p class="description">
       Use the keyboard to tab into the button and press Enter or Space to see the loading state.
       Focus remains on the button while loading.
     </p>
 
     <button
-      protoButton
+      exButton
       [aria-label]="isLoading() ? 'Submitting, please wait' : null"
       [disabled]="isLoading()"
       [disabledInteractive]="isLoading()"
@@ -30421,11 +30442,11 @@ var ExProtoButtonLoading = class _ExProtoButtonLoading {
     </button>
 
     <div class="clicks">{{ clicks() }} clicks</div>
-  `, styles: ["/* angular:styles/component:css;127335024fd76d4f2ecf69f95bb29caf346502f38e9324c3a6fe2a2d1a346817;/home/runner/work/terse-ui/terse-ui/apps/examples/src/examples/protos/ex-proto-button-loading.ts */\n:host {\n  display: grid;\n  place-items: center;\n  gap: 1rem;\n  text-align: center;\n}\n.description {\n  line-height: 1.5;\n  text-wrap: balance;\n}\n[protoButton] {\n  font-size: 1em;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  border-radius: 0.5rem;\n  color: var(--primary);\n  border: none;\n  height: 2.5rem;\n  font-weight: 500;\n  background-color: var(--surface);\n  transition: background-color 100ms cubic-bezier(0.4, 0, 0.2, 1);\n  box-sizing: border-box;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  cursor: pointer;\n  gap: 0.5rem;\n}\n[protoButton]:focus-visible {\n  outline: 2px solid var(--ring);\n}\n[protoButton]:not([data-disabled]):hover {\n  background-color: var(--surface-hover);\n}\n[protoButton]:not([data-disabled]):active {\n  background-color: var(--surface-active);\n}\n[protoButton][data-disabled] {\n  opacity: 0.5;\n  cursor: not-allowed;\n}\n[protoButton] .loader {\n  width: 1rem;\n  height: 1rem;\n  border: 2px solid var(--on-surface);\n  border-bottom-color: transparent;\n  border-radius: 50%;\n  display: inline-block;\n  box-sizing: border-box;\n  animation: rotation 1s linear infinite;\n}\n@keyframes rotation {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n/*# sourceMappingURL=ex-proto-button-loading.css.map */\n"] }]
+  `, styles: ["/* angular:styles/component:css;997c7ef33e87329b0658abcba81c8ea003c01edf9922970d92966df4707e6590;/home/runner/work/terse-ui/terse-ui/apps/examples/src/examples/protos/ex-proto-button-loading.ts */\n:host {\n  display: grid;\n  place-items: center;\n  gap: 1rem;\n  text-align: center;\n}\n.description {\n  line-height: 1.5;\n  text-wrap: balance;\n}\n[exButton] {\n  font-size: 1em;\n  padding-left: 1rem;\n  padding-right: 1rem;\n  border-radius: 0.5rem;\n  color: var(--primary);\n  border: none;\n  height: 2.5rem;\n  font-weight: 500;\n  background-color: var(--surface);\n  transition: background-color 100ms cubic-bezier(0.4, 0, 0.2, 1);\n  box-sizing: border-box;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  cursor: pointer;\n  gap: 0.5rem;\n}\n[exButton]:focus-visible {\n  outline: 2px solid var(--ring);\n}\n[exButton]:not([data-disabled]):hover {\n  background-color: var(--surface-hover);\n}\n[exButton]:not([data-disabled]):active {\n  background-color: var(--surface-active);\n}\n[exButton][data-disabled] {\n  opacity: 0.5;\n  cursor: not-allowed;\n}\n[exButton] .loader {\n  width: 1rem;\n  height: 1rem;\n  border: 2px solid var(--on-surface);\n  border-bottom-color: transparent;\n  border-radius: 50%;\n  display: inline-block;\n  box-sizing: border-box;\n  animation: rotation 1s linear infinite;\n}\n@keyframes rotation {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n/*# sourceMappingURL=ex-proto-button-loading.css.map */\n"] }]
   }], null, null);
 })();
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(ExProtoButtonLoading, { className: "ExProtoButtonLoading", filePath: "apps/examples/src/examples/protos/ex-proto-button-loading.ts", lineNumber: 100 });
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(ExProtoButtonLoading, { className: "ExProtoButtonLoading", filePath: "apps/examples/src/examples/protos/ex-proto-button-loading.ts", lineNumber: 116 });
 })();
 
 // apps/examples/src/main.elements.ts
