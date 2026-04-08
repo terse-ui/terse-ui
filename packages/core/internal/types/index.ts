@@ -1,4 +1,4 @@
-import type {ElementRef, Injector, Signal} from '@angular/core';
+import type {Signal} from '@angular/core';
 
 export type Fn<T = unknown, A extends unknown[] = never[]> = (...args: A) => T;
 
@@ -7,11 +7,6 @@ export type MaybeFn<T = unknown, A extends unknown[] = never[]> = T | Fn<T, A>;
 export type MaybeProp<T> = MaybeFn<T | null | undefined>;
 
 export type MaybeSignal<T> = T | Signal<T>;
-
-export type MaybeElSignal<T extends Element> =
-  | T
-  | ElementRef<T>
-  | Signal<T | ElementRef<T> | null | undefined>;
 
 export type UnArray<T> = T extends (infer U)[] ? U : T;
 
@@ -33,15 +28,6 @@ export type Exact<T, Shape> = T extends Shape
     ? T
     : never
   : never;
-
-export interface WithInjector {
-  readonly injector?: Injector;
-}
-
-export type MaybeElementSignal<T extends Element> =
-  | T
-  | ElementRef<T>
-  | Signal<T | ElementRef<T> | null | undefined>;
 
 export type Constructor<T extends object = object, A extends unknown[] = never[]> = A extends []
   ? new () => T

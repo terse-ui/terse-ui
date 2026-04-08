@@ -14,6 +14,7 @@ import {IdGenerator} from '@terse-ui/core/internal';
  */
 @Directive({
   selector: '[atomId]',
+  exportAs: 'atomId',
   host: {
     '[id]': 'value',
   },

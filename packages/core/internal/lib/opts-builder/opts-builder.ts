@@ -1,48 +1,49 @@
 import type {InjectOptions, Provider} from '@angular/core';
 import {inject, InjectionToken, INJECTOR} from '@angular/core';
 import type {DeepPartial, MaybeFn} from '../../types';
-import {unwrapMergeInject} from '../unwrap';
+import {unwrapInject, unwrapMergeInject} from '../unwrap';
 
-export type OptionsBuilderResult<Options extends object> = [
-  provideOptions: (opts: MaybeFn<DeepPartial<Options>>) => Provider[],
-  injectOptions: (injOpts?: Omit<InjectOptions, 'optional'>) => Options,
+export type OptsBuilderResult<Options extends object> = [
+  provideOpts: (opts: MaybeFn<DeepPartial<Options>>) => Provider[],
+  injectOpts: (injOpts?: Omit<InjectOptions, 'optional'>) => Options,
 ];
 
 /**
- * Returns `[provideOptions, injectOptions]` for hierarchical, deep-merged
- * configuration. All contributes are resolved upon calling `injectOptions`.
+ * Returns `[provideOpts, injectOpts]` for hierarchical, deep-merged
+ * configuration. All contributes are resolved upon calling `injectOpts`.
  *
  * @example
  * ```ts
- * const [provideAppButtonOptions, injectAppButtonOptions] = optionsBuilder<AppButtonOptions>(() => ({
+ * const [provideAppButtonOpts, injectAppButtonOpts] = optsBuilder<AppButtonOpts>(() => ({
  *   disabled: false,
  *   tabIndex: numberAttribute(inject(new HostAttributeToken('tabindex'), {optional: true}) ?? 0, 0),
  * }));
  * ```
  */
-export function optsBuilder<Options extends object>(
-  debugName: string,
-  defaultOptions: MaybeFn<Options>,
-  merger?: (
-    contributions: MaybeFn<DeepPartial<Options>>[],
-    defaultValue: MaybeFn<Options>,
-  ) => Options,
-): OptionsBuilderResult<Options> {
-  const optsToken = new InjectionToken<Options>(ngDevMode ? `Options:${debugName}` : '');
+export function optsBuilder<Opts extends object>(
+  dbgName: string,
+  defaultOpts: MaybeFn<Opts>,
+  merger?: (contribs: DeepPartial<Opts>[], defaultVal: Opts) => Opts,
+): OptsBuilderResult<Opts> {
+  const optsToken = new InjectionToken<Opts>(ngDevMode ? `Opts:${dbgName}` : '');
 
-  const optsContributionToken = new InjectionToken<MaybeFn<DeepPartial<Options>>[]>(
-    ngDevMode ? `OptionsContribution:${debugName}` : '',
+  const optsContributionToken = new InjectionToken<MaybeFn<DeepPartial<Opts>>[]>(
+    ngDevMode ? `OptsContribution:${dbgName}` : '',
   );
 
-  function injectOptions(opts: Omit<InjectOptions, 'optional'> = {}): Options {
-    const contributions = inject(optsContributionToken, {...opts, optional: true}) ?? [];
+  function injectOpts(opts: Omit<InjectOptions, 'optional'> = {}): Opts {
+    const inj = inject(INJECTOR);
+    const contribs = inject(optsContributionToken, {...opts, optional: true}) ?? [];
     if (merger) {
-      return merger(contributions, defaultOptions);
+      return merger(
+        contribs.map((c) => unwrapInject(inj, c)),
+        unwrapInject(inj, defaultOpts),
+      );
     }
-    return unwrapMergeInject(inject(INJECTOR), defaultOptions, ...contributions);
+    return unwrapMergeInject(inj, defaultOpts, ...contribs);
   }
 
-  function provideOptions(opts: MaybeFn<DeepPartial<Options>>): Provider[] {
+  function provideOpts(opts: MaybeFn<DeepPartial<Opts>>): Provider[] {
     return [
       {
         multi: true,
@@ -51,10 +52,10 @@ export function optsBuilder<Options extends object>(
       },
       {
         provide: optsToken,
-        useFactory: injectOptions,
+        useFactory: injectOpts,
       },
     ];
   }
 
-  return [provideOptions, injectOptions] as const;
+  return [provideOpts, injectOpts] as const;
 }

@@ -1,5 +1,5 @@
 import {inject, Injectable, runInInjectionContext, untracked, type Injector} from '@angular/core';
-import {injEl, setupInjCtx, type InjCtxRef} from '@terse-ui/core/internal';
+import {injectCtx, injectElement, type InjectContextRef} from '@terse-ui/core/internal';
 import type {Constructor} from '@terse-ui/core/internal/types';
 
 @Injectable({providedIn: 'root'})
@@ -16,11 +16,11 @@ export class AutoHostResolver {
   }
 
   resolve<T extends object>(type: Constructor<T>, injector?: Injector): T {
-    return setupInjCtx(
+    return injectCtx(
       injector,
       this.resolve.bind(this),
     )(({injector}) => {
-      const element = injEl();
+      const element = injectElement();
       const serviceMap = this.#get<T>(element);
       let instance = serviceMap.get(type);
       if (!instance) {
@@ -50,17 +50,17 @@ export function AutoHost() {
 
 export function autoHost<T>(
   name: string,
-  factory: (ctx: InjCtxRef) => T,
+  factory: (ctx: InjectContextRef) => T,
 ): (injector?: Injector) => T {
   @AutoHost()
   class HostValue {
-    readonly value = setupInjCtx()((ctx) => factory(ctx));
+    readonly value = injectCtx()((ctx) => factory(ctx));
   }
 
   Object.defineProperty(HostValue, 'name', {value: name});
   Object.defineProperty(HostValue.prototype, Symbol.toStringTag, {value: name});
 
   return (injector?: Injector): T => {
-    return setupInjCtx(injector, autoHost)(() => inject(HostValue).value as T);
+    return injectCtx(injector, autoHost)(() => inject(HostValue).value as T);
   };
 }

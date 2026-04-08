@@ -1,5 +1,6 @@
 import {computed, Directive, DOCUMENT, inject, Injectable, model, signal} from '@angular/core';
-import {on, Timeout} from '@terse-ui/core/internal';
+import {listener} from '@signality/core';
+import {Timeout} from '@terse-ui/core/internal';
 
 @Injectable({providedIn: 'root'})
 class GlobalPointerEvents {
@@ -12,8 +13,8 @@ class GlobalPointerEvents {
 
   constructor() {
     const doc = inject(DOCUMENT);
-    on.capture.passive(doc, 'pointerup', this.#onGlobalPointerUp.bind(this));
-    on.capture.passive(doc, 'touchend', this.#ignoreEmulatedMouse.bind(this));
+    listener.capture.passive(doc, 'pointerup', this.#onGlobalPointerUp.bind(this));
+    listener.capture.passive(doc, 'touchend', this.#ignoreEmulatedMouse.bind(this));
   }
 
   #ignoreEmulatedMouse(): void {
@@ -51,7 +52,7 @@ export class AtomHover {
   readonly dataHoverAttr = computed(() => (this.disabled() ? null : this.isHovered() ? '' : null));
 
   #onHoverBegin(event: Event, pointerType: string): void {
-    if (pointerType === 'touch' || this.isHovered()) {
+    if (this.disabled() || pointerType === 'touch' || this.isHovered()) {
       return;
     }
 

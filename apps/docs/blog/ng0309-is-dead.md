@@ -4,7 +4,7 @@ outline: [2, 3]
 
 # Angular Host Directive De-Duplication Just Landed. NG0309 Is Dead.
 
-<p style="opacity: 0.6; margin-top: -0.5rem;">
+<p style="opacity: 0.6; margin-top: -0.25rem;">
   By Jeremy C. Zacharia
 </p>
 
@@ -25,15 +25,15 @@ This wasn't a niche edge case. This was the fundamental architecture of every he
 
 @Directive({
   selector: '[tooltipTrigger]',
-  hostDirectives: [AnchorPositioner],  // needs anchor positioning
+  hostDirectives: [AnchorPositioner], // needs anchor positioning
 })
-export class TooltipTrigger { }
+export class TooltipTrigger {}
 
 @Directive({
   selector: '[menuTrigger]',
-  hostDirectives: [AnchorPositioner],  // also needs anchor positioning
+  hostDirectives: [AnchorPositioner], // also needs anchor positioning
 })
-export class MenuTrigger { }
+export class MenuTrigger {}
 
 // A button that triggers both a menu and a tooltip:
 // <button tooltipTrigger menuTrigger>Actions</button>
@@ -108,9 +108,7 @@ export class SelectTrigger {
 
 ```html
 <!-- One button. Three floating behaviors. One anchor instance. -->
-<button tooltipTrigger menuTrigger selectTrigger>
-  Actions
-</button>
+<button tooltipTrigger menuTrigger selectTrigger>Actions</button>
 
 <!-- All three inject the SAME AnchorPositioner instance.       -->
 <!-- All three reference the SAME anchor-name for positioning.  -->
@@ -148,8 +146,12 @@ export class Disableable {
 export class FocusVisible {
   readonly focusVisible = signal(false);
 
-  onFocus() { this.focusVisible.set(true); }
-  onBlur()  { this.focusVisible.set(false); }
+  onFocus() {
+    this.focusVisible.set(true);
+  }
+  onBlur() {
+    this.focusVisible.set(false);
+  }
 }
 ```
 
@@ -158,22 +160,15 @@ export class FocusVisible {
 
 // ButtonBehavior = Disableable + FocusVisible
 @Directive({
-  hostDirectives: [
-    { directive: Disableable, inputs: ['disabled'] },
-    FocusVisible,
-  ],
+  hostDirectives: [{directive: Disableable, inputs: ['disabled']}, FocusVisible],
 })
-export class ButtonBehavior { }
+export class ButtonBehavior {}
 
 // DropdownItemBehavior = Disableable + FocusVisible + Selectable
 @Directive({
-  hostDirectives: [
-    { directive: Disableable, inputs: ['disabled'] },
-    FocusVisible,
-    Selectable,
-  ],
+  hostDirectives: [{directive: Disableable, inputs: ['disabled']}, FocusVisible, Selectable],
 })
-export class DropdownItemBehavior { }
+export class DropdownItemBehavior {}
 ```
 
 ```ts
@@ -186,12 +181,12 @@ export class DropdownItemBehavior { }
 @Component({
   selector: 'sidebar-item',
   hostDirectives: [
-    ButtonBehavior,       // brings Disableable + FocusVisible
+    ButtonBehavior, // brings Disableable + FocusVisible
     DropdownItemBehavior, // also brings Disableable + FocusVisible
-  ],                      // One Disableable, one FocusVisible. Merged.
+  ], // One Disableable, one FocusVisible. Merged.
   template: `<ng-content />`,
 })
-export class SidebarItem { }
+export class SidebarItem {}
 ```
 
 This is the exact scenario from the original GitHub issue. A collapsed sidebar renders items inside a dropdown. An expanded sidebar renders them as regular buttons. The component needs both behaviors simultaneously. Before this fix, you had to choose between architectural purity and a working application. Now you don't.
@@ -225,15 +220,11 @@ export class Appearance {
      diamond crashes. Force the consumer to
      apply it manually: -->
 
-<button
-  appearance
-  dsButton
-  dsDropdownItem
->
-
-<!-- Forgot appearance? No compile error.
+<button appearance dsButton dsDropdownItem>
+  <!-- Forgot appearance? No compile error.
      Just broken styling. Silent. Invisible.
      Shipped. -->
+</button>
 ```
 
 ```html [After - Pure composition]
@@ -241,15 +232,12 @@ export class Appearance {
      and dsDropdownItem where it belongs.
      The library owns the concern entirely. -->
 
-<button
-  dsButton
-  dsDropdownItem
->
-
-<!-- dsButton has Appearance.
+<button dsButton dsDropdownItem>
+  <!-- dsButton has Appearance.
      dsDropdownItem has Appearance.
      Angular keeps one instance.
      Consumer writes nothing extra. -->
+</button>
 ```
 
 :::
@@ -274,26 +262,18 @@ export class FormFieldState {
   readonly invalid = signal(false);
   readonly touched = signal(false);
   private readonly id = uniqueId();
-  readonly errorId = computed(() =>
-    this.invalid() ? `err-${this.id}` : null
-  );
+  readonly errorId = computed(() => (this.invalid() ? `err-${this.id}` : null));
 }
 
 @Directive({
-  hostDirectives: [
-    { directive: Disableable, inputs: ['disabled'] },
-    FormFieldState,
-  ],
+  hostDirectives: [{directive: Disableable, inputs: ['disabled']}, FormFieldState],
 })
-export class InputBehavior { }
+export class InputBehavior {}
 
 @Directive({
-  hostDirectives: [
-    { directive: Disableable, inputs: ['disabled'] },
-    FormFieldState,
-  ],
+  hostDirectives: [{directive: Disableable, inputs: ['disabled']}, FormFieldState],
 })
-export class TextareaBehavior { }
+export class TextareaBehavior {}
 
 // Compose both — shared atoms de-duplicated
 @Component({
@@ -302,7 +282,7 @@ export class TextareaBehavior { }
   // One Disableable. One FormFieldState. Merged.
   template: `...`,
 })
-export class TagInput { }
+export class TagInput {}
 ```
 
 ## Deep Composition Trees — The Stress Test
@@ -315,34 +295,42 @@ This is where de-duplication proves it isn't a convenience feature — it's stru
 // 4 levels deep — just works
 
 // Layer 1: Atoms
-@Directive({ host: { '[attr.data-disabled]': 'disabled() || null' } })
-export class Disableable  { readonly disabled = input(false); }
+@Directive({host: {'[attr.data-disabled]': 'disabled() || null'}})
+export class Disableable {
+  readonly disabled = input(false);
+}
 
-@Directive({ host: { '[attr.data-focus-visible]': 'focusVisible() || null' } })
-export class FocusVisible { readonly focusVisible = signal(false); }
+@Directive({host: {'[attr.data-focus-visible]': 'focusVisible() || null'}})
+export class FocusVisible {
+  readonly focusVisible = signal(false);
+}
 
-@Directive({ host: { '[style.anchor-name]': 'anchorName' } })
-export class AnchorPositioner { readonly anchorName = `--anchor-${uniqueId()}`; }
+@Directive({host: {'[style.anchor-name]': 'anchorName'}})
+export class AnchorPositioner {
+  readonly anchorName = `--anchor-${uniqueId()}`;
+}
 
-@Directive({ host: { '[attr.data-hovered]': 'hovered() || null' } })
-export class Hoverable    { readonly hovered = signal(false); }
+@Directive({host: {'[attr.data-hovered]': 'hovered() || null'}})
+export class Hoverable {
+  readonly hovered = signal(false);
+}
 
 // Layer 2: Compounds
 @Directive({
   hostDirectives: [Disableable, FocusVisible, Hoverable],
 })
-export class Interactive { }
+export class Interactive {}
 
 @Directive({
   hostDirectives: [AnchorPositioner, Hoverable],
 })
-export class PopoverTrigger { }
+export class PopoverTrigger {}
 
 // Layer 3: Primitives — Hoverable appears in BOTH
 @Directive({
   hostDirectives: [Interactive, PopoverTrigger],
 })
-export class MenuButton { }
+export class MenuButton {}
 
 // Layer 4: Consumer component
 @Component({
@@ -355,7 +343,7 @@ export class MenuButton { }
   //   AnchorPositioner  x1
   //   Hoverable         x1  (was x2, de-duplicated)
 })
-export class NavItem { }
+export class NavItem {}
 ```
 
 Four layers. Five unique atom directives. One potential duplicate resolved silently. The consumer writes a single line — `hostDirectives: [MenuButton]` — and everything resolves. That's the power of framework-level composition.
@@ -373,36 +361,28 @@ Angular host directives push that responsibility into the framework. Dependency 
 // detection and anchor positioning internally.
 // The consumer assembles everything by hand.
 
-function MenuButtonWithTooltip({ label, children }) {
+function MenuButtonWithTooltip({label, children}) {
   const triggerRef = useRef<HTMLButtonElement>(null);
 
   // Menu state + trigger props
   const menuState = useMenuTriggerState({});
-  const { menuTriggerProps, menuProps } = useMenuTrigger(
-    {},
-    menuState,
-    triggerRef,
-  );
+  const {menuTriggerProps, menuProps} = useMenuTrigger({}, menuState, triggerRef);
 
   // Tooltip state + trigger props
-  const tooltipState = useTooltipTriggerState({ delay: 500 });
-  const { triggerProps: tooltipTriggerProps } = useTooltipTrigger(
-    {},
-    tooltipState,
-    triggerRef,
-  );
+  const tooltipState = useTooltipTriggerState({delay: 500});
+  const {triggerProps: tooltipTriggerProps} = useTooltipTrigger({}, tooltipState, triggerRef);
 
   // Button semantics
-  const { buttonProps } = useButton(menuTriggerProps, triggerRef);
+  const {buttonProps} = useButton(menuTriggerProps, triggerRef);
 
   // Focus ring (keyboard focus only)
-  const { focusProps, isFocusVisible } = useFocusRing();
+  const {focusProps, isFocusVisible} = useFocusRing();
 
   // Hover detection — needed by BOTH tooltip and menu.
   // Each hook tracks hover internally, but only the consumer
   // knows both need it. If you forget this, the tooltip
   // never appears on hover.
-  const { hoverProps, isHovered } = useHover({
+  const {hoverProps, isHovered} = useHover({
     onHoverStart: () => tooltipState.open(true),
     onHoverEnd: () => tooltipState.close(),
   });
@@ -415,12 +395,7 @@ function MenuButtonWithTooltip({ label, children }) {
   return (
     <>
       <button
-        {...mergeProps(
-          buttonProps,
-          tooltipTriggerProps,
-          focusProps,
-          hoverProps,
-        )}
+        {...mergeProps(buttonProps, tooltipTriggerProps, focusProps, hoverProps)}
         ref={triggerRef}
         data-focus-visible={isFocusVisible || undefined}
         data-hovered={isHovered || undefined}
@@ -448,10 +423,10 @@ function MenuButtonWithTooltip({ label, children }) {
 // Angular de-duplicates. The consumer writes markup.
 
 @Component({
-  selector: "button[appMenuButtonWithTooltip]",
+  selector: 'button[appMenuButtonWithTooltip]',
   hostDirectives: [
-    MenuTrigger,     // brings Hoverable + AnchorPositioner
-    TooltipTrigger,  // also brings Hoverable + AnchorPositioner
+    MenuTrigger, // brings Hoverable + AnchorPositioner
+    TooltipTrigger, // also brings Hoverable + AnchorPositioner
     FocusVisible,
   ],
   // Hoverable x1        (de-duplicated)
@@ -490,4 +465,4 @@ There are no more workarounds. No more horrific `__NG_ELEMENT_ID__` hacks. No mo
 
 ---
 
-*This fix exists because [Alex Inkin](https://github.com/waterplea) refused to let it stay broken. He opened the original issue, made the case clearly, and kept pushing until the Angular team prioritized it. And [Kristiyan Kostadinov](https://github.com/crisbeto) turned it into reality — implementing the compiler and runtime changes in [PR #67996](https://github.com/angular/angular/pull/67996). The library author community owes them both.*
+_This fix exists because [Alex Inkin](https://github.com/waterplea) refused to let it stay broken. He opened the original issue, made the case clearly, and kept pushing until the Angular team prioritized it. And [Kristiyan Kostadinov](https://github.com/crisbeto) turned it into reality — implementing the compiler and runtime changes in [PR #67996](https://github.com/angular/angular/pull/67996). The library author community owes them both._

@@ -1,4 +1,3 @@
-
 You are an expert in TypeScript, Angular, and scalable web application development. You write functional, maintainable, performant, and accessible code following Angular and TypeScript best practices.
 
 ## TypeScript Best Practices
@@ -54,6 +53,18 @@ You are an expert in TypeScript, Angular, and scalable web application developme
 - Use the `providedIn: 'root'` option for singleton services
 - Use the `inject()` function instead of constructor injection
 
+## Signality
+
+This project heavily uses [`@signality/core`](https://signality.dev) as its reactive building block layer. Always prefer signality utilities over raw browser APIs or custom implementations.
+
+**Required usage:**
+- `listener()` from `@signality/core` — for all event listeners. Never use raw `addEventListener`/`removeEventListener`. The `listener` utility handles SSR safety, `untracked()` execution (prevents NG0600), and effect-based cleanup. Supports chainable modifiers: `listener.capture.passive(...)`.
+- `onClickOutside()` from `@signality/core` — for click-outside detection. Uses `composedPath()` for Shadow DOM compatibility and pointer-down/pointer-up sequence.
+- `activeElement()` from `@signality/core` — reactive signal tracking the document's active element.
+- `mutationObserver()` from `@signality/core` — reactive MutationObserver wrapper with automatic cleanup.
+
+**Import path:** Always import from `@signality/core` (not deeper paths like `@signality/core/browser/listener`).
+
 ## Project Architecture
 
 Terse UI is a headless Angular UI library with a three-layer architecture:
@@ -63,6 +74,7 @@ Terse UI is a headless Angular UI library with a three-layer architecture:
 - **`@terse-ui/protos`** (`packages/protos`) — Headless UI components composed from atoms via `hostDirectives`. Zero CSS, full WAI-ARIA compliance. (`ProtoButton`, more coming.)
 
 Other directories:
+
 - `apps/docs` — VitePress documentation site.
 - `apps/examples` — Angular Elements used as live demos in docs.
 
@@ -79,7 +91,7 @@ Follow the structure established in `apps/docs/protos/button.md` as the gold sta
 5. **Accessibility features** table (where applicable, linking WAI-ARIA patterns)
 6. **Examples** using `<Example name="..." />` (only when a corresponding Angular Element exists in `apps/examples/`)
 7. **Styling** section with CSS selector examples
-8. **API Reference** with tables for inputs, outputs, and data attributes
+8. **API Reference** using `<!-- api-ref:atoms/hover -->` (or the relevant path). This marker is replaced at build time by the `api-ref-inject` VitePress plugin (`apps/docs/.vitepress/plugins/api-ref-inject.ts`) which renders tables from extracted JSON in `apps/docs/.vitepress/data/api/`. Never write API tables manually.
 9. **Keyboard Interactions** with `<kbd>` tags (where applicable)
 
 Tone: technical but approachable. No fluff, no emoji. Aim for ~100 lines per page. Use tables for structured comparisons. Reference WAI-ARIA patterns where applicable.

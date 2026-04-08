@@ -1,5 +1,5 @@
 import {computed, Directive, inject, model} from '@angular/core';
-import {isString, optsBuilder, setupInjCtx} from '@terse-ui/core/internal';
+import {injectCtx, isString, optsBuilder} from '@terse-ui/core/internal';
 import {AtomAnchor, type AnchorName} from './atom-anchor';
 
 const SIDE_TO_POSITION_AREA: Record<AnchorSide, string> = {
@@ -30,6 +30,7 @@ export {provideAnchorOpts};
 
 @Directive({
   selector: '[atomAnchored]',
+  exportAs: 'atomAnchored',
   host: {
     '[style.position]': 'position()',
     '[style.position-anchor]': 'positionAnchor()',
@@ -39,7 +40,7 @@ export {provideAnchorOpts};
   },
 })
 export class AtomAnchored {
-  readonly #injCtx = setupInjCtx();
+  readonly #injCtx = injectCtx();
   readonly #options = injectAnchorOpts();
 
   readonly atomAnchored = model<AtomAnchor | AnchorName>();

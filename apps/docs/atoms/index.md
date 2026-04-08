@@ -17,6 +17,11 @@ Atoms are single-responsibility Angular host directives. Each atom manages exact
 | [AtomClickOutside](/atoms/click-outside) | `@terse-ui/atoms/click-outside` | Detects pointer events outside the host element |
 | [AtomIntersect](/atoms/intersect) | `@terse-ui/atoms/intersect` | Wraps `IntersectionObserver` with signals and data attributes |
 | [AtomClass](/atoms/classes) | `@terse-ui/atoms/classes` | Composable class merging from multiple sources with pluggable reducer |
+| [AtomFocusVisible](/atoms/focus-visible) | `@terse-ui/atoms/focus-visible` | Tracks keyboard-triggered focus with `data-focus-visible` attribute |
+| [AtomPress](/atoms/press) | `@terse-ui/atoms/press` | Tracks pointer and keyboard press state with `data-press` attribute |
+| [AtomFocusTrap](/atoms/focus-trap) | `@terse-ui/atoms/focus-trap` | Traps keyboard focus within the host element via Tab wrapping |
+| [AtomRovingFocusGroup](/atoms/roving-focus) | `@terse-ui/atoms/roving-focus` | Arrow-key navigation and roving tabindex across focusable items |
+| [AtomRovingFocusItem](/atoms/roving-focus) | `@terse-ui/atoms/roving-focus` | Item within a roving focus group with managed tabindex |
 
 ## How Atoms Compose
 

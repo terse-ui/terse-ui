@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/core": "22.0.0-next.6",
-    "@terse-ui/core": "0.0.1"
+    "@terse-ui/core": "0.0.1",
+    "@terse-ui/atoms": "0.0.1"
   },
   "sideEffects": false
 }

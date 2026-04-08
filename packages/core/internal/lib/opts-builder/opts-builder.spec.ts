@@ -90,7 +90,7 @@ describe('optionsBuilder', () => {
         selector: 'test-host',
         changeDetection: ChangeDetectionStrategy.OnPush,
         imports: [Widget],
-        template: `<div tWidget role="tab" size="24"></div>`,
+        template: `<div role="tab" size="24" tWidget></div>`,
       })
       class TestHost {}
 
@@ -107,7 +107,7 @@ describe('optionsBuilder', () => {
         selector: 'test-host',
         changeDetection: ChangeDetectionStrategy.OnPush,
         imports: [Widget],
-        template: `<div tWidget size="32"></div>`,
+        template: `<div size="32" tWidget></div>`,
       })
       class TestHost {}
 

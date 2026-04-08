@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-pnpm add @terse-ui/core @terse-ui/protos @terse-ui/atoms
+pnpm add @terse-ui/core @terse-ui/atoms @terse-ui/protos
 ```
 
 ## Your First Component
@@ -17,11 +17,7 @@ import {ProtoButton} from '@terse-ui/protos/button';
 @Component({
   selector: 'app-example',
   imports: [ProtoButton],
-  template: `
-    <button protoButton (click)="count = count + 1">
-      Clicked {{ count }} times
-    </button>
-  `,
+  template: ` <button protoButton (click)="count = count + 1">Clicked {{ count }} times</button> `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ExampleComponent {

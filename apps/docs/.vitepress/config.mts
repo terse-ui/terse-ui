@@ -80,11 +80,15 @@ export default defineConfig({
           {text: 'Anchor', link: '/atoms/anchor'},
           {text: 'Open Close', link: '/atoms/open-close'},
           {text: 'Orientation', link: '/atoms/orientation'},
-          {text: 'Disabled', link: '/atoms/disabled'},
+          {text: 'Interact', link: '/atoms/interact'},
+          {text: 'Focus', link: '/atoms/focus'},
+          {text: 'Visibility', link: '/atoms/visibility'},
           {text: 'Escape Key', link: '/atoms/escape-key'},
           {text: 'Click Outside', link: '/atoms/click-outside'},
-          {text: 'Intersect', link: '/atoms/intersect'},
           {text: 'Classes', link: '/atoms/classes'},
+          {text: 'Press', link: '/atoms/press'},
+          {text: 'Focus Trap', link: '/atoms/focus-trap'},
+          {text: 'Roving Focus', link: '/atoms/roving-focus'},
         ],
       },
       {
@@ -116,9 +120,13 @@ export default defineConfig({
   },
 
   markdown: {
+    languageAlias: {
+      'ts': 'angular-ts',
+      'html': 'angular-html',
+    },
     theme: {
-      light: 'github-dark',
-      dark: 'github-dark',
+      light: 'github-light',
+      dark: 'dark-plus',
     },
   },
 

@@ -17,7 +17,7 @@ No CSS shipped. No design opinions. Full WAI-ARIA compliance. Just behavior.
 ## Quick Start
 
 ```bash
-pnpm add @terse-ui/core @terse-ui/protos @terse-ui/atoms
+pnpm add @terse-ui/core @terse-ui/atoms @terse-ui/protos
 ```
 
 ```ts
@@ -31,7 +31,9 @@ import {ProtoButton} from '@terse-ui/protos/button';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SaveComponent {
-  save() { /* ... */ }
+  save() {
+    /* ... */
+  }
 }
 ```
 
@@ -49,11 +51,11 @@ export class SaveComponent {
 
 ## Packages
 
-| Package | Description |
-| --- | --- |
-| [`@terse-ui/core`](packages/core) | Foundational utilities: ID generation, deep-merge, type guards, injection helpers |
-| [`@terse-ui/atoms`](packages/atoms) | Atomic host directives: identity, hover, anchor positioning |
-| [`@terse-ui/protos`](packages/protos) | Headless UI components composed from atoms |
+| Package                               | Description                                                                       |
+| ------------------------------------- | --------------------------------------------------------------------------------- |
+| [`@terse-ui/core`](packages/core)     | Foundational utilities: ID generation, deep-merge, type guards, injection helpers |
+| [`@terse-ui/atoms`](packages/atoms)   | Atomic host directives: identity, hover, anchor positioning                       |
+| [`@terse-ui/protos`](packages/protos) | Headless UI components composed from atoms                                        |
 
 ## Links
 

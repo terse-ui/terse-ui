@@ -117,7 +117,6 @@ describe('AtomOpenClose', () => {
         {imports: [AtomOpenClose]},
       );
 
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
       const details = screen.getByText('Summary').closest('details')!;
       expect(details).toHaveAttribute('data-closed', '');
 

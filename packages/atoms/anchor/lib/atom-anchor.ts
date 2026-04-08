@@ -5,6 +5,7 @@ export type AnchorName = InstanceType<typeof AtomAnchor>['anchorName'];
 
 @Directive({
   selector: '[atomAnchor]',
+  exportAs: 'atomAnchor',
   host: {
     '[style.anchor-name]': 'anchorName',
   },

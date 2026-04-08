@@ -1,5 +1,6 @@
 // @ts-check
 import nx from '@nx/eslint-plugin';
+import angularConfig from '../../eslint.angular.config.mjs';
 import baseConfig from '../../eslint.config.mjs';
 
 export default [
@@ -52,21 +53,5 @@ export default [
       ],
     },
   },
-  {
-    files: ['**/*.ts'],
-    rules: {
-      'no-console': 'error',
-    },
-  },
-  {
-    files: ['**/*.spec.ts'],
-    rules: {
-      '@typescript-eslint/explicit-function-return-type': 'off',
-      '@typescript-eslint/no-floating-promises': 'off',
-      '@typescript-eslint/no-unsafe-assignment': 'off',
-      '@typescript-eslint/no-unsafe-member-access': 'off',
-      '@typescript-eslint/no-unsafe-call': 'off',
-      '@angular-eslint/component-selector': 'off',
-    },
-  },
+  ...angularConfig,
 ];
