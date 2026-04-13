@@ -26,7 +26,7 @@
     "rxjs": "~7.8.2"
   },
   "devDependencies": {
-    "@analogjs/vite-plugin-angular": "~2.4.1",
+    "@analogjs/vite-plugin-angular": "~2.4.7",
     "@analogjs/vitest-angular": "~2.4.1",
     "@angular-devkit/core": "22.0.0-next.4",
     "@angular-devkit/schematics": "22.0.0-next.4",
