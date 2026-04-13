@@ -32,40 +32,40 @@ importers:
     dependencies:
       '@angular-devkit/build-angular':
         specifier: 22.0.0-next.4
-        version: 22.0.0-next.4(758168f9a0a7013b01ad000d3bed766f)
+        version: 22.0.0-next.4(c5294860805d04e2fec7bf623e48b9af)
       '@angular/cdk':
         specifier: github:angular/cdk-builds#main
-        version: https://codeload.github.com/angular/cdk-builds/tar.gz/cebd4fb52989b094cbd8a09c7066f122bbdb414d(5e9117228ba18213c8c80fd15811f017)
+        version: https://codeload.github.com/angular/cdk-builds/tar.gz/8df4bebef3e5330a695d07e2beedff766d8f8a57(3c0c8a1ab4508240e1771b49ad7c4e12)
       '@angular/common':
         specifier: github:angular/common-builds#main
-        version: https://codeload.github.com/angular/common-builds/tar.gz/6296c196d7a439f5b233486b12725dd943f98315(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(rxjs@7.8.2)
+        version: https://codeload.github.com/angular/common-builds/tar.gz/ce29eb558af947a8dff258c1368c4388d3c031e2(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(rxjs@7.8.2)
       '@angular/compiler':
         specifier: github:angular/compiler-builds#main
-        version: https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0
+        version: https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1
       '@angular/core':
         specifier: github:angular/core-builds#main
-        version: https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2)
+        version: https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2)
       '@angular/elements':
         specifier: github:angular/elements-builds#main
-        version: https://codeload.github.com/angular/elements-builds/tar.gz/f201a1056d4db2018cde43c5d694b4ed0bac9192(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(rxjs@7.8.2)
+        version: https://codeload.github.com/angular/elements-builds/tar.gz/1d6c2e2c99b54553934aa94fe75456296e24fc57(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(rxjs@7.8.2)
       '@angular/forms':
         specifier: github:angular/forms-builds#main
-        version: https://codeload.github.com/angular/forms-builds/tar.gz/3c11ad9fa6f60fe7a5adeebc54dae3b65fb14d16(5e9117228ba18213c8c80fd15811f017)
+        version: https://codeload.github.com/angular/forms-builds/tar.gz/15abd7f8a2d0293e7af3de202d71f35c8b10b30b(3c0c8a1ab4508240e1771b49ad7c4e12)
       '@angular/platform-browser':
         specifier: github:angular/platform-browser-builds#main
-        version: https://codeload.github.com/angular/platform-browser-builds/tar.gz/824bf9553f6d0794ac4c97726d54e04465d9f543(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/6296c196d7a439f5b233486b12725dd943f98315(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))
+        version: https://codeload.github.com/angular/platform-browser-builds/tar.gz/e07a0dd2add89689fd4876a767692739df3849f3(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/ce29eb558af947a8dff258c1368c4388d3c031e2(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))
       '@angular/platform-server':
         specifier: github:angular/platform-server-builds#main
-        version: https://codeload.github.com/angular/platform-server-builds/tar.gz/b37797798b1ea95f80b9fc361dc9a7ed75e6387e(7e6337fe8f1cc7b1bed1d0a4feacc026)
+        version: https://codeload.github.com/angular/platform-server-builds/tar.gz/8bff221bcb6e75e42d635151eb46a4691151e335(2512992f7e38ff4a787eda9e339b7984)
       '@angular/router':
         specifier: github:angular/router-builds#main
-        version: https://codeload.github.com/angular/router-builds/tar.gz/1b85f9f644cf61cc5cb17676c3920b5f13e4aed4(5e9117228ba18213c8c80fd15811f017)
+        version: https://codeload.github.com/angular/router-builds/tar.gz/7432ebc260f1a7bc5db8d68122c76176ce2d7ec4(3c0c8a1ab4508240e1771b49ad7c4e12)
       '@angular/ssr':
         specifier: github:angular/angular-ssr-builds#main
-        version: https://codeload.github.com/angular/angular-ssr-builds/tar.gz/e4b5cccdd76316551273b1636ef8af1b63cdb35c(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/6296c196d7a439f5b233486b12725dd943f98315(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(@angular/platform-server@https://codeload.github.com/angular/platform-server-builds/tar.gz/b37797798b1ea95f80b9fc361dc9a7ed75e6387e(7e6337fe8f1cc7b1bed1d0a4feacc026))(@angular/router@https://codeload.github.com/angular/router-builds/tar.gz/1b85f9f644cf61cc5cb17676c3920b5f13e4aed4(5e9117228ba18213c8c80fd15811f017))
+        version: https://codeload.github.com/angular/angular-ssr-builds/tar.gz/aee3b37dcada04bb06bbe0bb29d5958be6679809(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/ce29eb558af947a8dff258c1368c4388d3c031e2(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(@angular/platform-server@https://codeload.github.com/angular/platform-server-builds/tar.gz/8bff221bcb6e75e42d635151eb46a4691151e335(2512992f7e38ff4a787eda9e339b7984))(@angular/router@https://codeload.github.com/angular/router-builds/tar.gz/7432ebc260f1a7bc5db8d68122c76176ce2d7ec4(3c0c8a1ab4508240e1771b49ad7c4e12))
       '@signality/core':
         specifier: ^0.1.3
-        version: 0.1.3(1e3f5073487ea7c59f2c691b6df0b5c0)
+        version: 0.1.3(f6947003d556a2464f9ae33dabd5debc)
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -78,34 +78,34 @@ importers:
     devDependencies:
       '@analogjs/vite-plugin-angular':
         specifier: ~2.4.1
-        version: 2.4.1(@angular-devkit/build-angular@22.0.0-next.4(758168f9a0a7013b01ad000d3bed766f))(@angular/build@https://codeload.github.com/angular/angular-build-builds/tar.gz/65fff176683df4fc6289d88751662dc5afa030f7(13b4bd07cfa5a2b864c60ec1c7195bfa))
+        version: 2.4.1(@angular-devkit/build-angular@22.0.0-next.4(c5294860805d04e2fec7bf623e48b9af))(@angular/build@https://codeload.github.com/angular/angular-build-builds/tar.gz/6d00286f6479813a474c9940fa4a44bd92c23902(b080299454bc7d96279558f61cb85213))
       '@analogjs/vitest-angular':
         specifier: ~2.4.1
-        version: 2.4.1(@analogjs/vite-plugin-angular@2.4.1(@angular-devkit/build-angular@22.0.0-next.4(758168f9a0a7013b01ad000d3bed766f))(@angular/build@https://codeload.github.com/angular/angular-build-builds/tar.gz/65fff176683df4fc6289d88751662dc5afa030f7(13b4bd07cfa5a2b864c60ec1c7195bfa)))(@angular-devkit/architect@0.2200.0-next.4(chokidar@5.0.0))(@angular-devkit/schematics@https://codeload.github.com/angular/angular-devkit-schematics-builds/tar.gz/3c61f90d12b7635896ea4e9d91f538a01b252817(chokidar@5.0.0))(vitest@4.1.3)
+        version: 2.4.1(@analogjs/vite-plugin-angular@2.4.1(@angular-devkit/build-angular@22.0.0-next.4(c5294860805d04e2fec7bf623e48b9af))(@angular/build@https://codeload.github.com/angular/angular-build-builds/tar.gz/6d00286f6479813a474c9940fa4a44bd92c23902(b080299454bc7d96279558f61cb85213)))(@angular-devkit/architect@0.2200.0-next.5(chokidar@5.0.0))(@angular-devkit/schematics@https://codeload.github.com/angular/angular-devkit-schematics-builds/tar.gz/e00cb89340b8910d27ef6195f959130e3973c5d4(chokidar@5.0.0))(vitest@4.1.3)
       '@angular-devkit/core':
         specifier: github:angular/angular-devkit-core-builds#main
-        version: https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/6cd775718f1fd4c78d960e28a99d5a40453cae36(chokidar@5.0.0)
+        version: https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/c1e4be52aa7dad58e06e8b45936cca5b82342df4(chokidar@5.0.0)
       '@angular-devkit/schematics':
         specifier: github:angular/angular-devkit-schematics-builds#main
-        version: https://codeload.github.com/angular/angular-devkit-schematics-builds/tar.gz/3c61f90d12b7635896ea4e9d91f538a01b252817(chokidar@5.0.0)
+        version: https://codeload.github.com/angular/angular-devkit-schematics-builds/tar.gz/e00cb89340b8910d27ef6195f959130e3973c5d4(chokidar@5.0.0)
       '@angular/build':
         specifier: github:angular/angular-build-builds#main
-        version: https://codeload.github.com/angular/angular-build-builds/tar.gz/65fff176683df4fc6289d88751662dc5afa030f7(13b4bd07cfa5a2b864c60ec1c7195bfa)
+        version: https://codeload.github.com/angular/angular-build-builds/tar.gz/6d00286f6479813a474c9940fa4a44bd92c23902(b080299454bc7d96279558f61cb85213)
       '@angular/cli':
         specifier: github:angular/cli-builds#main
-        version: https://codeload.github.com/angular/cli-builds/tar.gz/df8eef312e79fafe97bb84e4006a35a9475cf345(@types/node@24.12.2)(chokidar@5.0.0)
+        version: https://codeload.github.com/angular/cli-builds/tar.gz/1d1b69b0a4efd550e2fdb4db36ce9aef1d768406(@types/node@24.12.2)(chokidar@5.0.0)
       '@angular/compiler-cli':
         specifier: github:angular/compiler-cli-builds#main
-        version: https://codeload.github.com/angular/compiler-cli-builds/tar.gz/b032d4f9c7664088b71d183e6dad51be1fe19d74(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(typescript@6.0.2)
+        version: https://codeload.github.com/angular/compiler-cli-builds/tar.gz/2c8b8bf1dd606449166e6f9e2a4841bb75aa847a(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(typescript@6.0.2)
       '@angular/language-service':
         specifier: github:angular/language-service-builds#main
-        version: https://codeload.github.com/angular/language-service-builds/tar.gz/70180b5d8b49c8badbf88d30d0516bc763cd4084
+        version: https://codeload.github.com/angular/language-service-builds/tar.gz/cfa08e0699fffb8421eafd9b100862add20cccce
       '@eslint/js':
         specifier: ^9.39.4
         version: 9.39.4
       '@nx/angular':
         specifier: 22.6.4
-        version: 22.6.4(72061a06f331d57c565772016b1d07ed)
+        version: 22.6.4(105f26053ee85c0ccf0fd4360df3309a)
       '@nx/devkit':
         specifier: 22.6.4
         version: 22.6.4(nx@22.6.4(@swc-node/register@1.11.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/core@1.15.24(@swc/helpers@0.5.21))(@swc/types@0.1.26)(typescript@6.0.2))(@swc/core@1.15.24(@swc/helpers@0.5.21)))
@@ -114,7 +114,7 @@ importers:
         version: 22.6.4(@babel/traverse@7.29.0)(@swc-node/register@1.11.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/core@1.15.24(@swc/helpers@0.5.21))(@swc/types@0.1.26)(typescript@6.0.2))(@swc/core@1.15.24(@swc/helpers@0.5.21))(@zkochan/js-yaml@0.0.7)(eslint@9.39.4(jiti@2.6.1))(nx@22.6.4(@swc-node/register@1.11.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/core@1.15.24(@swc/helpers@0.5.21))(@swc/types@0.1.26)(typescript@6.0.2))(@swc/core@1.15.24(@swc/helpers@0.5.21)))(verdaccio@6.4.0(encoding@0.1.13)(typanion@3.14.0))
       '@nx/eslint-plugin':
         specifier: 22.6.4
-        version: 22.6.4(@babel/traverse@7.29.0)(@swc-node/register@1.11.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/core@1.15.24(@swc/helpers@0.5.21))(@swc/types@0.1.26)(typescript@6.0.2))(@swc/core@1.15.24(@swc/helpers@0.5.21))(@typescript-eslint/parser@8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2))(eslint-config-prettier@10.1.8(eslint@9.39.4(jiti@2.6.1)))(eslint@9.39.4(jiti@2.6.1))(nx@22.6.4(@swc-node/register@1.11.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/core@1.15.24(@swc/helpers@0.5.21))(@swc/types@0.1.26)(typescript@6.0.2))(@swc/core@1.15.24(@swc/helpers@0.5.21)))(typescript@6.0.2)(verdaccio@6.4.0(encoding@0.1.13)(typanion@3.14.0))
+        version: 22.6.4(@babel/traverse@7.29.0)(@swc-node/register@1.11.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/core@1.15.24(@swc/helpers@0.5.21))(@swc/types@0.1.26)(typescript@6.0.2))(@swc/core@1.15.24(@swc/helpers@0.5.21))(@typescript-eslint/parser@8.58.2(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2))(eslint-config-prettier@10.1.8(eslint@9.39.4(jiti@2.6.1)))(eslint@9.39.4(jiti@2.6.1))(nx@22.6.4(@swc-node/register@1.11.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/core@1.15.24(@swc/helpers@0.5.21))(@swc/types@0.1.26)(typescript@6.0.2))(@swc/core@1.15.24(@swc/helpers@0.5.21)))(typescript@6.0.2)(verdaccio@6.4.0(encoding@0.1.13)(typanion@3.14.0))
       '@nx/js':
         specifier: 22.6.4
         version: 22.6.4(@babel/traverse@7.29.0)(@swc-node/register@1.11.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/core@1.15.24(@swc/helpers@0.5.21))(@swc/types@0.1.26)(typescript@6.0.2))(@swc/core@1.15.24(@swc/helpers@0.5.21))(nx@22.6.4(@swc-node/register@1.11.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/core@1.15.24(@swc/helpers@0.5.21))(@swc/types@0.1.26)(typescript@6.0.2))(@swc/core@1.15.24(@swc/helpers@0.5.21)))(verdaccio@6.4.0(encoding@0.1.13)(typanion@3.14.0))
@@ -141,7 +141,7 @@ importers:
         version: 1.59.1
       '@schematics/angular':
         specifier: github:angular/schematics-angular-builds#main
-        version: https://codeload.github.com/angular/schematics-angular-builds/tar.gz/d3e56d02a8acc2e33a76b47bf7b3a5b4cdc79a01(chokidar@5.0.0)
+        version: https://codeload.github.com/angular/schematics-angular-builds/tar.gz/f22a1030689665c830587a8b92cc511f26432169(chokidar@5.0.0)
       '@swc-node/register':
         specifier: ~1.11.1
         version: 1.11.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/core@1.15.24(@swc/helpers@0.5.21))(@swc/types@0.1.26)(typescript@6.0.2)
@@ -159,7 +159,7 @@ importers:
         version: 4.2.2(vite@8.0.7(@types/node@24.12.2)(esbuild@0.28.0)(jiti@2.6.1)(less@4.6.4)(sass-embedded@1.99.0)(sass@1.98.0)(terser@5.46.1)(yaml@2.8.3))
       '@testing-library/angular':
         specifier: ^19.2.1
-        version: 19.2.1(8f651d61d52da49991cdaf839850d9c1)
+        version: 19.2.1(ca1ecbc4a36d1d808cef81fa9758a9ed)
       '@testing-library/jest-dom':
         specifier: ^6.9.1
         version: 6.9.1
@@ -183,7 +183,7 @@ importers:
         version: 4.1.3(vitest@4.1.3)
       angular-eslint:
         specifier: ^21.3.1
-        version: 21.3.1(@angular/cli@https://codeload.github.com/angular/cli-builds/tar.gz/df8eef312e79fafe97bb84e4006a35a9475cf345(@types/node@24.12.2)(chokidar@5.0.0))(chokidar@5.0.0)(eslint@9.39.4(jiti@2.6.1))(typescript-eslint@8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2))(typescript@6.0.2)
+        version: 21.3.1(@angular/cli@https://codeload.github.com/angular/cli-builds/tar.gz/1d1b69b0a4efd550e2fdb4db36ce9aef1d768406(@types/node@24.12.2)(chokidar@5.0.0))(chokidar@5.0.0)(eslint@9.39.4(jiti@2.6.1))(typescript-eslint@8.58.2(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2))(typescript@6.0.2)
       autoprefixer:
         specifier: ^10.4.27
         version: 10.4.27(postcss@8.5.8)
@@ -207,7 +207,7 @@ importers:
         version: 2.4.2
       ng-packagr:
         specifier: 22.0.0-next.1
-        version: 22.0.0-next.1(@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/b032d4f9c7664088b71d183e6dad51be1fe19d74(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(typescript@6.0.2))(tailwindcss@4.2.2)(tslib@2.8.1)(typescript@6.0.2)
+        version: 22.0.0-next.1(@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/2c8b8bf1dd606449166e6f9e2a4841bb75aa847a(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(typescript@6.0.2))(tailwindcss@4.2.2)(tslib@2.8.1)(typescript@6.0.2)
       nx:
         specifier: 22.6.4
         version: 22.6.4(@swc-node/register@1.11.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/core@1.15.24(@swc/helpers@0.5.21))(@swc/types@0.1.26)(typescript@6.0.2))(@swc/core@1.15.24(@swc/helpers@0.5.21))
@@ -233,8 +233,8 @@ importers:
         specifier: ~6.0.2
         version: 6.0.2
       typescript-eslint:
-        specifier: ^8.58.0
-        version: 8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
+        specifier: ^8.58.2
+        version: 8.58.2(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
       verdaccio:
         specifier: ^6.4.0
         version: 6.4.0(encoding@0.1.13)(typanion@3.14.0)
@@ -255,10 +255,6 @@ packages:
 
   '@adobe/css-tools@4.4.4':
     resolution: {integrity: sha512-Elp+iwUx5rN5+Y8xLt5/GRoG20WGoDCQ/1Fb+1LiGtvwbDavuSk0jhD/eZdckHAuzcDzccnkv+rEjyWfRx18gg==}
-
-  '@algolia/abtesting@1.16.0':
-    resolution: {integrity: sha512-alHFZ68/i9qLC/muEB07VQ9r7cB8AvCcGX6dVQi2PNHhc/ZQRmmFAv8KK1ay4UiseGSFr7f0nXBKsZ/jRg7e4g==}
-    engines: {node: '>= 14.0.0'}
 
   '@algolia/abtesting@1.16.1':
     resolution: {integrity: sha512-Xxk4l00pYI+jE0PNw8y0MvsQWh5278WRtZQav8/BMMi3HKi2xmeuqe11WJ3y8/6nuBHdv39w76OpJb09TMfAVQ==}
@@ -284,104 +280,52 @@ packages:
       '@algolia/client-search': '>= 4.9.1 < 6'
       algoliasearch: '>= 4.9.1 < 6'
 
-  '@algolia/client-abtesting@5.50.0':
-    resolution: {integrity: sha512-mfgUdLQNxOAvCZUGzPQxjahEWEPuQkKlV0ZtGmePOa9ZxIQZlk31vRBNbM6ScU8jTH41SCYE77G/lCifDr1SVw==}
-    engines: {node: '>= 14.0.0'}
-
   '@algolia/client-abtesting@5.50.1':
     resolution: {integrity: sha512-4peZlPXMwTOey9q1rQKMdCnwZb/E95/1e+7KujXpLLSh0FawJzg//U2NM+r4AiJy4+naT2MTBhj0K30yshnVTA==}
-    engines: {node: '>= 14.0.0'}
-
-  '@algolia/client-analytics@5.50.0':
-    resolution: {integrity: sha512-5mjokeKYyPaP3Q8IYJEnutI+O4dW/Ixxx5IgsSxT04pCfGqPXxTOH311hTQxyNpcGGEOGrMv8n8Z+UMTPamioQ==}
     engines: {node: '>= 14.0.0'}
 
   '@algolia/client-analytics@5.50.1':
     resolution: {integrity: sha512-i+aWHHG8NZvGFHtPeMZkxL2Loc6Fm7iaRo15lYSMx8gFL+at9vgdWxhka7mD1fqxkrxXsQstUBCIsSY8FvkEOw==}
     engines: {node: '>= 14.0.0'}
 
-  '@algolia/client-common@5.50.0':
-    resolution: {integrity: sha512-emtOvR6dl3rX3sBJXXbofMNHU1qMQqQSWu319RMrNL5BWoBqyiq7y0Zn6cjJm7aGHV/Qbf+KCCYeWNKEMPI3BQ==}
-    engines: {node: '>= 14.0.0'}
-
   '@algolia/client-common@5.50.1':
     resolution: {integrity: sha512-Hw52Fwapyk/7hMSV/fI4+s3H9MGZEUcRh4VphyXLAk2oLYdndVUkc6KBi0zwHSzwPAr+ZBwFPe2x6naUt9mZGw==}
-    engines: {node: '>= 14.0.0'}
-
-  '@algolia/client-insights@5.50.0':
-    resolution: {integrity: sha512-IerGH2/hcj/6bwkpQg/HHRqmlGN1XwygQWythAk0gZFBrghs9danJaYuSS3ShzLSVoIVth4jY5GDPX9Lbw5cgg==}
     engines: {node: '>= 14.0.0'}
 
   '@algolia/client-insights@5.50.1':
     resolution: {integrity: sha512-Bn/wtwhJ7p1OD/6pY+Zzn+zlu2N/SJnH46md/PAbvqIzmjVuwjNwD4y0vV5Ov8naeukXdd7UU9v550+v8+mtlg==}
     engines: {node: '>= 14.0.0'}
 
-  '@algolia/client-personalization@5.50.0':
-    resolution: {integrity: sha512-3idPJeXn5L0MmgP9jk9JJqblrQ/SguN93dNK9z9gfgyupBhHnJMOEjrRYcVgTIfvG13Y04wO+Q0FxE2Ut8PVbA==}
-    engines: {node: '>= 14.0.0'}
-
   '@algolia/client-personalization@5.50.1':
     resolution: {integrity: sha512-0V4Tu0RWR8YxkgI9EPVOZHGE4K5pEIhkLNN0CTkP/rnPsqaaSQpNMYW3/mGWdiKOWbX0iVmwLB9QESk3H0jS5g==}
-    engines: {node: '>= 14.0.0'}
-
-  '@algolia/client-query-suggestions@5.50.0':
-    resolution: {integrity: sha512-q7qRoWrQK1a8m5EFQEmPlo7+pg9mVQ8X5jsChtChERre0uS2pdYEDixBBl0ydBSGkdGbLUDufcACIhH/077E4g==}
     engines: {node: '>= 14.0.0'}
 
   '@algolia/client-query-suggestions@5.50.1':
     resolution: {integrity: sha512-jofcWNYMXJDDr87Z2eivlWY6o71Zn7F7aOvQCXSDAo9QTlyf7BhXEsZymLUvF0O1yU9Q9wvrjAWn8uVHYnAvgw==}
     engines: {node: '>= 14.0.0'}
 
-  '@algolia/client-search@5.50.0':
-    resolution: {integrity: sha512-Jc360x4yqb3eEg4OY4KEIdGePBxZogivKI+OGIU8aLXgAYPTECvzeOBc90312yHA1hr3AeRlAFl0rIc8lQaIrQ==}
-    engines: {node: '>= 14.0.0'}
-
   '@algolia/client-search@5.50.1':
     resolution: {integrity: sha512-OteRb8WubcmEvU0YlMJwCXs3Q6xrdkb0v50/qZBJP1TF0CvujFZQM++9BjEkTER/Jr9wbPHvjSFKnbMta0b4dQ==}
-    engines: {node: '>= 14.0.0'}
-
-  '@algolia/ingestion@1.50.0':
-    resolution: {integrity: sha512-OS3/Viao+NPpyBbEY3tf6hLewppG+UclD+9i0ju56mq2DrdMJFCkEky6Sk9S5VPcbLzxzg3BqBX6u9Q35w19aQ==}
     engines: {node: '>= 14.0.0'}
 
   '@algolia/ingestion@1.50.1':
     resolution: {integrity: sha512-0GmfSgDQK6oiIVXnJvGxtNFOfosBspRTR7csCOYCTL1P8QtxX2vDCIKwTM7xdSAEbJaZ43QlWg25q0Qdsndz8Q==}
     engines: {node: '>= 14.0.0'}
 
-  '@algolia/monitoring@1.50.0':
-    resolution: {integrity: sha512-/znwgSiGufpbJVIoDmeQaHtTq+OMdDawFRbMSJVv+12n79hW+qdQXS8/Uu3BD3yn0BzgVFJEvrsHrCsInZKdhw==}
-    engines: {node: '>= 14.0.0'}
-
   '@algolia/monitoring@1.50.1':
     resolution: {integrity: sha512-ySuigKEe4YjYV3si8NVk9BHQpFj/1B+ON7DhhvTvbrZJseHQQloxzq0yHwKmznSdlO6C956fx4pcfOKkZClsyg==}
-    engines: {node: '>= 14.0.0'}
-
-  '@algolia/recommend@5.50.0':
-    resolution: {integrity: sha512-dHjUfu4jfjdQiKDpCpAnM7LP5yfG0oNShtfpF5rMCel6/4HIoqJ4DC4h5GKDzgrvJYtgAhblo0AYBmOM00T+lQ==}
     engines: {node: '>= 14.0.0'}
 
   '@algolia/recommend@5.50.1':
     resolution: {integrity: sha512-Cp8T/B0gVmjFlzzp6eP47hwKh5FGyeqQp1N48/ANDdvdiQkPqLyFHQVDwLBH0LddfIPQE+yqmZIgmKc82haF4A==}
     engines: {node: '>= 14.0.0'}
 
-  '@algolia/requester-browser-xhr@5.50.0':
-    resolution: {integrity: sha512-bffIbUljAWnh/Ctu5uScORajuUavqmZ0ACYd1fQQeSSYA9NNN83ynO26pSc2dZRXpSK0fkc1//qSSFXMKGu+aw==}
-    engines: {node: '>= 14.0.0'}
-
   '@algolia/requester-browser-xhr@5.50.1':
     resolution: {integrity: sha512-XKdGGLikfrlK66ZSXh/vWcXZZ8Vg3byDFbJD8pwEvN1FoBRGxhxya476IY2ohoTymLa4qB5LBRlIa+2TLHx3Uw==}
     engines: {node: '>= 14.0.0'}
 
-  '@algolia/requester-fetch@5.50.0':
-    resolution: {integrity: sha512-y0EwNvPGvkM+yTAqqO6Gpt9wVGm3CLDtpLvNEiB3VGvN3WzfkjZGtLUsG/ru2kVJIIU7QcV0puuYgEpBeFxcJg==}
-    engines: {node: '>= 14.0.0'}
-
   '@algolia/requester-fetch@5.50.1':
     resolution: {integrity: sha512-mBAU6WyVsDwhHyGM+nodt1/oebHxgvuLlOAoMGbj/1i6LygDHZWDgL1t5JEs37x9Aywv7ZGhqbM1GsfZ54sU6g==}
-    engines: {node: '>= 14.0.0'}
-
-  '@algolia/requester-node-http@5.50.0':
-    resolution: {integrity: sha512-xpwefe4fCOWnZgXCbkGpqQY6jgBSCf2hmgnySbyzZIccrv3SoashHKGPE4x6vVG+gdHrGciMTAcDo9HOZwH22Q==}
     engines: {node: '>= 14.0.0'}
 
   '@algolia/requester-node-http@5.50.1':
@@ -421,14 +365,14 @@ packages:
       zone.js:
         optional: true
 
-  '@angular-devkit/architect@0.2200.0-next.4':
-    resolution: {integrity: sha512-OOKrw8kxAJ/CVaZ4ULNk13YV7k5E1DnJciqE769bbCdtvBlHqyIXlGUZFGuIFkSmpyk7PAq0c9/Uc8gQynRWgA==}
+  '@angular-devkit/architect@0.2200.0-next.5':
+    resolution: {integrity: sha512-CiFsp6SkwnFzq9UZKgNnhaTGpEXA3OEZ79hmYe0pW+HPpi0mYPmXmyV6nVWgxRSsXO1dl6arkEt+wMHXVgpdkQ==}
     engines: {node: ^22.22.0 || >=24.13.1, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     hasBin: true
 
-  '@angular-devkit/architect@https://codeload.github.com/angular/angular-devkit-architect-builds/tar.gz/7351c17a7b2a6adfe28a3d5e348663e68247e083':
-    resolution: {tarball: https://codeload.github.com/angular/angular-devkit-architect-builds/tar.gz/7351c17a7b2a6adfe28a3d5e348663e68247e083}
-    version: 0.2200.0-next.4
+  '@angular-devkit/architect@https://codeload.github.com/angular/angular-devkit-architect-builds/tar.gz/332e5514420989edc954c1e959599d62b139ddcc':
+    resolution: {tarball: https://codeload.github.com/angular/angular-devkit-architect-builds/tar.gz/332e5514420989edc954c1e959599d62b139ddcc}
+    version: 0.2200.0-next.5
     engines: {node: ^22.22.0 || >=24.13.1, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     hasBin: true
 
@@ -477,9 +421,9 @@ packages:
       webpack: ^5.30.0
       webpack-dev-server: ^5.0.2
 
-  '@angular-devkit/core@https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/6cd775718f1fd4c78d960e28a99d5a40453cae36':
-    resolution: {tarball: https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/6cd775718f1fd4c78d960e28a99d5a40453cae36}
-    version: 22.0.0-next.4
+  '@angular-devkit/core@https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/c1e4be52aa7dad58e06e8b45936cca5b82342df4':
+    resolution: {tarball: https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/c1e4be52aa7dad58e06e8b45936cca5b82342df4}
+    version: 22.0.0-next.5
     engines: {node: ^22.22.0 || >=24.13.1, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     peerDependencies:
       chokidar: ^5.0.0
@@ -487,9 +431,9 @@ packages:
       chokidar:
         optional: true
 
-  '@angular-devkit/schematics@https://codeload.github.com/angular/angular-devkit-schematics-builds/tar.gz/3c61f90d12b7635896ea4e9d91f538a01b252817':
-    resolution: {tarball: https://codeload.github.com/angular/angular-devkit-schematics-builds/tar.gz/3c61f90d12b7635896ea4e9d91f538a01b252817}
-    version: 22.0.0-next.4
+  '@angular-devkit/schematics@https://codeload.github.com/angular/angular-devkit-schematics-builds/tar.gz/e00cb89340b8910d27ef6195f959130e3973c5d4':
+    resolution: {tarball: https://codeload.github.com/angular/angular-devkit-schematics-builds/tar.gz/e00cb89340b8910d27ef6195f959130e3973c5d4}
+    version: 22.0.0-next.5
     engines: {node: ^22.22.0 || >=24.13.1, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
 
   '@angular-eslint/builder@21.3.1':
@@ -538,9 +482,9 @@ packages:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
       typescript: '*'
 
-  '@angular/build@https://codeload.github.com/angular/angular-build-builds/tar.gz/65fff176683df4fc6289d88751662dc5afa030f7':
-    resolution: {tarball: https://codeload.github.com/angular/angular-build-builds/tar.gz/65fff176683df4fc6289d88751662dc5afa030f7}
-    version: 22.0.0-next.4
+  '@angular/build@https://codeload.github.com/angular/angular-build-builds/tar.gz/6d00286f6479813a474c9940fa4a44bd92c23902':
+    resolution: {tarball: https://codeload.github.com/angular/angular-build-builds/tar.gz/6d00286f6479813a474c9940fa4a44bd92c23902}
+    version: 22.0.0-next.5
     engines: {node: ^22.22.0 || >=24.13.1, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     peerDependencies:
       '@angular/compiler': ^22.0.0-next.0
@@ -550,7 +494,7 @@ packages:
       '@angular/platform-browser': ^22.0.0-next.0
       '@angular/platform-server': ^22.0.0-next.0
       '@angular/service-worker': ^22.0.0-next.0
-      '@angular/ssr': github:angular/angular-ssr-builds#a4666ad
+      '@angular/ssr': github:angular/angular-ssr-builds#a0487d9
       istanbul-lib-instrument: ^6.0.0
       karma: ^6.4.0
       less: ^4.2.0
@@ -558,7 +502,7 @@ packages:
       postcss: ^8.4.0
       tailwindcss: ^2.0.0 || ^3.0.0 || ^4.0.0
       tslib: ^2.3.0
-      typescript: '>=5.9 <6.1'
+      typescript: '>=6.0 <6.1'
       vitest: ^4.0.8
     peerDependenciesMeta:
       '@angular/core':
@@ -588,52 +532,52 @@ packages:
       vitest:
         optional: true
 
-  '@angular/cdk@https://codeload.github.com/angular/cdk-builds/tar.gz/cebd4fb52989b094cbd8a09c7066f122bbdb414d':
-    resolution: {tarball: https://codeload.github.com/angular/cdk-builds/tar.gz/cebd4fb52989b094cbd8a09c7066f122bbdb414d}
-    version: 22.0.0-next.3
+  '@angular/cdk@https://codeload.github.com/angular/cdk-builds/tar.gz/8df4bebef3e5330a695d07e2beedff766d8f8a57':
+    resolution: {tarball: https://codeload.github.com/angular/cdk-builds/tar.gz/8df4bebef3e5330a695d07e2beedff766d8f8a57}
+    version: 22.0.0-next.4
     peerDependencies:
       '@angular/common': ^22.0.0-0 || ^22.1.0-0 || ^22.2.0-0 || ^22.3.0-0 || ^23.0.0-0
       '@angular/core': ^22.0.0-0 || ^22.1.0-0 || ^22.2.0-0 || ^22.3.0-0 || ^23.0.0-0
       '@angular/platform-browser': ^22.0.0-0 || ^22.1.0-0 || ^22.2.0-0 || ^22.3.0-0 || ^23.0.0-0
       rxjs: ^6.5.3 || ^7.4.0
 
-  '@angular/cli@https://codeload.github.com/angular/cli-builds/tar.gz/df8eef312e79fafe97bb84e4006a35a9475cf345':
-    resolution: {tarball: https://codeload.github.com/angular/cli-builds/tar.gz/df8eef312e79fafe97bb84e4006a35a9475cf345}
-    version: 22.0.0-next.4
+  '@angular/cli@https://codeload.github.com/angular/cli-builds/tar.gz/1d1b69b0a4efd550e2fdb4db36ce9aef1d768406':
+    resolution: {tarball: https://codeload.github.com/angular/cli-builds/tar.gz/1d1b69b0a4efd550e2fdb4db36ce9aef1d768406}
+    version: 22.0.0-next.5
     engines: {node: ^22.22.0 || >=24.13.1, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     hasBin: true
 
-  '@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/6296c196d7a439f5b233486b12725dd943f98315':
-    resolution: {tarball: https://codeload.github.com/angular/common-builds/tar.gz/6296c196d7a439f5b233486b12725dd943f98315}
-    version: 22.0.0-next.6
+  '@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/ce29eb558af947a8dff258c1368c4388d3c031e2':
+    resolution: {tarball: https://codeload.github.com/angular/common-builds/tar.gz/ce29eb558af947a8dff258c1368c4388d3c031e2}
+    version: 22.0.0-next.7
     engines: {node: ^22.22.0 || >=24.13.1}
     peerDependencies:
-      '@angular/core': 22.0.0-next.6+sha-a0aa830
+      '@angular/core': 22.0.0-next.7+sha-2f5ab54
       rxjs: ^6.5.3 || ^7.4.0
 
-  '@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/b032d4f9c7664088b71d183e6dad51be1fe19d74':
-    resolution: {tarball: https://codeload.github.com/angular/compiler-cli-builds/tar.gz/b032d4f9c7664088b71d183e6dad51be1fe19d74}
-    version: 22.0.0-next.6
+  '@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/2c8b8bf1dd606449166e6f9e2a4841bb75aa847a':
+    resolution: {tarball: https://codeload.github.com/angular/compiler-cli-builds/tar.gz/2c8b8bf1dd606449166e6f9e2a4841bb75aa847a}
+    version: 22.0.0-next.7
     engines: {node: ^22.22.0 || >=24.13.1}
     hasBin: true
     peerDependencies:
-      '@angular/compiler': 22.0.0-next.6+sha-a0aa830
+      '@angular/compiler': 22.0.0-next.7+sha-2f5ab54
       typescript: '>=6.0 <6.1'
     peerDependenciesMeta:
       typescript:
         optional: true
 
-  '@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0':
-    resolution: {tarball: https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0}
-    version: 22.0.0-next.6
+  '@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1':
+    resolution: {tarball: https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1}
+    version: 22.0.0-next.7
     engines: {node: ^22.22.0 || >=24.13.1}
 
-  '@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac':
-    resolution: {tarball: https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac}
-    version: 22.0.0-next.6
+  '@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8':
+    resolution: {tarball: https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8}
+    version: 22.0.0-next.7
     engines: {node: ^22.22.0 || >=24.13.1}
     peerDependencies:
-      '@angular/compiler': 22.0.0-next.6+sha-a0aa830
+      '@angular/compiler': 22.0.0-next.7+sha-2f5ab54
       rxjs: ^6.5.3 || ^7.4.0
       zone.js: ~0.15.0 || ~0.16.0
     peerDependenciesMeta:
@@ -642,65 +586,65 @@ packages:
       zone.js:
         optional: true
 
-  '@angular/elements@https://codeload.github.com/angular/elements-builds/tar.gz/f201a1056d4db2018cde43c5d694b4ed0bac9192':
-    resolution: {tarball: https://codeload.github.com/angular/elements-builds/tar.gz/f201a1056d4db2018cde43c5d694b4ed0bac9192}
-    version: 22.0.0-next.6
+  '@angular/elements@https://codeload.github.com/angular/elements-builds/tar.gz/1d6c2e2c99b54553934aa94fe75456296e24fc57':
+    resolution: {tarball: https://codeload.github.com/angular/elements-builds/tar.gz/1d6c2e2c99b54553934aa94fe75456296e24fc57}
+    version: 22.0.0-next.7
     engines: {node: ^22.22.0 || >=24.13.1}
     peerDependencies:
-      '@angular/core': 22.0.0-next.6+sha-a0aa830
+      '@angular/core': 22.0.0-next.7+sha-2f5ab54
       rxjs: ^6.5.3 || ^7.4.0
 
-  '@angular/forms@https://codeload.github.com/angular/forms-builds/tar.gz/3c11ad9fa6f60fe7a5adeebc54dae3b65fb14d16':
-    resolution: {tarball: https://codeload.github.com/angular/forms-builds/tar.gz/3c11ad9fa6f60fe7a5adeebc54dae3b65fb14d16}
-    version: 22.0.0-next.6
+  '@angular/forms@https://codeload.github.com/angular/forms-builds/tar.gz/15abd7f8a2d0293e7af3de202d71f35c8b10b30b':
+    resolution: {tarball: https://codeload.github.com/angular/forms-builds/tar.gz/15abd7f8a2d0293e7af3de202d71f35c8b10b30b}
+    version: 22.0.0-next.7
     engines: {node: ^22.22.0 || >=24.13.1}
     peerDependencies:
-      '@angular/common': 22.0.0-next.6+sha-a0aa830
-      '@angular/core': 22.0.0-next.6+sha-a0aa830
-      '@angular/platform-browser': 22.0.0-next.6+sha-a0aa830
+      '@angular/common': 22.0.0-next.7+sha-2f5ab54
+      '@angular/core': 22.0.0-next.7+sha-2f5ab54
+      '@angular/platform-browser': 22.0.0-next.7+sha-2f5ab54
       rxjs: ^6.5.3 || ^7.4.0
 
-  '@angular/language-service@https://codeload.github.com/angular/language-service-builds/tar.gz/70180b5d8b49c8badbf88d30d0516bc763cd4084':
-    resolution: {tarball: https://codeload.github.com/angular/language-service-builds/tar.gz/70180b5d8b49c8badbf88d30d0516bc763cd4084}
-    version: 22.0.0-next.6
+  '@angular/language-service@https://codeload.github.com/angular/language-service-builds/tar.gz/cfa08e0699fffb8421eafd9b100862add20cccce':
+    resolution: {tarball: https://codeload.github.com/angular/language-service-builds/tar.gz/cfa08e0699fffb8421eafd9b100862add20cccce}
+    version: 22.0.0-next.7
     engines: {node: ^22.22.0 || >=24.13.1}
 
-  '@angular/platform-browser@https://codeload.github.com/angular/platform-browser-builds/tar.gz/824bf9553f6d0794ac4c97726d54e04465d9f543':
-    resolution: {tarball: https://codeload.github.com/angular/platform-browser-builds/tar.gz/824bf9553f6d0794ac4c97726d54e04465d9f543}
-    version: 22.0.0-next.6
+  '@angular/platform-browser@https://codeload.github.com/angular/platform-browser-builds/tar.gz/e07a0dd2add89689fd4876a767692739df3849f3':
+    resolution: {tarball: https://codeload.github.com/angular/platform-browser-builds/tar.gz/e07a0dd2add89689fd4876a767692739df3849f3}
+    version: 22.0.0-next.7
     engines: {node: ^22.22.0 || >=24.13.1}
     peerDependencies:
-      '@angular/animations': 22.0.0-next.6+sha-a0aa830
-      '@angular/common': 22.0.0-next.6+sha-a0aa830
-      '@angular/core': 22.0.0-next.6+sha-a0aa830
+      '@angular/animations': 22.0.0-next.7+sha-2f5ab54
+      '@angular/common': 22.0.0-next.7+sha-2f5ab54
+      '@angular/core': 22.0.0-next.7+sha-2f5ab54
     peerDependenciesMeta:
       '@angular/animations':
         optional: true
 
-  '@angular/platform-server@https://codeload.github.com/angular/platform-server-builds/tar.gz/b37797798b1ea95f80b9fc361dc9a7ed75e6387e':
-    resolution: {tarball: https://codeload.github.com/angular/platform-server-builds/tar.gz/b37797798b1ea95f80b9fc361dc9a7ed75e6387e}
-    version: 22.0.0-next.6
+  '@angular/platform-server@https://codeload.github.com/angular/platform-server-builds/tar.gz/8bff221bcb6e75e42d635151eb46a4691151e335':
+    resolution: {tarball: https://codeload.github.com/angular/platform-server-builds/tar.gz/8bff221bcb6e75e42d635151eb46a4691151e335}
+    version: 22.0.0-next.7
     engines: {node: ^22.22.0 || >=24.13.1}
     peerDependencies:
-      '@angular/common': 22.0.0-next.6+sha-a0aa830
-      '@angular/compiler': 22.0.0-next.6+sha-a0aa830
-      '@angular/core': 22.0.0-next.6+sha-a0aa830
-      '@angular/platform-browser': 22.0.0-next.6+sha-a0aa830
+      '@angular/common': 22.0.0-next.7+sha-2f5ab54
+      '@angular/compiler': 22.0.0-next.7+sha-2f5ab54
+      '@angular/core': 22.0.0-next.7+sha-2f5ab54
+      '@angular/platform-browser': 22.0.0-next.7+sha-2f5ab54
       rxjs: ^6.5.3 || ^7.4.0
 
-  '@angular/router@https://codeload.github.com/angular/router-builds/tar.gz/1b85f9f644cf61cc5cb17676c3920b5f13e4aed4':
-    resolution: {tarball: https://codeload.github.com/angular/router-builds/tar.gz/1b85f9f644cf61cc5cb17676c3920b5f13e4aed4}
-    version: 22.0.0-next.6
+  '@angular/router@https://codeload.github.com/angular/router-builds/tar.gz/7432ebc260f1a7bc5db8d68122c76176ce2d7ec4':
+    resolution: {tarball: https://codeload.github.com/angular/router-builds/tar.gz/7432ebc260f1a7bc5db8d68122c76176ce2d7ec4}
+    version: 22.0.0-next.7
     engines: {node: ^22.22.0 || >=24.13.1}
     peerDependencies:
-      '@angular/common': 22.0.0-next.6+sha-a0aa830
-      '@angular/core': 22.0.0-next.6+sha-a0aa830
-      '@angular/platform-browser': 22.0.0-next.6+sha-a0aa830
+      '@angular/common': 22.0.0-next.7+sha-2f5ab54
+      '@angular/core': 22.0.0-next.7+sha-2f5ab54
+      '@angular/platform-browser': 22.0.0-next.7+sha-2f5ab54
       rxjs: ^6.5.3 || ^7.4.0
 
-  '@angular/ssr@https://codeload.github.com/angular/angular-ssr-builds/tar.gz/e4b5cccdd76316551273b1636ef8af1b63cdb35c':
-    resolution: {tarball: https://codeload.github.com/angular/angular-ssr-builds/tar.gz/e4b5cccdd76316551273b1636ef8af1b63cdb35c}
-    version: 22.0.0-next.4
+  '@angular/ssr@https://codeload.github.com/angular/angular-ssr-builds/tar.gz/aee3b37dcada04bb06bbe0bb29d5958be6679809':
+    resolution: {tarball: https://codeload.github.com/angular/angular-ssr-builds/tar.gz/aee3b37dcada04bb06bbe0bb29d5958be6679809}
+    version: 22.0.0-next.5
     peerDependencies:
       '@angular/common': ^22.0.0-next.0
       '@angular/core': ^22.0.0-next.0
@@ -2015,8 +1959,8 @@ packages:
   '@harperfast/extended-iterable@1.0.3':
     resolution: {integrity: sha512-sSAYhQca3rDWtQUHSAPeO7axFIUJOI6hn1gjRC5APVE1a90tuyT8f5WIgRsFhhWA7htNkju2veB9eWL6YHi/Lw==}
 
-  '@hono/node-server@1.19.13':
-    resolution: {integrity: sha512-TsQLe4i2gvoTtrHje625ngThGBySOgSK3Xo2XRYOdqGN1teR8+I7vchQC46uLJi8OF62YTYA3AhSpumtkhsaKQ==}
+  '@hono/node-server@1.19.14':
+    resolution: {integrity: sha512-GwtvgtXxnWsucXvbQXkRgqksiH2Qed37H9xHZocE5sA3N8O8O8/8FA3uclQXxXVzc9XBZuEOMK7+r02FmSpHtw==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: ^4
@@ -2049,15 +1993,6 @@ packages:
 
   '@inquirer/checkbox@5.1.3':
     resolution: {integrity: sha512-+G7I8CT+EHv/hasNfUl3P37DVoMoZfpA+2FXmM54dA8MxYle1YqucxbacxHalw1iAFSdKNEDTGNV7F+j1Ldqcg==}
-    engines: {node: '>=23.5.0 || ^22.13.0 || ^21.7.0 || ^20.12.0'}
-    peerDependencies:
-      '@types/node': '>=18'
-    peerDependenciesMeta:
-      '@types/node':
-        optional: true
-
-  '@inquirer/confirm@6.0.10':
-    resolution: {integrity: sha512-tiNyA73pgpQ0FQ7axqtoLUe4GDYjNCDcVsbgcA5anvwg2z6i+suEngLKKJrWKJolT//GFPZHwN30binDIHgSgQ==}
     engines: {node: '>=23.5.0 || ^22.13.0 || ^21.7.0 || ^20.12.0'}
     peerDependencies:
       '@types/node': '>=18'
@@ -2141,8 +2076,8 @@ packages:
       '@types/node':
         optional: true
 
-  '@inquirer/prompts@8.3.2':
-    resolution: {integrity: sha512-yFroiSj2iiBFlm59amdTvAcQFvWS6ph5oKESls/uqPBect7rTU2GbjyZO2DqxMGuIwVA8z0P4K6ViPcd/cp+0w==}
+  '@inquirer/prompts@8.4.1':
+    resolution: {integrity: sha512-AH5xPQ997K7e0F0vulPlteIHke2awMkFi8F0dBemrDfmvtPmHJo82mdHbONC4F/t8d1NHwrbI5cGVI+RbLWdoQ==}
     engines: {node: '>=23.5.0 || ^22.13.0 || ^21.7.0 || ^20.12.0'}
     peerDependencies:
       '@types/node': '>=18'
@@ -2356,53 +2291,53 @@ packages:
   '@leichtgewicht/ip-codec@2.0.5':
     resolution: {integrity: sha512-Vo+PSpZG2/fmgmiNzYK9qWRh8h/CHrwD0mo1h1DzL4yzHNSfWYujGTYsWGreD000gcgmZ7K4Ys6Tx9TxtsKdDw==}
 
-  '@listr2/prompt-adapter-inquirer@4.2.2':
-    resolution: {integrity: sha512-QCVBPLxPEG3ZLSfGz8DfzgiqkLiK31sb4JTIxp+sfdOrpze5rjZscHSAuSI0e/engIS9tWgzifLhSCwlocFsZQ==}
+  '@listr2/prompt-adapter-inquirer@4.2.3':
+    resolution: {integrity: sha512-Co9U3AJ3LW0J8XBHjVoNKA79dMAyFt8EZH3OaKTMcDTj8r+6kG3vSUPq/eGLHT7P0iK3uLaFfhdFYd3033P24g==}
     engines: {node: '>=22.13.0'}
     peerDependencies:
       '@inquirer/prompts': '>= 3 < 9'
       listr2: 10.2.1
 
-  '@lmdb/lmdb-darwin-arm64@3.5.2':
-    resolution: {integrity: sha512-ZTEuSwB3QHOA6Jal4bi0oxAV1MK3xtzS3oUMq5OK3HSXNN4A79f9dhieZA0hgvwOTaGzEWmTd8Fg9XSkBIhAWw==}
+  '@lmdb/lmdb-darwin-arm64@3.5.3':
+    resolution: {integrity: sha512-Ob379nnG6FpfVi9WUVupUVsMFa0+jbkelilrBAdJgNlg6dDtXKeTi+pzL+G3f1z3SNdXXWUAL5N8LTp7szXEVw==}
     cpu: [arm64]
     os: [darwin]
 
-  '@lmdb/lmdb-darwin-x64@3.5.2':
-    resolution: {integrity: sha512-Zs+mdB6gNqpPK6ybNbqFoSU+DCIdhE8tqeaAzRs+hNJt8V43PRvTVxu1UPBHwK2917FnQ4dL5/OIoqHDa+9Dpw==}
+  '@lmdb/lmdb-darwin-x64@3.5.3':
+    resolution: {integrity: sha512-fbKZ6gonDCWENiXiRoDC4KdBBXi2rlDr1uYj/SErpIAHuTfnLo0Il1hvmbDLeiCPLaPjbXlvcMiR3vLnrNnWMw==}
     cpu: [x64]
     os: [darwin]
 
-  '@lmdb/lmdb-linux-arm64@3.5.2':
-    resolution: {integrity: sha512-hT6JPw5hDCXzppBgpIFS/cQp4v2LqNMgd5nuo4U9H5/wnbMS7Prh0twu5IbDvzYZf2a/xPTXtTDRuUiFc39lEw==}
+  '@lmdb/lmdb-linux-arm64@3.5.3':
+    resolution: {integrity: sha512-VYWkuWS8uQSyszMe5KGVJPD3YSkaXVrUz/6hbg3zkBvhfOTyrIVMN9M3cZjpU4yxVRBmGViZ5kgjoKz7n3sw2w==}
     cpu: [arm64]
     os: [linux]
 
-  '@lmdb/lmdb-linux-arm@3.5.2':
-    resolution: {integrity: sha512-GhdC4huGWDzcbZWfS+G3dW4/TopNUnO+/E7aVdfWIhslSs1FI2+sVo94040S9BPJ7lNpnf1zVxaBlLmqZpKhcw==}
+  '@lmdb/lmdb-linux-arm@3.5.3':
+    resolution: {integrity: sha512-A80EUIRBiKA+0iMc5DxT2u8msgY+K05Lok133IKb3eJVlJkmJie4+LM0MjNyV+mREnu8UwhlNFupSikPy/eTPw==}
     cpu: [arm]
     os: [linux]
 
-  '@lmdb/lmdb-linux-x64@3.5.2':
-    resolution: {integrity: sha512-aTBBxTQGdgKcqZD6ywIVCIbCIJ3fJ28OhzCxgl3zGQzzJwkDt5TSIuBtMt4oKZMgDSjuRBjtID9TOUvSRg8IQA==}
+  '@lmdb/lmdb-linux-x64@3.5.3':
+    resolution: {integrity: sha512-JAeG8rJaL1klzg+VKyRqp0wPSbuPo1ZuNmO/IBRs8QRrSIPxF9r3r1TcIVVRLaaJmI0+2KOjbFRjtvFWFH6cMQ==}
     cpu: [x64]
     os: [linux]
 
-  '@lmdb/lmdb-win32-arm64@3.5.2':
-    resolution: {integrity: sha512-mqfNN5zb3z3QnHEPaV4Zv5zd3BhlcL+uqPNF7kGRkmCaRHuh6T9N5g/4ZqOiNHNPWglv3g8Ut15XxCKZjf6jHw==}
+  '@lmdb/lmdb-win32-arm64@3.5.3':
+    resolution: {integrity: sha512-9QdgjU5VW0MJ3wy94h4fQ+cNkxeJ0KasjvisOhLuvlCep2KSOzr1i65Js3ElHBRQX8N+jVD8/+LWIM7flfGZ4w==}
     cpu: [arm64]
     os: [win32]
 
-  '@lmdb/lmdb-win32-x64@3.5.2':
-    resolution: {integrity: sha512-JhPxlA8sIxPIdS78e4LeNfTlkF+2I/r98jKXf90pf+yhMCzyLkphcvbnWv7YL8yckp32c1uKZ1vf/JqcSiplHg==}
+  '@lmdb/lmdb-win32-x64@3.5.3':
+    resolution: {integrity: sha512-0nd13c9ypIDkdsJbHv1PMvk6MZrwHLQP05AXZdxvv8lklxRrZxPK2d8nSo8HLoMXyLt0hA2yQ3fydQaSRrkz0g==}
     cpu: [x64]
     os: [win32]
 
   '@ltd/j-toml@1.38.0':
     resolution: {integrity: sha512-lYtBcmvHustHQtg4X7TXUu1Xa/tbLC3p2wLvgQI+fWVySguVZJF60Snxijw5EiohumxZbR10kWYFFebh1zotiw==}
 
-  '@modelcontextprotocol/sdk@1.28.0':
-    resolution: {integrity: sha512-gmloF+i+flI8ouQK7MWW4mOwuMh4RePBuPFAEPC6+pdqyWOUMDOixb6qZ69owLJpz6XmyllCouc4t8YWO+E2Nw==}
+  '@modelcontextprotocol/sdk@1.29.0':
+    resolution: {integrity: sha512-zo37mZA9hJWpULgkRpowewez1y6ML5GsXJPY8FI0tBBCd77HEvza4jDqRKOXgHNn867PVGCyTdzqpz0izu5ZjQ==}
     engines: {node: '>=18'}
     peerDependencies:
       '@cfworker/json-schema': ^4.1.1
@@ -2600,49 +2535,42 @@ packages:
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@napi-rs/nice-linux-arm64-musl@1.1.1':
     resolution: {integrity: sha512-+2Rzdb3nTIYZ0YJF43qf2twhqOCkiSrHx2Pg6DJaCPYhhaxbLcdlV8hCRMHghQ+EtZQWGNcS2xF4KxBhSGeutg==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@napi-rs/nice-linux-ppc64-gnu@1.1.1':
     resolution: {integrity: sha512-4FS8oc0GeHpwvv4tKciKkw3Y4jKsL7FRhaOeiPei0X9T4Jd619wHNe4xCLmN2EMgZoeGg+Q7GY7BsvwKpL22Tg==}
     engines: {node: '>= 10'}
     cpu: [ppc64]
     os: [linux]
-    libc: [glibc]
 
   '@napi-rs/nice-linux-riscv64-gnu@1.1.1':
     resolution: {integrity: sha512-HU0nw9uD4FO/oGCCk409tCi5IzIZpH2agE6nN4fqpwVlCn5BOq0MS1dXGjXaG17JaAvrlpV5ZeyZwSon10XOXw==}
     engines: {node: '>= 10'}
     cpu: [riscv64]
     os: [linux]
-    libc: [glibc]
 
   '@napi-rs/nice-linux-s390x-gnu@1.1.1':
     resolution: {integrity: sha512-2YqKJWWl24EwrX0DzCQgPLKQBxYDdBxOHot1KWEq7aY2uYeX+Uvtv4I8xFVVygJDgf6/92h9N3Y43WPx8+PAgQ==}
     engines: {node: '>= 10'}
     cpu: [s390x]
     os: [linux]
-    libc: [glibc]
 
   '@napi-rs/nice-linux-x64-gnu@1.1.1':
     resolution: {integrity: sha512-/gaNz3R92t+dcrfCw/96pDopcmec7oCcAQ3l/M+Zxr82KT4DljD37CpgrnXV+pJC263JkW572pdbP3hP+KjcIg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@napi-rs/nice-linux-x64-musl@1.1.1':
     resolution: {integrity: sha512-xScCGnyj/oppsNPMnevsBe3pvNaoK7FGvMjT35riz9YdhB2WtTG47ZlbxtOLpjeO9SqqQ2J2igCmz6IJOD5JYw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@napi-rs/nice-openharmony-arm64@1.1.1':
     resolution: {integrity: sha512-6uJPRVwVCLDeoOaNyeiW0gp2kFIM4r7PL2MczdZQHkFi9gVlgm+Vn+V6nTWRcu856mJ2WjYJiumEajfSm7arPQ==}
@@ -2822,25 +2750,21 @@ packages:
     resolution: {integrity: sha512-x6Zim1STewCXuHBCgoy2TO0586UlwH4RNCobn0mTiPd1jt7nU+fNqo3SpY8RzY1KmBfgcO48BBrfykPE9YWMpg==}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@nx/nx-linux-arm64-musl@22.6.4':
     resolution: {integrity: sha512-vYOqdgXIhtHFWdtnonp/jFfmfkyNPTu1JEdXuJpSxwUQdV2dWqS/l3HVPVWHXDrVKofPafK3M72jMvoWoaOQ6g==}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@nx/nx-linux-x64-gnu@22.6.4':
     resolution: {integrity: sha512-UfWUDlOzlvQNVa1mnqOFxzvUwoGfM2o9ruhwYRoFm3XJbVYnjINyQsdcHwwDJItJP04LZzLPxA1+O8sU+Oqg6A==}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@nx/nx-linux-x64-musl@22.6.4':
     resolution: {integrity: sha512-dwXpcyin4ScD5gH9FdhiNnOqFXclXLFBDTyRCEOlRUbOPayF9YEcH0PPIf9uWmwP3tshhAdr5sg9DLN+r7M3xg==}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@nx/nx-win32-arm64-msvc@22.6.4':
     resolution: {integrity: sha512-KqjJbFWhKJaKjET3Ep8hltXPizO0EstF4yfmp3oepWVn11poagc2MT1pf/tnRf6cdD88wd0bmw/83Ng6WUQ3Uw==}
@@ -2896,9 +2820,6 @@ packages:
     resolution: {integrity: sha512-Rg8Wlt5dCbXhQnsXPrkOjL1DTSvXLgb2R/KYfnf1/K+R0k6UMLEmbQXPM+kwrWqSmWA2t0B1EtHy2/3zikQpvQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
 
-  '@oxc-project/types@0.122.0':
-    resolution: {integrity: sha512-oLAl5kBpV4w69UtFZ9xqcmTi+GENWOcPF7FCrczTiBbmC0ibXxCwyvZGbO39rCVEuLGAZM84DH0pUIyyv/YJzA==}
-
   '@oxc-project/types@0.123.0':
     resolution: {integrity: sha512-YtECP/y8Mj1lSHiUWGSRzy/C6teUKlS87dEfuVKT09LgQbUsBW1rNg+MiJ4buGu3yuADV60gbIvo9/HplA56Ew==}
 
@@ -2941,49 +2862,41 @@ packages:
     resolution: {integrity: sha512-heV2+jmXyYnUrpUXSPugqWDRpnsQcDm2AX4wzTuvgdlZfoNYO0O3W2AVpJYaDn9AG4JdM6Kxom8+foE7/BcSig==}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@oxc-resolver/binding-linux-arm64-musl@11.19.1':
     resolution: {integrity: sha512-jvo2Pjs1c9KPxMuMPIeQsgu0mOJF9rEb3y3TdpsrqwxRM+AN6/nDDwv45n5ZrUnQMsdBy5gIabioMKnQfWo9ew==}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@oxc-resolver/binding-linux-ppc64-gnu@11.19.1':
     resolution: {integrity: sha512-vLmdNxWCdN7Uo5suays6A/+ywBby2PWBBPXctWPg5V0+eVuzsJxgAn6MMB4mPlshskYbppjpN2Zg83ArHze9gQ==}
     cpu: [ppc64]
     os: [linux]
-    libc: [glibc]
 
   '@oxc-resolver/binding-linux-riscv64-gnu@11.19.1':
     resolution: {integrity: sha512-/b+WgR+VTSBxzgOhDO7TlMXC1ufPIMR6Vj1zN+/x+MnyXGW7prTLzU9eW85Aj7Th7CCEG9ArCbTeqxCzFWdg2w==}
     cpu: [riscv64]
     os: [linux]
-    libc: [glibc]
 
   '@oxc-resolver/binding-linux-riscv64-musl@11.19.1':
     resolution: {integrity: sha512-YlRdeWb9j42p29ROh+h4eg/OQ3dTJlpHSa+84pUM9+p6i3djtPz1q55yLJhgW9XfDch7FN1pQ/Vd6YP+xfRIuw==}
     cpu: [riscv64]
     os: [linux]
-    libc: [musl]
 
   '@oxc-resolver/binding-linux-s390x-gnu@11.19.1':
     resolution: {integrity: sha512-EDpafVOQWF8/MJynsjOGFThcqhRHy417sRyLfQmeiamJ8qVhSKAn2Dn2VVKUGCjVB9C46VGjhNo7nOPUi1x6uA==}
     cpu: [s390x]
     os: [linux]
-    libc: [glibc]
 
   '@oxc-resolver/binding-linux-x64-gnu@11.19.1':
     resolution: {integrity: sha512-NxjZe+rqWhr+RT8/Ik+5ptA3oz7tUw361Wa5RWQXKnfqwSSHdHyrw6IdcTfYuml9dM856AlKWZIUXDmA9kkiBQ==}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@oxc-resolver/binding-linux-x64-musl@11.19.1':
     resolution: {integrity: sha512-cM/hQwsO3ReJg5kR+SpI69DMfvNCp+A/eVR4b4YClE5bVZwz8rh2Nh05InhwI5HR/9cArbEkzMjcKgTHS6UaNw==}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@oxc-resolver/binding-openharmony-arm64@11.19.1':
     resolution: {integrity: sha512-QF080IowFB0+9Rh6RcD19bdgh49BpQHUW5TajG1qvWHvmrQznTZZjYlgE2ltLXyKY+qs4F/v5xuX1XS7Is+3qA==}
@@ -3039,42 +2952,36 @@ packages:
     engines: {node: '>= 10.0.0'}
     cpu: [arm]
     os: [linux]
-    libc: [glibc]
 
   '@parcel/watcher-linux-arm-musl@2.5.6':
     resolution: {integrity: sha512-Ve3gUCG57nuUUSyjBq/MAM0CzArtuIOxsBdQ+ftz6ho8n7s1i9E1Nmk/xmP323r2YL0SONs1EuwqBp2u1k5fxg==}
     engines: {node: '>= 10.0.0'}
     cpu: [arm]
     os: [linux]
-    libc: [musl]
 
   '@parcel/watcher-linux-arm64-glibc@2.5.6':
     resolution: {integrity: sha512-f2g/DT3NhGPdBmMWYoxixqYr3v/UXcmLOYy16Bx0TM20Tchduwr4EaCbmxh1321TABqPGDpS8D/ggOTaljijOA==}
     engines: {node: '>= 10.0.0'}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@parcel/watcher-linux-arm64-musl@2.5.6':
     resolution: {integrity: sha512-qb6naMDGlbCwdhLj6hgoVKJl2odL34z2sqkC7Z6kzir8b5W65WYDpLB6R06KabvZdgoHI/zxke4b3zR0wAbDTA==}
     engines: {node: '>= 10.0.0'}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@parcel/watcher-linux-x64-glibc@2.5.6':
     resolution: {integrity: sha512-kbT5wvNQlx7NaGjzPFu8nVIW1rWqV780O7ZtkjuWaPUgpv2NMFpjYERVi0UYj1msZNyCzGlaCWEtzc+exjMGbQ==}
     engines: {node: '>= 10.0.0'}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@parcel/watcher-linux-x64-musl@2.5.6':
     resolution: {integrity: sha512-1JRFeC+h7RdXwldHzTsmdtYR/Ku8SylLgTU/reMuqdVD7CtLwf0VR1FqeprZ0eHQkO0vqsbvFLXUmYm/uNKJBg==}
     engines: {node: '>= 10.0.0'}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@parcel/watcher-win32-arm64@2.5.6':
     resolution: {integrity: sha512-3ukyebjc6eGlw9yRt678DxVF7rjXatWiHvTXqphZLvo7aC5NdEgFufVwjFfY51ijYEWpXbqF5jtrK275z52D4Q==}
@@ -3152,34 +3059,16 @@ packages:
   '@polka/url@1.0.0-next.29':
     resolution: {integrity: sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww==}
 
-  '@rolldown/binding-android-arm64@1.0.0-rc.12':
-    resolution: {integrity: sha512-pv1y2Fv0JybcykuiiD3qBOBdz6RteYojRFY1d+b95WVuzx211CRh+ytI/+9iVyWQ6koTh5dawe4S/yRfOFjgaA==}
-    engines: {node: ^20.19.0 || >=22.12.0}
-    cpu: [arm64]
-    os: [android]
-
   '@rolldown/binding-android-arm64@1.0.0-rc.13':
     resolution: {integrity: sha512-5ZiiecKH2DXAVJTNN13gNMUcCDg4Jy8ZjbXEsPnqa248wgOVeYRX0iqXXD5Jz4bI9BFHgKsI2qmyJynstbmr+g==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [android]
 
-  '@rolldown/binding-darwin-arm64@1.0.0-rc.12':
-    resolution: {integrity: sha512-cFYr6zTG/3PXXF3pUO+umXxt1wkRK/0AYT8lDwuqvRC+LuKYWSAQAQZjCWDQpAH172ZV6ieYrNnFzVVcnSflAg==}
-    engines: {node: ^20.19.0 || >=22.12.0}
-    cpu: [arm64]
-    os: [darwin]
-
   '@rolldown/binding-darwin-arm64@1.0.0-rc.13':
     resolution: {integrity: sha512-tz/v/8G77seu8zAB3A5sK3UFoOl06zcshEzhUO62sAEtrEuW/H1CcyoupOrD+NbQJytYgA4CppXPzlrmp4JZKA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
-    os: [darwin]
-
-  '@rolldown/binding-darwin-x64@1.0.0-rc.12':
-    resolution: {integrity: sha512-ZCsYknnHzeXYps0lGBz8JrF37GpE9bFVefrlmDrAQhOEi4IOIlcoU1+FwHEtyXGx2VkYAvhu7dyBf75EJQffBw==}
-    engines: {node: ^20.19.0 || >=22.12.0}
-    cpu: [x64]
     os: [darwin]
 
   '@rolldown/binding-darwin-x64@1.0.0-rc.13':
@@ -3188,23 +3077,11 @@ packages:
     cpu: [x64]
     os: [darwin]
 
-  '@rolldown/binding-freebsd-x64@1.0.0-rc.12':
-    resolution: {integrity: sha512-dMLeprcVsyJsKolRXyoTH3NL6qtsT0Y2xeuEA8WQJquWFXkEC4bcu1rLZZSnZRMtAqwtrF/Ib9Ddtpa/Gkge9Q==}
-    engines: {node: ^20.19.0 || >=22.12.0}
-    cpu: [x64]
-    os: [freebsd]
-
   '@rolldown/binding-freebsd-x64@1.0.0-rc.13':
     resolution: {integrity: sha512-4wBQFfjDuXYN/SVI8inBF3Aa+isq40rc6VMFbk5jcpolUBTe5cYnMsHZ51nFWsx3PVyyNN3vgoESki0Hmr/4BA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [freebsd]
-
-  '@rolldown/binding-linux-arm-gnueabihf@1.0.0-rc.12':
-    resolution: {integrity: sha512-YqWjAgGC/9M1lz3GR1r1rP79nMgo3mQiiA+Hfo+pvKFK1fAJ1bCi0ZQVh8noOqNacuY1qIcfyVfP6HoyBRZ85Q==}
-    engines: {node: ^20.19.0 || >=22.12.0}
-    cpu: [arm]
-    os: [linux]
 
   '@rolldown/binding-linux-arm-gnueabihf@1.0.0-rc.13':
     resolution: {integrity: sha512-JW/e4yPIXLms+jmnbwwy5LA/LxVwZUWLN8xug+V200wzaVi5TEGIWQlh8o91gWYFxW609euI98OCCemmWGuPrw==}
@@ -3212,95 +3089,41 @@ packages:
     cpu: [arm]
     os: [linux]
 
-  '@rolldown/binding-linux-arm64-gnu@1.0.0-rc.12':
-    resolution: {integrity: sha512-/I5AS4cIroLpslsmzXfwbe5OmWvSsrFuEw3mwvbQ1kDxJ822hFHIx+vsN/TAzNVyepI/j/GSzrtCIwQPeKCLIg==}
-    engines: {node: ^20.19.0 || >=22.12.0}
-    cpu: [arm64]
-    os: [linux]
-    libc: [glibc]
-
   '@rolldown/binding-linux-arm64-gnu@1.0.0-rc.13':
     resolution: {integrity: sha512-ZfKWpXiUymDnavepCaM6KG/uGydJ4l2nBmMxg60Ci4CbeefpqjPWpfaZM7PThOhk2dssqBAcwLc6rAyr0uTdXg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
-
-  '@rolldown/binding-linux-arm64-musl@1.0.0-rc.12':
-    resolution: {integrity: sha512-V6/wZztnBqlx5hJQqNWwFdxIKN0m38p8Jas+VoSfgH54HSj9tKTt1dZvG6JRHcjh6D7TvrJPWFGaY9UBVOaWPw==}
-    engines: {node: ^20.19.0 || >=22.12.0}
-    cpu: [arm64]
-    os: [linux]
-    libc: [musl]
 
   '@rolldown/binding-linux-arm64-musl@1.0.0-rc.13':
     resolution: {integrity: sha512-bmRg3O6Z0gq9yodKKWCIpnlH051sEfdVwt+6m5UDffAQMUUqU0xjnQqqAUm+Gu7ofAAly9DqiQDtKu2nPDEABA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
-
-  '@rolldown/binding-linux-ppc64-gnu@1.0.0-rc.12':
-    resolution: {integrity: sha512-AP3E9BpcUYliZCxa3w5Kwj9OtEVDYK6sVoUzy4vTOJsjPOgdaJZKFmN4oOlX0Wp0RPV2ETfmIra9x1xuayFB7g==}
-    engines: {node: ^20.19.0 || >=22.12.0}
-    cpu: [ppc64]
-    os: [linux]
-    libc: [glibc]
 
   '@rolldown/binding-linux-ppc64-gnu@1.0.0-rc.13':
     resolution: {integrity: sha512-8Wtnbw4k7pMYN9B/mOEAsQ8HOiq7AZ31Ig4M9BKn2So4xRaFEhtCSa4ZJaOutOWq50zpgR4N5+L/opnlaCx8wQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [ppc64]
     os: [linux]
-    libc: [glibc]
-
-  '@rolldown/binding-linux-s390x-gnu@1.0.0-rc.12':
-    resolution: {integrity: sha512-nWwpvUSPkoFmZo0kQazZYOrT7J5DGOJ/+QHHzjvNlooDZED8oH82Yg67HvehPPLAg5fUff7TfWFHQS8IV1n3og==}
-    engines: {node: ^20.19.0 || >=22.12.0}
-    cpu: [s390x]
-    os: [linux]
-    libc: [glibc]
 
   '@rolldown/binding-linux-s390x-gnu@1.0.0-rc.13':
     resolution: {integrity: sha512-D/0Nlo8mQuxSMohNJUF2lDXWRsFDsHldfRRgD9bRgktj+EndGPj4DOV37LqDKPYS+osdyhZEH7fTakTAEcW7qg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [s390x]
     os: [linux]
-    libc: [glibc]
-
-  '@rolldown/binding-linux-x64-gnu@1.0.0-rc.12':
-    resolution: {integrity: sha512-RNrafz5bcwRy+O9e6P8Z/OCAJW/A+qtBczIqVYwTs14pf4iV1/+eKEjdOUta93q2TsT/FI0XYDP3TCky38LMAg==}
-    engines: {node: ^20.19.0 || >=22.12.0}
-    cpu: [x64]
-    os: [linux]
-    libc: [glibc]
 
   '@rolldown/binding-linux-x64-gnu@1.0.0-rc.13':
     resolution: {integrity: sha512-eRrPvat2YaVQcwwKi/JzOP6MKf1WRnOCr+VaI3cTWz3ZoLcP/654z90lVCJ4dAuMEpPdke0n+qyAqXDZdIC4rA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
-
-  '@rolldown/binding-linux-x64-musl@1.0.0-rc.12':
-    resolution: {integrity: sha512-Jpw/0iwoKWx3LJ2rc1yjFrj+T7iHZn2JDg1Yny1ma0luviFS4mhAIcd1LFNxK3EYu3DHWCps0ydXQ5i/rrJ2ig==}
-    engines: {node: ^20.19.0 || >=22.12.0}
-    cpu: [x64]
-    os: [linux]
-    libc: [musl]
 
   '@rolldown/binding-linux-x64-musl@1.0.0-rc.13':
     resolution: {integrity: sha512-PsdONiFRp8hR8KgVjTWjZ9s7uA3uueWL0t74/cKHfM4dR5zXYv4AjB8BvA+QDToqxAFg4ZkcVEqeu5F7inoz5w==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
-
-  '@rolldown/binding-openharmony-arm64@1.0.0-rc.12':
-    resolution: {integrity: sha512-vRugONE4yMfVn0+7lUKdKvN4D5YusEiPilaoO2sgUWpCvrncvWgPMzK00ZFFJuiPgLwgFNP5eSiUlv2tfc+lpA==}
-    engines: {node: ^20.19.0 || >=22.12.0}
-    cpu: [arm64]
-    os: [openharmony]
 
   '@rolldown/binding-openharmony-arm64@1.0.0-rc.13':
     resolution: {integrity: sha512-hCNXgC5dI3TVOLrPT++PKFNZ+1EtS0mLQwfXXXSUD/+rGlB65gZDwN/IDuxLpQP4x8RYYHqGomlUXzpO8aVI2w==}
@@ -3308,21 +3131,10 @@ packages:
     cpu: [arm64]
     os: [openharmony]
 
-  '@rolldown/binding-wasm32-wasi@1.0.0-rc.12':
-    resolution: {integrity: sha512-ykGiLr/6kkiHc0XnBfmFJuCjr5ZYKKofkx+chJWDjitX+KsJuAmrzWhwyOMSHzPhzOHOy7u9HlFoa5MoAOJ/Zg==}
-    engines: {node: '>=14.0.0'}
-    cpu: [wasm32]
-
   '@rolldown/binding-wasm32-wasi@1.0.0-rc.13':
     resolution: {integrity: sha512-viLS5C5et8NFtLWw9Sw3M/w4vvnVkbWkO7wSNh3C+7G1+uCkGpr6PcjNDSFcNtmXY/4trjPBqUfcOL+P3sWy/g==}
     engines: {node: '>=14.0.0'}
     cpu: [wasm32]
-
-  '@rolldown/binding-win32-arm64-msvc@1.0.0-rc.12':
-    resolution: {integrity: sha512-5eOND4duWkwx1AzCxadcOrNeighiLwMInEADT0YM7xeEOOFcovWZCq8dadXgcRHSf3Ulh1kFo/qvzoFiCLOL1Q==}
-    engines: {node: ^20.19.0 || >=22.12.0}
-    cpu: [arm64]
-    os: [win32]
 
   '@rolldown/binding-win32-arm64-msvc@1.0.0-rc.13':
     resolution: {integrity: sha512-Fqa3Tlt1xL4wzmAYxGNFV36Hb+VfPc9PYU+E25DAnswXv3ODDu/yyWjQDbXMo5AGWkQVjLgQExuVu8I/UaZhPQ==}
@@ -3330,20 +3142,11 @@ packages:
     cpu: [arm64]
     os: [win32]
 
-  '@rolldown/binding-win32-x64-msvc@1.0.0-rc.12':
-    resolution: {integrity: sha512-PyqoipaswDLAZtot351MLhrlrh6lcZPo2LSYE+VDxbVk24LVKAGOuE4hb8xZQmrPAuEtTZW8E6D2zc5EUZX4Lw==}
-    engines: {node: ^20.19.0 || >=22.12.0}
-    cpu: [x64]
-    os: [win32]
-
   '@rolldown/binding-win32-x64-msvc@1.0.0-rc.13':
     resolution: {integrity: sha512-/pLI5kPkGEi44TDlnbio3St/5gUFeN51YWNAk/Gnv6mEQBOahRBh52qVFVBpmrnU01n2yysvBML9Ynu7K4kGAQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [win32]
-
-  '@rolldown/pluginutils@1.0.0-rc.12':
-    resolution: {integrity: sha512-HHMwmarRKvoFsJorqYlFeFRzXZqCt2ETQlEDOb9aqssrnVBB1/+xgTGtuTrIk5vzLNX1MjMtTf7W9z3tsSbrxw==}
 
   '@rolldown/pluginutils@1.0.0-rc.13':
     resolution: {integrity: sha512-3ngTAv6F/Py35BsYbeeLeecvhMKdsKm4AoOETVhAA+Qc8nrA2I0kF7oa93mE9qnIurngOSpMnQ0x2nQY2FPviA==}
@@ -3400,79 +3203,66 @@ packages:
     resolution: {integrity: sha512-L+34Qqil+v5uC0zEubW7uByo78WOCIrBvci69E7sFASRl0X7b/MB6Cqd1lky/CtcSVTydWa2WZwFuWexjS5o6g==}
     cpu: [arm]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-arm-musleabihf@4.60.1':
     resolution: {integrity: sha512-n83O8rt4v34hgFzlkb1ycniJh7IR5RCIqt6mz1VRJD6pmhRi0CXdmfnLu9dIUS6buzh60IvACM842Ffb3xd6Gg==}
     cpu: [arm]
     os: [linux]
-    libc: [musl]
 
   '@rollup/rollup-linux-arm64-gnu@4.60.1':
     resolution: {integrity: sha512-Nql7sTeAzhTAja3QXeAI48+/+GjBJ+QmAH13snn0AJSNL50JsDqotyudHyMbO2RbJkskbMbFJfIJKWA6R1LCJQ==}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-arm64-musl@4.60.1':
     resolution: {integrity: sha512-+pUymDhd0ys9GcKZPPWlFiZ67sTWV5UU6zOJat02M1+PiuSGDziyRuI/pPue3hoUwm2uGfxdL+trT6Z9rxnlMA==}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@rollup/rollup-linux-loong64-gnu@4.60.1':
     resolution: {integrity: sha512-VSvgvQeIcsEvY4bKDHEDWcpW4Yw7BtlKG1GUT4FzBUlEKQK0rWHYBqQt6Fm2taXS+1bXvJT6kICu5ZwqKCnvlQ==}
     cpu: [loong64]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-loong64-musl@4.60.1':
     resolution: {integrity: sha512-4LqhUomJqwe641gsPp6xLfhqWMbQV04KtPp7/dIp0nzPxAkNY1AbwL5W0MQpcalLYk07vaW9Kp1PBhdpZYYcEw==}
     cpu: [loong64]
     os: [linux]
-    libc: [musl]
 
   '@rollup/rollup-linux-ppc64-gnu@4.60.1':
     resolution: {integrity: sha512-tLQQ9aPvkBxOc/EUT6j3pyeMD6Hb8QF2BTBnCQWP/uu1lhc9AIrIjKnLYMEroIz/JvtGYgI9dF3AxHZNaEH0rw==}
     cpu: [ppc64]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-ppc64-musl@4.60.1':
     resolution: {integrity: sha512-RMxFhJwc9fSXP6PqmAz4cbv3kAyvD1etJFjTx4ONqFP9DkTkXsAMU4v3Vyc5BgzC+anz7nS/9tp4obsKfqkDHg==}
     cpu: [ppc64]
     os: [linux]
-    libc: [musl]
 
   '@rollup/rollup-linux-riscv64-gnu@4.60.1':
     resolution: {integrity: sha512-QKgFl+Yc1eEk6MmOBfRHYF6lTxiiiV3/z/BRrbSiW2I7AFTXoBFvdMEyglohPj//2mZS4hDOqeB0H1ACh3sBbg==}
     cpu: [riscv64]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-riscv64-musl@4.60.1':
     resolution: {integrity: sha512-RAjXjP/8c6ZtzatZcA1RaQr6O1TRhzC+adn8YZDnChliZHviqIjmvFwHcxi4JKPSDAt6Uhf/7vqcBzQJy0PDJg==}
     cpu: [riscv64]
     os: [linux]
-    libc: [musl]
 
   '@rollup/rollup-linux-s390x-gnu@4.60.1':
     resolution: {integrity: sha512-wcuocpaOlaL1COBYiA89O6yfjlp3RwKDeTIA0hM7OpmhR1Bjo9j31G1uQVpDlTvwxGn2nQs65fBFL5UFd76FcQ==}
     cpu: [s390x]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-x64-gnu@4.60.1':
     resolution: {integrity: sha512-77PpsFQUCOiZR9+LQEFg9GClyfkNXj1MP6wRnzYs0EeWbPcHs02AXu4xuUbM1zhwn3wqaizle3AEYg5aeoohhg==}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-x64-musl@4.60.1':
     resolution: {integrity: sha512-5cIATbk5vynAjqqmyBjlciMJl1+R/CwX9oLk/EyiFXDWd95KpHdrOJT//rnUl4cUcskrd0jCCw3wpZnhIHdD9w==}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@rollup/rollup-openbsd-x64@4.60.1':
     resolution: {integrity: sha512-cl0w09WsCi17mcmWqqglez9Gk8isgeWvoUZ3WiJFYSR3zjBQc2J5/ihSjpl+VLjPqjQ/1hJRcqBfLjssREQILw==}
@@ -3523,25 +3313,21 @@ packages:
     resolution: {integrity: sha512-fvZX6xZPvBT8qipSpvkKMX5M7yd2BSpZNCZXcefw6gA3uC7LI3gu+er0LrDXY1PtPzVuHTyDx+abwWpagV3PiQ==}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@rspack/binding-linux-arm64-musl@1.6.8':
     resolution: {integrity: sha512-++XMKcMNrt59HcFBLnRaJcn70k3X0GwkAegZBVpel8xYIAgvoXT5+L8P1ExId/yTFxqedaz8DbcxQnNmMozviw==}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@rspack/binding-linux-x64-gnu@1.6.8':
     resolution: {integrity: sha512-tv3BWkTE1TndfX+DsE1rSTg8fBevCxujNZ3MlfZ22Wfy9x1FMXTJlWG8VIOXmaaJ1wUHzv8S7cE2YUUJ2LuiCg==}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@rspack/binding-linux-x64-musl@1.6.8':
     resolution: {integrity: sha512-DCGgZ5/in1O3FjHWqXnDsncRy+48cMhfuUAAUyl0yDj1NpsZu9pP+xfGLvGcQTiYrVl7IH9Aojf1eShP/77WGA==}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@rspack/binding-wasm32-wasi@1.6.8':
     resolution: {integrity: sha512-VUwdhl/lI4m6o1OGCZ9JwtMjTV/yLY5VZTQdEPKb40JMTlmZ5MBlr5xk7ByaXXYHr6I+qnqEm73iMKQvg6iknw==}
@@ -3592,9 +3378,9 @@ packages:
       webpack-hot-middleware:
         optional: true
 
-  '@schematics/angular@https://codeload.github.com/angular/schematics-angular-builds/tar.gz/d3e56d02a8acc2e33a76b47bf7b3a5b4cdc79a01':
-    resolution: {tarball: https://codeload.github.com/angular/schematics-angular-builds/tar.gz/d3e56d02a8acc2e33a76b47bf7b3a5b4cdc79a01}
-    version: 22.0.0-next.4
+  '@schematics/angular@https://codeload.github.com/angular/schematics-angular-builds/tar.gz/f22a1030689665c830587a8b92cc511f26432169':
+    resolution: {tarball: https://codeload.github.com/angular/schematics-angular-builds/tar.gz/f22a1030689665c830587a8b92cc511f26432169}
+    version: 22.0.0-next.5
     engines: {node: ^22.22.0 || >=24.13.1, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
 
   '@shikijs/core@2.5.0':
@@ -3704,42 +3490,36 @@ packages:
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@swc/core-linux-arm64-musl@1.15.24':
     resolution: {integrity: sha512-ZpF/pRe1guk6sKzQI9D1jAORtjTdNlyeXn9GDz8ophof/w2WhojRblvSDJaGe7rJjcPN8AaOkhwdRUh7q8oYIg==}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@swc/core-linux-ppc64-gnu@1.15.24':
     resolution: {integrity: sha512-QZEsZfisHTSJlmyChgDFNmKPb3W6Lhbfo/O76HhIngfEdnQNmukS38/VSe1feho+xkV5A5hETyCbx3sALBZKAQ==}
     engines: {node: '>=10'}
     cpu: [ppc64]
     os: [linux]
-    libc: [glibc]
 
   '@swc/core-linux-s390x-gnu@1.15.24':
     resolution: {integrity: sha512-DLdJKVsJgglqQrJBuoUYNmzm3leI7kUZhLbZGHv42onfKsGf6JDS3+bzCUQfte/XOqDjh/tmmn1DR/CF/tCJFw==}
     engines: {node: '>=10'}
     cpu: [s390x]
     os: [linux]
-    libc: [glibc]
 
   '@swc/core-linux-x64-gnu@1.15.24':
     resolution: {integrity: sha512-IpLYfposPA/XLxYOKpRfeccl1p5dDa3+okZDHHTchBkXEaVCnq5MADPmIWwIYj1tudt7hORsEHccG5no6IUQRw==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@swc/core-linux-x64-musl@1.15.24':
     resolution: {integrity: sha512-JHy3fMSc0t/EPWgo74+OK5TGr51aElnzqfUPaiRf2qJ/BfX5CUCfMiWVBuhI7qmVMBnk1jTRnL/xZnOSHDPLYg==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@swc/core-win32-arm64-msvc@1.15.24':
     resolution: {integrity: sha512-Txj+qUH1z2bUd1P3JvwByfjKFti3cptlAxhWgmunBUUxy/IW3CXLZ6l6Gk4liANadKkU71nIU1X30Z5vpMT3BA==}
@@ -3819,28 +3599,24 @@ packages:
     engines: {node: '>= 20'}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@tailwindcss/oxide-linux-arm64-musl@4.2.2':
     resolution: {integrity: sha512-oCfG/mS+/+XRlwNjnsNLVwnMWYH7tn/kYPsNPh+JSOMlnt93mYNCKHYzylRhI51X+TbR+ufNhhKKzm6QkqX8ag==}
     engines: {node: '>= 20'}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@tailwindcss/oxide-linux-x64-gnu@4.2.2':
     resolution: {integrity: sha512-rTAGAkDgqbXHNp/xW0iugLVmX62wOp2PoE39BTCGKjv3Iocf6AFbRP/wZT/kuCxC9QBh9Pu8XPkv/zCZB2mcMg==}
     engines: {node: '>= 20'}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@tailwindcss/oxide-linux-x64-musl@4.2.2':
     resolution: {integrity: sha512-XW3t3qwbIwiSyRCggeO2zxe3KWaEbM0/kW9e8+0XpBgyKU4ATYzcVSMKteZJ1iukJ3HgHBjbg9P5YPRCVUxlnQ==}
     engines: {node: '>= 20'}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@tailwindcss/oxide-wasm32-wasi@4.2.2':
     resolution: {integrity: sha512-eKSztKsmEsn1O5lJ4ZAfyn41NfG7vzCg496YiGtMDV86jz1q/irhms5O0VrY6ZwTUkFy/EKG3RfWgxSI3VbZ8Q==}
@@ -4050,16 +3826,16 @@ packages:
   '@types/yargs@17.0.35':
     resolution: {integrity: sha512-qUHkeCyQFxMXg79wQfTtfndEC+N9ZZg76HJftDJp+qH2tV7Gj4OJi7l+PiWwJ+pWtW8GwSmqsDj/oymhrTWXjg==}
 
-  '@typescript-eslint/eslint-plugin@8.58.0':
-    resolution: {integrity: sha512-RLkVSiNuUP1C2ROIWfqX+YcUfLaSnxGE/8M+Y57lopVwg9VTYYfhuz15Yf1IzCKgZj6/rIbYTmJCUSqr76r0Wg==}
+  '@typescript-eslint/eslint-plugin@8.58.2':
+    resolution: {integrity: sha512-aC2qc5thQahutKjP+cl8cgN9DWe3ZUqVko30CMSZHnFEHyhOYoZSzkGtAI2mcwZ38xeImDucI4dnqsHiOYuuCw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
-      '@typescript-eslint/parser': ^8.58.0
+      '@typescript-eslint/parser': ^8.58.2
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
       typescript: '>=4.8.4 <6.1.0'
 
-  '@typescript-eslint/parser@8.58.0':
-    resolution: {integrity: sha512-rLoGZIf9afaRBYsPUMtvkDWykwXwUPL60HebR4JgTI8mxfFe2cQTu3AGitANp4b9B2QlVru6WzjgB2IzJKiCSA==}
+  '@typescript-eslint/parser@8.58.2':
+    resolution: {integrity: sha512-/Zb/xaIDfxeJnvishjGdcR4jmr7S+bda8PKNhRGdljDM+elXhlvN0FyPSsMnLmJUrVG9aPO6dof80wjMawsASg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
@@ -4071,12 +3847,28 @@ packages:
     peerDependencies:
       typescript: '>=4.8.4 <6.1.0'
 
+  '@typescript-eslint/project-service@8.58.2':
+    resolution: {integrity: sha512-Cq6UfpZZk15+r87BkIh5rDpi38W4b+Sjnb8wQCPPDDweS/LRCFjCyViEbzHk5Ck3f2QDfgmlxqSa7S7clDtlfg==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      typescript: '>=4.8.4 <6.1.0'
+
   '@typescript-eslint/scope-manager@8.58.0':
     resolution: {integrity: sha512-W1Lur1oF50FxSnNdGp3Vs6P+yBRSmZiw4IIjEeYxd8UQJwhUF0gDgDD/W/Tgmh73mxgEU3qX0Bzdl/NGuSPEpQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
+  '@typescript-eslint/scope-manager@8.58.2':
+    resolution: {integrity: sha512-SgmyvDPexWETQek+qzZnrG6844IaO02UVyOLhI4wpo82dpZJY9+6YZCKAMFzXb7qhx37mFK1QcPQ18tud+vo6Q==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
   '@typescript-eslint/tsconfig-utils@8.58.0':
     resolution: {integrity: sha512-doNSZEVJsWEu4htiVC+PR6NpM+pa+a4ClH9INRWOWCUzMst/VA9c4gXq92F8GUD1rwhNvRLkgjfYtFXegXQF7A==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      typescript: '>=4.8.4 <6.1.0'
+
+  '@typescript-eslint/tsconfig-utils@8.58.2':
+    resolution: {integrity: sha512-3SR+RukipDvkkKp/d0jP0dyzuls3DbGmwDpVEc5wqk5f38KFThakqAAO0XMirWAE+kT00oTauTbzMFGPoAzB0A==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       typescript: '>=4.8.4 <6.1.0'
@@ -4088,12 +3880,29 @@ packages:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
       typescript: '>=4.8.4 <6.1.0'
 
+  '@typescript-eslint/type-utils@8.58.2':
+    resolution: {integrity: sha512-Z7EloNR/B389FvabdGeTo2XMs4W9TjtPiO9DAsmT0yom0bwlPyRjkJ1uCdW1DvrrrYP50AJZ9Xc3sByZA9+dcg==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
+      typescript: '>=4.8.4 <6.1.0'
+
   '@typescript-eslint/types@8.58.0':
     resolution: {integrity: sha512-O9CjxypDT89fbHxRfETNoAnHj/i6IpRK0CvbVN3qibxlLdo5p5hcLmUuCCrHMpxiWSwKyI8mCP7qRNYuOJ0Uww==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
+  '@typescript-eslint/types@8.58.2':
+    resolution: {integrity: sha512-9TukXyATBQf/Jq9AMQXfvurk+G5R2MwfqQGDR2GzGz28HvY/lXNKGhkY+6IOubwcquikWk5cjlgPvD2uAA7htQ==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
   '@typescript-eslint/typescript-estree@8.58.0':
     resolution: {integrity: sha512-7vv5UWbHqew/dvs+D3e1RvLv1v2eeZ9txRHPnEEBUgSNLx5ghdzjHa0sgLWYVKssH+lYmV0JaWdoubo0ncGYLA==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      typescript: '>=4.8.4 <6.1.0'
+
+  '@typescript-eslint/typescript-estree@8.58.2':
+    resolution: {integrity: sha512-ELGuoofuhhoCvNbQjFFiobFcGgcDCEm0ThWdmO4Z0UzLqPXS3KFvnEZ+SHewwOYHjM09tkzOWXNTv9u6Gqtyuw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       typescript: '>=4.8.4 <6.1.0'
@@ -4105,8 +3914,19 @@ packages:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
       typescript: '>=4.8.4 <6.1.0'
 
+  '@typescript-eslint/utils@8.58.2':
+    resolution: {integrity: sha512-QZfjHNEzPY8+l0+fIXMvuQ2sJlplB4zgDZvA+NmvZsZv3EQwOcc1DuIU1VJUTWZ/RKouBMhDyNaBMx4sWvrzRA==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
+      typescript: '>=4.8.4 <6.1.0'
+
   '@typescript-eslint/visitor-keys@8.58.0':
     resolution: {integrity: sha512-XJ9UD9+bbDo4a4epraTwG3TsNPeiB9aShrUneAVXy8q4LuwowN+qu89/6ByLMINqvIMeI9H9hOHQtg/ijrYXzQ==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@typescript-eslint/visitor-keys@8.58.2':
+    resolution: {integrity: sha512-f1WO2Lx8a9t8DARmcWAUPJbu0G20bJlj8L4z72K00TMeJAoyLr/tHhI/pzYBLrR4dXWkcxO1cWYZEOX8DKHTqA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@ungap/structured-clone@1.3.0':
@@ -4496,10 +4316,6 @@ packages:
   ajv@8.18.0:
     resolution: {integrity: sha512-PlXPeEWMXMZ7sPYOHqmDyCJzcfNrUr3fGNKtezX14ykXOEIvyK81d+qydx89KY5O71FKMPaQ2vBfBFI5NHR63A==}
 
-  algoliasearch@5.50.0:
-    resolution: {integrity: sha512-yE5I83Q2s8euVou8Y3feXK08wyZInJWLYXgWO6Xti9jBUEZAGUahyeQ7wSZWkifLWVnQVKEz5RAmBlXG5nqxog==}
-    engines: {node: '>= 14.0.0'}
-
   algoliasearch@5.50.1:
     resolution: {integrity: sha512-/bwdue1/8LWELn/DBalGRfuLsXBLXULJo/yOeavJtDu8rBwxIzC6/Rz9Jg19S21VkJvRuZO1k8CZXBMS73mYbA==}
     engines: {node: '>= 14.0.0'}
@@ -4727,8 +4543,8 @@ packages:
   bcryptjs@2.4.3:
     resolution: {integrity: sha512-V/Hy/X9Vt7f3BbPJEi8BdVFMByHi+jNXrYkW3huaybV/kQ0KJg0Y6PkEMbn+zeT+i+SiKZ/HMqJGIIt4LZDqNQ==}
 
-  beasties@0.4.1:
-    resolution: {integrity: sha512-2Imdcw3LznDuxAbJM26RHniOLAzE6WgrK8OuvVXCQtNBS8rsnD9zsSEa3fHl4hHpUY7BYTlrpvtPVbvu9G6neg==}
+  beasties@0.4.2:
+    resolution: {integrity: sha512-NvcGjG/7AVUAfRbvrJmHunDQS9uHnE6Q/7AkaPr8oKE8HjOlpjRG5075z/th2Tmlezk3VlaaS8+X9I1RwHJMQw==}
     engines: {node: '>=18.0.0'}
 
   bidi-js@1.0.3:
@@ -4766,6 +4582,9 @@ packages:
 
   brace-expansion@2.0.3:
     resolution: {integrity: sha512-MCV/fYJEbqx68aE58kv2cA/kiky1G8vux3OR6/jbS+jIMe/6fJWa0DTzJU7dqijOWYwHi1t29FlfYI9uytqlpA==}
+
+  brace-expansion@2.1.0:
+    resolution: {integrity: sha512-TN1kCZAgdgweJhWWpgKYrQaMNHcDULHkWwQIspdtjV4Y5aurRdZpjAqn6yX3FPqTA9ngHCc4hJxMAMgGfve85w==}
 
   brace-expansion@5.0.5:
     resolution: {integrity: sha512-VZznLgtwhn+Mact9tfiwx64fA9erHH/MCXEUfB/0bX/6Fz6ny5EGTXYltMocqg4xFAQZtnO3DHWWXi8RiuN7cQ==}
@@ -5007,8 +4826,8 @@ packages:
     resolution: {integrity: sha512-FveZTNuGw04cxlAiWbzi6zTAL/lhehaWbTtgluJh4/E95DqMwTmha3KZN1aAWA8cFIhHzMZUvLevkw5Rqk+tSQ==}
     engines: {node: '>= 0.6'}
 
-  content-disposition@1.0.1:
-    resolution: {integrity: sha512-oIXISMynqSqm241k6kcQ5UwttDILMK4BiurCfGEREw6+X9jkkpEe5T9FZaApyLGGOnFuyMWZpdolTXMtvEJ08Q==}
+  content-disposition@1.1.0:
+    resolution: {integrity: sha512-5jRCH9Z/+DRP7rkvY83B+yGIGX96OYdJmzngqnw2SBSxqCFPd0w2km3s5iawpGX8krnwSGmF0FW5Nhr0Hfai3g==}
     engines: {node: '>=18'}
 
   content-type@1.0.5:
@@ -6544,28 +6363,24 @@ packages:
     engines: {node: '>= 12.0.0'}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   lightningcss-linux-arm64-musl@1.32.0:
     resolution: {integrity: sha512-UpQkoenr4UJEzgVIYpI80lDFvRmPVg6oqboNHfoH4CQIfNA+HOrZ7Mo7KZP02dC6LjghPQJeBsvXhJod/wnIBg==}
     engines: {node: '>= 12.0.0'}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   lightningcss-linux-x64-gnu@1.32.0:
     resolution: {integrity: sha512-V7Qr52IhZmdKPVr+Vtw8o+WLsQJYCTd8loIfpDaMRWGUZfBOYEJeyJIkqGIDMZPwPx24pUMfwSxxI8phr/MbOA==}
     engines: {node: '>= 12.0.0'}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   lightningcss-linux-x64-musl@1.32.0:
     resolution: {integrity: sha512-bYcLp+Vb0awsiXg/80uCRezCYHNg1/l3mt0gzHnWV9XP1W5sKa5/TCdGWaR/zBM2PeF/HbsQv/j2URNOiVuxWg==}
     engines: {node: '>= 12.0.0'}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   lightningcss-win32-arm64-msvc@1.32.0:
     resolution: {integrity: sha512-8SbC8BR40pS6baCM8sbtYDSwEVQd4JlFTOlaD3gWGHfThTcABnNDBda6eTZeqbofalIJhFx0qKzgHJmcPTnGdw==}
@@ -6598,8 +6413,8 @@ packages:
     resolution: {integrity: sha512-7I5knELsJKTUjXG+A6BkKAiGkW1i25fNa/xlUl9hFtk15WbE9jndA89xu5FzQKrY5llajE1hfZZFMILXkDHk/Q==}
     engines: {node: '>=22.13.0'}
 
-  lmdb@3.5.2:
-    resolution: {integrity: sha512-od5AWh1MNylIOeX7MB7TV627MM9tzyOUn8U8FZOeWKpWFnMU5FS9pu5t41pS4+pi7OxHRyk5QVRhuUimHjfkmg==}
+  lmdb@3.5.3:
+    resolution: {integrity: sha512-6A0iRKOv/N62P1vU8qhBr32tHQIY6pQMe8b6zqI4VLELqV8fWHUMdnfNjMR+Kyh7ZeRCo8PDzAnW2g+SJSoP1A==}
     hasBin: true
 
   loader-runner@4.3.1:
@@ -7688,6 +7503,10 @@ packages:
     resolution: {integrity: sha512-mAZTtNCeetKMH+pSjrb76NAM8V9a05I9aBZOHztWy/UqcJdQYNsf59vrRKWnojAT9Y+GbIvoTBC++CPHqpDBhQ==}
     engines: {node: '>=0.6'}
 
+  qs@6.15.1:
+    resolution: {integrity: sha512-6YHEFRL9mfgcAvql/XhwTvf5jKcOiiupt2FiJxHkiX1z4j7WL8J/jRHYLluORvc1XxB5rV20KoeK00gVJamspg==}
+    engines: {node: '>=0.6'}
+
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
@@ -7848,11 +7667,6 @@ packages:
   rfdc@1.4.1:
     resolution: {integrity: sha512-q1b3N5QkRUWUl7iyylaaj3kOpIT0N2i9MqIEQXP73GVsN9cw3fdx8X63cEmWhJGi2PPCF23Ijp7ktmd39rawIA==}
 
-  rolldown@1.0.0-rc.12:
-    resolution: {integrity: sha512-yP4USLIMYrwpPHEFB5JGH1uxhcslv6/hL0OyvTuY+3qlOSJvZ7ntYnoWpehBxufkgN0cvXxppuTu5hHa/zPh+A==}
-    engines: {node: ^20.19.0 || >=22.12.0}
-    hasBin: true
-
   rolldown@1.0.0-rc.13:
     resolution: {integrity: sha512-bvVj8YJmf0rq4pSFmH7laLa6pYrhghv3PRzrCdRAr23g66zOKVJ4wkvFtgohtPLWmthgg8/rkaqRHrpUEh0Zbw==}
     engines: {node: ^20.19.0 || >=22.12.0}
@@ -7942,56 +7756,48 @@ packages:
     engines: {node: '>=14.0.0'}
     cpu: [arm64]
     os: [linux]
-    libc: glibc
 
   sass-embedded-linux-arm@1.99.0:
     resolution: {integrity: sha512-d4IjJZrX2+AwB2YCy1JySwdptJECNP/WfAQLUl8txI3ka8/d3TUI155GtelnoZUkio211PwIeFvvAeZ9RXPQnw==}
     engines: {node: '>=14.0.0'}
     cpu: [arm]
     os: [linux]
-    libc: glibc
 
   sass-embedded-linux-musl-arm64@1.99.0:
     resolution: {integrity: sha512-Hi2bt/IrM5P4FBKz6EcHAlniwfpoz9mnTdvSd58y+avA3SANM76upIkAdSayA8ZGwyL3gZokru1AKDPF9lJDNw==}
     engines: {node: '>=14.0.0'}
     cpu: [arm64]
     os: [linux]
-    libc: musl
 
   sass-embedded-linux-musl-arm@1.99.0:
     resolution: {integrity: sha512-2gvHOupgIw3ytatXT4nFUow71LFbuOZPEwG+HUzcNQDH8ue4Ez8cr03vsv5MDv3lIjOKcXwDvWD980t18MwkoQ==}
     engines: {node: '>=14.0.0'}
     cpu: [arm]
     os: [linux]
-    libc: musl
 
   sass-embedded-linux-musl-riscv64@1.99.0:
     resolution: {integrity: sha512-mKqGvVaJ9rHMqyZsF0kikQe4NO0f4osb67+X6nLhBiVDKvyazQHJ3zJQreNefIE36yL2sjHIclSB//MprzaQDg==}
     engines: {node: '>=14.0.0'}
     cpu: [riscv64]
     os: [linux]
-    libc: musl
 
   sass-embedded-linux-musl-x64@1.99.0:
     resolution: {integrity: sha512-huhgOMmOc30r7CH7qbRbT9LerSEGSnWuS4CYNOskr9BvNeQp4dIneFufNRGZ7hkOAxUM8DglxIZJN/cyAT95Ew==}
     engines: {node: '>=14.0.0'}
     cpu: [x64]
     os: [linux]
-    libc: musl
 
   sass-embedded-linux-riscv64@1.99.0:
     resolution: {integrity: sha512-mevFPIFAVhrH90THifxLfOntFmHtcEKOcdWnep2gJ0X4DVva4AiVIRlQe/7w9JFx5+gnDRE1oaJJkzuFUuYZsA==}
     engines: {node: '>=14.0.0'}
     cpu: [riscv64]
     os: [linux]
-    libc: glibc
 
   sass-embedded-linux-x64@1.99.0:
     resolution: {integrity: sha512-9k7IkULqIZdCIVt4Mboryt6vN8Mjmm3EhI1P3mClU5y5i3wLK5ExC3cbVWk047KsID/fvB1RLslqghXJx5BoxA==}
     engines: {node: '>=14.0.0'}
     cpu: [x64]
     os: [linux]
-    libc: glibc
 
   sass-embedded-unknown-all@1.99.0:
     resolution: {integrity: sha512-P7MxiUtL/XzGo3PX0CaB8lNNEFLQWKikPA8pbKytx9ZCLZSDkt2NJcdAbblB/sqMs4AV3EK2NadV8rI/diq3xg==}
@@ -8477,6 +8283,10 @@ packages:
     resolution: {integrity: sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==}
     engines: {node: '>=12.0.0'}
 
+  tinyglobby@0.2.16:
+    resolution: {integrity: sha512-pn99VhoACYR8nFHhxqix+uvsbXineAasWm5ojXoN8xEwK5Kd3/TrhNn1wByuD52UxWRLy8pu+kRMniEi6Eq9Zg==}
+    engines: {node: '>=12.0.0'}
+
   tinyrainbow@3.1.0:
     resolution: {integrity: sha512-Bf+ILmBgretUrdJxzXM0SgXLZ3XfiaUuOj/IKQHuTXip+05Xn+uyEYdVg0kYDipTBcLrCVyUzAPz7QmArb0mmw==}
     engines: {node: '>=14.0.0'}
@@ -8617,8 +8427,8 @@ packages:
   typed-assert@1.0.9:
     resolution: {integrity: sha512-KNNZtayBCtmnNmbo5mG47p1XsCyrx6iVqomjcZnec/1Y5GGARaxPs6r49RnSPeUP3YjNYiU9sQHAtY4BBvnZwg==}
 
-  typescript-eslint@8.58.0:
-    resolution: {integrity: sha512-e2TQzKfaI85fO+F3QywtX+tCTsu/D3WW5LVU6nz8hTFKFZ8yBJ6mSYRpXqdR3mFjPWmO0eWsTa5f+UpAOe/FMA==}
+  typescript-eslint@8.58.2:
+    resolution: {integrity: sha512-V8iSng9mRbdZjl54VJ9NKr6ZB+dW0J3TzRXRGcSbLIej9jV86ZRtlYeTKDR/QLxXykocJ5icNzbsl2+5TzIvcQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
@@ -8784,8 +8594,8 @@ packages:
       terser:
         optional: true
 
-  vite@7.3.1:
-    resolution: {integrity: sha512-w+N7Hifpc3gRjZ63vYBXA56dvvRlNWRczTdmCBBa+CotUzAPf5b7YMdMR/8CQoeYE5LX3W4wj6RYTgonm1b9DA==}
+  vite@7.3.2:
+    resolution: {integrity: sha512-Bby3NOsna2jsjfLVOHKes8sGwgl4TT0E6vvpYgnAYDIF/tie7MRaFthmKuHx1NSXjiTueXH3do80FMQgvEktRg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -9206,13 +9016,6 @@ snapshots:
 
   '@adobe/css-tools@4.4.4': {}
 
-  '@algolia/abtesting@1.16.0':
-    dependencies:
-      '@algolia/client-common': 5.50.0
-      '@algolia/requester-browser-xhr': 5.50.0
-      '@algolia/requester-fetch': 5.50.0
-      '@algolia/requester-node-http': 5.50.0
-
   '@algolia/abtesting@1.16.1':
     dependencies:
       '@algolia/client-common': 5.50.1
@@ -9248,26 +9051,12 @@ snapshots:
       '@algolia/client-search': 5.50.1
       algoliasearch: 5.50.1
 
-  '@algolia/client-abtesting@5.50.0':
-    dependencies:
-      '@algolia/client-common': 5.50.0
-      '@algolia/requester-browser-xhr': 5.50.0
-      '@algolia/requester-fetch': 5.50.0
-      '@algolia/requester-node-http': 5.50.0
-
   '@algolia/client-abtesting@5.50.1':
     dependencies:
       '@algolia/client-common': 5.50.1
       '@algolia/requester-browser-xhr': 5.50.1
       '@algolia/requester-fetch': 5.50.1
       '@algolia/requester-node-http': 5.50.1
-
-  '@algolia/client-analytics@5.50.0':
-    dependencies:
-      '@algolia/client-common': 5.50.0
-      '@algolia/requester-browser-xhr': 5.50.0
-      '@algolia/requester-fetch': 5.50.0
-      '@algolia/requester-node-http': 5.50.0
 
   '@algolia/client-analytics@5.50.1':
     dependencies:
@@ -9276,16 +9065,7 @@ snapshots:
       '@algolia/requester-fetch': 5.50.1
       '@algolia/requester-node-http': 5.50.1
 
-  '@algolia/client-common@5.50.0': {}
-
   '@algolia/client-common@5.50.1': {}
-
-  '@algolia/client-insights@5.50.0':
-    dependencies:
-      '@algolia/client-common': 5.50.0
-      '@algolia/requester-browser-xhr': 5.50.0
-      '@algolia/requester-fetch': 5.50.0
-      '@algolia/requester-node-http': 5.50.0
 
   '@algolia/client-insights@5.50.1':
     dependencies:
@@ -9294,26 +9074,12 @@ snapshots:
       '@algolia/requester-fetch': 5.50.1
       '@algolia/requester-node-http': 5.50.1
 
-  '@algolia/client-personalization@5.50.0':
-    dependencies:
-      '@algolia/client-common': 5.50.0
-      '@algolia/requester-browser-xhr': 5.50.0
-      '@algolia/requester-fetch': 5.50.0
-      '@algolia/requester-node-http': 5.50.0
-
   '@algolia/client-personalization@5.50.1':
     dependencies:
       '@algolia/client-common': 5.50.1
       '@algolia/requester-browser-xhr': 5.50.1
       '@algolia/requester-fetch': 5.50.1
       '@algolia/requester-node-http': 5.50.1
-
-  '@algolia/client-query-suggestions@5.50.0':
-    dependencies:
-      '@algolia/client-common': 5.50.0
-      '@algolia/requester-browser-xhr': 5.50.0
-      '@algolia/requester-fetch': 5.50.0
-      '@algolia/requester-node-http': 5.50.0
 
   '@algolia/client-query-suggestions@5.50.1':
     dependencies:
@@ -9322,26 +9088,12 @@ snapshots:
       '@algolia/requester-fetch': 5.50.1
       '@algolia/requester-node-http': 5.50.1
 
-  '@algolia/client-search@5.50.0':
-    dependencies:
-      '@algolia/client-common': 5.50.0
-      '@algolia/requester-browser-xhr': 5.50.0
-      '@algolia/requester-fetch': 5.50.0
-      '@algolia/requester-node-http': 5.50.0
-
   '@algolia/client-search@5.50.1':
     dependencies:
       '@algolia/client-common': 5.50.1
       '@algolia/requester-browser-xhr': 5.50.1
       '@algolia/requester-fetch': 5.50.1
       '@algolia/requester-node-http': 5.50.1
-
-  '@algolia/ingestion@1.50.0':
-    dependencies:
-      '@algolia/client-common': 5.50.0
-      '@algolia/requester-browser-xhr': 5.50.0
-      '@algolia/requester-fetch': 5.50.0
-      '@algolia/requester-node-http': 5.50.0
 
   '@algolia/ingestion@1.50.1':
     dependencies:
@@ -9350,26 +9102,12 @@ snapshots:
       '@algolia/requester-fetch': 5.50.1
       '@algolia/requester-node-http': 5.50.1
 
-  '@algolia/monitoring@1.50.0':
-    dependencies:
-      '@algolia/client-common': 5.50.0
-      '@algolia/requester-browser-xhr': 5.50.0
-      '@algolia/requester-fetch': 5.50.0
-      '@algolia/requester-node-http': 5.50.0
-
   '@algolia/monitoring@1.50.1':
     dependencies:
       '@algolia/client-common': 5.50.1
       '@algolia/requester-browser-xhr': 5.50.1
       '@algolia/requester-fetch': 5.50.1
       '@algolia/requester-node-http': 5.50.1
-
-  '@algolia/recommend@5.50.0':
-    dependencies:
-      '@algolia/client-common': 5.50.0
-      '@algolia/requester-browser-xhr': 5.50.0
-      '@algolia/requester-fetch': 5.50.0
-      '@algolia/requester-node-http': 5.50.0
 
   '@algolia/recommend@5.50.1':
     dependencies:
@@ -9378,25 +9116,13 @@ snapshots:
       '@algolia/requester-fetch': 5.50.1
       '@algolia/requester-node-http': 5.50.1
 
-  '@algolia/requester-browser-xhr@5.50.0':
-    dependencies:
-      '@algolia/client-common': 5.50.0
-
   '@algolia/requester-browser-xhr@5.50.1':
     dependencies:
       '@algolia/client-common': 5.50.1
 
-  '@algolia/requester-fetch@5.50.0':
-    dependencies:
-      '@algolia/client-common': 5.50.0
-
   '@algolia/requester-fetch@5.50.1':
     dependencies:
       '@algolia/client-common': 5.50.1
-
-  '@algolia/requester-node-http@5.50.0':
-    dependencies:
-      '@algolia/client-common': 5.50.0
 
   '@algolia/requester-node-http@5.50.1':
     dependencies:
@@ -9409,43 +9135,43 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.13
       '@jridgewell/trace-mapping': 0.3.31
 
-  '@analogjs/vite-plugin-angular@2.4.1(@angular-devkit/build-angular@22.0.0-next.4(758168f9a0a7013b01ad000d3bed766f))(@angular/build@https://codeload.github.com/angular/angular-build-builds/tar.gz/65fff176683df4fc6289d88751662dc5afa030f7(13b4bd07cfa5a2b864c60ec1c7195bfa))':
+  '@analogjs/vite-plugin-angular@2.4.1(@angular-devkit/build-angular@22.0.0-next.4(c5294860805d04e2fec7bf623e48b9af))(@angular/build@https://codeload.github.com/angular/angular-build-builds/tar.gz/6d00286f6479813a474c9940fa4a44bd92c23902(b080299454bc7d96279558f61cb85213))':
     dependencies:
       tinyglobby: 0.2.15
       ts-morph: 21.0.1
     optionalDependencies:
-      '@angular-devkit/build-angular': 22.0.0-next.4(758168f9a0a7013b01ad000d3bed766f)
-      '@angular/build': https://codeload.github.com/angular/angular-build-builds/tar.gz/65fff176683df4fc6289d88751662dc5afa030f7(13b4bd07cfa5a2b864c60ec1c7195bfa)
+      '@angular-devkit/build-angular': 22.0.0-next.4(c5294860805d04e2fec7bf623e48b9af)
+      '@angular/build': https://codeload.github.com/angular/angular-build-builds/tar.gz/6d00286f6479813a474c9940fa4a44bd92c23902(b080299454bc7d96279558f61cb85213)
 
-  '@analogjs/vitest-angular@2.4.1(@analogjs/vite-plugin-angular@2.4.1(@angular-devkit/build-angular@22.0.0-next.4(758168f9a0a7013b01ad000d3bed766f))(@angular/build@https://codeload.github.com/angular/angular-build-builds/tar.gz/65fff176683df4fc6289d88751662dc5afa030f7(13b4bd07cfa5a2b864c60ec1c7195bfa)))(@angular-devkit/architect@0.2200.0-next.4(chokidar@5.0.0))(@angular-devkit/schematics@https://codeload.github.com/angular/angular-devkit-schematics-builds/tar.gz/3c61f90d12b7635896ea4e9d91f538a01b252817(chokidar@5.0.0))(vitest@4.1.3)':
+  '@analogjs/vitest-angular@2.4.1(@analogjs/vite-plugin-angular@2.4.1(@angular-devkit/build-angular@22.0.0-next.4(c5294860805d04e2fec7bf623e48b9af))(@angular/build@https://codeload.github.com/angular/angular-build-builds/tar.gz/6d00286f6479813a474c9940fa4a44bd92c23902(b080299454bc7d96279558f61cb85213)))(@angular-devkit/architect@0.2200.0-next.5(chokidar@5.0.0))(@angular-devkit/schematics@https://codeload.github.com/angular/angular-devkit-schematics-builds/tar.gz/e00cb89340b8910d27ef6195f959130e3973c5d4(chokidar@5.0.0))(vitest@4.1.3)':
     dependencies:
-      '@analogjs/vite-plugin-angular': 2.4.1(@angular-devkit/build-angular@22.0.0-next.4(758168f9a0a7013b01ad000d3bed766f))(@angular/build@https://codeload.github.com/angular/angular-build-builds/tar.gz/65fff176683df4fc6289d88751662dc5afa030f7(13b4bd07cfa5a2b864c60ec1c7195bfa))
-      '@angular-devkit/architect': 0.2200.0-next.4(chokidar@5.0.0)
-      '@angular-devkit/schematics': https://codeload.github.com/angular/angular-devkit-schematics-builds/tar.gz/3c61f90d12b7635896ea4e9d91f538a01b252817(chokidar@5.0.0)
+      '@analogjs/vite-plugin-angular': 2.4.1(@angular-devkit/build-angular@22.0.0-next.4(c5294860805d04e2fec7bf623e48b9af))(@angular/build@https://codeload.github.com/angular/angular-build-builds/tar.gz/6d00286f6479813a474c9940fa4a44bd92c23902(b080299454bc7d96279558f61cb85213))
+      '@angular-devkit/architect': 0.2200.0-next.5(chokidar@5.0.0)
+      '@angular-devkit/schematics': https://codeload.github.com/angular/angular-devkit-schematics-builds/tar.gz/e00cb89340b8910d27ef6195f959130e3973c5d4(chokidar@5.0.0)
       vitest: 4.1.3(@types/node@24.12.2)(@vitest/coverage-v8@4.1.3)(@vitest/ui@4.1.3)(jsdom@27.4.0)(vite@8.0.7(@types/node@24.12.2)(esbuild@0.28.0)(jiti@2.6.1)(less@4.6.4)(sass-embedded@1.99.0)(sass@1.98.0)(terser@5.46.1)(yaml@2.8.3))
 
-  '@angular-devkit/architect@0.2200.0-next.4(chokidar@5.0.0)':
+  '@angular-devkit/architect@0.2200.0-next.5(chokidar@5.0.0)':
     dependencies:
-      '@angular-devkit/core': https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/6cd775718f1fd4c78d960e28a99d5a40453cae36(chokidar@5.0.0)
+      '@angular-devkit/core': https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/c1e4be52aa7dad58e06e8b45936cca5b82342df4(chokidar@5.0.0)
       rxjs: 7.8.2
     transitivePeerDependencies:
       - chokidar
 
-  '@angular-devkit/architect@https://codeload.github.com/angular/angular-devkit-architect-builds/tar.gz/7351c17a7b2a6adfe28a3d5e348663e68247e083(chokidar@5.0.0)':
+  '@angular-devkit/architect@https://codeload.github.com/angular/angular-devkit-architect-builds/tar.gz/332e5514420989edc954c1e959599d62b139ddcc(chokidar@5.0.0)':
     dependencies:
-      '@angular-devkit/core': https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/6cd775718f1fd4c78d960e28a99d5a40453cae36(chokidar@5.0.0)
+      '@angular-devkit/core': https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/c1e4be52aa7dad58e06e8b45936cca5b82342df4(chokidar@5.0.0)
       rxjs: 7.8.2
     transitivePeerDependencies:
       - chokidar
 
-  '@angular-devkit/build-angular@22.0.0-next.4(758168f9a0a7013b01ad000d3bed766f)':
+  '@angular-devkit/build-angular@22.0.0-next.4(c5294860805d04e2fec7bf623e48b9af)':
     dependencies:
       '@ampproject/remapping': 2.3.0
-      '@angular-devkit/architect': https://codeload.github.com/angular/angular-devkit-architect-builds/tar.gz/7351c17a7b2a6adfe28a3d5e348663e68247e083(chokidar@5.0.0)
+      '@angular-devkit/architect': https://codeload.github.com/angular/angular-devkit-architect-builds/tar.gz/332e5514420989edc954c1e959599d62b139ddcc(chokidar@5.0.0)
       '@angular-devkit/build-webpack': 0.2200.0-next.4(chokidar@5.0.0)(webpack-dev-server@5.2.3(tslib@2.8.1)(webpack@5.105.4(@swc/core@1.15.24(@swc/helpers@0.5.21))(esbuild@0.27.3)))(webpack@5.105.4(@swc/core@1.15.24(@swc/helpers@0.5.21))(esbuild@0.27.3))
-      '@angular-devkit/core': https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/6cd775718f1fd4c78d960e28a99d5a40453cae36(chokidar@5.0.0)
-      '@angular/build': https://codeload.github.com/angular/angular-build-builds/tar.gz/65fff176683df4fc6289d88751662dc5afa030f7(13b4bd07cfa5a2b864c60ec1c7195bfa)
-      '@angular/compiler-cli': https://codeload.github.com/angular/compiler-cli-builds/tar.gz/b032d4f9c7664088b71d183e6dad51be1fe19d74(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(typescript@6.0.2)
+      '@angular-devkit/core': https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/c1e4be52aa7dad58e06e8b45936cca5b82342df4(chokidar@5.0.0)
+      '@angular/build': https://codeload.github.com/angular/angular-build-builds/tar.gz/6d00286f6479813a474c9940fa4a44bd92c23902(b080299454bc7d96279558f61cb85213)
+      '@angular/compiler-cli': https://codeload.github.com/angular/compiler-cli-builds/tar.gz/2c8b8bf1dd606449166e6f9e2a4841bb75aa847a(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(typescript@6.0.2)
       '@babel/core': 7.29.0
       '@babel/generator': 7.29.1
       '@babel/helper-annotate-as-pure': 7.27.3
@@ -9456,7 +9182,7 @@ snapshots:
       '@babel/preset-env': 7.29.2(@babel/core@7.29.0)
       '@babel/runtime': 7.29.2
       '@discoveryjs/json-ext': 1.0.0
-      '@ngtools/webpack': 22.0.0-next.4(@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/b032d4f9c7664088b71d183e6dad51be1fe19d74(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(typescript@6.0.2))(typescript@6.0.2)(webpack@5.105.4(@swc/core@1.15.24(@swc/helpers@0.5.21))(esbuild@0.27.3))
+      '@ngtools/webpack': 22.0.0-next.4(@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/2c8b8bf1dd606449166e6f9e2a4841bb75aa847a(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(typescript@6.0.2))(typescript@6.0.2)(webpack@5.105.4(@swc/core@1.15.24(@swc/helpers@0.5.21))(esbuild@0.27.3))
       ansi-colors: 4.1.3
       autoprefixer: 10.4.27(postcss@8.5.8)
       babel-loader: 10.1.1(@babel/core@7.29.0)(@rspack/core@1.6.8(@swc/helpers@0.5.21))(webpack@5.105.4(@swc/core@1.15.24(@swc/helpers@0.5.21))(esbuild@0.27.3))
@@ -9496,17 +9222,15 @@ snapshots:
       webpack-merge: 6.0.1
       webpack-subresource-integrity: 5.1.0(webpack@5.105.4(@swc/core@1.15.24(@swc/helpers@0.5.21))(esbuild@0.27.3))
     optionalDependencies:
-      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2)
-      '@angular/platform-browser': https://codeload.github.com/angular/platform-browser-builds/tar.gz/824bf9553f6d0794ac4c97726d54e04465d9f543(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/6296c196d7a439f5b233486b12725dd943f98315(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))
-      '@angular/platform-server': https://codeload.github.com/angular/platform-server-builds/tar.gz/b37797798b1ea95f80b9fc361dc9a7ed75e6387e(7e6337fe8f1cc7b1bed1d0a4feacc026)
-      '@angular/ssr': https://codeload.github.com/angular/angular-ssr-builds/tar.gz/e4b5cccdd76316551273b1636ef8af1b63cdb35c(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/6296c196d7a439f5b233486b12725dd943f98315(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(@angular/platform-server@https://codeload.github.com/angular/platform-server-builds/tar.gz/b37797798b1ea95f80b9fc361dc9a7ed75e6387e(7e6337fe8f1cc7b1bed1d0a4feacc026))(@angular/router@https://codeload.github.com/angular/router-builds/tar.gz/1b85f9f644cf61cc5cb17676c3920b5f13e4aed4(5e9117228ba18213c8c80fd15811f017))
+      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2)
+      '@angular/platform-browser': https://codeload.github.com/angular/platform-browser-builds/tar.gz/e07a0dd2add89689fd4876a767692739df3849f3(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/ce29eb558af947a8dff258c1368c4388d3c031e2(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))
+      '@angular/platform-server': https://codeload.github.com/angular/platform-server-builds/tar.gz/8bff221bcb6e75e42d635151eb46a4691151e335(2512992f7e38ff4a787eda9e339b7984)
+      '@angular/ssr': https://codeload.github.com/angular/angular-ssr-builds/tar.gz/aee3b37dcada04bb06bbe0bb29d5958be6679809(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/ce29eb558af947a8dff258c1368c4388d3c031e2(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(@angular/platform-server@https://codeload.github.com/angular/platform-server-builds/tar.gz/8bff221bcb6e75e42d635151eb46a4691151e335(2512992f7e38ff4a787eda9e339b7984))(@angular/router@https://codeload.github.com/angular/router-builds/tar.gz/7432ebc260f1a7bc5db8d68122c76176ce2d7ec4(3c0c8a1ab4508240e1771b49ad7c4e12))
       esbuild: 0.27.3
-      ng-packagr: 22.0.0-next.1(@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/b032d4f9c7664088b71d183e6dad51be1fe19d74(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(typescript@6.0.2))(tailwindcss@4.2.2)(tslib@2.8.1)(typescript@6.0.2)
+      ng-packagr: 22.0.0-next.1(@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/2c8b8bf1dd606449166e6f9e2a4841bb75aa847a(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(typescript@6.0.2))(tailwindcss@4.2.2)(tslib@2.8.1)(typescript@6.0.2)
       tailwindcss: 4.2.2
     transitivePeerDependencies:
       - '@angular/compiler'
-      - '@emnapi/core'
-      - '@emnapi/runtime'
       - '@rspack/core'
       - '@swc/core'
       - '@types/node'
@@ -9530,14 +9254,14 @@ snapshots:
 
   '@angular-devkit/build-webpack@0.2200.0-next.4(chokidar@5.0.0)(webpack-dev-server@5.2.3(tslib@2.8.1)(webpack@5.105.4(@swc/core@1.15.24(@swc/helpers@0.5.21))(esbuild@0.27.3)))(webpack@5.105.4(@swc/core@1.15.24(@swc/helpers@0.5.21))(esbuild@0.27.3))':
     dependencies:
-      '@angular-devkit/architect': https://codeload.github.com/angular/angular-devkit-architect-builds/tar.gz/7351c17a7b2a6adfe28a3d5e348663e68247e083(chokidar@5.0.0)
+      '@angular-devkit/architect': https://codeload.github.com/angular/angular-devkit-architect-builds/tar.gz/332e5514420989edc954c1e959599d62b139ddcc(chokidar@5.0.0)
       rxjs: 7.8.2
       webpack: 5.105.4(@swc/core@1.15.24(@swc/helpers@0.5.21))(esbuild@0.28.0)
       webpack-dev-server: 5.2.3(tslib@2.8.1)(webpack@5.105.4(@swc/core@1.15.24(@swc/helpers@0.5.21))(esbuild@0.27.3))
     transitivePeerDependencies:
       - chokidar
 
-  '@angular-devkit/core@https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/6cd775718f1fd4c78d960e28a99d5a40453cae36(chokidar@5.0.0)':
+  '@angular-devkit/core@https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/c1e4be52aa7dad58e06e8b45936cca5b82342df4(chokidar@5.0.0)':
     dependencies:
       ajv: 8.18.0
       ajv-formats: 3.0.1(ajv@8.18.0)
@@ -9548,9 +9272,9 @@ snapshots:
     optionalDependencies:
       chokidar: 5.0.0
 
-  '@angular-devkit/schematics@https://codeload.github.com/angular/angular-devkit-schematics-builds/tar.gz/3c61f90d12b7635896ea4e9d91f538a01b252817(chokidar@5.0.0)':
+  '@angular-devkit/schematics@https://codeload.github.com/angular/angular-devkit-schematics-builds/tar.gz/e00cb89340b8910d27ef6195f959130e3973c5d4(chokidar@5.0.0)':
     dependencies:
-      '@angular-devkit/core': https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/6cd775718f1fd4c78d960e28a99d5a40453cae36(chokidar@5.0.0)
+      '@angular-devkit/core': https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/c1e4be52aa7dad58e06e8b45936cca5b82342df4(chokidar@5.0.0)
       jsonc-parser: 3.3.1
       magic-string: 0.30.21
       ora: 9.3.0
@@ -9558,11 +9282,11 @@ snapshots:
     transitivePeerDependencies:
       - chokidar
 
-  '@angular-eslint/builder@21.3.1(@angular/cli@https://codeload.github.com/angular/cli-builds/tar.gz/df8eef312e79fafe97bb84e4006a35a9475cf345(@types/node@24.12.2)(chokidar@5.0.0))(chokidar@5.0.0)(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)':
+  '@angular-eslint/builder@21.3.1(@angular/cli@https://codeload.github.com/angular/cli-builds/tar.gz/1d1b69b0a4efd550e2fdb4db36ce9aef1d768406(@types/node@24.12.2)(chokidar@5.0.0))(chokidar@5.0.0)(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)':
     dependencies:
-      '@angular-devkit/architect': https://codeload.github.com/angular/angular-devkit-architect-builds/tar.gz/7351c17a7b2a6adfe28a3d5e348663e68247e083(chokidar@5.0.0)
-      '@angular-devkit/core': https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/6cd775718f1fd4c78d960e28a99d5a40453cae36(chokidar@5.0.0)
-      '@angular/cli': https://codeload.github.com/angular/cli-builds/tar.gz/df8eef312e79fafe97bb84e4006a35a9475cf345(@types/node@24.12.2)(chokidar@5.0.0)
+      '@angular-devkit/architect': https://codeload.github.com/angular/angular-devkit-architect-builds/tar.gz/332e5514420989edc954c1e959599d62b139ddcc(chokidar@5.0.0)
+      '@angular-devkit/core': https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/c1e4be52aa7dad58e06e8b45936cca5b82342df4(chokidar@5.0.0)
+      '@angular/cli': https://codeload.github.com/angular/cli-builds/tar.gz/1d1b69b0a4efd550e2fdb4db36ce9aef1d768406(@types/node@24.12.2)(chokidar@5.0.0)
       eslint: 9.39.4(jiti@2.6.1)
       typescript: 6.0.2
     transitivePeerDependencies:
@@ -9591,13 +9315,13 @@ snapshots:
       ts-api-utils: 2.5.0(typescript@6.0.2)
       typescript: 6.0.2
 
-  '@angular-eslint/schematics@21.3.1(@angular-eslint/template-parser@21.3.1(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2))(@angular/cli@https://codeload.github.com/angular/cli-builds/tar.gz/df8eef312e79fafe97bb84e4006a35a9475cf345(@types/node@24.12.2)(chokidar@5.0.0))(@typescript-eslint/types@8.58.0)(@typescript-eslint/utils@8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2))(chokidar@5.0.0)(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)':
+  '@angular-eslint/schematics@21.3.1(@angular-eslint/template-parser@21.3.1(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2))(@angular/cli@https://codeload.github.com/angular/cli-builds/tar.gz/1d1b69b0a4efd550e2fdb4db36ce9aef1d768406(@types/node@24.12.2)(chokidar@5.0.0))(@typescript-eslint/types@8.58.0)(@typescript-eslint/utils@8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2))(chokidar@5.0.0)(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)':
     dependencies:
-      '@angular-devkit/core': https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/6cd775718f1fd4c78d960e28a99d5a40453cae36(chokidar@5.0.0)
-      '@angular-devkit/schematics': https://codeload.github.com/angular/angular-devkit-schematics-builds/tar.gz/3c61f90d12b7635896ea4e9d91f538a01b252817(chokidar@5.0.0)
+      '@angular-devkit/core': https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/c1e4be52aa7dad58e06e8b45936cca5b82342df4(chokidar@5.0.0)
+      '@angular-devkit/schematics': https://codeload.github.com/angular/angular-devkit-schematics-builds/tar.gz/e00cb89340b8910d27ef6195f959130e3973c5d4(chokidar@5.0.0)
       '@angular-eslint/eslint-plugin': 21.3.1(@typescript-eslint/utils@8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2))(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
       '@angular-eslint/eslint-plugin-template': 21.3.1(@angular-eslint/template-parser@21.3.1(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2))(@typescript-eslint/types@8.58.0)(@typescript-eslint/utils@8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2))(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
-      '@angular/cli': https://codeload.github.com/angular/cli-builds/tar.gz/df8eef312e79fafe97bb84e4006a35a9475cf345(@types/node@24.12.2)(chokidar@5.0.0)
+      '@angular/cli': https://codeload.github.com/angular/cli-builds/tar.gz/1d1b69b0a4efd550e2fdb4db36ce9aef1d768406(@types/node@24.12.2)(chokidar@5.0.0)
       ignore: 7.0.5
       semver: 7.7.4
       strip-json-comments: 3.1.1
@@ -9623,20 +9347,20 @@ snapshots:
       eslint: 9.39.4(jiti@2.6.1)
       typescript: 6.0.2
 
-  '@angular/build@https://codeload.github.com/angular/angular-build-builds/tar.gz/65fff176683df4fc6289d88751662dc5afa030f7(13b4bd07cfa5a2b864c60ec1c7195bfa)':
+  '@angular/build@https://codeload.github.com/angular/angular-build-builds/tar.gz/6d00286f6479813a474c9940fa4a44bd92c23902(b080299454bc7d96279558f61cb85213)':
     dependencies:
       '@ampproject/remapping': 2.3.0
-      '@angular-devkit/architect': https://codeload.github.com/angular/angular-devkit-architect-builds/tar.gz/7351c17a7b2a6adfe28a3d5e348663e68247e083(chokidar@5.0.0)
-      '@angular/compiler': https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0
-      '@angular/compiler-cli': https://codeload.github.com/angular/compiler-cli-builds/tar.gz/b032d4f9c7664088b71d183e6dad51be1fe19d74(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(typescript@6.0.2)
+      '@angular-devkit/architect': https://codeload.github.com/angular/angular-devkit-architect-builds/tar.gz/332e5514420989edc954c1e959599d62b139ddcc(chokidar@5.0.0)
+      '@angular/compiler': https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1
+      '@angular/compiler-cli': https://codeload.github.com/angular/compiler-cli-builds/tar.gz/2c8b8bf1dd606449166e6f9e2a4841bb75aa847a(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(typescript@6.0.2)
       '@babel/core': 7.29.0
       '@babel/helper-annotate-as-pure': 7.27.3
       '@babel/helper-split-export-declaration': 7.24.7
-      '@inquirer/confirm': 6.0.10(@types/node@24.12.2)
-      '@vitejs/plugin-basic-ssl': 2.3.0(vite@7.3.1(@types/node@24.12.2)(jiti@2.6.1)(less@4.6.4)(lightningcss@1.32.0)(sass-embedded@1.99.0)(sass@1.98.0)(terser@5.46.1)(yaml@2.8.3))
-      beasties: 0.4.1
+      '@inquirer/confirm': 6.0.11(@types/node@24.12.2)
+      '@vitejs/plugin-basic-ssl': 2.3.0(vite@7.3.2(@types/node@24.12.2)(jiti@2.6.1)(less@4.6.4)(lightningcss@1.32.0)(sass-embedded@1.99.0)(sass@1.99.0)(terser@5.46.1)(yaml@2.8.3))
+      beasties: 0.4.2
       browserslist: 4.28.2
-      esbuild: 0.27.3
+      esbuild: 0.28.0
       https-proxy-agent: 9.0.0
       jsonc-parser: 3.3.1
       listr2: 10.2.1
@@ -9645,30 +9369,28 @@ snapshots:
       parse5-html-rewriting-stream: 8.0.0
       picomatch: 4.0.4
       piscina: 5.1.4
-      rolldown: 1.0.0-rc.12(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)
-      sass: 1.98.0
+      rollup: 4.60.1
+      sass: 1.99.0
       semver: 7.7.4
       source-map-support: 0.5.21
-      tinyglobby: 0.2.15
+      tinyglobby: 0.2.16
       tslib: 2.8.1
       typescript: 6.0.2
-      vite: 7.3.1(@types/node@24.12.2)(jiti@2.6.1)(less@4.6.4)(lightningcss@1.32.0)(sass-embedded@1.99.0)(sass@1.98.0)(terser@5.46.1)(yaml@2.8.3)
+      vite: 7.3.2(@types/node@24.12.2)(jiti@2.6.1)(less@4.6.4)(lightningcss@1.32.0)(sass-embedded@1.99.0)(sass@1.99.0)(terser@5.46.1)(yaml@2.8.3)
       watchpack: 2.5.1
     optionalDependencies:
-      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2)
-      '@angular/platform-browser': https://codeload.github.com/angular/platform-browser-builds/tar.gz/824bf9553f6d0794ac4c97726d54e04465d9f543(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/6296c196d7a439f5b233486b12725dd943f98315(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))
-      '@angular/platform-server': https://codeload.github.com/angular/platform-server-builds/tar.gz/b37797798b1ea95f80b9fc361dc9a7ed75e6387e(7e6337fe8f1cc7b1bed1d0a4feacc026)
-      '@angular/ssr': https://codeload.github.com/angular/angular-ssr-builds/tar.gz/e4b5cccdd76316551273b1636ef8af1b63cdb35c(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/6296c196d7a439f5b233486b12725dd943f98315(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(@angular/platform-server@https://codeload.github.com/angular/platform-server-builds/tar.gz/b37797798b1ea95f80b9fc361dc9a7ed75e6387e(7e6337fe8f1cc7b1bed1d0a4feacc026))(@angular/router@https://codeload.github.com/angular/router-builds/tar.gz/1b85f9f644cf61cc5cb17676c3920b5f13e4aed4(5e9117228ba18213c8c80fd15811f017))
+      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2)
+      '@angular/platform-browser': https://codeload.github.com/angular/platform-browser-builds/tar.gz/e07a0dd2add89689fd4876a767692739df3849f3(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/ce29eb558af947a8dff258c1368c4388d3c031e2(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))
+      '@angular/platform-server': https://codeload.github.com/angular/platform-server-builds/tar.gz/8bff221bcb6e75e42d635151eb46a4691151e335(2512992f7e38ff4a787eda9e339b7984)
+      '@angular/ssr': https://codeload.github.com/angular/angular-ssr-builds/tar.gz/aee3b37dcada04bb06bbe0bb29d5958be6679809(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/ce29eb558af947a8dff258c1368c4388d3c031e2(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(@angular/platform-server@https://codeload.github.com/angular/platform-server-builds/tar.gz/8bff221bcb6e75e42d635151eb46a4691151e335(2512992f7e38ff4a787eda9e339b7984))(@angular/router@https://codeload.github.com/angular/router-builds/tar.gz/7432ebc260f1a7bc5db8d68122c76176ce2d7ec4(3c0c8a1ab4508240e1771b49ad7c4e12))
       istanbul-lib-instrument: 6.0.3
       less: 4.6.4
-      lmdb: 3.5.2
-      ng-packagr: 22.0.0-next.1(@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/b032d4f9c7664088b71d183e6dad51be1fe19d74(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(typescript@6.0.2))(tailwindcss@4.2.2)(tslib@2.8.1)(typescript@6.0.2)
+      lmdb: 3.5.3
+      ng-packagr: 22.0.0-next.1(@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/2c8b8bf1dd606449166e6f9e2a4841bb75aa847a(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(typescript@6.0.2))(tailwindcss@4.2.2)(tslib@2.8.1)(typescript@6.0.2)
       postcss: 8.5.8
       tailwindcss: 4.2.2
       vitest: 4.1.3(@types/node@24.12.2)(@vitest/coverage-v8@4.1.3)(@vitest/ui@4.1.3)(jsdom@27.4.0)(vite@8.0.7(@types/node@24.12.2)(esbuild@0.28.0)(jiti@2.6.1)(less@4.6.4)(sass-embedded@1.99.0)(sass@1.98.0)(terser@5.46.1)(yaml@2.8.3))
     transitivePeerDependencies:
-      - '@emnapi/core'
-      - '@emnapi/runtime'
       - '@types/node'
       - chokidar
       - jiti
@@ -9681,26 +9403,26 @@ snapshots:
       - tsx
       - yaml
 
-  '@angular/cdk@https://codeload.github.com/angular/cdk-builds/tar.gz/cebd4fb52989b094cbd8a09c7066f122bbdb414d(5e9117228ba18213c8c80fd15811f017)':
+  '@angular/cdk@https://codeload.github.com/angular/cdk-builds/tar.gz/8df4bebef3e5330a695d07e2beedff766d8f8a57(3c0c8a1ab4508240e1771b49ad7c4e12)':
     dependencies:
-      '@angular/common': https://codeload.github.com/angular/common-builds/tar.gz/6296c196d7a439f5b233486b12725dd943f98315(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(rxjs@7.8.2)
-      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2)
-      '@angular/platform-browser': https://codeload.github.com/angular/platform-browser-builds/tar.gz/824bf9553f6d0794ac4c97726d54e04465d9f543(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/6296c196d7a439f5b233486b12725dd943f98315(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))
+      '@angular/common': https://codeload.github.com/angular/common-builds/tar.gz/ce29eb558af947a8dff258c1368c4388d3c031e2(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(rxjs@7.8.2)
+      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2)
+      '@angular/platform-browser': https://codeload.github.com/angular/platform-browser-builds/tar.gz/e07a0dd2add89689fd4876a767692739df3849f3(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/ce29eb558af947a8dff258c1368c4388d3c031e2(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))
       parse5: 8.0.0
       rxjs: 7.8.2
       tslib: 2.8.1
 
-  '@angular/cli@https://codeload.github.com/angular/cli-builds/tar.gz/df8eef312e79fafe97bb84e4006a35a9475cf345(@types/node@24.12.2)(chokidar@5.0.0)':
+  '@angular/cli@https://codeload.github.com/angular/cli-builds/tar.gz/1d1b69b0a4efd550e2fdb4db36ce9aef1d768406(@types/node@24.12.2)(chokidar@5.0.0)':
     dependencies:
-      '@angular-devkit/architect': https://codeload.github.com/angular/angular-devkit-architect-builds/tar.gz/7351c17a7b2a6adfe28a3d5e348663e68247e083(chokidar@5.0.0)
-      '@angular-devkit/core': https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/6cd775718f1fd4c78d960e28a99d5a40453cae36(chokidar@5.0.0)
-      '@angular-devkit/schematics': https://codeload.github.com/angular/angular-devkit-schematics-builds/tar.gz/3c61f90d12b7635896ea4e9d91f538a01b252817(chokidar@5.0.0)
-      '@inquirer/prompts': 8.3.2(@types/node@24.12.2)
-      '@listr2/prompt-adapter-inquirer': 4.2.2(@inquirer/prompts@8.3.2(@types/node@24.12.2))(@types/node@24.12.2)(listr2@10.2.1)
-      '@modelcontextprotocol/sdk': 1.28.0(zod@4.3.6)
-      '@schematics/angular': https://codeload.github.com/angular/schematics-angular-builds/tar.gz/d3e56d02a8acc2e33a76b47bf7b3a5b4cdc79a01(chokidar@5.0.0)
+      '@angular-devkit/architect': https://codeload.github.com/angular/angular-devkit-architect-builds/tar.gz/332e5514420989edc954c1e959599d62b139ddcc(chokidar@5.0.0)
+      '@angular-devkit/core': https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/c1e4be52aa7dad58e06e8b45936cca5b82342df4(chokidar@5.0.0)
+      '@angular-devkit/schematics': https://codeload.github.com/angular/angular-devkit-schematics-builds/tar.gz/e00cb89340b8910d27ef6195f959130e3973c5d4(chokidar@5.0.0)
+      '@inquirer/prompts': 8.4.1(@types/node@24.12.2)
+      '@listr2/prompt-adapter-inquirer': 4.2.3(@inquirer/prompts@8.4.1(@types/node@24.12.2))(@types/node@24.12.2)(listr2@10.2.1)
+      '@modelcontextprotocol/sdk': 1.29.0(zod@4.3.6)
+      '@schematics/angular': https://codeload.github.com/angular/schematics-angular-builds/tar.gz/f22a1030689665c830587a8b92cc511f26432169(chokidar@5.0.0)
       '@yarnpkg/lockfile': 1.1.0
-      algoliasearch: 5.50.0
+      algoliasearch: 5.50.1
       ini: 6.0.0
       jsonc-parser: 3.3.1
       listr2: 10.2.1
@@ -9716,15 +9438,15 @@ snapshots:
       - chokidar
       - supports-color
 
-  '@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/6296c196d7a439f5b233486b12725dd943f98315(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(rxjs@7.8.2)':
+  '@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/ce29eb558af947a8dff258c1368c4388d3c031e2(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(rxjs@7.8.2)':
     dependencies:
-      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2)
+      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2)
       rxjs: 7.8.2
       tslib: 2.8.1
 
-  '@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/b032d4f9c7664088b71d183e6dad51be1fe19d74(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(typescript@6.0.2)':
+  '@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/2c8b8bf1dd606449166e6f9e2a4841bb75aa847a(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(typescript@6.0.2)':
     dependencies:
-      '@angular/compiler': https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0
+      '@angular/compiler': https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1
       '@babel/core': 7.29.0
       '@jridgewell/sourcemap-codec': 1.5.5
       chokidar: 5.0.0
@@ -9738,66 +9460,66 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0':
+  '@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1':
     dependencies:
       tslib: 2.8.1
 
-  '@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2)':
+  '@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2)':
     dependencies:
       rxjs: 7.8.2
       tslib: 2.8.1
     optionalDependencies:
-      '@angular/compiler': https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0
+      '@angular/compiler': https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1
 
-  '@angular/elements@https://codeload.github.com/angular/elements-builds/tar.gz/f201a1056d4db2018cde43c5d694b4ed0bac9192(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(rxjs@7.8.2)':
+  '@angular/elements@https://codeload.github.com/angular/elements-builds/tar.gz/1d6c2e2c99b54553934aa94fe75456296e24fc57(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(rxjs@7.8.2)':
     dependencies:
-      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2)
+      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2)
       rxjs: 7.8.2
       tslib: 2.8.1
 
-  '@angular/forms@https://codeload.github.com/angular/forms-builds/tar.gz/3c11ad9fa6f60fe7a5adeebc54dae3b65fb14d16(5e9117228ba18213c8c80fd15811f017)':
+  '@angular/forms@https://codeload.github.com/angular/forms-builds/tar.gz/15abd7f8a2d0293e7af3de202d71f35c8b10b30b(3c0c8a1ab4508240e1771b49ad7c4e12)':
     dependencies:
-      '@angular/common': https://codeload.github.com/angular/common-builds/tar.gz/6296c196d7a439f5b233486b12725dd943f98315(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(rxjs@7.8.2)
-      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2)
-      '@angular/platform-browser': https://codeload.github.com/angular/platform-browser-builds/tar.gz/824bf9553f6d0794ac4c97726d54e04465d9f543(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/6296c196d7a439f5b233486b12725dd943f98315(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))
+      '@angular/common': https://codeload.github.com/angular/common-builds/tar.gz/ce29eb558af947a8dff258c1368c4388d3c031e2(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(rxjs@7.8.2)
+      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2)
+      '@angular/platform-browser': https://codeload.github.com/angular/platform-browser-builds/tar.gz/e07a0dd2add89689fd4876a767692739df3849f3(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/ce29eb558af947a8dff258c1368c4388d3c031e2(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))
       '@standard-schema/spec': 1.1.0
       rxjs: 7.8.2
       tslib: 2.8.1
 
-  '@angular/language-service@https://codeload.github.com/angular/language-service-builds/tar.gz/70180b5d8b49c8badbf88d30d0516bc763cd4084': {}
+  '@angular/language-service@https://codeload.github.com/angular/language-service-builds/tar.gz/cfa08e0699fffb8421eafd9b100862add20cccce': {}
 
-  '@angular/platform-browser@https://codeload.github.com/angular/platform-browser-builds/tar.gz/824bf9553f6d0794ac4c97726d54e04465d9f543(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/6296c196d7a439f5b233486b12725dd943f98315(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))':
+  '@angular/platform-browser@https://codeload.github.com/angular/platform-browser-builds/tar.gz/e07a0dd2add89689fd4876a767692739df3849f3(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/ce29eb558af947a8dff258c1368c4388d3c031e2(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))':
     dependencies:
-      '@angular/common': https://codeload.github.com/angular/common-builds/tar.gz/6296c196d7a439f5b233486b12725dd943f98315(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(rxjs@7.8.2)
-      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2)
+      '@angular/common': https://codeload.github.com/angular/common-builds/tar.gz/ce29eb558af947a8dff258c1368c4388d3c031e2(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(rxjs@7.8.2)
+      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2)
       tslib: 2.8.1
 
-  '@angular/platform-server@https://codeload.github.com/angular/platform-server-builds/tar.gz/b37797798b1ea95f80b9fc361dc9a7ed75e6387e(7e6337fe8f1cc7b1bed1d0a4feacc026)':
+  '@angular/platform-server@https://codeload.github.com/angular/platform-server-builds/tar.gz/8bff221bcb6e75e42d635151eb46a4691151e335(2512992f7e38ff4a787eda9e339b7984)':
     dependencies:
-      '@angular/common': https://codeload.github.com/angular/common-builds/tar.gz/6296c196d7a439f5b233486b12725dd943f98315(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(rxjs@7.8.2)
-      '@angular/compiler': https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0
-      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2)
-      '@angular/platform-browser': https://codeload.github.com/angular/platform-browser-builds/tar.gz/824bf9553f6d0794ac4c97726d54e04465d9f543(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/6296c196d7a439f5b233486b12725dd943f98315(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))
+      '@angular/common': https://codeload.github.com/angular/common-builds/tar.gz/ce29eb558af947a8dff258c1368c4388d3c031e2(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(rxjs@7.8.2)
+      '@angular/compiler': https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1
+      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2)
+      '@angular/platform-browser': https://codeload.github.com/angular/platform-browser-builds/tar.gz/e07a0dd2add89689fd4876a767692739df3849f3(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/ce29eb558af947a8dff258c1368c4388d3c031e2(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))
       rxjs: 7.8.2
       tslib: 2.8.1
       xhr2: 0.2.1
 
-  '@angular/router@https://codeload.github.com/angular/router-builds/tar.gz/1b85f9f644cf61cc5cb17676c3920b5f13e4aed4(5e9117228ba18213c8c80fd15811f017)':
+  '@angular/router@https://codeload.github.com/angular/router-builds/tar.gz/7432ebc260f1a7bc5db8d68122c76176ce2d7ec4(3c0c8a1ab4508240e1771b49ad7c4e12)':
     dependencies:
-      '@angular/common': https://codeload.github.com/angular/common-builds/tar.gz/6296c196d7a439f5b233486b12725dd943f98315(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(rxjs@7.8.2)
-      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2)
-      '@angular/platform-browser': https://codeload.github.com/angular/platform-browser-builds/tar.gz/824bf9553f6d0794ac4c97726d54e04465d9f543(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/6296c196d7a439f5b233486b12725dd943f98315(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))
+      '@angular/common': https://codeload.github.com/angular/common-builds/tar.gz/ce29eb558af947a8dff258c1368c4388d3c031e2(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(rxjs@7.8.2)
+      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2)
+      '@angular/platform-browser': https://codeload.github.com/angular/platform-browser-builds/tar.gz/e07a0dd2add89689fd4876a767692739df3849f3(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/ce29eb558af947a8dff258c1368c4388d3c031e2(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))
       rxjs: 7.8.2
       tslib: 2.8.1
 
-  ? '@angular/ssr@https://codeload.github.com/angular/angular-ssr-builds/tar.gz/e4b5cccdd76316551273b1636ef8af1b63cdb35c(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/6296c196d7a439f5b233486b12725dd943f98315(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(@angular/platform-server@https://codeload.github.com/angular/platform-server-builds/tar.gz/b37797798b1ea95f80b9fc361dc9a7ed75e6387e(7e6337fe8f1cc7b1bed1d0a4feacc026))(@angular/router@https://codeload.github.com/angular/router-builds/tar.gz/1b85f9f644cf61cc5cb17676c3920b5f13e4aed4(5e9117228ba18213c8c80fd15811f017))'
+  ? '@angular/ssr@https://codeload.github.com/angular/angular-ssr-builds/tar.gz/aee3b37dcada04bb06bbe0bb29d5958be6679809(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/ce29eb558af947a8dff258c1368c4388d3c031e2(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(@angular/platform-server@https://codeload.github.com/angular/platform-server-builds/tar.gz/8bff221bcb6e75e42d635151eb46a4691151e335(2512992f7e38ff4a787eda9e339b7984))(@angular/router@https://codeload.github.com/angular/router-builds/tar.gz/7432ebc260f1a7bc5db8d68122c76176ce2d7ec4(3c0c8a1ab4508240e1771b49ad7c4e12))'
   : dependencies:
-      '@angular/common': https://codeload.github.com/angular/common-builds/tar.gz/6296c196d7a439f5b233486b12725dd943f98315(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(rxjs@7.8.2)
-      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2)
-      '@angular/router': https://codeload.github.com/angular/router-builds/tar.gz/1b85f9f644cf61cc5cb17676c3920b5f13e4aed4(5e9117228ba18213c8c80fd15811f017)
+      '@angular/common': https://codeload.github.com/angular/common-builds/tar.gz/ce29eb558af947a8dff258c1368c4388d3c031e2(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(rxjs@7.8.2)
+      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2)
+      '@angular/router': https://codeload.github.com/angular/router-builds/tar.gz/7432ebc260f1a7bc5db8d68122c76176ce2d7ec4(3c0c8a1ab4508240e1771b49ad7c4e12)
       tslib: 2.8.1
     optionalDependencies:
-      '@angular/platform-server': https://codeload.github.com/angular/platform-server-builds/tar.gz/b37797798b1ea95f80b9fc361dc9a7ed75e6387e(7e6337fe8f1cc7b1bed1d0a4feacc026)
+      '@angular/platform-server': https://codeload.github.com/angular/platform-server-builds/tar.gz/8bff221bcb6e75e42d635151eb46a4691151e335(2512992f7e38ff4a787eda9e339b7984)
 
   '@asamuzakjp/css-color@4.1.2':
     dependencies:
@@ -10995,7 +10717,7 @@ snapshots:
   '@harperfast/extended-iterable@1.0.3':
     optional: true
 
-  '@hono/node-server@1.19.13(hono@4.12.12)':
+  '@hono/node-server@1.19.14(hono@4.12.12)':
     dependencies:
       hono: 4.12.12
 
@@ -11023,13 +10745,6 @@ snapshots:
       '@inquirer/ansi': 2.0.5
       '@inquirer/core': 11.1.8(@types/node@24.12.2)
       '@inquirer/figures': 2.0.5
-      '@inquirer/type': 4.0.5(@types/node@24.12.2)
-    optionalDependencies:
-      '@types/node': 24.12.2
-
-  '@inquirer/confirm@6.0.10(@types/node@24.12.2)':
-    dependencies:
-      '@inquirer/core': 11.1.8(@types/node@24.12.2)
       '@inquirer/type': 4.0.5(@types/node@24.12.2)
     optionalDependencies:
       '@types/node': 24.12.2
@@ -11099,7 +10814,7 @@ snapshots:
     optionalDependencies:
       '@types/node': 24.12.2
 
-  '@inquirer/prompts@8.3.2(@types/node@24.12.2)':
+  '@inquirer/prompts@8.4.1(@types/node@24.12.2)':
     dependencies:
       '@inquirer/checkbox': 5.1.3(@types/node@24.12.2)
       '@inquirer/confirm': 6.0.11(@types/node@24.12.2)
@@ -11324,40 +11039,40 @@ snapshots:
 
   '@leichtgewicht/ip-codec@2.0.5': {}
 
-  '@listr2/prompt-adapter-inquirer@4.2.2(@inquirer/prompts@8.3.2(@types/node@24.12.2))(@types/node@24.12.2)(listr2@10.2.1)':
+  '@listr2/prompt-adapter-inquirer@4.2.3(@inquirer/prompts@8.4.1(@types/node@24.12.2))(@types/node@24.12.2)(listr2@10.2.1)':
     dependencies:
-      '@inquirer/prompts': 8.3.2(@types/node@24.12.2)
+      '@inquirer/prompts': 8.4.1(@types/node@24.12.2)
       '@inquirer/type': 4.0.5(@types/node@24.12.2)
       listr2: 10.2.1
     transitivePeerDependencies:
       - '@types/node'
 
-  '@lmdb/lmdb-darwin-arm64@3.5.2':
+  '@lmdb/lmdb-darwin-arm64@3.5.3':
     optional: true
 
-  '@lmdb/lmdb-darwin-x64@3.5.2':
+  '@lmdb/lmdb-darwin-x64@3.5.3':
     optional: true
 
-  '@lmdb/lmdb-linux-arm64@3.5.2':
+  '@lmdb/lmdb-linux-arm64@3.5.3':
     optional: true
 
-  '@lmdb/lmdb-linux-arm@3.5.2':
+  '@lmdb/lmdb-linux-arm@3.5.3':
     optional: true
 
-  '@lmdb/lmdb-linux-x64@3.5.2':
+  '@lmdb/lmdb-linux-x64@3.5.3':
     optional: true
 
-  '@lmdb/lmdb-win32-arm64@3.5.2':
+  '@lmdb/lmdb-win32-arm64@3.5.3':
     optional: true
 
-  '@lmdb/lmdb-win32-x64@3.5.2':
+  '@lmdb/lmdb-win32-x64@3.5.3':
     optional: true
 
   '@ltd/j-toml@1.38.0': {}
 
-  '@modelcontextprotocol/sdk@1.28.0(zod@4.3.6)':
+  '@modelcontextprotocol/sdk@1.29.0(zod@4.3.6)':
     dependencies:
-      '@hono/node-server': 1.19.13(hono@4.12.12)
+      '@hono/node-server': 1.19.14(hono@4.12.12)
       ajv: 8.18.0
       ajv-formats: 3.0.1(ajv@8.18.0)
       content-type: 1.0.5
@@ -11706,9 +11421,9 @@ snapshots:
       '@tybys/wasm-util': 0.10.1
     optional: true
 
-  '@ngtools/webpack@22.0.0-next.4(@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/b032d4f9c7664088b71d183e6dad51be1fe19d74(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(typescript@6.0.2))(typescript@6.0.2)(webpack@5.105.4(@swc/core@1.15.24(@swc/helpers@0.5.21))(esbuild@0.27.3))':
+  '@ngtools/webpack@22.0.0-next.4(@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/2c8b8bf1dd606449166e6f9e2a4841bb75aa847a(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(typescript@6.0.2))(typescript@6.0.2)(webpack@5.105.4(@swc/core@1.15.24(@swc/helpers@0.5.21))(esbuild@0.27.3))':
     dependencies:
-      '@angular/compiler-cli': https://codeload.github.com/angular/compiler-cli-builds/tar.gz/b032d4f9c7664088b71d183e6dad51be1fe19d74(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(typescript@6.0.2)
+      '@angular/compiler-cli': https://codeload.github.com/angular/compiler-cli-builds/tar.gz/2c8b8bf1dd606449166e6f9e2a4841bb75aa847a(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(typescript@6.0.2)
       typescript: 6.0.2
       webpack: 5.105.4(@swc/core@1.15.24(@swc/helpers@0.5.21))(esbuild@0.28.0)
 
@@ -11784,10 +11499,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@nx/angular@22.6.4(72061a06f331d57c565772016b1d07ed)':
+  '@nx/angular@22.6.4(105f26053ee85c0ccf0fd4360df3309a)':
     dependencies:
-      '@angular-devkit/core': https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/6cd775718f1fd4c78d960e28a99d5a40453cae36(chokidar@5.0.0)
-      '@angular-devkit/schematics': https://codeload.github.com/angular/angular-devkit-schematics-builds/tar.gz/3c61f90d12b7635896ea4e9d91f538a01b252817(chokidar@5.0.0)
+      '@angular-devkit/core': https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/c1e4be52aa7dad58e06e8b45936cca5b82342df4(chokidar@5.0.0)
+      '@angular-devkit/schematics': https://codeload.github.com/angular/angular-devkit-schematics-builds/tar.gz/e00cb89340b8910d27ef6195f959130e3973c5d4(chokidar@5.0.0)
       '@nx/devkit': 22.6.4(nx@22.6.4(@swc-node/register@1.11.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/core@1.15.24(@swc/helpers@0.5.21))(@swc/types@0.1.26)(typescript@6.0.2))(@swc/core@1.15.24(@swc/helpers@0.5.21)))
       '@nx/eslint': 22.6.4(@babel/traverse@7.29.0)(@swc-node/register@1.11.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/core@1.15.24(@swc/helpers@0.5.21))(@swc/types@0.1.26)(typescript@6.0.2))(@swc/core@1.15.24(@swc/helpers@0.5.21))(@zkochan/js-yaml@0.0.7)(eslint@9.39.4(jiti@2.6.1))(nx@22.6.4(@swc-node/register@1.11.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/core@1.15.24(@swc/helpers@0.5.21))(@swc/types@0.1.26)(typescript@6.0.2))(@swc/core@1.15.24(@swc/helpers@0.5.21)))(verdaccio@6.4.0(encoding@0.1.13)(typanion@3.14.0))
       '@nx/js': 22.6.4(@babel/traverse@7.29.0)(@swc-node/register@1.11.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/core@1.15.24(@swc/helpers@0.5.21))(@swc/types@0.1.26)(typescript@6.0.2))(@swc/core@1.15.24(@swc/helpers@0.5.21))(nx@22.6.4(@swc-node/register@1.11.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/core@1.15.24(@swc/helpers@0.5.21))(@swc/types@0.1.26)(typescript@6.0.2))(@swc/core@1.15.24(@swc/helpers@0.5.21)))(verdaccio@6.4.0(encoding@0.1.13)(typanion@3.14.0))
@@ -11797,7 +11512,7 @@ snapshots:
       '@nx/webpack': 22.6.4(@babel/traverse@7.29.0)(@rspack/core@1.6.8(@swc/helpers@0.5.21))(@swc-node/register@1.11.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/core@1.15.24(@swc/helpers@0.5.21))(@swc/types@0.1.26)(typescript@6.0.2))(@swc/core@1.15.24(@swc/helpers@0.5.21))(esbuild@0.28.0)(lightningcss@1.32.0)(nx@22.6.4(@swc-node/register@1.11.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/core@1.15.24(@swc/helpers@0.5.21))(@swc/types@0.1.26)(typescript@6.0.2))(@swc/core@1.15.24(@swc/helpers@0.5.21)))(typescript@6.0.2)(verdaccio@6.4.0(encoding@0.1.13)(typanion@3.14.0))
       '@nx/workspace': 22.6.4(@swc-node/register@1.11.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/core@1.15.24(@swc/helpers@0.5.21))(@swc/types@0.1.26)(typescript@6.0.2))(@swc/core@1.15.24(@swc/helpers@0.5.21))
       '@phenomnomnominal/tsquery': 6.1.4(typescript@6.0.2)
-      '@schematics/angular': https://codeload.github.com/angular/schematics-angular-builds/tar.gz/d3e56d02a8acc2e33a76b47bf7b3a5b4cdc79a01(chokidar@5.0.0)
+      '@schematics/angular': https://codeload.github.com/angular/schematics-angular-builds/tar.gz/f22a1030689665c830587a8b92cc511f26432169(chokidar@5.0.0)
       '@typescript-eslint/type-utils': 8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
       enquirer: 2.3.6
       magic-string: 0.30.21
@@ -11808,9 +11523,9 @@ snapshots:
       tslib: 2.8.1
       webpack-merge: 5.10.0
     optionalDependencies:
-      '@angular-devkit/build-angular': 22.0.0-next.4(758168f9a0a7013b01ad000d3bed766f)
-      '@angular/build': https://codeload.github.com/angular/angular-build-builds/tar.gz/65fff176683df4fc6289d88751662dc5afa030f7(13b4bd07cfa5a2b864c60ec1c7195bfa)
-      ng-packagr: 22.0.0-next.1(@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/b032d4f9c7664088b71d183e6dad51be1fe19d74(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(typescript@6.0.2))(tailwindcss@4.2.2)(tslib@2.8.1)(typescript@6.0.2)
+      '@angular-devkit/build-angular': 22.0.0-next.4(c5294860805d04e2fec7bf623e48b9af)
+      '@angular/build': https://codeload.github.com/angular/angular-build-builds/tar.gz/6d00286f6479813a474c9940fa4a44bd92c23902(b080299454bc7d96279558f61cb85213)
+      ng-packagr: 22.0.0-next.1(@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/2c8b8bf1dd606449166e6f9e2a4841bb75aa847a(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(typescript@6.0.2))(tailwindcss@4.2.2)(tslib@2.8.1)(typescript@6.0.2)
     transitivePeerDependencies:
       - '@babel/traverse'
       - '@module-federation/enhanced'
@@ -11857,12 +11572,12 @@ snapshots:
       tslib: 2.8.1
       yargs-parser: 21.1.1
 
-  '@nx/eslint-plugin@22.6.4(@babel/traverse@7.29.0)(@swc-node/register@1.11.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/core@1.15.24(@swc/helpers@0.5.21))(@swc/types@0.1.26)(typescript@6.0.2))(@swc/core@1.15.24(@swc/helpers@0.5.21))(@typescript-eslint/parser@8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2))(eslint-config-prettier@10.1.8(eslint@9.39.4(jiti@2.6.1)))(eslint@9.39.4(jiti@2.6.1))(nx@22.6.4(@swc-node/register@1.11.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/core@1.15.24(@swc/helpers@0.5.21))(@swc/types@0.1.26)(typescript@6.0.2))(@swc/core@1.15.24(@swc/helpers@0.5.21)))(typescript@6.0.2)(verdaccio@6.4.0(encoding@0.1.13)(typanion@3.14.0))':
+  '@nx/eslint-plugin@22.6.4(@babel/traverse@7.29.0)(@swc-node/register@1.11.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/core@1.15.24(@swc/helpers@0.5.21))(@swc/types@0.1.26)(typescript@6.0.2))(@swc/core@1.15.24(@swc/helpers@0.5.21))(@typescript-eslint/parser@8.58.2(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2))(eslint-config-prettier@10.1.8(eslint@9.39.4(jiti@2.6.1)))(eslint@9.39.4(jiti@2.6.1))(nx@22.6.4(@swc-node/register@1.11.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/core@1.15.24(@swc/helpers@0.5.21))(@swc/types@0.1.26)(typescript@6.0.2))(@swc/core@1.15.24(@swc/helpers@0.5.21)))(typescript@6.0.2)(verdaccio@6.4.0(encoding@0.1.13)(typanion@3.14.0))':
     dependencies:
       '@nx/devkit': 22.6.4(nx@22.6.4(@swc-node/register@1.11.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/core@1.15.24(@swc/helpers@0.5.21))(@swc/types@0.1.26)(typescript@6.0.2))(@swc/core@1.15.24(@swc/helpers@0.5.21)))
       '@nx/js': 22.6.4(@babel/traverse@7.29.0)(@swc-node/register@1.11.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/core@1.15.24(@swc/helpers@0.5.21))(@swc/types@0.1.26)(typescript@6.0.2))(@swc/core@1.15.24(@swc/helpers@0.5.21))(nx@22.6.4(@swc-node/register@1.11.1(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@swc/core@1.15.24(@swc/helpers@0.5.21))(@swc/types@0.1.26)(typescript@6.0.2))(@swc/core@1.15.24(@swc/helpers@0.5.21)))(verdaccio@6.4.0(encoding@0.1.13)(typanion@3.14.0))
       '@phenomnomnominal/tsquery': 6.1.4(typescript@6.0.2)
-      '@typescript-eslint/parser': 8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
+      '@typescript-eslint/parser': 8.58.2(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
       '@typescript-eslint/type-utils': 8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
       '@typescript-eslint/utils': 8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
       chalk: 4.1.2
@@ -12224,8 +11939,6 @@ snapshots:
 
   '@oxc-project/runtime@0.115.0': {}
 
-  '@oxc-project/types@0.122.0': {}
-
   '@oxc-project/types@0.123.0': {}
 
   '@oxc-resolver/binding-android-arm-eabi@11.19.1':
@@ -12460,84 +12173,40 @@ snapshots:
 
   '@polka/url@1.0.0-next.29': {}
 
-  '@rolldown/binding-android-arm64@1.0.0-rc.12':
-    optional: true
-
   '@rolldown/binding-android-arm64@1.0.0-rc.13':
-    optional: true
-
-  '@rolldown/binding-darwin-arm64@1.0.0-rc.12':
     optional: true
 
   '@rolldown/binding-darwin-arm64@1.0.0-rc.13':
     optional: true
 
-  '@rolldown/binding-darwin-x64@1.0.0-rc.12':
-    optional: true
-
   '@rolldown/binding-darwin-x64@1.0.0-rc.13':
-    optional: true
-
-  '@rolldown/binding-freebsd-x64@1.0.0-rc.12':
     optional: true
 
   '@rolldown/binding-freebsd-x64@1.0.0-rc.13':
     optional: true
 
-  '@rolldown/binding-linux-arm-gnueabihf@1.0.0-rc.12':
-    optional: true
-
   '@rolldown/binding-linux-arm-gnueabihf@1.0.0-rc.13':
-    optional: true
-
-  '@rolldown/binding-linux-arm64-gnu@1.0.0-rc.12':
     optional: true
 
   '@rolldown/binding-linux-arm64-gnu@1.0.0-rc.13':
     optional: true
 
-  '@rolldown/binding-linux-arm64-musl@1.0.0-rc.12':
-    optional: true
-
   '@rolldown/binding-linux-arm64-musl@1.0.0-rc.13':
-    optional: true
-
-  '@rolldown/binding-linux-ppc64-gnu@1.0.0-rc.12':
     optional: true
 
   '@rolldown/binding-linux-ppc64-gnu@1.0.0-rc.13':
     optional: true
 
-  '@rolldown/binding-linux-s390x-gnu@1.0.0-rc.12':
-    optional: true
-
   '@rolldown/binding-linux-s390x-gnu@1.0.0-rc.13':
-    optional: true
-
-  '@rolldown/binding-linux-x64-gnu@1.0.0-rc.12':
     optional: true
 
   '@rolldown/binding-linux-x64-gnu@1.0.0-rc.13':
     optional: true
 
-  '@rolldown/binding-linux-x64-musl@1.0.0-rc.12':
-    optional: true
-
   '@rolldown/binding-linux-x64-musl@1.0.0-rc.13':
     optional: true
 
-  '@rolldown/binding-openharmony-arm64@1.0.0-rc.12':
-    optional: true
-
   '@rolldown/binding-openharmony-arm64@1.0.0-rc.13':
-    optional: true
-
-  '@rolldown/binding-wasm32-wasi@1.0.0-rc.12(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)':
-    dependencies:
-      '@napi-rs/wasm-runtime': 1.1.2(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)
-    transitivePeerDependencies:
-      - '@emnapi/core'
-      - '@emnapi/runtime'
     optional: true
 
   '@rolldown/binding-wasm32-wasi@1.0.0-rc.13':
@@ -12547,19 +12216,11 @@ snapshots:
       '@napi-rs/wasm-runtime': 1.1.2(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.1)
     optional: true
 
-  '@rolldown/binding-win32-arm64-msvc@1.0.0-rc.12':
-    optional: true
-
   '@rolldown/binding-win32-arm64-msvc@1.0.0-rc.13':
-    optional: true
-
-  '@rolldown/binding-win32-x64-msvc@1.0.0-rc.12':
     optional: true
 
   '@rolldown/binding-win32-x64-msvc@1.0.0-rc.13':
     optional: true
-
-  '@rolldown/pluginutils@1.0.0-rc.12': {}
 
   '@rolldown/pluginutils@1.0.0-rc.13': {}
 
@@ -12757,10 +12418,10 @@ snapshots:
       error-stack-parser: 2.1.4
       react-refresh: 0.18.0
 
-  '@schematics/angular@https://codeload.github.com/angular/schematics-angular-builds/tar.gz/d3e56d02a8acc2e33a76b47bf7b3a5b4cdc79a01(chokidar@5.0.0)':
+  '@schematics/angular@https://codeload.github.com/angular/schematics-angular-builds/tar.gz/f22a1030689665c830587a8b92cc511f26432169(chokidar@5.0.0)':
     dependencies:
-      '@angular-devkit/core': https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/6cd775718f1fd4c78d960e28a99d5a40453cae36(chokidar@5.0.0)
-      '@angular-devkit/schematics': https://codeload.github.com/angular/angular-devkit-schematics-builds/tar.gz/3c61f90d12b7635896ea4e9d91f538a01b252817(chokidar@5.0.0)
+      '@angular-devkit/core': https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/c1e4be52aa7dad58e06e8b45936cca5b82342df4(chokidar@5.0.0)
+      '@angular-devkit/schematics': https://codeload.github.com/angular/angular-devkit-schematics-builds/tar.gz/e00cb89340b8910d27ef6195f959130e3973c5d4(chokidar@5.0.0)
       jsonc-parser: 3.3.1
     transitivePeerDependencies:
       - chokidar
@@ -12805,13 +12466,13 @@ snapshots:
 
   '@shikijs/vscode-textmate@10.0.2': {}
 
-  '@signality/core@0.1.3(1e3f5073487ea7c59f2c691b6df0b5c0)':
+  '@signality/core@0.1.3(f6947003d556a2464f9ae33dabd5debc)':
     dependencies:
-      '@angular/common': https://codeload.github.com/angular/common-builds/tar.gz/6296c196d7a439f5b233486b12725dd943f98315(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(rxjs@7.8.2)
-      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2)
-      '@angular/forms': https://codeload.github.com/angular/forms-builds/tar.gz/3c11ad9fa6f60fe7a5adeebc54dae3b65fb14d16(5e9117228ba18213c8c80fd15811f017)
-      '@angular/platform-browser': https://codeload.github.com/angular/platform-browser-builds/tar.gz/824bf9553f6d0794ac4c97726d54e04465d9f543(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/6296c196d7a439f5b233486b12725dd943f98315(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))
-      '@angular/router': https://codeload.github.com/angular/router-builds/tar.gz/1b85f9f644cf61cc5cb17676c3920b5f13e4aed4(5e9117228ba18213c8c80fd15811f017)
+      '@angular/common': https://codeload.github.com/angular/common-builds/tar.gz/ce29eb558af947a8dff258c1368c4388d3c031e2(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(rxjs@7.8.2)
+      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2)
+      '@angular/forms': https://codeload.github.com/angular/forms-builds/tar.gz/15abd7f8a2d0293e7af3de202d71f35c8b10b30b(3c0c8a1ab4508240e1771b49ad7c4e12)
+      '@angular/platform-browser': https://codeload.github.com/angular/platform-browser-builds/tar.gz/e07a0dd2add89689fd4876a767692739df3849f3(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/ce29eb558af947a8dff258c1368c4388d3c031e2(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))
+      '@angular/router': https://codeload.github.com/angular/router-builds/tar.gz/7432ebc260f1a7bc5db8d68122c76176ce2d7ec4(3c0c8a1ab4508240e1771b49ad7c4e12)
       rxjs: 7.8.2
       tslib: 2.8.1
 
@@ -13025,12 +12686,12 @@ snapshots:
       tailwindcss: 4.2.2
       vite: 8.0.7(@types/node@24.12.2)(esbuild@0.28.0)(jiti@2.6.1)(less@4.6.4)(sass-embedded@1.99.0)(sass@1.98.0)(terser@5.46.1)(yaml@2.8.3)
 
-  '@testing-library/angular@19.2.1(8f651d61d52da49991cdaf839850d9c1)':
+  '@testing-library/angular@19.2.1(ca1ecbc4a36d1d808cef81fa9758a9ed)':
     dependencies:
-      '@angular/common': https://codeload.github.com/angular/common-builds/tar.gz/6296c196d7a439f5b233486b12725dd943f98315(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(rxjs@7.8.2)
-      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2)
-      '@angular/platform-browser': https://codeload.github.com/angular/platform-browser-builds/tar.gz/824bf9553f6d0794ac4c97726d54e04465d9f543(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/6296c196d7a439f5b233486b12725dd943f98315(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/b8a4431215fce2f67fc223e471d0fe2c31d6fcac(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(rxjs@7.8.2))
-      '@angular/router': https://codeload.github.com/angular/router-builds/tar.gz/1b85f9f644cf61cc5cb17676c3920b5f13e4aed4(5e9117228ba18213c8c80fd15811f017)
+      '@angular/common': https://codeload.github.com/angular/common-builds/tar.gz/ce29eb558af947a8dff258c1368c4388d3c031e2(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(rxjs@7.8.2)
+      '@angular/core': https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2)
+      '@angular/platform-browser': https://codeload.github.com/angular/platform-browser-builds/tar.gz/e07a0dd2add89689fd4876a767692739df3849f3(@angular/common@https://codeload.github.com/angular/common-builds/tar.gz/ce29eb558af947a8dff258c1368c4388d3c031e2(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@https://codeload.github.com/angular/core-builds/tar.gz/4d0783695b3e57a323bd02ff782b686a084d4db8(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(rxjs@7.8.2))
+      '@angular/router': https://codeload.github.com/angular/router-builds/tar.gz/7432ebc260f1a7bc5db8d68122c76176ce2d7ec4(3c0c8a1ab4508240e1771b49ad7c4e12)
       '@testing-library/dom': 10.4.1
       tslib: 2.8.1
 
@@ -13236,14 +12897,14 @@ snapshots:
     dependencies:
       '@types/yargs-parser': 21.0.3
 
-  '@typescript-eslint/eslint-plugin@8.58.0(@typescript-eslint/parser@8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2))(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)':
+  '@typescript-eslint/eslint-plugin@8.58.2(@typescript-eslint/parser@8.58.2(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2))(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)':
     dependencies:
       '@eslint-community/regexpp': 4.12.2
-      '@typescript-eslint/parser': 8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
-      '@typescript-eslint/scope-manager': 8.58.0
-      '@typescript-eslint/type-utils': 8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
-      '@typescript-eslint/utils': 8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
-      '@typescript-eslint/visitor-keys': 8.58.0
+      '@typescript-eslint/parser': 8.58.2(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
+      '@typescript-eslint/scope-manager': 8.58.2
+      '@typescript-eslint/type-utils': 8.58.2(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
+      '@typescript-eslint/utils': 8.58.2(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
+      '@typescript-eslint/visitor-keys': 8.58.2
       eslint: 9.39.4(jiti@2.6.1)
       ignore: 7.0.5
       natural-compare: 1.4.0
@@ -13252,12 +12913,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/parser@8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)':
+  '@typescript-eslint/parser@8.58.2(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)':
     dependencies:
-      '@typescript-eslint/scope-manager': 8.58.0
-      '@typescript-eslint/types': 8.58.0
-      '@typescript-eslint/typescript-estree': 8.58.0(typescript@6.0.2)
-      '@typescript-eslint/visitor-keys': 8.58.0
+      '@typescript-eslint/scope-manager': 8.58.2
+      '@typescript-eslint/types': 8.58.2
+      '@typescript-eslint/typescript-estree': 8.58.2(typescript@6.0.2)
+      '@typescript-eslint/visitor-keys': 8.58.2
       debug: 4.4.3
       eslint: 9.39.4(jiti@2.6.1)
       typescript: 6.0.2
@@ -13273,12 +12934,30 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@typescript-eslint/project-service@8.58.2(typescript@6.0.2)':
+    dependencies:
+      '@typescript-eslint/tsconfig-utils': 8.58.2(typescript@6.0.2)
+      '@typescript-eslint/types': 8.58.2
+      debug: 4.4.3
+      typescript: 6.0.2
+    transitivePeerDependencies:
+      - supports-color
+
   '@typescript-eslint/scope-manager@8.58.0':
     dependencies:
       '@typescript-eslint/types': 8.58.0
       '@typescript-eslint/visitor-keys': 8.58.0
 
+  '@typescript-eslint/scope-manager@8.58.2':
+    dependencies:
+      '@typescript-eslint/types': 8.58.2
+      '@typescript-eslint/visitor-keys': 8.58.2
+
   '@typescript-eslint/tsconfig-utils@8.58.0(typescript@6.0.2)':
+    dependencies:
+      typescript: 6.0.2
+
+  '@typescript-eslint/tsconfig-utils@8.58.2(typescript@6.0.2)':
     dependencies:
       typescript: 6.0.2
 
@@ -13294,7 +12973,21 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@typescript-eslint/type-utils@8.58.2(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)':
+    dependencies:
+      '@typescript-eslint/types': 8.58.2
+      '@typescript-eslint/typescript-estree': 8.58.2(typescript@6.0.2)
+      '@typescript-eslint/utils': 8.58.2(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
+      debug: 4.4.3
+      eslint: 9.39.4(jiti@2.6.1)
+      ts-api-utils: 2.5.0(typescript@6.0.2)
+      typescript: 6.0.2
+    transitivePeerDependencies:
+      - supports-color
+
   '@typescript-eslint/types@8.58.0': {}
+
+  '@typescript-eslint/types@8.58.2': {}
 
   '@typescript-eslint/typescript-estree@8.58.0(typescript@6.0.2)':
     dependencies:
@@ -13305,7 +12998,22 @@ snapshots:
       debug: 4.4.3
       minimatch: 10.2.5
       semver: 7.7.4
-      tinyglobby: 0.2.15
+      tinyglobby: 0.2.16
+      ts-api-utils: 2.5.0(typescript@6.0.2)
+      typescript: 6.0.2
+    transitivePeerDependencies:
+      - supports-color
+
+  '@typescript-eslint/typescript-estree@8.58.2(typescript@6.0.2)':
+    dependencies:
+      '@typescript-eslint/project-service': 8.58.2(typescript@6.0.2)
+      '@typescript-eslint/tsconfig-utils': 8.58.2(typescript@6.0.2)
+      '@typescript-eslint/types': 8.58.2
+      '@typescript-eslint/visitor-keys': 8.58.2
+      debug: 4.4.3
+      minimatch: 10.2.5
+      semver: 7.7.4
+      tinyglobby: 0.2.16
       ts-api-utils: 2.5.0(typescript@6.0.2)
       typescript: 6.0.2
     transitivePeerDependencies:
@@ -13322,9 +13030,25 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@typescript-eslint/utils@8.58.2(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)':
+    dependencies:
+      '@eslint-community/eslint-utils': 4.9.1(eslint@9.39.4(jiti@2.6.1))
+      '@typescript-eslint/scope-manager': 8.58.2
+      '@typescript-eslint/types': 8.58.2
+      '@typescript-eslint/typescript-estree': 8.58.2(typescript@6.0.2)
+      eslint: 9.39.4(jiti@2.6.1)
+      typescript: 6.0.2
+    transitivePeerDependencies:
+      - supports-color
+
   '@typescript-eslint/visitor-keys@8.58.0':
     dependencies:
       '@typescript-eslint/types': 8.58.0
+      eslint-visitor-keys: 5.0.1
+
+  '@typescript-eslint/visitor-keys@8.58.2':
+    dependencies:
+      '@typescript-eslint/types': 8.58.2
       eslint-visitor-keys: 5.0.1
 
   '@ungap/structured-clone@1.3.0': {}
@@ -13494,9 +13218,9 @@ snapshots:
       lodash: 4.18.1
       minimatch: 7.4.9
 
-  '@vitejs/plugin-basic-ssl@2.3.0(vite@7.3.1(@types/node@24.12.2)(jiti@2.6.1)(less@4.6.4)(lightningcss@1.32.0)(sass-embedded@1.99.0)(sass@1.98.0)(terser@5.46.1)(yaml@2.8.3))':
+  '@vitejs/plugin-basic-ssl@2.3.0(vite@7.3.2(@types/node@24.12.2)(jiti@2.6.1)(less@4.6.4)(lightningcss@1.32.0)(sass-embedded@1.99.0)(sass@1.99.0)(terser@5.46.1)(yaml@2.8.3))':
     dependencies:
-      vite: 7.3.1(@types/node@24.12.2)(jiti@2.6.1)(less@4.6.4)(lightningcss@1.32.0)(sass-embedded@1.99.0)(sass@1.98.0)(terser@5.46.1)(yaml@2.8.3)
+      vite: 7.3.2(@types/node@24.12.2)(jiti@2.6.1)(less@4.6.4)(lightningcss@1.32.0)(sass-embedded@1.99.0)(sass@1.99.0)(terser@5.46.1)(yaml@2.8.3)
 
   '@vitejs/plugin-vue@5.2.4(vite@5.4.21(@types/node@24.12.2)(less@4.6.4)(lightningcss@1.32.0)(sass-embedded@1.99.0)(sass@1.98.0)(terser@5.46.1))(vue@3.5.32(typescript@6.0.2))':
     dependencies:
@@ -13848,23 +13572,6 @@ snapshots:
       json-schema-traverse: 1.0.0
       require-from-string: 2.0.2
 
-  algoliasearch@5.50.0:
-    dependencies:
-      '@algolia/abtesting': 1.16.0
-      '@algolia/client-abtesting': 5.50.0
-      '@algolia/client-analytics': 5.50.0
-      '@algolia/client-common': 5.50.0
-      '@algolia/client-insights': 5.50.0
-      '@algolia/client-personalization': 5.50.0
-      '@algolia/client-query-suggestions': 5.50.0
-      '@algolia/client-search': 5.50.0
-      '@algolia/ingestion': 1.50.0
-      '@algolia/monitoring': 1.50.0
-      '@algolia/recommend': 5.50.0
-      '@algolia/requester-browser-xhr': 5.50.0
-      '@algolia/requester-fetch': 5.50.0
-      '@algolia/requester-node-http': 5.50.0
-
   algoliasearch@5.50.1:
     dependencies:
       '@algolia/abtesting': 1.16.1
@@ -13882,21 +13589,21 @@ snapshots:
       '@algolia/requester-fetch': 5.50.1
       '@algolia/requester-node-http': 5.50.1
 
-  angular-eslint@21.3.1(@angular/cli@https://codeload.github.com/angular/cli-builds/tar.gz/df8eef312e79fafe97bb84e4006a35a9475cf345(@types/node@24.12.2)(chokidar@5.0.0))(chokidar@5.0.0)(eslint@9.39.4(jiti@2.6.1))(typescript-eslint@8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2))(typescript@6.0.2):
+  angular-eslint@21.3.1(@angular/cli@https://codeload.github.com/angular/cli-builds/tar.gz/1d1b69b0a4efd550e2fdb4db36ce9aef1d768406(@types/node@24.12.2)(chokidar@5.0.0))(chokidar@5.0.0)(eslint@9.39.4(jiti@2.6.1))(typescript-eslint@8.58.2(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2))(typescript@6.0.2):
     dependencies:
-      '@angular-devkit/core': https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/6cd775718f1fd4c78d960e28a99d5a40453cae36(chokidar@5.0.0)
-      '@angular-devkit/schematics': https://codeload.github.com/angular/angular-devkit-schematics-builds/tar.gz/3c61f90d12b7635896ea4e9d91f538a01b252817(chokidar@5.0.0)
-      '@angular-eslint/builder': 21.3.1(@angular/cli@https://codeload.github.com/angular/cli-builds/tar.gz/df8eef312e79fafe97bb84e4006a35a9475cf345(@types/node@24.12.2)(chokidar@5.0.0))(chokidar@5.0.0)(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
+      '@angular-devkit/core': https://codeload.github.com/angular/angular-devkit-core-builds/tar.gz/c1e4be52aa7dad58e06e8b45936cca5b82342df4(chokidar@5.0.0)
+      '@angular-devkit/schematics': https://codeload.github.com/angular/angular-devkit-schematics-builds/tar.gz/e00cb89340b8910d27ef6195f959130e3973c5d4(chokidar@5.0.0)
+      '@angular-eslint/builder': 21.3.1(@angular/cli@https://codeload.github.com/angular/cli-builds/tar.gz/1d1b69b0a4efd550e2fdb4db36ce9aef1d768406(@types/node@24.12.2)(chokidar@5.0.0))(chokidar@5.0.0)(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
       '@angular-eslint/eslint-plugin': 21.3.1(@typescript-eslint/utils@8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2))(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
       '@angular-eslint/eslint-plugin-template': 21.3.1(@angular-eslint/template-parser@21.3.1(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2))(@typescript-eslint/types@8.58.0)(@typescript-eslint/utils@8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2))(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
-      '@angular-eslint/schematics': 21.3.1(@angular-eslint/template-parser@21.3.1(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2))(@angular/cli@https://codeload.github.com/angular/cli-builds/tar.gz/df8eef312e79fafe97bb84e4006a35a9475cf345(@types/node@24.12.2)(chokidar@5.0.0))(@typescript-eslint/types@8.58.0)(@typescript-eslint/utils@8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2))(chokidar@5.0.0)(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
+      '@angular-eslint/schematics': 21.3.1(@angular-eslint/template-parser@21.3.1(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2))(@angular/cli@https://codeload.github.com/angular/cli-builds/tar.gz/1d1b69b0a4efd550e2fdb4db36ce9aef1d768406(@types/node@24.12.2)(chokidar@5.0.0))(@typescript-eslint/types@8.58.0)(@typescript-eslint/utils@8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2))(chokidar@5.0.0)(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
       '@angular-eslint/template-parser': 21.3.1(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
-      '@angular/cli': https://codeload.github.com/angular/cli-builds/tar.gz/df8eef312e79fafe97bb84e4006a35a9475cf345(@types/node@24.12.2)(chokidar@5.0.0)
+      '@angular/cli': https://codeload.github.com/angular/cli-builds/tar.gz/1d1b69b0a4efd550e2fdb4db36ce9aef1d768406(@types/node@24.12.2)(chokidar@5.0.0)
       '@typescript-eslint/types': 8.58.0
       '@typescript-eslint/utils': 8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
       eslint: 9.39.4(jiti@2.6.1)
       typescript: 6.0.2
-      typescript-eslint: 8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
+      typescript-eslint: 8.58.2(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
     transitivePeerDependencies:
       - chokidar
       - supports-color
@@ -14094,7 +13801,7 @@ snapshots:
 
   bcryptjs@2.4.3: {}
 
-  beasties@0.4.1:
+  beasties@0.4.2:
     dependencies:
       css-select: 6.0.0
       css-what: 7.0.0
@@ -14147,7 +13854,7 @@ snapshots:
       http-errors: 2.0.1
       iconv-lite: 0.7.2
       on-finished: 2.4.1
-      qs: 6.15.0
+      qs: 6.15.1
       raw-body: 3.0.2
       type-is: 2.0.1
     transitivePeerDependencies:
@@ -14166,6 +13873,10 @@ snapshots:
       concat-map: 0.0.1
 
   brace-expansion@2.0.3:
+    dependencies:
+      balanced-match: 1.0.2
+
+  brace-expansion@2.1.0:
     dependencies:
       balanced-match: 1.0.2
 
@@ -14413,7 +14124,7 @@ snapshots:
     dependencies:
       safe-buffer: 5.2.1
 
-  content-disposition@1.0.1: {}
+  content-disposition@1.1.0: {}
 
   content-type@1.0.5: {}
 
@@ -14899,6 +14610,7 @@ snapshots:
       '@esbuild/win32-arm64': 0.27.3
       '@esbuild/win32-ia32': 0.27.3
       '@esbuild/win32-x64': 0.27.3
+    optional: true
 
   esbuild@0.27.7:
     optionalDependencies:
@@ -14957,7 +14669,6 @@ snapshots:
       '@esbuild/win32-arm64': 0.28.0
       '@esbuild/win32-ia32': 0.28.0
       '@esbuild/win32-x64': 0.28.0
-    optional: true
 
   escalade@3.2.0: {}
 
@@ -15161,7 +14872,7 @@ snapshots:
     dependencies:
       accepts: 2.0.0
       body-parser: 2.2.2
-      content-disposition: 1.0.1
+      content-disposition: 1.1.0
       content-type: 1.0.5
       cookie: 0.7.2
       cookie-signature: 1.2.2
@@ -15179,7 +14890,7 @@ snapshots:
       once: 1.4.0
       parseurl: 1.3.3
       proxy-addr: 2.0.7
-      qs: 6.15.0
+      qs: 6.15.1
       range-parser: 1.2.1
       router: 2.2.0
       send: 1.2.1
@@ -16166,7 +15877,7 @@ snapshots:
       rfdc: 1.4.1
       wrap-ansi: 10.0.0
 
-  lmdb@3.5.2:
+  lmdb@3.5.3:
     dependencies:
       '@harperfast/extended-iterable': 1.0.3
       msgpackr: 1.11.9
@@ -16175,13 +15886,13 @@ snapshots:
       ordered-binary: 1.6.1
       weak-lru-cache: 1.2.2
     optionalDependencies:
-      '@lmdb/lmdb-darwin-arm64': 3.5.2
-      '@lmdb/lmdb-darwin-x64': 3.5.2
-      '@lmdb/lmdb-linux-arm': 3.5.2
-      '@lmdb/lmdb-linux-arm64': 3.5.2
-      '@lmdb/lmdb-linux-x64': 3.5.2
-      '@lmdb/lmdb-win32-arm64': 3.5.2
-      '@lmdb/lmdb-win32-x64': 3.5.2
+      '@lmdb/lmdb-darwin-arm64': 3.5.3
+      '@lmdb/lmdb-darwin-x64': 3.5.3
+      '@lmdb/lmdb-linux-arm': 3.5.3
+      '@lmdb/lmdb-linux-arm64': 3.5.3
+      '@lmdb/lmdb-linux-x64': 3.5.3
+      '@lmdb/lmdb-win32-arm64': 3.5.3
+      '@lmdb/lmdb-win32-x64': 3.5.3
     optional: true
 
   loader-runner@4.3.1: {}
@@ -16441,11 +16152,11 @@ snapshots:
 
   minimatch@5.1.9:
     dependencies:
-      brace-expansion: 2.0.3
+      brace-expansion: 2.1.0
 
   minimatch@7.4.6:
     dependencies:
-      brace-expansion: 2.0.3
+      brace-expansion: 2.1.0
 
   minimatch@7.4.9:
     dependencies:
@@ -16547,10 +16258,10 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  ng-packagr@22.0.0-next.1(@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/b032d4f9c7664088b71d183e6dad51be1fe19d74(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(typescript@6.0.2))(tailwindcss@4.2.2)(tslib@2.8.1)(typescript@6.0.2):
+  ng-packagr@22.0.0-next.1(@angular/compiler-cli@https://codeload.github.com/angular/compiler-cli-builds/tar.gz/2c8b8bf1dd606449166e6f9e2a4841bb75aa847a(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(typescript@6.0.2))(tailwindcss@4.2.2)(tslib@2.8.1)(typescript@6.0.2):
     dependencies:
       '@ampproject/remapping': 2.3.0
-      '@angular/compiler-cli': https://codeload.github.com/angular/compiler-cli-builds/tar.gz/b032d4f9c7664088b71d183e6dad51be1fe19d74(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/19b399ff75a37954acbb90b255785247325662b0)(typescript@6.0.2)
+      '@angular/compiler-cli': https://codeload.github.com/angular/compiler-cli-builds/tar.gz/2c8b8bf1dd606449166e6f9e2a4841bb75aa847a(@angular/compiler@https://codeload.github.com/angular/compiler-builds/tar.gz/98d8ae0783899a6ff5e2cc41275e363dffc83bd1)(typescript@6.0.2)
       '@rollup/plugin-json': 6.1.0(rollup@4.60.1)
       '@rollup/wasm-node': 4.60.1
       ajv: 8.18.0
@@ -16614,7 +16325,7 @@ snapshots:
       proc-log: 6.1.0
       semver: 7.7.4
       tar: 7.5.13
-      tinyglobby: 0.2.15
+      tinyglobby: 0.2.16
       which: 6.0.1
     transitivePeerDependencies:
       - supports-color
@@ -17342,6 +17053,10 @@ snapshots:
     dependencies:
       side-channel: 1.1.0
 
+  qs@6.15.1:
+    dependencies:
+      side-channel: 1.1.0
+
   queue-microtask@1.2.3: {}
 
   quick-format-unescaped@4.0.4: {}
@@ -17504,30 +17219,6 @@ snapshots:
   reusify@1.1.0: {}
 
   rfdc@1.4.1: {}
-
-  rolldown@1.0.0-rc.12(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2):
-    dependencies:
-      '@oxc-project/types': 0.122.0
-      '@rolldown/pluginutils': 1.0.0-rc.12
-    optionalDependencies:
-      '@rolldown/binding-android-arm64': 1.0.0-rc.12
-      '@rolldown/binding-darwin-arm64': 1.0.0-rc.12
-      '@rolldown/binding-darwin-x64': 1.0.0-rc.12
-      '@rolldown/binding-freebsd-x64': 1.0.0-rc.12
-      '@rolldown/binding-linux-arm-gnueabihf': 1.0.0-rc.12
-      '@rolldown/binding-linux-arm64-gnu': 1.0.0-rc.12
-      '@rolldown/binding-linux-arm64-musl': 1.0.0-rc.12
-      '@rolldown/binding-linux-ppc64-gnu': 1.0.0-rc.12
-      '@rolldown/binding-linux-s390x-gnu': 1.0.0-rc.12
-      '@rolldown/binding-linux-x64-gnu': 1.0.0-rc.12
-      '@rolldown/binding-linux-x64-musl': 1.0.0-rc.12
-      '@rolldown/binding-openharmony-arm64': 1.0.0-rc.12
-      '@rolldown/binding-wasm32-wasi': 1.0.0-rc.12(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)
-      '@rolldown/binding-win32-arm64-msvc': 1.0.0-rc.12
-      '@rolldown/binding-win32-x64-msvc': 1.0.0-rc.12
-    transitivePeerDependencies:
-      - '@emnapi/core'
-      - '@emnapi/runtime'
 
   rolldown@1.0.0-rc.13:
     dependencies:
@@ -18250,6 +17941,11 @@ snapshots:
       fdir: 6.5.0(picomatch@4.0.4)
       picomatch: 4.0.4
 
+  tinyglobby@0.2.16:
+    dependencies:
+      fdir: 6.5.0(picomatch@4.0.4)
+      picomatch: 4.0.4
+
   tinyrainbow@3.1.0: {}
 
   tldts-core@6.1.86: {}
@@ -18385,12 +18081,12 @@ snapshots:
 
   typed-assert@1.0.9: {}
 
-  typescript-eslint@8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2):
+  typescript-eslint@8.58.2(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2):
     dependencies:
-      '@typescript-eslint/eslint-plugin': 8.58.0(@typescript-eslint/parser@8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2))(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
-      '@typescript-eslint/parser': 8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
-      '@typescript-eslint/typescript-estree': 8.58.0(typescript@6.0.2)
-      '@typescript-eslint/utils': 8.58.0(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
+      '@typescript-eslint/eslint-plugin': 8.58.2(@typescript-eslint/parser@8.58.2(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2))(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
+      '@typescript-eslint/parser': 8.58.2(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
+      '@typescript-eslint/typescript-estree': 8.58.2(typescript@6.0.2)
+      '@typescript-eslint/utils': 8.58.2(eslint@9.39.4(jiti@2.6.1))(typescript@6.0.2)
       eslint: 9.39.4(jiti@2.6.1)
       typescript: 6.0.2
     transitivePeerDependencies:
@@ -18570,21 +18266,21 @@ snapshots:
       sass-embedded: 1.99.0
       terser: 5.46.1
 
-  vite@7.3.1(@types/node@24.12.2)(jiti@2.6.1)(less@4.6.4)(lightningcss@1.32.0)(sass-embedded@1.99.0)(sass@1.98.0)(terser@5.46.1)(yaml@2.8.3):
+  vite@7.3.2(@types/node@24.12.2)(jiti@2.6.1)(less@4.6.4)(lightningcss@1.32.0)(sass-embedded@1.99.0)(sass@1.99.0)(terser@5.46.1)(yaml@2.8.3):
     dependencies:
       esbuild: 0.27.7
       fdir: 6.5.0(picomatch@4.0.4)
       picomatch: 4.0.4
       postcss: 8.5.8
       rollup: 4.60.1
-      tinyglobby: 0.2.15
+      tinyglobby: 0.2.16
     optionalDependencies:
       '@types/node': 24.12.2
       fsevents: 2.3.3
       jiti: 2.6.1
       less: 4.6.4
       lightningcss: 1.32.0
-      sass: 1.98.0
+      sass: 1.99.0
       sass-embedded: 1.99.0
       terser: 5.46.1
       yaml: 2.8.3
